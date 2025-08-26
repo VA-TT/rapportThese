@@ -1,0 +1,133 @@
+\documentclass[10pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz, pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{positioning}
+\usetikzlibrary{trees}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning}
+\usepackage{xcolor}
+\usetheme{EastLansing}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{hyperref} 
+\usepackage{colortbl} % Required for \rowcolor
+\usepackage{animate}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage[french]{babel}
+\setbeamertemplate{caption}[numbered]
+
+\title{Rapport Hebdo}
+\author{Viet Anh Quach}
+\institute{3SR}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+
+\section{MPM}
+
+
+
+\section{DEM}
+\begin{frame}{Étude sur le critère de rupture de Coulomb}
+    \begin{table}
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            \textbf{Symboles}               & \textbf{Paramètres}         & \textbf{Valeurs}                          & \textbf{Unité}  \\
+            \hline
+            Nombre de particules            & N                           & $15^3$                                    & -               \\
+            \hline
+            Le rayon des particules         & R                           & 0.003 $\div$ 0.005                        & m               \\
+            \hline
+            Masse volumique                 & $\rho$                      & 2500                                      & $\text{kg/m}^3$ \\
+            \hline
+            Contrainte isotrope             & $\sigma_{xx} = \sigma_{zz}$ & 100, 200, 300                             & kPa             \\
+            \hline
+            Raideur normale et tangentielle & $k_n$ \& $k_t$              & \textcolor{black}{$3 \times 10^6$}        & $\text{N/m}$    \\
+            \hline
+            Niveau de raideur               & $\kappa$                    & 1000                                      & -               \\
+            \hline
+            Coefficient de frottement       & $\mu$                       & 0.5                                       & -               \\
+            \hline
+            Déformation axiale              & $\varepsilon_{\text{yy}}$   & 10                                        & $\%$            \\
+            \hline
+            Masse de la cellule périodique  & $h_{mass}$                  & \textcolor{black}{$7.13 \times 10^{-4}$}  & $\text{kg}$     \\
+            \hline
+            Nombre d’inertie                & I                           & \textcolor{red}{$10^{-6}\  \& \ 10^{-2}$} & -               \\
+            \hline
+            Vitesse imposée                 & v                           & $10^{-3}\  \& \ 10 $                      & m/s             \\
+            \hline
+            Pas de temps                    & $d_t$                       & $10^{-6}\  \& \ 10^{-10}$                 & $\text{s}$      \\
+            \hline
+            Coefficient d'amortissement     & $\alpha$                    & \textcolor{black}{$0.0 \ \& \ 0.7$}       & -               \\
+            \hline
+        \end{tabular}
+        \caption{Valeurs des paramètres utilisés dans la compression triaxiale}
+    \end{table}
+\end{frame}
+
+
+
+
+\begin{frame}{Déformation des échantillons lâches}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[h]
+                \centering
+                \animategraphics[loop,autoplay,width=4cm]{10}{Statique_LACHE_}{1}{5}
+                \caption{Statique}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[h]
+                \centering
+                \animategraphics[loop,autoplay,width=4cm]{10}{Dynamique_LACHE_}{1}{5}
+                \caption{Dynamique}
+            \end{figure}
+        \end{column}
+    \end{columns}
+    La vitesse de compression trop élevée, les grains n'ont pas le temps de se réarranger. \\
+    Pendant ce temps, les liaisons sont déjà rompues; \\
+    $\rightarrow$ La rupture précoce similaire à celle observée pour les échantillons denses.
+\end{frame}
+
+
+\begin{frame}{L'étude sur l'effet dynamique}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[h]
+                \centering
+                \scalebox{0.5}{\input{dVerlet_Contrainte_Deformation.tex}}
+                \caption{Courbe Contrainte-Déformation}
+            \end{figure}
+        \end{column}
+
+
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[h]
+                \centering
+                \scalebox{0.5}{\input{dVerlet_Deformation_Volumique.tex}}
+                \caption{Déformation Volumique}
+            \end{figure}
+        \end{column}
+    \end{columns}
+    \begin{itemize}
+        \item Les échantillons lâches se comportent dans une tendence comme l'échantillons denses sous l'effet dynamique.
+        \item Le sable lâche n'est pas purement contractant sous compression dynamique.
+        \item Néanmoins, l’état critique est toujours observé, même dans le cas dynamique.
+    \end{itemize}
+\end{frame}
+
+
+
+
+
+
+
+\end{document}
