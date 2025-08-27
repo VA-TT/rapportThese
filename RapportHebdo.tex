@@ -15,8 +15,9 @@
 \usepackage[T1]{fontenc}
 \usepackage{amsmath, amsfonts, amssymb}
 \usepackage[french]{babel}
+\usepackage[normalem]{ulem}
 \setbeamertemplate{caption}[numbered]
-
+\usepackage{multirow}
 \title{Rapport Hebdo}
 \author{Viet Anh Quach}
 \institute{3SR}
@@ -29,105 +30,211 @@
 \end{frame}
 
 
-\section{MPM}
-
-
-
 \section{DEM}
-\begin{frame}{Étude sur le critère de rupture de Coulomb}
+\begin{frame}{Changer le modèle}
+    \begin{figure}[h]
+        \centering
+        \scalebox{0.15}{\includegraphics{rentangulaire.png}}
+        \caption{Boîte rentangulaire}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Étude sur le nombre d'inertie}
     \begin{table}
         \centering
         \begin{tabular}{|c|c|c|c|}
             \hline
-            \textbf{Symboles}               & \textbf{Paramètres}         & \textbf{Valeurs}                          & \textbf{Unité}  \\
+            \textbf{Symboles}               & \textbf{Paramètres} & \textbf{Valeurs}                      & \textbf{Unité}  \\
             \hline
-            Nombre de particules            & N                           & $15^3$                                    & -               \\
+            Nombre de particules            & N                   & $15 \times 30 \times 15 = 6750$       & -               \\
             \hline
-            Le rayon des particules         & R                           & 0.003 $\div$ 0.005                        & m               \\
+            Le rayon des particules         & R                   & 0.003 $\div$ 0.005                    & m               \\
             \hline
-            Masse volumique                 & $\rho$                      & 2500                                      & $\text{kg/m}^3$ \\
+            Masse volumique                 & $\rho$              & 2500                                  & $\text{kg/m}^3$ \\
             \hline
-            Contrainte isotrope             & $\sigma_{xx} = \sigma_{zz}$ & 100, 200, 300                             & kPa             \\
+            Raideur normale et tangentielle & $k_n$ \& $k_t$      & \textcolor{black}{$3 \times 10^6$}    & $\text{N/m}$    \\
             \hline
-            Raideur normale et tangentielle & $k_n$ \& $k_t$              & \textcolor{black}{$3 \times 10^6$}        & $\text{N/m}$    \\
+            Niveau de raideur               & $\kappa$            & >1000                                 & -               \\
             \hline
-            Niveau de raideur               & $\kappa$                    & 1000                                      & -               \\
+            Coefficient de frottement       & $\mu$               & $\mu_{iso} = 0.1, \mu_{triax} = 0.5 $ & -               \\
             \hline
-            Coefficient de frottement       & $\mu$                       & 0.5                                       & -               \\
-            \hline
-            Déformation axiale              & $\varepsilon_{\text{yy}}$   & 10                                        & $\%$            \\
-            \hline
-            Masse de la cellule périodique  & $h_{mass}$                  & \textcolor{black}{$7.13 \times 10^{-4}$}  & $\text{kg}$     \\
-            \hline
-            Nombre d’inertie                & I                           & \textcolor{red}{$10^{-6}\  \& \ 10^{-2}$} & -               \\
-            \hline
-            Vitesse imposée                 & v                           & $10^{-3}\  \& \ 10 $                      & m/s             \\
-            \hline
-            Pas de temps                    & $d_t$                       & $10^{-6}\  \& \ 10^{-10}$                 & $\text{s}$      \\
-            \hline
-            Coefficient d'amortissement     & $\alpha$                    & \textcolor{black}{$0.0 \ \& \ 0.7$}       & -               \\
+            Coefficient d'amortissement     & $\alpha$            & 0.0                                   & -               \\
             \hline
         \end{tabular}
-        \caption{Valeurs des paramètres utilisés dans la compression triaxiale}
+        \caption{Valeurs gardé}
     \end{table}
 \end{frame}
 
 
+\begin{frame}{Étude sur le nombre d'inertie}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{table}
+                \centering
+                \begin{tabular}{|c|c|c|c|}
+                    \hline
+                    % \textbf{v (m/s) \&P (kPa)} & $3 \times 10^4$ & $3 \times 10^2$                       & $3 \times 10^0$ & $3 \times 10^{-2}$ & $3 \times 10^{-4}$ \\
+                    $v $(m/s)                & $ \sigma_3 = 3 \times 10^2$ (kPa) \\
+                    \hline
+                    $4.542   \times 10^{-3}$ & I = $10^{-5}$                     \\
+                    \hline
+                    $4.542   \times 10^{-2}$ & I = $10^{-4}$                     \\
+                    \hline
+                    $4.542   \times 10^{-1}$ & I = $10^{-3}$                     \\
+                    \hline
+                    $4.542   \times 10^{0}$  & I = $10^{-2}$                     \\
+                    \hline
+                    $4.542   \times 10^{1}$  & I = $10^{-1}$                     \\
+                    \hline
+                    $4.542   \times 10^{2}$  & I = $1$                           \\
+                    \hline
+                \end{tabular}
+                \caption{Changer la vitess}
+            \end{table}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{table}
+                \centering
+                \begin{tabular}{|c|c|c|c|}
+                    \hline
+                    % \textbf{v (m/s) \&P (kPa)} & $3 \times 10^4$ & $3 \times 10^2$                       & $3 \times 10^0$ & $3 \times 10^{-2}$ & $3 \times 10^{-4}$ \\
+                    $\sigma_{3} $(kPa) & v $ = 4.542   \times 10^{-2}$ (m/s) \\
+                    \hline
+                    $3 \times 10^4$    & I = $10^{-5}$                       \\
+                    \hline
+                    $3 \times 10^2$    & I = $10^{-4}$                       \\
+                    \hline
+                    $3 \times 10^0$    & I = $10^{-3}$                       \\
+                    \hline
+                    $3 \times 10^{-2}$ & I = $10^{-2}$                       \\
+                    \hline
+                    $3 \times 10^{-4}$ & I = $10^{-1}$                       \\
+                    \hline
+                    $3 \times 10^{-7}$ & I = $1$                             \\
+                    \hline
+                \end{tabular}
+                \caption{Changer la contrainte de confinement}
+            \end{table}
+        \end{column}
+    \end{columns}
+\end{frame}
 
-
-\begin{frame}{Déformation des échantillons lâches}
+\begin{frame}{Changer la contrainte}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{figure}[h]
                 \centering
-                \animategraphics[loop,autoplay,width=4cm]{10}{Statique_LACHE_}{1}{5}
-                \caption{Statique}
+                \scalebox{0.5}{\input{Contrainte_contrainteDeviatorique.tex}}
+                \caption{Contrainte - Déformation DEM (changer la vitess)}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
-            \begin{figure}[h]
+            \begin{table}
                 \centering
-                \animategraphics[loop,autoplay,width=4cm]{10}{Dynamique_LACHE_}{1}{5}
-                \caption{Dynamique}
-            \end{figure}
+                \begin{tabular}{|c|c|c|c|}
+                    \hline
+                    % \textbf{v (m/s) \&P (kPa)} & $3 \times 10^4$ & $3 \times 10^2$                       & $3 \times 10^0$ & $3 \times 10^{-2}$ & $3 \times 10^{-4}$ \\
+                    $\sigma_{3} $(kPa)      & v $ = 4.542   \times 10^{-2}$ (m/s)                  \\
+                    \hline
+                    $3 \times 10^4$         & $\kappa > 1000$                                      \\
+                    \hline
+                    $3 \times 10^2$         & I = $10^{-4}$                                        \\
+                    \hline
+                    \rowcolor{white}
+                    $3 \times 10^0$         & \multirow{2}{*}{$\tan {\varphi} \approx 90 \degres$} \\
+                    \cline{1-1}
+                    $3 \times 10^{-2}$      &                                                      \\
+                    \hline
+
+                    $4.542   \times 10^{1}$ & \multirow{2}{*}{IsoComp stabilise pas}               \\
+                    \cline{1-1}
+                    $4.542   \times 10^{2}$ &                                                      \\
+                    \hline
+                \end{tabular}
+                \caption{Changer la contrainte de confinement}
+            \end{table}
         \end{column}
     \end{columns}
-    La vitesse de compression trop élevée, les grains n'ont pas le temps de se réarranger. \\
-    Pendant ce temps, les liaisons sont déjà rompues; \\
-    $\rightarrow$ La rupture précoce similaire à celle observée pour les échantillons denses.
 \end{frame}
 
-
-\begin{frame}{L'étude sur l'effet dynamique}
+\begin{frame}{Changer la vitess}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{figure}[h]
                 \centering
-                \scalebox{0.5}{\input{dVerlet_Contrainte_Deformation.tex}}
-                \caption{Courbe Contrainte-Déformation}
+                \scalebox{0.5}{\input{Vitess-contrainteDeviatorique.tex}}
+                \caption{Contrainte - Déformation DEM (changer la vitess)}
             \end{figure}
         \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{table}
+                \centering
+                \begin{tabular}{|c|c|c|c|}
+                    \hline
+                    % \textbf{v (m/s) \&P (kPa)} & $3 \times 10^4$ & $3 \times 10^2$                       & $3 \times 10^0$ & $3 \times 10^{-2}$ & $3 \times 10^{-4}$ \\
+                    $v $(m/s)                & $ \sigma_3 = 3 \times 10^2$ (kPa) \\
+                    \hline
+                    $4.542   \times 10^{-3}$ & I = $10^{-5}$                     \\
+                    \hline
+                    $4.542   \times 10^{-2}$ & I = $10^{-4}$                     \\
+                    \hline
+                    $4.542   \times 10^{-1}$ & I = $10^{-3}$                     \\
+                    \hline
+                    $4.542   \times 10^{0}$  & I = $10^{-2}$                     \\
+                    \hline
+                    $4.542   \times 10^{1}$  & I = $10^{-1}$                     \\
+                    \hline
+                    $4.542   \times 10^{2}$  & I = $1$                           \\
+                    \hline
+                \end{tabular}
+                \caption{Changer la vitess}
+            \end{table}
+        \end{column}
+    \end{columns}
+\end{frame}
 
-
+\begin{frame}{Changer la vitess}
+    \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{figure}[h]
                 \centering
-                \scalebox{0.5}{\input{dVerlet_Deformation_Volumique.tex}}
-                \caption{Déformation Volumique}
+                \scalebox{0.5}{\input{Vitess-contrainteDeviatorique.tex}}
+                \caption{Contrainte - Déformation DEM (changer la vitess)}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[h]
+                \centering
+                \scalebox{0.5}{\input{PasTemps.tex}}
+                \caption{Bruyant concernant pas de temps MPM (avant)}
             \end{figure}
         \end{column}
     \end{columns}
-    \begin{itemize}
-        \item Les échantillons lâches se comportent dans une tendence comme l'échantillons denses sous l'effet dynamique.
-        \item Le sable lâche n'est pas purement contractant sous compression dynamique.
-        \item Néanmoins, l’état critique est toujours observé, même dans le cas dynamique.
-    \end{itemize}
+    \[
+        \dot{x}(t) = \frac{x(t+\varepsilon) - x(t-\varepsilon)}{2\varepsilon}
+    \]
+    Problème de arrondir?
 \end{frame}
 
-
-
-
-
-
+\begin{frame}{Comparer entre les formes de boite}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[h]
+                \centering
+                \scalebox{0.5}{\input{contrainteDeviatorique.tex}}
+                \caption{Rectangulaire}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[h]
+                \centering
+                \scalebox{0.5}{\input{Test.tex}}
+                \caption{Cube (précédent)}
+            \end{figure}
+        \end{column}
+    \end{columns}
+    En compression quasi-statique, la contrainte déviatorique au pic ou à l’état critique (donc  $\mu$) ne présente aucune différence entre les deux formes.
+\end{frame}
 
 \end{document}
