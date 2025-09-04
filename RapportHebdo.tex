@@ -237,4 +237,49 @@
     En compression quasi-statique, la contrainte déviatorique au pic ou à l’état critique (donc  $\mu$) ne présente aucune différence entre les deux formes.
 \end{frame}
 
+
+\begin{frame}{Comparer entre les formes de boite}
+    \begin{figure}[h]
+        \centering
+        \scalebox{0.7}{\input{Synthese.tex}}
+        \caption{Courbe Contrainte ($\sigma_3 = 300kPa$)}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Problème d'arrondir (Standard IEEE 754)}
+    \begin{itemize}
+        \item Un type flottant ne représente qu’un nombre limité de chiffres significatifs ; au-delà, la valeur devient inexacte.
+        \item Manipulation délicate à cause des différences entre binaire et décimal.
+        \item Les opérations mathématiques amplifient les erreurs d’arrondi (e.g: $+$ et $\times$).
+    \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Problème d'arrondir (Standard IEEE 754)}
+    \begin{itemize}
+        \item La comparaison de valeurs flottantes peut poser problème.
+        \item Si les opérandes sont très proches, les opérateurs (surtout $=$ et $!=$) deviennent peu fiables.
+    \end{itemize}
+
+    \begin{figure}[h]
+        \centering
+        \scalebox{0.15}{\includegraphics{pbArrondir.png}}
+        \caption{La programme}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Problème d'arrondir (Standard IEEE 754)}
+    \begin{itemize}
+        \item The Art of Computer Programming, Volume II: Seminumerical Algorithms (Addison-Wesley, 1969)”
+        \item Si elles sont « assez proches » à $\epsilon$, on les considère comme égales.
+    \end{itemize}
+    \begin{figure}[h]
+        \centering
+        \scalebox{0.15}{\includegraphics{solutionPbArrondir.png}}
+        \caption{Fonction de comparison}
+    \end{figure}
+\end{frame}
+
 \end{document}
