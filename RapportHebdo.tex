@@ -6,7 +6,6 @@
 \usetikzlibrary{trees}
 \usetikzlibrary{shapes.geometric, arrows.meta, positioning}
 \usepackage{xcolor}
-\usetheme{EastLansing}
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{hyperref} 
@@ -16,6 +15,25 @@
 \usepackage{amsmath, amsfonts, amssymb}
 \usepackage[french]{babel}
 \usepackage[normalem]{ulem}
+
+% Theme và màu sắc cho beamer
+\usetheme{AnnArbor}
+\usecolortheme{seahorse}
+
+% Định nghĩa và thiết lập màu sắc chung
+\definecolor{mydarkblue}{RGB}{0,51,102}
+\setbeamercolor{structure}{fg=mydarkblue}
+\setbeamercolor{frametitle}{bg=mydarkblue, fg=white}
+\setbeamercolor{title}{fg=mydarkblue}
+\setbeamercolor{item}{fg=mydarkblue}
+\setbeamercolor{block title}{bg=mydarkblue, fg=white}
+\setbeamercolor{block body}{bg=white, fg=black}
+\setbeamercolor{section in toc}{fg=mydarkblue}
+\setbeamercolor{subsection in toc}{fg=mydarkblue}
+\setbeamercolor{caption name}{fg=mydarkblue}
+\setbeamercolor{author}{fg=mydarkblue}
+\setbeamercolor{date}{fg=mydarkblue}
+\setbeamercolor{institute}{fg=mydarkblue}
 \setbeamertemplate{caption}[numbered]
 \usepackage{multirow}
 \title{Rapport Hebdo}
@@ -247,24 +265,14 @@
     \end{itemize}
     \begin{figure}[h]
         \centering
-        \scalebox{0.15}{\includegraphics{RoundingErrorInCode.png}}
-        \caption{La fonction \textbf{"hold"} maintient $\varepsilon = const$ jusqu’à stabilisation de $\sigma$}
-    \end{figure}
-\end{frame}
-
-
-\begin{frame}{Problème d'arrondir (Standard IEEE 754)}
-    \begin{itemize}
-        \item La comparaison de valeurs flottantes peut poser problème.
-        \item Si les opérandes sont très proches, les opérateurs (surtout $=$ et $!=$) deviennent peu fiables.
-    \end{itemize}
-
-    \begin{figure}[h]
-        \centering
         \scalebox{0.15}{\includegraphics{pbArrondir.png}}
         \caption{La programme}
     \end{figure}
 \end{frame}
+
+
+
+
 
 
 \begin{frame}{Revient chez DEM - cellule cube}
@@ -285,6 +293,7 @@
     \end{figure}
 \end{frame}
 
+
 \begin{frame}{Code : ajouter tous les parties dynamiques}
     \begin{figure}[h]
         \centering
@@ -297,9 +306,6 @@
     \end{itemize}
     $\Rightarrow$ Les résultats varient de manière très sensible avec I
 \end{frame}
-
-
-
 
 \begin{frame}{Comparer entre les versions du code}
     \begin{figure}[h]

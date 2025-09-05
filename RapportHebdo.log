@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.4.17)  5 SEP 2025 13:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.4.17)  5 SEP 2025 16:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -621,7 +621,7 @@ File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfarrowlength=\dimen312
 \pgfarrowwidth=\dimen313
 \pgfarrowlinewidth=\dimen314
-) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeEastLansing.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemespruce.sty)) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
  (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
@@ -768,7 +768,7 @@ Package babel Info: Making ? an active character on input line 433.
 \FBfnindent=\dimen336
 )) (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 Package french.ldf Info: No list customisation for the beamer class,
-(french.ldf)             reported on input line 18.
+(french.ldf)             reported on input line 17.
  (/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box86
 \UL@hyphenbox=\box87
@@ -780,7 +780,7 @@ Package french.ldf Info: No list customisation for the beamer class,
 \ULC@box=\box88
 Package: ulem 2019/11/18
 \ULdepth=\dimen339
-) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeAnnArbor.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewolverine.sty)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeseahorse.sty) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip71
 \multirow@cntb=\count380
@@ -789,24 +789,24 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 ) (./RapportHebdo.aux)
 \openout1 = `RapportHebdo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -816,14 +816,14 @@ LaTeX Font Info:    ... okay on input line 26.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(10.00002pt, 344.19533pt, 10.00002pt)
+* h-part:(L,W,R)=(9.99756pt, 344.20024pt, 9.99756pt)
 * v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
 * \paperwidth=364.19536pt
 * \paperheight=273.14662pt
-* \textwidth=344.19533pt
+* \textwidth=344.20024pt
 * \textheight=244.6939pt
-* \oddsidemargin=-62.26997pt
-* \evensidemargin=-62.26997pt
+* \oddsidemargin=-62.27243pt
+* \evensidemargin=-62.27243pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
@@ -861,7 +861,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 44.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -871,66 +871,66 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count387
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 44.
+LaTeX Info: Redefining \pageref on input line 44.
+LaTeX Info: Redefining \nameref on input line 44.
  (./RapportHebdo.out) (./RapportHebdo.out)
 \@outlinefile=\write5
 \openout5 = `RapportHebdo.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 26.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 44.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 26.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 44.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 26.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 26.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 44.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 26.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 26.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 26.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 44.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 26.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 26.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 26.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 44.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 26.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 26.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 26.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 44.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 26.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 26.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 44.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 26.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 44.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 26.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 26.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 26.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 26.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 26.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 26.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 26.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 44.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 44.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 26.
+(Font)              `pureletters' in the math version `normal' on input line 44.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 26.
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 44.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 26.
+(Font)              `pureletters' in the math version `bold' on input line 44.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 26.
+(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 44.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 26.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 44.
  (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -949,8 +949,8 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: french babel package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \degres on input line 26.
-LaTeX Info: Redefining \up on input line 26.
+LaTeX Info: Redefining \degres on input line 44.
+LaTeX Info: Redefining \up on input line 44.
 (./RapportHebdo.nav) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Vitess-contrainteDeviatorique.tex
@@ -978,13 +978,13 @@ Package epstopdf Info: Source file: <./Vitess-contrainteDeviatorique.eps>
 (epstopdf)             Command: <repstopdf --outfile=./Vitess-contrainteDeviatorique-eps-converted-to.pdf ./Vitess-contrainteDeviatorique.eps>
 (epstopdf)             \includegraphics on input line 152.
 Package epstopdf Info: Output file is already uptodate.
-<./Vitess-contrainteDeviatorique-eps-converted-to.pdf, id=52, 361.35pt x 252.945pt>
+<./Vitess-contrainteDeviatorique-eps-converted-to.pdf, id=64, 361.35pt x 252.945pt>
 File: ./Vitess-contrainteDeviatorique-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Vitess-contrainteDeviatorique-eps-converted-to.pdf>
 Package pdftex.def Info: ./Vitess-contrainteDeviatorique-eps-converted-to.pdf  used on input line 152.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57251pt too wide) in paragraph at lines 218--218
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 236--236
  [] 
  []
 
@@ -998,69 +998,61 @@ Package epstopdf Info: Source file: <./PasTemps.eps>
 (epstopdf)             Command: <repstopdf --outfile=./PasTemps-eps-converted-to.pdf ./PasTemps.eps>
 (epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
-<./PasTemps-eps-converted-to.pdf, id=53, 361.35pt x 252.945pt>
+<./PasTemps-eps-converted-to.pdf, id=65, 361.35pt x 252.945pt>
 File: ./PasTemps-eps-converted-to.pdf Graphic file (type pdf)
 <use ./PasTemps-eps-converted-to.pdf>
 Package pdftex.def Info: ./PasTemps-eps-converted-to.pdf  used on input line 122.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57251pt too wide) in paragraph at lines 218--218
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 236--236
  [] 
  []
 
 [2
 
  <./Vitess-contrainteDeviatorique-eps-converted-to.pdf> <./PasTemps-eps-converted-to.pdf>]
-<RoundingErrorInCode.png, id=93, 1131.22626pt x 749.80125pt>
-File: RoundingErrorInCode.png Graphic file (type png)
-<use RoundingErrorInCode.png>
-Package pdftex.def Info: RoundingErrorInCode.png  used on input line 253.
-(pdftex.def)             Requested size: 1131.2235pt x 749.79942pt.
- [3
-
- <./RoundingErrorInCode.png>]
-<pbArrondir.png, id=128, 1072.005pt x 1218.5525pt>
+<pbArrondir.png, id=105, 1072.005pt x 1218.5525pt>
 File: pbArrondir.png Graphic file (type png)
 <use pbArrondir.png>
-Package pdftex.def Info: pbArrondir.png  used on input line 267.
+Package pdftex.def Info: pbArrondir.png  used on input line 271.
 (pdftex.def)             Requested size: 1072.0024pt x 1218.54953pt.
 
-Overfull \vbox (33.5607pt too high) detected at line 267
+Overfull \vbox (46.11612pt too high) detected at line 271
  []
 
-[4
+[3
 
  <./pbArrondir.png>]
-<box1.png, id=159, 823.075pt x 858.20625pt>
+<box1.png, id=136, 823.075pt x 858.20625pt>
 File: box1.png Graphic file (type png)
 <use box1.png>
-Package pdftex.def Info: box1.png  used on input line 274.
+Package pdftex.def Info: box1.png  used on input line 282.
 (pdftex.def)             Requested size: 823.07298pt x 858.20416pt.
  <./box1.png> <a0,fr0>
-<box2.png, id=163, 823.075pt x 858.20625pt>
+<box2.png, id=140, 823.075pt x 858.20625pt>
 File: box2.png Graphic file (type png)
 <use box2.png>
-Package pdftex.def Info: box2.png  used on input line 274.
+Package pdftex.def Info: box2.png  used on input line 282.
 (pdftex.def)             Requested size: 823.07298pt x 858.20416pt.
  <./box2.png> <a0,fr1>
-<box3.png, id=167, 823.075pt x 858.20625pt>
+<box3.png, id=144, 823.075pt x 858.20625pt>
 File: box3.png Graphic file (type png)
 <use box3.png>
-Package pdftex.def Info: box3.png  used on input line 274.
+Package pdftex.def Info: box3.png  used on input line 282.
 (pdftex.def)             Requested size: 823.07298pt x 858.20416pt.
- <./box3.png> <a0,fr2> [5
+ <./box3.png> <a0,fr2> [4
 
 ]
-<solutionPbArrondir.png, id=206, 1330.9725pt x 1234.6125pt>
+<solutionPbArrondir.png, id=184, 1330.9725pt x 1234.6125pt>
 File: solutionPbArrondir.png Graphic file (type png)
 <use solutionPbArrondir.png>
-Package pdftex.def Info: solutionPbArrondir.png  used on input line 286.
+Package pdftex.def Info: solutionPbArrondir.png  used on input line 294.
 (pdftex.def)             Requested size: 1330.96925pt x 1234.6095pt.
 
-Overfull \vbox (35.6303pt too high) detected at line 286
+Overfull \vbox (35.6303pt too high) detected at line 294
  []
 
-[6
+[5
 
  <./solutionPbArrondir.png>] (./2termsVersion.tex
 Package epstopdf Info: Source file: <./2termsVersion.eps>
@@ -1072,7 +1064,7 @@ Package epstopdf Info: Source file: <./2termsVersion.eps>
 (epstopdf)             Command: <repstopdf --outfile=./2termsVersion-eps-converted-to.pdf ./2termsVersion.eps>
 (epstopdf)             \includegraphics on input line 134.
 Package epstopdf Info: Output file is already uptodate.
-<./2termsVersion-eps-converted-to.pdf, id=236, 361.35pt x 252.945pt>
+<./2termsVersion-eps-converted-to.pdf, id=214, 361.35pt x 252.945pt>
 File: ./2termsVersion-eps-converted-to.pdf Graphic file (type pdf)
 <use ./2termsVersion-eps-converted-to.pdf>
 Package pdftex.def Info: ./2termsVersion-eps-converted-to.pdf  used on input line 134.
@@ -1082,24 +1074,24 @@ Package pdftex.def Info: ./2termsVersion-eps-converted-to.pdf  used on input lin
 LaTeX Warning: Command \l invalid in math mode on input line 135.
 
 Missing character: There is no ª in font cmss10!
-) [7
+) [6
 
  <./2termsVersion-eps-converted-to.pdf>] (./Synthese.tex
 Package epstopdf Info: Source file: <./Synthese.eps>
-(epstopdf)                    date: 2025-09-03 16:14:42
-(epstopdf)                    size: 229428 bytes
+(epstopdf)                    date: 2025-09-05 16:49:01
+(epstopdf)                    size: 229083 bytes
 (epstopdf)             Output file: <./Synthese-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-09-03 16:16:27
-(epstopdf)                    size: 95177 bytes
+(epstopdf)                    date: 2025-09-05 16:49:50
+(epstopdf)                    size: 93731 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Synthese-eps-converted-to.pdf ./Synthese.eps>
-(epstopdf)             \includegraphics on input line 136.
+(epstopdf)             \includegraphics on input line 134.
 Package epstopdf Info: Output file is already uptodate.
-<./Synthese-eps-converted-to.pdf, id=269, 361.35pt x 252.945pt>
+<./Synthese-eps-converted-to.pdf, id=248, 361.35pt x 252.945pt>
 File: ./Synthese-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Synthese-eps-converted-to.pdf>
-Package pdftex.def Info: ./Synthese-eps-converted-to.pdf  used on input line 136.
+Package pdftex.def Info: ./Synthese-eps-converted-to.pdf  used on input line 134.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-) [8
+) [7
 
  <./Synthese-eps-converted-to.pdf>] (./Masse.tex
 Package epstopdf Info: Source file: <./Masse.eps>
@@ -1111,12 +1103,12 @@ Package epstopdf Info: Source file: <./Masse.eps>
 (epstopdf)             Command: <repstopdf --outfile=./Masse-eps-converted-to.pdf ./Masse.eps>
 (epstopdf)             \includegraphics on input line 130.
 Package epstopdf Info: Output file is already uptodate.
-<./Masse-eps-converted-to.pdf, id=299, 361.35pt x 252.945pt>
+<./Masse-eps-converted-to.pdf, id=280, 361.35pt x 252.945pt>
 File: ./Masse-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Masse-eps-converted-to.pdf>
 Package pdftex.def Info: ./Masse-eps-converted-to.pdf  used on input line 130.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-) [9
+) [8
 
  <./Masse-eps-converted-to.pdf>] (./vraiInertie.tex
 Package epstopdf Info: Source file: <./vraiInertie.eps>
@@ -1128,16 +1120,16 @@ Package epstopdf Info: Source file: <./vraiInertie.eps>
 (epstopdf)             Command: <repstopdf --outfile=./vraiInertie-eps-converted-to.pdf ./vraiInertie.eps>
 (epstopdf)             \includegraphics on input line 132.
 Package epstopdf Info: Output file is already uptodate.
-<./vraiInertie-eps-converted-to.pdf, id=330, 361.35pt x 252.945pt>
+<./vraiInertie-eps-converted-to.pdf, id=311, 361.35pt x 252.945pt>
 File: ./vraiInertie-eps-converted-to.pdf Graphic file (type pdf)
 <use ./vraiInertie-eps-converted-to.pdf>
 Package pdftex.def Info: ./vraiInertie-eps-converted-to.pdf  used on input line 132.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \vbox (18.51085pt too high) detected at line 368
+Overfull \vbox (18.51085pt too high) detected at line 374
  []
 
-[10
+[9
 
  <./vraiInertie-eps-converted-to.pdf>] (./veriteI0terms.tex
 Package epstopdf Info: Source file: <./veriteI0terms.eps>
@@ -1149,13 +1141,13 @@ Package epstopdf Info: Source file: <./veriteI0terms.eps>
 (epstopdf)             Command: <repstopdf --outfile=./veriteI0terms-eps-converted-to.pdf ./veriteI0terms.eps>
 (epstopdf)             \includegraphics on input line 126.
 Package epstopdf Info: Output file is already uptodate.
-<./veriteI0terms-eps-converted-to.pdf, id=361, 361.35pt x 252.945pt>
+<./veriteI0terms-eps-converted-to.pdf, id=342, 361.35pt x 252.945pt>
 File: ./veriteI0terms-eps-converted-to.pdf Graphic file (type pdf)
 <use ./veriteI0terms-eps-converted-to.pdf>
 Package pdftex.def Info: ./veriteI0terms-eps-converted-to.pdf  used on input line 126.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57251pt too wide) in paragraph at lines 388--388
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 394--394
  [] 
  []
 
@@ -1169,46 +1161,46 @@ Package epstopdf Info: Source file: <./VeriteI2terms.eps>
 (epstopdf)             Command: <repstopdf --outfile=./VeriteI2terms-eps-converted-to.pdf ./VeriteI2terms.eps>
 (epstopdf)             \includegraphics on input line 126.
 Package epstopdf Info: Output file is already uptodate.
-<./VeriteI2terms-eps-converted-to.pdf, id=362, 361.35pt x 252.945pt>
+<./VeriteI2terms-eps-converted-to.pdf, id=343, 361.35pt x 252.945pt>
 File: ./VeriteI2terms-eps-converted-to.pdf Graphic file (type pdf)
 <use ./VeriteI2terms-eps-converted-to.pdf>
 Package pdftex.def Info: ./VeriteI2terms-eps-converted-to.pdf  used on input line 126.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57251pt too wide) in paragraph at lines 388--388
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 394--394
  [] 
+ []
+
+[10
+
+ <./veriteI0terms-eps-converted-to.pdf> <./VeriteI2terms-eps-converted-to.pdf>]
+<demiVelocite.png, id=374, 947.54pt x 870.25125pt>
+File: demiVelocite.png Graphic file (type png)
+<use demiVelocite.png>
+Package pdftex.def Info: demiVelocite.png  used on input line 416.
+(pdftex.def)             Requested size: 947.53767pt x 870.24913pt.
+
+Overfull \vbox (66.8738pt too high) detected at line 416
  []
 
 [11
 
- <./veriteI0terms-eps-converted-to.pdf> <./VeriteI2terms-eps-converted-to.pdf>]
-<demiVelocite.png, id=394, 947.54pt x 870.25125pt>
-File: demiVelocite.png Graphic file (type png)
-<use demiVelocite.png>
-Package pdftex.def Info: demiVelocite.png  used on input line 410.
-(pdftex.def)             Requested size: 947.53767pt x 870.24913pt.
+ <./demiVelocite.png>]
+<Courses.png, id=405, 1088.065pt x 755.82375pt>
+File: Courses.png Graphic file (type png)
+<use Courses.png>
+Package pdftex.def Info: Courses.png  used on input line 429.
+(pdftex.def)             Requested size: 1088.06236pt x 755.8219pt.
+<DatePrvision.png, id=406, 775.89874pt x 861.2175pt>
+File: DatePrvision.png Graphic file (type png)
+<use DatePrvision.png>
+Package pdftex.def Info: DatePrvision.png  used on input line 429.
+(pdftex.def)             Requested size: 775.89685pt x 861.2154pt.
 
-Overfull \vbox (66.8738pt too high) detected at line 410
+Overfull \vbox (41.02693pt too high) detected at line 429
  []
 
 [12
-
- <./demiVelocite.png>]
-<Courses.png, id=424, 1088.065pt x 755.82375pt>
-File: Courses.png Graphic file (type png)
-<use Courses.png>
-Package pdftex.def Info: Courses.png  used on input line 423.
-(pdftex.def)             Requested size: 1088.06236pt x 755.8219pt.
-<DatePrvision.png, id=425, 775.89874pt x 861.2175pt>
-File: DatePrvision.png Graphic file (type png)
-<use DatePrvision.png>
-Package pdftex.def Info: DatePrvision.png  used on input line 423.
-(pdftex.def)             Requested size: 775.89685pt x 861.2154pt.
-
-Overfull \vbox (41.02693pt too high) detected at line 423
- []
-
-[13
 
  <./Courses.png> <./DatePrvision.png>]
 \tf@nav=\write6
@@ -1225,18 +1217,18 @@ Package rerunfilecheck Info: File `RapportHebdo.out' has not changed.
 (rerunfilecheck)             Checksum: 5347B60332A058CF323F57855E330CB0;58.
  ) 
 Here is how much of TeX's memory you used:
- 41111 strings out of 478287
- 960818 string characters out of 5849289
- 1339670 words of memory out of 5000000
- 58474 multiletter control sequences out of 15000+600000
- 485939 words of font info for 73 fonts, out of 8000000 for 9000
+ 41167 strings out of 478287
+ 963017 string characters out of 5849289
+ 1339949 words of memory out of 5000000
+ 58531 multiletter control sequences out of 15000+600000
+ 485173 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,776b,931s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb>
-Output written on RapportHebdo.pdf (13 pages, 2102630 bytes).
+ 128i,15n,122p,776b,930s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb>
+Output written on RapportHebdo.pdf (12 pages, 1979184 bytes).
 PDF statistics:
- 546 PDF objects out of 1000 (max. 8388607)
- 449 compressed objects within 5 object streams
- 28 named destinations out of 1000 (max. 500000)
- 172 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 522 PDF objects out of 1000 (max. 8388607)
+ 424 compressed objects within 5 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 203 words of extra memory for PDF output out of 10000 (max. 10000000)
 
