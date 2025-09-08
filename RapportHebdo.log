@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.4.17)  5 SEP 2025 16:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.4.17)  8 SEP 2025 09:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -953,108 +953,42 @@ LaTeX Info: Redefining \degres on input line 44.
 LaTeX Info: Redefining \up on input line 44.
 (./RapportHebdo.nav) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Vitess-contrainteDeviatorique.tex
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<box1.png, id=64, 823.075pt x 858.20625pt>
+File: box1.png Graphic file (type png)
+<use box1.png>
+Package pdftex.def Info: box1.png  used on input line 291.
+(pdftex.def)             Requested size: 823.07298pt x 858.20416pt.
+ <./box1.png> <a0,fr0>
+<box2.png, id=69, 823.075pt x 858.20625pt>
+File: box2.png Graphic file (type png)
+<use box2.png>
+Package pdftex.def Info: box2.png  used on input line 291.
+(pdftex.def)             Requested size: 823.07298pt x 858.20416pt.
+ <./box2.png> <a0,fr1>
+<box3.png, id=73, 823.075pt x 858.20625pt>
+File: box3.png Graphic file (type png)
+<use box3.png>
+Package pdftex.def Info: box3.png  used on input line 291.
+(pdftex.def)             Requested size: 823.07298pt x 858.20416pt.
+ <./box3.png> <a0,fr2> [2
+
+] (./2termsVersion.tex
 \gptboxheight=\skip73
 \gptboxwidth=\skip74
 \gptboxtext=\box90
-LaTeX Font Info:    Trying to load font information for U+msa on input line 151.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 133.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 151.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 133.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 151.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 133.
  (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
-Package epstopdf Info: Source file: <./Vitess-contrainteDeviatorique.eps>
-(epstopdf)                    date: 2025-08-27 10:34:37
-(epstopdf)                    size: 612816 bytes
-(epstopdf)             Output file: <./Vitess-contrainteDeviatorique-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-08-27 12:27:12
-(epstopdf)                    size: 188577 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Vitess-contrainteDeviatorique-eps-converted-to.pdf ./Vitess-contrainteDeviatorique.eps>
-(epstopdf)             \includegraphics on input line 152.
-Package epstopdf Info: Output file is already uptodate.
-<./Vitess-contrainteDeviatorique-eps-converted-to.pdf, id=64, 361.35pt x 252.945pt>
-File: ./Vitess-contrainteDeviatorique-eps-converted-to.pdf Graphic file (type pdf)
-<use ./Vitess-contrainteDeviatorique-eps-converted-to.pdf>
-Package pdftex.def Info: ./Vitess-contrainteDeviatorique-eps-converted-to.pdf  used on input line 152.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-)
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 236--236
- [] 
- []
-
-(./PasTemps.tex
-Package epstopdf Info: Source file: <./PasTemps.eps>
-(epstopdf)                    date: 2025-04-25 13:15:34
-(epstopdf)                    size: 90880 bytes
-(epstopdf)             Output file: <./PasTemps-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-08-27 12:27:12
-(epstopdf)                    size: 39653 bytes
-(epstopdf)             Command: <repstopdf --outfile=./PasTemps-eps-converted-to.pdf ./PasTemps.eps>
-(epstopdf)             \includegraphics on input line 122.
-Package epstopdf Info: Output file is already uptodate.
-<./PasTemps-eps-converted-to.pdf, id=65, 361.35pt x 252.945pt>
-File: ./PasTemps-eps-converted-to.pdf Graphic file (type pdf)
-<use ./PasTemps-eps-converted-to.pdf>
-Package pdftex.def Info: ./PasTemps-eps-converted-to.pdf  used on input line 122.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-)
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 236--236
- [] 
- []
-
-[2
-
- <./Vitess-contrainteDeviatorique-eps-converted-to.pdf> <./PasTemps-eps-converted-to.pdf>]
-<pbArrondir.png, id=105, 1072.005pt x 1218.5525pt>
-File: pbArrondir.png Graphic file (type png)
-<use pbArrondir.png>
-Package pdftex.def Info: pbArrondir.png  used on input line 271.
-(pdftex.def)             Requested size: 1072.0024pt x 1218.54953pt.
-
-Overfull \vbox (46.11612pt too high) detected at line 271
- []
-
-[3
-
- <./pbArrondir.png>]
-<box1.png, id=136, 823.075pt x 858.20625pt>
-File: box1.png Graphic file (type png)
-<use box1.png>
-Package pdftex.def Info: box1.png  used on input line 282.
-(pdftex.def)             Requested size: 823.07298pt x 858.20416pt.
- <./box1.png> <a0,fr0>
-<box2.png, id=140, 823.075pt x 858.20625pt>
-File: box2.png Graphic file (type png)
-<use box2.png>
-Package pdftex.def Info: box2.png  used on input line 282.
-(pdftex.def)             Requested size: 823.07298pt x 858.20416pt.
- <./box2.png> <a0,fr1>
-<box3.png, id=144, 823.075pt x 858.20625pt>
-File: box3.png Graphic file (type png)
-<use box3.png>
-Package pdftex.def Info: box3.png  used on input line 282.
-(pdftex.def)             Requested size: 823.07298pt x 858.20416pt.
- <./box3.png> <a0,fr2> [4
-
-]
-<solutionPbArrondir.png, id=184, 1330.9725pt x 1234.6125pt>
-File: solutionPbArrondir.png Graphic file (type png)
-<use solutionPbArrondir.png>
-Package pdftex.def Info: solutionPbArrondir.png  used on input line 294.
-(pdftex.def)             Requested size: 1330.96925pt x 1234.6095pt.
-
-Overfull \vbox (35.6303pt too high) detected at line 294
- []
-
-[5
-
- <./solutionPbArrondir.png>] (./2termsVersion.tex
 Package epstopdf Info: Source file: <./2termsVersion.eps>
 (epstopdf)                    date: 2025-09-05 11:25:23
 (epstopdf)                    size: 92041 bytes
@@ -1064,7 +998,7 @@ Package epstopdf Info: Source file: <./2termsVersion.eps>
 (epstopdf)             Command: <repstopdf --outfile=./2termsVersion-eps-converted-to.pdf ./2termsVersion.eps>
 (epstopdf)             \includegraphics on input line 134.
 Package epstopdf Info: Output file is already uptodate.
-<./2termsVersion-eps-converted-to.pdf, id=214, 361.35pt x 252.945pt>
+<./2termsVersion-eps-converted-to.pdf, id=112, 361.35pt x 252.945pt>
 File: ./2termsVersion-eps-converted-to.pdf Graphic file (type pdf)
 <use ./2termsVersion-eps-converted-to.pdf>
 Package pdftex.def Info: ./2termsVersion-eps-converted-to.pdf  used on input line 134.
@@ -1074,24 +1008,26 @@ Package pdftex.def Info: ./2termsVersion-eps-converted-to.pdf  used on input lin
 LaTeX Warning: Command \l invalid in math mode on input line 135.
 
 Missing character: There is no ª in font cmss10!
-) [6
+) [3
 
  <./2termsVersion-eps-converted-to.pdf>] (./Synthese.tex
 Package epstopdf Info: Source file: <./Synthese.eps>
-(epstopdf)                    date: 2025-09-05 16:49:01
-(epstopdf)                    size: 229083 bytes
+(epstopdf)                    date: 2025-09-08 09:09:59
+(epstopdf)                    size: 187250 bytes
 (epstopdf)             Output file: <./Synthese-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-09-05 16:49:50
-(epstopdf)                    size: 93731 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Synthese-eps-converted-to.pdf ./Synthese.eps>
 (epstopdf)             \includegraphics on input line 134.
-Package epstopdf Info: Output file is already uptodate.
-<./Synthese-eps-converted-to.pdf, id=248, 361.35pt x 252.945pt>
+runsystem(repstopdf --outfile=./Synthese-eps-converted-to.pdf ./Synthese.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./Synthese-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-09-08 09:10:11
+(epstopdf)                    size: 84681 bytes.
+<./Synthese-eps-converted-to.pdf, id=156, 361.35pt x 252.945pt>
 File: ./Synthese-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Synthese-eps-converted-to.pdf>
 Package pdftex.def Info: ./Synthese-eps-converted-to.pdf  used on input line 134.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-) [7
+) [4
 
  <./Synthese-eps-converted-to.pdf>] (./Masse.tex
 Package epstopdf Info: Source file: <./Masse.eps>
@@ -1103,12 +1039,12 @@ Package epstopdf Info: Source file: <./Masse.eps>
 (epstopdf)             Command: <repstopdf --outfile=./Masse-eps-converted-to.pdf ./Masse.eps>
 (epstopdf)             \includegraphics on input line 130.
 Package epstopdf Info: Output file is already uptodate.
-<./Masse-eps-converted-to.pdf, id=280, 361.35pt x 252.945pt>
+<./Masse-eps-converted-to.pdf, id=186, 361.35pt x 252.945pt>
 File: ./Masse-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Masse-eps-converted-to.pdf>
 Package pdftex.def Info: ./Masse-eps-converted-to.pdf  used on input line 130.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-) [8
+) [5
 
  <./Masse-eps-converted-to.pdf>] (./vraiInertie.tex
 Package epstopdf Info: Source file: <./vraiInertie.eps>
@@ -1120,16 +1056,16 @@ Package epstopdf Info: Source file: <./vraiInertie.eps>
 (epstopdf)             Command: <repstopdf --outfile=./vraiInertie-eps-converted-to.pdf ./vraiInertie.eps>
 (epstopdf)             \includegraphics on input line 132.
 Package epstopdf Info: Output file is already uptodate.
-<./vraiInertie-eps-converted-to.pdf, id=311, 361.35pt x 252.945pt>
+<./vraiInertie-eps-converted-to.pdf, id=217, 361.35pt x 252.945pt>
 File: ./vraiInertie-eps-converted-to.pdf Graphic file (type pdf)
 <use ./vraiInertie-eps-converted-to.pdf>
 Package pdftex.def Info: ./vraiInertie-eps-converted-to.pdf  used on input line 132.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \vbox (18.51085pt too high) detected at line 374
+Overfull \vbox (18.51085pt too high) detected at line 377
  []
 
-[9
+[6
 
  <./vraiInertie-eps-converted-to.pdf>] (./veriteI0terms.tex
 Package epstopdf Info: Source file: <./veriteI0terms.eps>
@@ -1141,66 +1077,54 @@ Package epstopdf Info: Source file: <./veriteI0terms.eps>
 (epstopdf)             Command: <repstopdf --outfile=./veriteI0terms-eps-converted-to.pdf ./veriteI0terms.eps>
 (epstopdf)             \includegraphics on input line 126.
 Package epstopdf Info: Output file is already uptodate.
-<./veriteI0terms-eps-converted-to.pdf, id=342, 361.35pt x 252.945pt>
+<./veriteI0terms-eps-converted-to.pdf, id=248, 361.35pt x 252.945pt>
 File: ./veriteI0terms-eps-converted-to.pdf Graphic file (type pdf)
 <use ./veriteI0terms-eps-converted-to.pdf>
 Package pdftex.def Info: ./veriteI0terms-eps-converted-to.pdf  used on input line 126.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 394--394
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 397--397
  [] 
  []
 
 (./VeriteI2terms.tex
 Package epstopdf Info: Source file: <./VeriteI2terms.eps>
-(epstopdf)                    date: 2025-09-05 13:12:50
+(epstopdf)                    date: 2025-09-08 08:51:48
 (epstopdf)                    size: 64399 bytes
 (epstopdf)             Output file: <./VeriteI2terms-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-09-05 13:38:28
+(epstopdf)                    date: 2025-09-08 08:52:29
 (epstopdf)                    size: 28636 bytes
 (epstopdf)             Command: <repstopdf --outfile=./VeriteI2terms-eps-converted-to.pdf ./VeriteI2terms.eps>
 (epstopdf)             \includegraphics on input line 126.
 Package epstopdf Info: Output file is already uptodate.
-<./VeriteI2terms-eps-converted-to.pdf, id=343, 361.35pt x 252.945pt>
+<./VeriteI2terms-eps-converted-to.pdf, id=249, 361.35pt x 252.945pt>
 File: ./VeriteI2terms-eps-converted-to.pdf Graphic file (type pdf)
 <use ./VeriteI2terms-eps-converted-to.pdf>
 Package pdftex.def Info: ./VeriteI2terms-eps-converted-to.pdf  used on input line 126.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 394--394
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 397--397
  [] 
  []
 
-[10
+[7
 
  <./veriteI0terms-eps-converted-to.pdf> <./VeriteI2terms-eps-converted-to.pdf>]
-<demiVelocite.png, id=374, 947.54pt x 870.25125pt>
-File: demiVelocite.png Graphic file (type png)
-<use demiVelocite.png>
-Package pdftex.def Info: demiVelocite.png  used on input line 416.
-(pdftex.def)             Requested size: 947.53767pt x 870.24913pt.
-
-Overfull \vbox (66.8738pt too high) detected at line 416
- []
-
-[11
-
- <./demiVelocite.png>]
-<Courses.png, id=405, 1088.065pt x 755.82375pt>
+<Courses.png, id=281, 1088.065pt x 755.82375pt>
 File: Courses.png Graphic file (type png)
 <use Courses.png>
-Package pdftex.def Info: Courses.png  used on input line 429.
+Package pdftex.def Info: Courses.png  used on input line 432.
 (pdftex.def)             Requested size: 1088.06236pt x 755.8219pt.
-<DatePrvision.png, id=406, 775.89874pt x 861.2175pt>
+<DatePrvision.png, id=282, 775.89874pt x 861.2175pt>
 File: DatePrvision.png Graphic file (type png)
 <use DatePrvision.png>
-Package pdftex.def Info: DatePrvision.png  used on input line 429.
+Package pdftex.def Info: DatePrvision.png  used on input line 432.
 (pdftex.def)             Requested size: 775.89685pt x 861.2154pt.
 
-Overfull \vbox (41.02693pt too high) detected at line 429
+Overfull \vbox (41.02693pt too high) detected at line 432
  []
 
-[12
+[8
 
  <./Courses.png> <./DatePrvision.png>]
 \tf@nav=\write6
@@ -1217,18 +1141,18 @@ Package rerunfilecheck Info: File `RapportHebdo.out' has not changed.
 (rerunfilecheck)             Checksum: 5347B60332A058CF323F57855E330CB0;58.
  ) 
 Here is how much of TeX's memory you used:
- 41167 strings out of 478287
- 963017 string characters out of 5849289
- 1339949 words of memory out of 5000000
- 58531 multiletter control sequences out of 15000+600000
- 485173 words of font info for 72 fonts, out of 8000000 for 9000
+ 41044 strings out of 478287
+ 959757 string characters out of 5849289
+ 1335947 words of memory out of 5000000
+ 58426 multiletter control sequences out of 15000+600000
+ 484414 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,776b,930s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb>
-Output written on RapportHebdo.pdf (12 pages, 1979090 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb>
+Output written on RapportHebdo.pdf (8 pages, 1317725 bytes).
 PDF statistics:
- 522 PDF objects out of 1000 (max. 8388607)
- 424 compressed objects within 5 object streams
- 26 named destinations out of 1000 (max. 500000)
- 203 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 392 PDF objects out of 1000 (max. 8388607)
+ 309 compressed objects within 4 object streams
+ 18 named destinations out of 1000 (max. 500000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 

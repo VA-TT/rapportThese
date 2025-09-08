@@ -212,28 +212,28 @@
 %     \end{columns}
 % \end{frame}
 
-\begin{frame}{Changer la vitesse}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{figure}[h]
-                \centering
-                \scalebox{0.5}{\input{Vitess-contrainteDeviatorique.tex}}
-                \caption{Contrainte - Déformation DEM (changer la vitesse)}
-            \end{figure}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \begin{figure}[h]
-                \centering
-                \scalebox{0.5}{\input{PasTemps.tex}}
-                \caption{Bruyant concernant pas de temps MPM (avant)}
-            \end{figure}
-        \end{column}
-    \end{columns}
-    \[
-        \dot{x}(t) = \frac{x(t+\varepsilon) - x(t-\varepsilon)}{2\varepsilon}
-    \]
-    Problème de arrondir?
-\end{frame}
+% \begin{frame}{Changer la vitesse}
+%     \begin{columns}
+%         \begin{column}{0.5\textwidth}
+%             \begin{figure}[h]
+%                 \centering
+%                 \scalebox{0.5}{\input{Vitess-contrainteDeviatorique.tex}}
+%                 \caption{Contrainte - Déformation DEM (changer la vitesse)}
+%             \end{figure}
+%         \end{column}
+%         \begin{column}{0.5\textwidth}
+%             \begin{figure}[h]
+%                 \centering
+%                 \scalebox{0.5}{\input{PasTemps.tex}}
+%                 \caption{Bruyant concernant pas de temps MPM (avant)}
+%             \end{figure}
+%         \end{column}
+%     \end{columns}
+%     \[
+%         \dot{x}(t) = \frac{x(t+\varepsilon) - x(t-\varepsilon)}{2\varepsilon}
+%     \]
+%     Problème de arrondir?
+% \end{frame}
 
 % \begin{frame}{Comparer entre les formes de boite}
 %     \begin{columns}
@@ -257,21 +257,30 @@
 
 
 
-\begin{frame}{Problème d'arrondir (Standard IEEE 754)}
-    \begin{itemize}
-        \item Un type flottant ne représente qu’un nombre limité de chiffres significatifs ; au-delà, la valeur devient inexacte.
-        \item Manipulation délicate à cause des différences entre binaire et décimal.
-        \item Les opérations mathématiques amplifient les erreurs d’arrondi (e.g: $+$ et $\times$).
-    \end{itemize}
-    \begin{figure}[h]
-        \centering
-        \scalebox{0.15}{\includegraphics{pbArrondir.png}}
-        \caption{La programme}
-    \end{figure}
-\end{frame}
+% \begin{frame}{Problème d'arrondir (Standard IEEE 754)}
+%     \begin{itemize}
+%         \item Un type flottant ne représente qu’un nombre limité de chiffres significatifs ; au-delà, la valeur devient inexacte.
+%         \item Manipulation délicate à cause des différences entre binaire et décimal.
+%         \item Les opérations mathématiques amplifient les erreurs d’arrondi (e.g: $+$ et $\times$).
+%     \end{itemize}
+%     \begin{figure}[h]
+%         \centering
+%         \scalebox{0.15}{\includegraphics{pbArrondir.png}}
+%         \caption{La programme}
+%     \end{figure}
+% \end{frame}
 
-
-
+% \begin{frame}{Problème d'arrondir (Standard IEEE 754)}
+%     \begin{itemize}
+%         \item The Art of Computer Programming, Volume II: Seminumerical Algorithms (Addison-Wesley, 1969)”
+%         \item Toujours contrôler la tolérance d’erreur ($\epsilon$) au lieu de compter sur la “précision absolue” de l’ordinateur.
+%     \end{itemize}
+%     \begin{figure}[h]
+%         \centering
+%         \scalebox{0.14}{\includegraphics{solutionPbArrondir.png}}
+%         \caption{Fonction de comparison}
+%     \end{figure}
+% \end{frame}
 
 
 
@@ -280,19 +289,6 @@
         \scalebox{0.8}{\animategraphics[autoplay,loop,width=0.7\textwidth]{3}{box}{1}{3}}
     \end{center}
 \end{frame}
-
-\begin{frame}{Problème d'arrondir (Standard IEEE 754)}
-    \begin{itemize}
-        \item The Art of Computer Programming, Volume II: Seminumerical Algorithms (Addison-Wesley, 1969)”
-        \item Toujours contrôler la tolérance d’erreur ($\epsilon$) au lieu de compter sur la “précision absolue” de l’ordinateur.
-    \end{itemize}
-    \begin{figure}[h]
-        \centering
-        \scalebox{0.14}{\includegraphics{solutionPbArrondir.png}}
-        \caption{Fonction de comparison}
-    \end{figure}
-\end{frame}
-
 
 \begin{frame}{Code : ajouter tous les parties dynamiques}
     \begin{figure}[h]
@@ -320,6 +316,7 @@
     \end{itemize}
 \end{frame}
 
+
 \begin{frame}{Essayer de changer la masse de la périodic}
     \begin{figure}[h]
         \centering
@@ -334,6 +331,12 @@
     \]
 
 \end{frame}
+
+
+
+
+
+
 
 \begin{frame}{Les résultats varient de manière très sensible avec $I$}
     \begin{figure}[h]
@@ -379,41 +382,41 @@
             \begin{figure}[h]
                 \centering
                 \scalebox{0.5}{\input{veriteI0terms.tex}}
-                \caption{Contrainte - Déformation DEM (changer la vitesse)}
+                \caption{0 termes}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
             \begin{figure}[h]
                 \centering
                 \scalebox{0.5}{\input{VeriteI2terms.tex}}
-                \caption{Bruyant concernant pas de temps MPM (avant)}
+                \caption{2 termes}
             \end{figure}
         \end{column}
     \end{columns}
     $I = 10^{-2}$ se marche maintenant
 \end{frame}
 
-\begin{frame}{Souci concernant demi-vélocité}
-    \begin{itemize}
-        \item Si $\Delta t$ est très petit et $a(t) \approx a(t+\Delta t)$, on “perd” peut-être la moitié de l'incrément de $v(t+\Delta t)$.
-        \item Pour des essais triaxiaux à chargement rapide, cette différence pourrait devenir critique.
-        \item Lors du calcul des contraintes avec le terme dynamique $(mv^2)$, l'erreur peut s'amplifier, possiblement proportionnellement au carré de la vitesse.
-    \end{itemize}
+% \begin{frame}{Souci concernant demi-vélocité}
+%     \begin{itemize}
+%         \item Si $\Delta t$ est très petit et $a(t) \approx a(t+\Delta t)$, on “perd” peut-être la moitié de l'incrément de $v(t+\Delta t)$.
+%         \item Pour des essais triaxiaux à chargement rapide, cette différence pourrait devenir critique.
+%         \item Lors du calcul des contraintes avec le terme dynamique $(mv^2)$, l'erreur peut s'amplifier, possiblement proportionnellement au carré de la vitesse.
+%     \end{itemize}
 
-    \textbf{Formules de référence du Verlet Velocité :}
-    \[
-        \text{Demi-pas vitesse: } v(t + 0.5\Delta t) = v(t) + 0.5\,\Delta t\, a(t)
-    \]
-    \[
-        \text{Vitesse au pas entier: } v(t + \Delta t) = v(t) + 0.5\,\Delta t \,[a(t) + a(t+\Delta t)]
-    \]
+%     \textbf{Formules de référence du Verlet Velocité :}
+%     \[
+%         \text{Demi-pas vitesse: } v(t + 0.5\Delta t) = v(t) + 0.5\,\Delta t\, a(t)
+%     \]
+%     \[
+%         \text{Vitesse au pas entier: } v(t + \Delta t) = v(t) + 0.5\,\Delta t \,[a(t) + a(t+\Delta t)]
+%     \]
 
-    \begin{figure}[h]
-        \centering
-        \scalebox{0.15}{\includegraphics{demiVelocite.png}}
-        \caption{La programme}
-    \end{figure}
-\end{frame}
+%     \begin{figure}[h]
+%         \centering
+%         \scalebox{0.15}{\includegraphics{demiVelocite.png}}
+%         \caption{La programme}
+%     \end{figure}
+% \end{frame}
 
 \begin{frame}{Hors de sujet}
     \begin{figure}[h]
