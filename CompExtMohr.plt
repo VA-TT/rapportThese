@@ -45,20 +45,48 @@ set key bottom left
 unset grid
 
 # Input
-sigma1_1 = 63.2658
-sigma3_1 = 30
-sigma1_2 = 30
-sigma3_2 = 15.0127
 
-sigma1_3 = 61.3891
+#A couple of sigma to draw the Mohr Circle
+sigma1_1 = 65.7959  #Compression residuel
+sigma3_1 = 30  #Same sigma3 for compression
+sigma1_2 = 30  #Same sigma3 for Extension
+sigma3_2 = 14.6044 #Extension residuel
+
+#Another couple
+sigma1_3 = 63.2658
 sigma3_3 = 30
 sigma1_4 = 30
-sigma3_4 = 14.527
+sigma3_4 = 15.2852
 
-sigma1_5 = 81.6339
+sigma1_5 = 61.3891
 sigma3_5 = 30
 sigma1_6 = 30
-sigma3_6 = 11.6382
+sigma3_6 = 14.7711
+
+sigma1_7 = 59.979
+sigma3_7 = 30
+sigma1_8 = 30
+sigma3_8 = 14.3254
+
+sigma1_9 = 72.3845
+sigma3_9 = 30
+sigma1_10 = 30
+sigma3_10 = 13.5763
+
+sigma1_11 = 70.9943
+sigma3_11 = 30
+sigma1_12 = 30
+sigma3_12 = 13.1244
+
+sigma1_13 = 70.8903
+sigma3_13 = 30
+sigma1_14 = 30
+sigma3_14 = 11.5727
+
+sigma1_15 = 81.6339
+sigma3_15 = 30
+sigma1_16 = 30
+sigma3_16 = 11.7319
 
 delta_x = -30
 delta_y = -30
@@ -70,6 +98,16 @@ radius_3 = (sigma1_3 - sigma3_3) / 2
 radius_4 = (sigma1_4 - sigma3_4) / 2
 radius_5 = (sigma1_5 - sigma3_5) / 2
 radius_6 = (sigma1_6 - sigma3_6) / 2
+radius_7 = (sigma1_7 - sigma3_7) / 2
+radius_8 = (sigma1_8 - sigma3_8) / 2
+radius_9 = (sigma1_9 - sigma3_9) / 2
+radius_10 = (sigma1_10 - sigma3_10) / 2
+radius_11 = (sigma1_11 - sigma3_11) / 2
+radius_12 = (sigma1_12 - sigma3_12) / 2
+radius_13 = (sigma1_13 - sigma3_13) / 2
+radius_14 = (sigma1_14 - sigma3_14) / 2
+radius_15 = (sigma1_15 - sigma3_15) / 2
+radius_16 = (sigma1_16 - sigma3_16) / 2
 
 # Center des cercles
 center_1 = (sigma1_1 + sigma3_1) / 2
@@ -78,6 +116,16 @@ center_3 = (sigma1_3 + sigma3_3) / 2
 center_4 = (sigma1_4 + sigma3_4) / 2
 center_5 = (sigma1_5 + sigma3_5) / 2
 center_6 = (sigma1_6 + sigma3_6) / 2
+center_7 = (sigma1_7 + sigma3_7) / 2
+center_8 = (sigma1_8 + sigma3_8) / 2
+center_9 = (sigma1_9 + sigma3_9) / 2
+center_10 = (sigma1_10 + sigma3_10) / 2
+center_11 = (sigma1_11 + sigma3_11) / 2
+center_12 = (sigma1_12 + sigma3_12) / 2
+center_13 = (sigma1_13 + sigma3_13) / 2
+center_14 = (sigma1_14 + sigma3_14) / 2
+center_15 = (sigma1_15 + sigma3_15) / 2
+center_16 = (sigma1_16 + sigma3_16) / 2
 
 # Set range
 set xrange [xmin:xmax]
@@ -91,6 +139,17 @@ m3 = tan(asin((sigma1_3 - sigma3_3) / (sigma1_3 + sigma3_3)))
 m4 = tan(asin((sigma1_4 - sigma3_4) / (sigma1_4 + sigma3_4)))
 m5 = tan(asin((sigma1_5 - sigma3_5) / (sigma1_5 + sigma3_5)))
 m6 = tan(asin((sigma1_6 - sigma3_6) / (sigma1_6 + sigma3_6)))
+m7 = tan(asin((sigma1_7 - sigma3_7) / (sigma1_7 + sigma3_7)))
+m8 = tan(asin((sigma1_8 - sigma3_8) / (sigma1_8 + sigma3_8)))
+m9 = tan(asin((sigma1_9 - sigma3_9) / (sigma1_9 + sigma3_9)))
+m10 = tan(asin((sigma1_10 - sigma3_10) / (sigma1_10 + sigma3_10)))
+m11 = tan(asin((sigma1_11 - sigma3_11) / (sigma1_11 + sigma3_11)))
+m12 = tan(asin((sigma1_12 - sigma3_12) / (sigma1_12 + sigma3_12)))
+m13 = tan(asin((sigma1_13 - sigma3_13) / (sigma1_13 + sigma3_13)))
+m14 = tan(asin((sigma1_14 - sigma3_14) / (sigma1_14 + sigma3_14)))
+m15 = tan(asin((sigma1_15 - sigma3_15) / (sigma1_15 + sigma3_15)))
+m16 = tan(asin((sigma1_16 - sigma3_16) / (sigma1_16 + sigma3_16)))
+
 
 phi1 = atan(m1) * 180 / pi
 phi2 = atan(m2) * 180 / pi
