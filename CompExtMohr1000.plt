@@ -27,17 +27,17 @@ set output './Cercle_1000_residuel.tex'
 
 # Input
 xmin = 0
-xmax = 90
-ymin = -30
-ymax = 30
+xmax = 100
+ymin = -40
+ymax = 40
 
 # set arrow 1 from 0,0 to xmax,0 nohead
 # set arrow 2 from 0,0 to 0,ymax nohead
 
-set xlabel "$\\sigma_n$ (kPa)" offset 28,11
+set xlabel "$\\sigma_n$ (kPa)" offset 28,14
 set ylabel "$\\tau$ (kPa)"
 unset border
-set xtics (" " 0, 20, 40, 60, 80, 100) axis nomirror 
+set xtics (" " 0, 20, 40, 60, 80) axis nomirror 
 set ytics axis nomirror
 set arrow from 0,ymin to 0,ymax nohead
 set arrow from xmin,0 to xmax,0 nohead
