@@ -1653,3 +1653,920 @@ correlation matrix of the fit parameters:
 mus             1.000 
 mu2             0.533  1.000 
 I0              0.544  1.000  1.000 
+
+
+*******************************************************************************
+Tue Oct 14 10:49:52 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2           I0           
+   0 2.6290715650e-02   0.00e+00  1.90e-01    3.300000e-01   6.000000e-01   1.000000e+00
+ 195 3.0814879110e-33   0.00e+00  1.90e-09    9.780585e-02   4.560265e-01   5.387513e-05
+
+After 195 iterations the fit converged.
+final sum of squares of residuals : 3.08149e-33
+abs. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 0.0978059      
+mu2             = 0.456026       
+I0              = 5.38751e-05    
+
+
+*******************************************************************************
+Tue Oct 14 10:50:10 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2           I0           
+   0 2.6290715650e-02   0.00e+00  1.90e-01    3.300000e-01   6.000000e-01   1.000000e+00
+ 195 3.0814879110e-33   0.00e+00  1.90e-09    9.780585e-02   4.560265e-01   5.387513e-05
+
+After 195 iterations the fit converged.
+final sum of squares of residuals : 3.08149e-33
+abs. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 0.0978059      
+mu2             = 0.456026       
+I0              = 5.38751e-05    
+
+
+*******************************************************************************
+Tue Oct 14 11:16:23 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 2
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+BREAK: Number of data points smaller than number of parameters
+
+*******************************************************************************
+Tue Oct 14 11:17:08 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 2
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+BREAK: Number of data points smaller than number of parameters
+
+*******************************************************************************
+Tue Oct 14 11:19:56 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 2
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2          
+   0 7.7280738272e-01   0.00e+00  2.23e-01    3.300000e-01   6.000000e-01
+   7 3.0814879110e-33   0.00e+00  2.23e-08    1.315256e+00  -1.144132e+01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 3.08149e-33
+abs. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 1.31526        
+mu2             = -11.4413       
+
+
+*******************************************************************************
+Tue Oct 14 11:20:32 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 2
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2          
+   0 7.7280738272e-01   0.00e+00  2.23e-01    3.300000e-01   6.000000e-01
+   7 3.0814879110e-33   0.00e+00  2.23e-08    1.315256e+00  -1.144132e+01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 3.08149e-33
+abs. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 1.31526        
+mu2             = -11.4413       
+
+
+*******************************************************************************
+Tue Oct 14 12:49:47 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 2
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2          
+   0 7.7280738272e-01   0.00e+00  2.23e-01    3.300000e-01   6.000000e-01
+   7 3.0814879110e-33   0.00e+00  2.23e-08    1.315256e+00  -1.144132e+01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 3.08149e-33
+abs. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 1.31526        
+mu2             = -11.4413       
+
+
+*******************************************************************************
+Tue Oct 14 12:49:54 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 2
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2          
+   0 7.7280738272e-01   0.00e+00  2.23e-01    3.300000e-01   6.000000e-01
+   7 3.0814879110e-33   0.00e+00  2.23e-08    1.315256e+00  -1.144132e+01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 3.08149e-33
+abs. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 1.31526        
+mu2             = -11.4413       
+
+
+*******************************************************************************
+Tue Oct 14 12:50:01 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 2
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2          
+   0 7.7280738272e-01   0.00e+00  2.23e-01    3.300000e-01   6.000000e-01
+   7 3.0814879110e-33   0.00e+00  2.23e-08    1.315256e+00  -1.144132e+01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 3.08149e-33
+abs. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 1.31526        
+mu2             = -11.4413       
+
+
+*******************************************************************************
+Tue Oct 14 12:50:09 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 2
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2          
+   0 7.7280738272e-01   0.00e+00  2.23e-01    3.300000e-01   6.000000e-01
+   7 3.0814879110e-33   0.00e+00  2.23e-08    1.315256e+00  -1.144132e+01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 3.08149e-33
+abs. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 1.31526        
+mu2             = -11.4413       
+
+
+*******************************************************************************
+Tue Oct 14 12:50:29 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 2
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2          
+   0 7.7280738272e-01   0.00e+00  2.23e-01    3.300000e-01   6.000000e-01
+   7 3.0814879110e-33   0.00e+00  2.23e-08    1.315256e+00  -1.144132e+01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 3.08149e-33
+abs. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 1.31526        
+mu2             = -11.4413       
+
+
+*******************************************************************************
+Tue Oct 14 12:51:10 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 2
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2          
+   0 7.7280738272e-01   0.00e+00  2.23e-01    3.300000e-01   6.000000e-01
+   7 3.0814879110e-33   0.00e+00  2.23e-08    1.315256e+00  -1.144132e+01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 3.08149e-33
+abs. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 1.31526        
+mu2             = -11.4413       
+
+
+*******************************************************************************
+Tue Oct 14 12:51:29 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 2
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2          
+   0 7.7280738272e-01   0.00e+00  2.23e-01    3.300000e-01   6.000000e-01
+   7 3.0814879110e-33   0.00e+00  2.23e-08    1.315256e+00  -1.144132e+01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 3.08149e-33
+abs. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 1.31526        
+mu2             = -11.4413       
+
+
+*******************************************************************************
+Tue Oct 14 12:51:35 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 8
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2           I0           
+   0 3.9948369102e-01   0.00e+00  1.85e-01    3.300000e-01   6.000000e-01   1.000000e+00
+  17 2.3602900998e-02  -1.09e-01  1.85e-09    3.849852e-01   5.698889e+00   1.422197e+00
+
+After 17 iterations the fit converged.
+final sum of squares of residuals : 0.0236029
+rel. change during last iteration : -1.09191e-06
+
+degrees of freedom    (FIT_NDF)                        : 5
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0687065
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00472058
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+mus             = 0.384985         +/- 0.04342      (11.28%)
+mu2             = 5.69889          +/- 56.73        (995.5%)
+I0              = 1.4222           +/- 16.19        (1139%)
+
+correlation matrix of the fit parameters:
+                mus    mu2    I0     
+mus             1.000 
+mu2             0.533  1.000 
+I0              0.544  1.000  1.000 
+
+
+*******************************************************************************
+Tue Oct 14 12:58:00 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2          
+   0 5.8608797282e-02   0.00e+00  2.27e-01    3.300000e-01   6.000000e-01
+   5 2.8670803965e-05  -2.70e-08  2.27e-06    3.449246e-01   3.070931e+00
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.86708e-05
+rel. change during last iteration : -2.6979e-13
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00535451
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.86708e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+mus             = 0.344925         +/- 0.004035     (1.17%)
+mu2             = 3.07093          +/- 0.0739       (2.406%)
+
+correlation matrix of the fit parameters:
+                mus    mu2    
+mus             1.000 
+mu2            -0.610  1.000 
+
+
+*******************************************************************************
+Tue Oct 14 12:58:46 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2          
+   0 5.8608797282e-02   0.00e+00  2.27e-01    3.300000e-01   6.000000e-01
+   5 2.8670803965e-05  -2.70e-08  2.27e-06    3.449246e-01   3.070931e+00
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.86708e-05
+rel. change during last iteration : -2.6979e-13
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00535451
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.86708e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+mus             = 0.344925         +/- 0.004035     (1.17%)
+mu2             = 3.07093          +/- 0.0739       (2.406%)
+
+correlation matrix of the fit parameters:
+                mus    mu2    
+mus             1.000 
+mu2            -0.610  1.000 
+
+
+*******************************************************************************
+Tue Oct 14 12:59:24 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2          
+   0 5.8608797282e-02   0.00e+00  2.27e-01    3.300000e-01   6.000000e-01
+   5 2.8670803965e-05  -2.70e-08  2.27e-06    3.449246e-01   3.070931e+00
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.86708e-05
+rel. change during last iteration : -2.6979e-13
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00535451
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.86708e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+mus             = 0.344925         +/- 0.004035     (1.17%)
+mu2             = 3.07093          +/- 0.0739       (2.406%)
+
+correlation matrix of the fit parameters:
+                mus    mu2    
+mus             1.000 
+mu2            -0.610  1.000 
+
+
+*******************************************************************************
+Tue Oct 14 13:00:51 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2           I0           
+   0 6.9710069523e-02   0.00e+00  1.90e-01    3.300000e-01   6.000000e-01   1.000000e+00
+  32 0.0000000000e+00  -inf       1.90e-11    3.403707e-01   1.121234e+00   2.098910e-02
+
+After 32 iterations the fit converged.
+final sum of squares of residuals : 0
+abs. change during last iteration : -1.2326e-32
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 0.340371       
+mu2             = 1.12123        
+I0              = 0.0209891      
+
+
+*******************************************************************************
+Tue Oct 14 13:00:57 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2           I0           
+   0 6.9710069523e-02   0.00e+00  1.90e-01    3.300000e-01   6.000000e-01   1.000000e+00
+  32 0.0000000000e+00  -inf       1.90e-11    3.403707e-01   1.121234e+00   2.098910e-02
+
+After 32 iterations the fit converged.
+final sum of squares of residuals : 0
+abs. change during last iteration : -1.2326e-32
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 0.340371       
+mu2             = 1.12123        
+I0              = 0.0209891      
+
+
+*******************************************************************************
+Tue Oct 14 13:03:21 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2           I0           
+   0 5.8608797282e-02   0.00e+00  1.85e-01    3.300000e-01   6.000000e-01   1.000000e-01
+  13 0.0000000000e+00  -inf       1.85e-10    3.403707e-01   1.121234e+00   2.098910e-02
+
+After 13 iterations the fit converged.
+final sum of squares of residuals : 0
+abs. change during last iteration : -3.08149e-33
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 0.340371       
+mu2             = 1.12123        
+I0              = 0.0209891      
+
+
+*******************************************************************************
+Tue Oct 14 13:03:56 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2           I0           
+   0 5.8608797282e-02   0.00e+00  1.85e-01    3.300000e-01   6.000000e-01   1.000000e-01
+  13 0.0000000000e+00  -inf       1.85e-10    3.403707e-01   1.121234e+00   2.098910e-02
+
+After 13 iterations the fit converged.
+final sum of squares of residuals : 0
+abs. change during last iteration : -3.08149e-33
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 0.340371       
+mu2             = 1.12123        
+I0              = 0.0209891      
+
+
+*******************************************************************************
+Tue Oct 14 13:04:08 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2           I0           
+   0 5.8608797282e-02   0.00e+00  1.85e-01    3.300000e-01   6.000000e-01   1.000000e-01
+  13 0.0000000000e+00  -inf       1.85e-10    3.403707e-01   1.121234e+00   2.098910e-02
+
+After 13 iterations the fit converged.
+final sum of squares of residuals : 0
+abs. change during last iteration : -3.08149e-33
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 0.340371       
+mu2             = 1.12123        
+I0              = 0.0209891      
+
+
+*******************************************************************************
+Tue Oct 14 13:04:43 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2           I0           
+   0 5.8608797282e-02   0.00e+00  1.85e-01    3.300000e-01   6.000000e-01   1.000000e-01
+  13 0.0000000000e+00  -inf       1.85e-10    3.403707e-01   1.121234e+00   2.098910e-02
+
+After 13 iterations the fit converged.
+final sum of squares of residuals : 0
+abs. change during last iteration : -3.08149e-33
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 0.340371       
+mu2             = 1.12123        
+I0              = 0.0209891      
+
+
+*******************************************************************************
+Tue Oct 14 13:07:19 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        x range restricted to [0.000100000 : 0.100000]
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2           I0           
+   0 5.8608797282e-02   0.00e+00  1.85e-01    3.300000e-01   6.000000e-01   1.000000e-01
+  13 0.0000000000e+00  -inf       1.85e-10    3.403707e-01   1.121234e+00   2.098910e-02
+
+After 13 iterations the fit converged.
+final sum of squares of residuals : 0
+abs. change during last iteration : -3.08149e-33
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 0.340371       
+mu2             = 1.12123        
+I0              = 0.0209891      
+
+
+*******************************************************************************
+Tue Oct 14 13:09:41 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2           I0           
+   0 5.8608797282e-02   0.00e+00  1.85e-01    3.300000e-01   6.000000e-01   1.000000e-01
+  13 0.0000000000e+00  -inf       1.85e-10    3.403707e-01   1.121234e+00   2.098910e-02
+
+After 13 iterations the fit converged.
+final sum of squares of residuals : 0
+abs. change during last iteration : -3.08149e-33
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 0.340371       
+mu2             = 1.12123        
+I0              = 0.0209891      
+
+
+*******************************************************************************
+Tue Oct 14 13:11:43 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2           I0           
+   0 5.8608797282e-02   0.00e+00  1.85e-01    3.300000e-01   6.000000e-01   1.000000e-01
+  13 0.0000000000e+00  -inf       1.85e-10    3.403707e-01   1.121234e+00   2.098910e-02
+
+After 13 iterations the fit converged.
+final sum of squares of residuals : 0
+abs. change during last iteration : -3.08149e-33
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 0.340371       
+mu2             = 1.12123        
+I0              = 0.0209891      
+
+
+*******************************************************************************
+Tue Oct 14 13:23:48 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2           I0           
+   0 1.6803372191e-02   0.00e+00  1.89e-01    3.300000e-01   6.000000e-01   1.000000e-01
+  10 0.0000000000e+00  -inf       1.89e-11    3.403707e-01   1.121234e+00   2.098910e-01
+
+After 10 iterations the fit converged.
+final sum of squares of residuals : 0
+abs. change during last iteration : -1.2326e-31
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 0.340371       
+mu2             = 1.12123        
+I0              = 0.209891       
+
+
+*******************************************************************************
+Tue Oct 14 13:26:12 2025
+
+
+FIT:    data read from tmpfile using 1:2
+        format = x:z
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mu(x)
+	mu(x) = mus + (mu2 - mus)/(1 + I0/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mus           mu2           I0           
+   0 1.6803372191e-02   0.00e+00  1.89e-01    3.300000e-01   6.000000e-01   1.000000e-01
+  10 0.0000000000e+00  -inf       1.89e-11    3.403707e-01   1.121234e+00   2.098910e-01
+
+After 10 iterations the fit converged.
+final sum of squares of residuals : 0
+abs. change during last iteration : -1.2326e-31
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+mus             = 0.340371       
+mu2             = 1.12123        
+I0              = 0.209891       

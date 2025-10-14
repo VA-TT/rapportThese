@@ -55,7 +55,7 @@
 \begin{frame}{Modifications sur les paramètres}
     kineticStress = 1: Ajouter les parties:
     \begin{align*}
-    \dot{r} &= \dot{s}h + \cancel{\dot{h}s} \\
+    \dot{r} &= h\dot{s} + \cancel{\dot{h}s} \\
     \ddot{s} &= h^{-1}(\ddot{r} - 2\dot{h}\dot{s} - \cancel{\ddot{h}s})
     \end{align*}
     Échantillon lâche: $ \mu_{\text{isoComp}} = \mu_{\text{triaxialComp}} = 0.5$ \\
@@ -64,44 +64,65 @@
             W_{particule} = K / (K + 1) = 1 / (1 + 1) = 0.5; \\
             k_n^{elas} = k_n \times W_{particule} \times \eta_{amort}; \\
             \sigma_3 = 30 \times 10^3; \\
-    \kappa = \dfrac{k_n}{\sigma_3 \overline{a}} = \dfrac{3\times10^{6}/2}{30\times10^{3} \times (2 \times 0.004)} = 6250
+    \kappa = \dfrac{k_n^{elas}}{\sigma_3 \overline{a}} = \dfrac{3\times10^{6}/2}{30\times10^{3} \times (2 \times 0.004)} = 6250
 \end{align*}
 
 \end{frame}
 
+
+
 \begin{frame}{Influnce du terme dynamique}
     \begin{columns}
         \begin{column}{0.5\textwidth}
-            \begin{figure}[h]
+            \begin{figure}
                 \centering
                 \scalebox{0.5}{\input{KineticComp.tex}}
                 \caption{kineticStress = 1}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
-            \begin{figure}[h]
+            \begin{figure}
                 \centering
                 \scalebox{0.5}{\input{SansKineticComp.tex}}
                 \caption{kineticStress = 0}
             \end{figure}
         \end{column}
     \end{columns}
-    Presque la même chôse\\
+    Presque la même chôse (1000 et 3375 particules)\\
     $I = 10^{-1}$, pic?
 \end{frame}
 
+\begin{frame}{L'étude sur le nombre de particules}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \scalebox{0.5}{\input{NombreCoordination.tex}}
+                \caption{Nombre de Coordination Z à la fin de la compression isotrope (lâche)}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \scalebox{0.5}{\input{ComparerNP.tex}}
+                \caption{Courbe de contrainte}
+            \end{figure}
+        \end{column}
+    \end{columns}
+    La période résiduel pose pas de différennce
+\end{frame}
 
 \begin{frame}{1000 particules}
     \begin{columns}
         \begin{column}{0.5\textwidth}
-            \begin{figure}[h]
+            \begin{figure}
                 \centering
                 \scalebox{0.5}{\input{1000KineticComp.tex}}
                 \caption{Compression}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
-            \begin{figure}[h]
+            \begin{figure}
                 \centering
                 \scalebox{0.5}{\input{1000KineticExt.tex}}
                 \caption{Extension}
@@ -113,14 +134,14 @@
 \begin{frame}{1000 particules}
     \begin{columns}
         \begin{column}{0.5\textwidth}
-            \begin{figure}[h]
+            \begin{figure}
                 \centering
                 \scalebox{0.4}{\input{Cercle_1000_residuel.tex}}
                 \caption{Cercles de Mohr}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
-            \begin{figure}[h]
+            \begin{figure}
                 \centering
                 \scalebox{0.5}{\input{mu_I_1000.tex}}
                 \caption{$\mu(I)$ rhéologie}
@@ -129,25 +150,24 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}{3000 particules}
+\begin{frame}{3375 particules}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{figure}[h]
                 \centering
-                \scalebox{0.4}{\input{Cercle_1000_residuel.tex}}
+                \scalebox{0.4}{\input{Cercle_3000_residuel.tex}}
                 \caption{Cercles de Mohr}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
             \begin{figure}[h]
                 \centering
-                \scalebox{0.5}{\input{mu_I_1000.tex}}
+                \scalebox{0.5}{\input{mu_I_3000.tex}}
                 \caption{$\mu(I)$ rhéologie}
             \end{figure}
         \end{column}
     \end{columns}
 \end{frame}
-
 
 
 \end{document}
