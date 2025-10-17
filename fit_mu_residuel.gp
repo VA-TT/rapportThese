@@ -29,31 +29,31 @@ plot 'Mu(I)_Rheology.dat' using 1:4 with points pt 7 ps 1.5 title "Données", \
      mu(x) with lines lw 2 lc rgb "red" title "$\\mu(I)$ régression"
 set output
 
-# ### Biểu đồ phi(I) ###
-# reset
-# set encoding utf8
-# set terminal epslatex color colortext
-# set output './Pack_I_fit.tex'
-# set xlabel "$I$"
-# set ylabel "$\\Phi$"
-# set grid
-# set key bottom left box opaque
-# set logscale x 10
-# set xrange [1e-4:1e-1]
-# set xtics ("$10^{-4}$" 1e-4, "$10^{-3}$" 1e-3, "$10^{-2}$" 1e-2, "$10^{-1}$" 1e-1)
+### Biểu đồ phi(I) ###
+reset
+set encoding utf8
+set terminal epslatex color colortext
+set output './Pack_I_fit.tex'
+set xlabel "$I$"
+set ylabel "$\\Phi$"
+set grid
+set key bottom left box opaque
+set logscale x 10
+set xrange [1e-4:1e-1]
+set xtics ("$10^{-4}$" 1e-4, "$10^{-3}$" 1e-3, "$10^{-2}$" 1e-2, "$10^{-1}$" 1e-1)
 
-# phi(x) = phimax - b * x
-# phimax = 0.64
-# b = 1.0
+phi(x) = phimax - b * x
+phimax = 0.64
+b = 1.0
 
-# fit phi(x) 'Mu(I)_Rheology.dat' using 1:(1.0/(1.0 + $2)) via phimax, b
+fit phi(x) 'Mu(I)_Rheology.dat' using 1:(1.0/(1.0 + $2)) via phimax, b
 
-# set label 1 sprintf("$\\Phi_{max} = %.4f$", phimax) at graph 0.1, 0.25
-# set label 2 sprintf("$b = %.4f$", b) at graph 0.1, 0.15
+set label 1 sprintf("$\\Phi_{max} = %.4f$", phimax) at graph 0.1, 0.25
+set label 2 sprintf("$b = %.4f$", b) at graph 0.1, 0.15
 
-# plot 'Mu(I)_Rheology.dat' using 1:(1.0/(1.0 + column(2))) with points pt 7 ps 1.5 title "Données", \
-#      phi(x) with lines lw 2 lc rgb "red" title "$\\Phi(I)$ régression"
-# set output
+plot 'Mu(I)_Rheology.dat' using 1:(1.0/(1.0 + column(2))) with points pt 7 ps 1.5 title "Données", \
+     phi(x) with lines lw 2 lc rgb "red" title "$\\Phi(I)$ régression"
+set output
 
 
 # ### Biểu đồ mu(Q) ###

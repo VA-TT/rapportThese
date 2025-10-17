@@ -1,0 +1,140 @@
+\documentclass[9pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz, pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{positioning}
+\usetikzlibrary{trees}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{hyperref} 
+\usepackage{colortbl} % Required for \rowcolor
+\usepackage{animate}
+\usepackage{asymptote}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{cancel}
+\usepackage[french]{babel}
+\usepackage[normalem]{ulem}
+
+% Reduce only the slide body text size (leave titles at theme defaults)
+\setbeamerfont{normal text}{size=\small}
+
+% Theme và màu sắc cho beamer
+\usetheme{AnnArbor}
+\usecolortheme{seahorse}
+
+% Định nghĩa và thiết lập màu sắc chung
+\definecolor{mydarkblue}{RGB}{0,51,102}
+\setbeamercolor{structure}{fg=mydarkblue}
+\setbeamercolor{frametitle}{bg=mydarkblue, fg=white}
+\setbeamercolor{title}{fg=mydarkblue}
+\setbeamercolor{item}{fg=mydarkblue}
+\setbeamercolor{block title}{bg=mydarkblue, fg=white}
+\setbeamercolor{block body}{bg=white, fg=black}
+\setbeamercolor{section in toc}{fg=mydarkblue}
+\setbeamercolor{subsection in toc}{fg=mydarkblue}
+\setbeamercolor{caption name}{fg=mydarkblue}
+\setbeamercolor{author}{fg=mydarkblue}
+\setbeamercolor{date}{fg=mydarkblue}
+\setbeamercolor{institute}{fg=mydarkblue}
+\setbeamertemplate{caption}[numbered]
+\usepackage{multirow}
+\title{PIC anormale}
+\author{Viet Anh Quach}
+\institute{3SR}
+\date{\today}
+
+\begin{document}
+
+
+\section{DEM}
+% \begin{frame}{Modèle: Triaxiale selon l'axe y}
+%         \centering
+%     \begin{figure}
+%     \includegraphics[width=0.5\textwidth]{modele.pdf}
+%     \end{figure}
+%     % Générer picAbnormale-1.pdf avec Asymptote séparément, puis compiler ce fichier
+%     Condition de limite: Périodique
+% \end{frame}
+
+% \begin{frame}{Paramètres d'échantillon}
+%     \begin{table}
+%         \centering
+%         \begin{tabular}{|c|c|c|c|}
+%             \hline
+%             \textbf{Symboles}               & \textbf{Paramètres}         & \textbf{Valeurs}                          & \textbf{Unité}  \\
+%             \hline
+%             Nombre de particules            & N                           & $1000$                                    & -               \\
+%             \hline
+%             Le rayon des particules         & R                           & 0.003 $\div$ 0.005                        & m               \\
+%             \hline
+%             Masse volumique                 & $\rho$                      & 2500                                      & $\text{kg/m}^3$ \\
+%             \hline
+%             Contrainte isotrope             & $\sigma_{xx} = \sigma_{zz}$ & 30                             & kPa             \\
+%             \hline
+%             Raideur normale et tangentielle & $k_n$ \& $k_t$              & \textcolor{black}{$3 \times 10^6$}        & $\text{N/m}$    \\
+%             \hline
+%             Niveau de raideur               & $\kappa$                    & 6250                                      & -               \\
+%             \hline
+%             Coefficient de frottement       & $\mu_{isotrope} = \mu_{triaxiale}$                       & 0.5                                       & -               \\
+%             \hline
+%             Masse de la cellule périodique  & $h_{mass}$                  & \textcolor{black}{$7.13 \times 10^{-4}$}  & $\text{kg}$     \\
+%             \hline
+%             Nombre d’inertie                & I                           & \textcolor{red}{$10^{-4}\  \div \ 10^{-2}$} & -               \\
+%             \hline
+%             Pas de temps                    & $d_t$                       & $10^{-6}\  \div \ 10^{-9}$                 & $\text{s}$      \\
+%             \hline
+%             Coefficient d'amortissement     & $\alpha$                    & \textcolor{black}{0}       & -               \\
+%             \hline
+%         \end{tabular}
+%         \caption{Valeurs des paramètres utilisés dans la compression triaxiale}
+%     \end{table}
+% \end{frame}
+
+% \begin{frame}{PIC anormale}
+%     \begin{columns}
+%         \begin{column}{0.5\textwidth}
+%             \begin{figure}
+%                 \centering
+%                 \scalebox{0.5}{\input{1000KineticComp.tex}}
+%                 \caption{Contrainte déviatorique}
+%             \end{figure}
+%         \end{column}
+%         \begin{column}{0.5\textwidth}
+%             \begin{figure}
+%                 \centering
+%                 \scalebox{0.5}{\input{1000Deformation.tex}}
+%                 \caption{Déformation Volumique}
+%             \end{figure}
+%         \end{column}
+%     \end{columns}
+% \end{frame}
+
+\begin{frame}{Nombre d'Inertie}
+    Le nombre d'inerties "I" est défini à partir du ``temps d'inertie'' et du ``temps de cisaillement''.
+    Le temps d'inertie caractérise le temps de déplacement d'une particule moyenne de masse $m$ et de diamètre $d$, sous la pression $P$, dans $D$ dimensions\footnote{Lecture \textit{Discrete Element Modeling} – Gaël COMBE}. Leurs expressions sont :
+    \begin{align}
+        	\tau_c &= \dfrac{1}{\dot{\epsilon}} = \dfrac{v}{H_0}, \\
+        	\tau_i &= \sqrt{\dfrac{m}{P d^{D-2}}} .
+    \end{align}
+
+    Dans notre cas (compression triaxiale en 3D, $D=3$) on obtient :
+    \begin{align}
+        I &= \dfrac{\tau_i}{\tau_c}
+        = \dfrac{v}{H_0}\,\sqrt{\dfrac{\tfrac{4}{3}\pi R^3 \rho}{\sigma_{0}\times 2R}} \,.
+    \end{align}
+
+    Où :
+    \begin{itemize}
+        \item $v$ : vitesse de compression,
+        \item $H_0$ : hauteur initiale de l'échantillon,
+        \item $R$ : rayon moyen des particules et $\rho$ : leaur masse volumique 
+        \item $\sigma_{0}$ : contrainte de confinement
+    \end{itemize}
+\end{frame}
+
+
+
+\end{document}

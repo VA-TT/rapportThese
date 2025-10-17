@@ -1,0 +1,498 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.4.17)  15 OCT 2025 16:59
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique
+(/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/01/26 3.70 The Babel package
+\babel@savecnt=\count193
+\U@D=\dimen139
+\l@unhyphenated=\language87
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count194
+ (/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
+Language: french 2021/07/20 v3.5m French support from the babel system
+Package babel Info: Hyphen rules for 'acadian' set to \l@french
+(babel)             (\language41). Reported on input line 91.
+Package babel Info: Hyphen rules for 'canadien' set to \l@french
+(babel)             (\language41). Reported on input line 92.
+\FB@nonchar=\count195
+Package babel Info: Making : an active character on input line 430.
+Package babel Info: Making ; an active character on input line 431.
+Package babel Info: Making ! an active character on input line 432.
+Package babel Info: Making ? an active character on input line 433.
+\FBguill@level=\count196
+\FBold@everypar=\toks18
+\FB@Mht=\dimen140
+\mc@charclass=\count197
+\mc@charfam=\count198
+\mc@charslot=\count199
+\std@mcc=\count266
+\dec@mcc=\count267
+\listindentFB=\dimen141
+\descindentFB=\dimen142
+\labelindentFB=\dimen143
+\labelwidthFB=\dimen144
+\leftmarginFB=\dimen145
+\parindentFFN=\dimen146
+\FBfnindent=\dimen147
+)) (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty) (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count268
+\l__pdf_internal_box=\box50
+)
+No file syntheseCinetique.aux.
+\openout1 = `syntheseCinetique.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Info: Redefining \degres on input line 9.
+LaTeX Info: Redefining \up on input line 9.
+
+Package french.ldf Warning: OT1 encoding should not be used for French.
+(french.ldf)                Add \usepackage[T1]{fontenc} to the preamble
+(french.ldf)                of your document; reported on input line 9.
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:11: LaTeX Error: Unicode character ề (U+1EC1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \maketitle
+               
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 11.
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:11: LaTeX Error: Unicode character ả (U+1EA3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \maketitle
+               
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:14: LaTeX Error: Unicode character ắ (U+1EAF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 Tóm tắ
+              t nội dung bài báo ở đây.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:14: LaTeX Error: Unicode character ộ (U+1ED9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 Tóm tắt nộ
+                    i dung bài báo ở đây.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:14: LaTeX Error: Unicode character ở (U+1EDF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 Tóm tắt nội dung bài báo ở
+                                         đây.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:17: LaTeX Error: Unicode character ớ (U+1EDB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \section{Giới thiệu}
+                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:17: LaTeX Error: Unicode character ệ (U+1EC7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \section{Giới thiệu}
+                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:18: LaTeX Error: Unicode character ộ (U+1ED9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 Nộ
+         i dung phần giới thiệu.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:18: LaTeX Error: Unicode character ầ (U+1EA7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 Nội dung phầ
+                     n giới thiệu.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:18: LaTeX Error: Unicode character ớ (U+1EDB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 Nội dung phần giớ
+                            i thiệu.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:18: LaTeX Error: Unicode character ệ (U+1EC7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 Nội dung phần giới thiệ
+                                    u.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:20: LaTeX Error: Unicode character ư (U+01B0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \section{Phương pháp}
+                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:20: LaTeX Error: Unicode character ơ (U+01A1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \section{Phương pháp}
+                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:21: LaTeX Error: Unicode character ộ (U+1ED9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 Nộ
+         i dung phần phương pháp.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:21: LaTeX Error: Unicode character ầ (U+1EA7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 Nội dung phầ
+                     n phương pháp.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:21: LaTeX Error: Unicode character ư (U+01B0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 Nội dung phần phư
+                           ơng pháp.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:21: LaTeX Error: Unicode character ơ (U+01A1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 Nội dung phần phươ
+                             ng pháp.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:23: LaTeX Error: Unicode character ế (U+1EBF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \section{Kết quả}
+                          
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:23: LaTeX Error: Unicode character ả (U+1EA3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \section{Kết quả}
+                          
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:24: LaTeX Error: Unicode character ộ (U+1ED9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 Nộ
+         i dung phần kết quả.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:24: LaTeX Error: Unicode character ầ (U+1EA7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 Nội dung phầ
+                     n kết quả.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:24: LaTeX Error: Unicode character ế (U+1EBF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 Nội dung phần kế
+                           t quả.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:24: LaTeX Error: Unicode character ả (U+1EA3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 Nội dung phần kết quả
+                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:26: LaTeX Error: Unicode character ế (U+1EBF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \section{Kết luận}
+                           
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:26: LaTeX Error: Unicode character ậ (U+1EAD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \section{Kết luận}
+                           
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:27: LaTeX Error: Unicode character ộ (U+1ED9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 Nộ
+         i dung phần kết luận.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:27: LaTeX Error: Unicode character ầ (U+1EA7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 Nội dung phầ
+                     n kết luận.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:27: LaTeX Error: Unicode character ế (U+1EBF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 Nội dung phần kế
+                           t luận.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/3S-LAB/vquach/Documents/rapportThese/syntheseCinetique.tex:27: LaTeX Error: Unicode character ậ (U+1EAD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 Nội dung phần kết luậ
+                                  n.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+] (./syntheseCinetique.aux) ) 
+Here is how much of TeX's memory you used:
+ 2211 strings out of 478287
+ 37756 string characters out of 5849289
+ 349475 words of memory out of 5000000
+ 20457 multiletter control sequences out of 15000+600000
+ 472899 words of font info for 40 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 39i,9n,46p,202b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on syntheseCinetique.pdf (1 page, 48251 bytes).
+PDF statistics:
+ 28 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
