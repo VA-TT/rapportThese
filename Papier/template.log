@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.4.17)  21 OCT 2025 17:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.4.17)  21 OCT 2025 14:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/3S-LAB/vquach/Documents/rapportThese/Papier/main
-(/home/3S-LAB/vquach/Documents/rapportThese/Papier/main.tex
+**/home/3S-LAB/vquach/Documents/rapportThese/Papier/template
+(/home/3S-LAB/vquach/Documents/rapportThese/Papier/template.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (./elsarticle.cls
 Document Class: elsarticle 2009/09/17, 1.20b: Elsevier Ltd
@@ -70,7 +70,7 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@enLab=\toks18
 \@sep=\skip49
 \@@sep=\skip50
- (./main.spl) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+ (./template.spl) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip51
 \bibsep=\skip52
@@ -78,7 +78,7 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count199
 )
 \splwrite=\write3
-\openout3 = `main.spl'.
+\openout3 = `template.spl'.
 
  (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -305,23 +305,12 @@ Package caption Info: float package is loaded.
 )
 \c@subfigure=\count305
 \c@subtable=\count306
-) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
  (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 227.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
-Package xcolor Info: Model `RGB' extended on input line 1368.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
-) (/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
-Package: cancel 2013/04/12 v2.2 Cancel math terms
+Package color Info: Driver file: pdftex.def on input line 149.
 ) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
  (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
@@ -451,70 +440,34 @@ Package csquotes Info: ... found 'babel' package.
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count317
 \l__pdf_internal_box=\box58
-) (./main.aux
+) (./template.aux
 
-LaTeX Warning: Label `fig:3000_kinetic_q' multiply defined.
-
-
-LaTeX Warning: Label `fig:3000_kinetic_q@cref' multiply defined.
+LaTeX Warning: Label `ctpccvrp_trois_camions' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:3000_kinetic_q' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:3000_kinetic_q@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:3000_kinetic_q' multiply defined.
-
-
-LaTeX Warning: Label `fig:3000_kinetic_q@cref' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:3000_kinetic_q' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:3000_kinetic_q@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:3000_kinetic_ev' multiply defined.
-
-
-LaTeX Warning: Label `fig:3000_kinetic_ev@cref' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:3000_kinetic_ev' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:3000_kinetic_ev@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:3000_kinetic_comp' multiply defined.
-
-
-LaTeX Warning: Label `fig:3000_kinetic_comp@cref' multiply defined.
+LaTeX Warning: Label `ctpccvrp_trois_camions@cref' multiply defined.
 
 )
-\openout1 = `main.aux'.
+\openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count318
@@ -576,12 +529,12 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \degres on input line 35.
-LaTeX Info: Redefining \up on input line 35.
+LaTeX Info: Redefining \degres on input line 33.
+LaTeX Info: Redefining \up on input line 33.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 35.
+Package hyperref Info: Link coloring ON on input line 33.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -591,268 +544,207 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count324
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
- (./main.out) (./main.out)
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
+ (./template.out) (./template.out)
 \@outlinefile=\write4
-\openout4 = `main.out'.
+\openout4 = `template.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<figures/modele.pdf, id=44, 134.39209pt x 119.69719pt>
-File: figures/modele.pdf Graphic file (type pdf)
-<use figures/modele.pdf>
-Package pdftex.def Info: figures/modele.pdf  used on input line 77.
-(pdftex.def)             Requested size: 144.54pt x 128.73587pt.
+
+Package natbib Warning: Citation `campbell_routing_2008' on page 1 undefined on input line 67.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (9.79547pt too wide) in paragraph at lines 67--68
+\T1/cmr/m/n/10 hu-maines qu'elle im-pose. [\T1/cmr/bx/n/10 ?\T1/cmr/m/n/10 ] dis-tingue deux de ces contraintes
+ []
+
+
+Overfull \hbox (2.90804pt too wide) in paragraph at lines 83--84
+\T1/cmr/m/n/10 tiennent à cette ca-té-go-rie : le \T1/cmr/m/it/10 Co-ve-ring Tour Pro-blem \T1/cmr/m/n/10 (CTP,
+ []
+
+
+Package natbib Warning: Citation `gendreau_covering_1997' on page 1 undefined on input line 91.
+
+
+Package natbib Warning: Citation `jozefowiez_bi-objective_2007' on page 1 undefined on input line 93.
+
+
+Package natbib Warning: Citation `gendreau_covering_1997' on page 1 undefined on input line 95.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./figures/modele.pdf>] (./figures/ComparerNP.tex
-\gptboxheight=\skip63
-\gptboxwidth=\skip64
-\gptboxtext=\box60
-Package epstopdf Info: Source file: <figures//./ComparerNP.eps>
-(epstopdf)                    date: 2025-10-14 10:55:58
-(epstopdf)                    size: 56360 bytes
-(epstopdf)             Output file: <figures//./ComparerNP-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-21 16:23:15
-(epstopdf)                    size: 26320 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures//./ComparerNP-eps-converted-to.pdf figures//./ComparerNP.eps>
-(epstopdf)             \includegraphics on input line 130.
-Package epstopdf Info: Output file is already uptodate.
-<figures//./ComparerNP-eps-converted-to.pdf, id=76, 361.35pt x 252.945pt>
-File: figures//./ComparerNP-eps-converted-to.pdf Graphic file (type pdf)
-<use figures//./ComparerNP-eps-converted-to.pdf>
-Package pdftex.def Info: figures//./ComparerNP-eps-converted-to.pdf  used on input line 130.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-) (./figures/3000KineticComp_q.tex
-Package epstopdf Info: Source file: <figures//./3000KineticComp_q.eps>
-(epstopdf)                    date: 2025-10-21 16:17:24
-(epstopdf)                    size: 21071 bytes
-(epstopdf)             Output file: <figures//./3000KineticComp_q-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-21 16:17:51
-(epstopdf)                    size: 3731 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures//./3000KineticComp_q-eps-converted-to.pdf figures//./3000KineticComp_q.eps>
-(epstopdf)             \includegraphics on input line 121.
-Package epstopdf Info: Output file is already uptodate.
-<figures//./3000KineticComp_q-eps-converted-to.pdf, id=77, 361.35pt x 252.945pt>
-File: figures//./3000KineticComp_q-eps-converted-to.pdf Graphic file (type pdf)
-<use figures//./3000KineticComp_q-eps-converted-to.pdf>
-Package pdftex.def Info: figures//./3000KineticComp_q-eps-converted-to.pdf  used on input line 121.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-) (./figures/3000KineticComp_ev.tex
-Package epstopdf Info: Source file: <figures//./3000KineticComp_ev.eps>
-(epstopdf)                    date: 2025-10-21 16:17:24
-(epstopdf)                    size: 20657 bytes
-(epstopdf)             Output file: <figures//./3000KineticComp_ev-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-21 16:17:51
-(epstopdf)                    size: 3725 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures//./3000KineticComp_ev-eps-converted-to.pdf figures//./3000KineticComp_ev.eps>
-(epstopdf)             \includegraphics on input line 112.
-Package epstopdf Info: Output file is already uptodate.
-<figures//./3000KineticComp_ev-eps-converted-to.pdf, id=78, 361.35pt x 252.945pt>
-File: figures//./3000KineticComp_ev-eps-converted-to.pdf Graphic file (type pdf)
-<use figures//./3000KineticComp_ev-eps-converted-to.pdf>
-Package pdftex.def Info: figures//./3000KineticComp_ev-eps-converted-to.pdf  used on input line 112.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-) (./figures/1000KineticComp.tex
-Package epstopdf Info: Source file: <figures//./1000KineticComp.eps>
-(epstopdf)                    date: 2025-10-17 17:17:39
-(epstopdf)                    size: 61733 bytes
-(epstopdf)             Output file: <figures//./1000KineticComp-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-21 17:15:29
-(epstopdf)                    size: 26150 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures//./1000KineticComp-eps-converted-to.pdf figures//./1000KineticComp.eps>
-(epstopdf)             \includegraphics on input line 142.
-Package epstopdf Info: Output file is already uptodate.
-<figures//./1000KineticComp-eps-converted-to.pdf, id=79, 361.35pt x 252.945pt>
-File: figures//./1000KineticComp-eps-converted-to.pdf Graphic file (type pdf)
-<use figures//./1000KineticComp-eps-converted-to.pdf>
-Package pdftex.def Info: figures//./1000KineticComp-eps-converted-to.pdf  used on input line 142.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-) (./figures/1000KineticExt.tex
-Package epstopdf Info: Source file: <figures//./1000KineticExt.eps>
-(epstopdf)                    date: 2025-10-21 17:02:12
-(epstopdf)                    size: 64954 bytes
-(epstopdf)             Output file: <figures//./1000KineticExt-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-21 17:20:08
-(epstopdf)                    size: 28997 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures//./1000KineticExt-eps-converted-to.pdf figures//./1000KineticExt.eps>
-(epstopdf)             \includegraphics on input line 134.
-Package epstopdf Info: Output file is already uptodate.
-<figures//./1000KineticExt-eps-converted-to.pdf, id=80, 361.35pt x 252.945pt>
-File: figures//./1000KineticExt-eps-converted-to.pdf Graphic file (type pdf)
-<use figures//./1000KineticExt-eps-converted-to.pdf>
-Package pdftex.def Info: figures//./1000KineticExt-eps-converted-to.pdf  used on input line 134.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-) (./figures/Cercle_3000_residuel.tex
-Package epstopdf Info: Source file: <figures//./Cercle_3000_residuel.eps>
-(epstopdf)                    date: 2025-10-21 17:10:32
-(epstopdf)                    size: 41652 bytes
-(epstopdf)             Output file: <figures//./Cercle_3000_residuel-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-21 17:12:04
-(epstopdf)                    size: 9736 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures//./Cercle_3000_residuel-eps-converted-to.pdf figures//./Cercle_3000_residuel.eps>
-(epstopdf)             \includegraphics on input line 121.
-Package epstopdf Info: Output file is already uptodate.
-<figures//./Cercle_3000_residuel-eps-converted-to.pdf, id=81, 454.69875pt x 454.69875pt>
-File: figures//./Cercle_3000_residuel-eps-converted-to.pdf Graphic file (type pdf)
-<use figures//./Cercle_3000_residuel-eps-converted-to.pdf>
-Package pdftex.def Info: figures//./Cercle_3000_residuel-eps-converted-to.pdf  used on input line 121.
-(pdftex.def)             Requested size: 455.2041pt x 455.2041pt.
-) (./figures/3000_mu_I_fit.tex
-Package epstopdf Info: Source file: <figures//./3000_mu_I_fit.eps>
-(epstopdf)                    date: 2025-10-21 14:13:44
-(epstopdf)                    size: 21823 bytes
-(epstopdf)             Output file: <figures//./3000_mu_I_fit-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-21 14:14:20
-(epstopdf)                    size: 4292 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures//./3000_mu_I_fit-eps-converted-to.pdf figures//./3000_mu_I_fit.eps>
-(epstopdf)             \includegraphics on input line 119.
-Package epstopdf Info: Output file is already uptodate.
-<figures//./3000_mu_I_fit-eps-converted-to.pdf, id=82, 361.35pt x 252.945pt>
-File: figures//./3000_mu_I_fit-eps-converted-to.pdf Graphic file (type pdf)
-<use figures//./3000_mu_I_fit-eps-converted-to.pdf>
-Package pdftex.def Info: figures//./3000_mu_I_fit-eps-converted-to.pdf  used on input line 119.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
+]
+
+Package natbib Warning: Citation `hodgson_covering_1998' on page 2 undefined on input line 97.
+
+
+Package natbib Warning: Citation `gendreau_covering_1997' on page 2 undefined on input line 97.
+
+
+Package natbib Warning: Citation `naji-azimi_covering_2012' on page 2 undefined on input line 99.
+
+
+Package natbib Warning: Citation `hachicha_heuristics_2000' on page 2 undefined on input line 99.
+
+
+Package natbib Warning: Citation `naji-azimi_covering_2012' on page 2 undefined on input line 99.
+
+
+Package natbib Warning: Citation `campbell_routing_2008' on page 2 undefined on input line 103.
+
+
+Package natbib Warning: Citation `ngueveu_effective_2010' on page 2 undefined on input line 103.
+
+
+Package natbib Warning: Citation `ngueveu_effective_2010' on page 2 undefined on input line 105.
+
+
+Package natbib Warning: Citation `campbell_routing_2008' on page 2 undefined on input line 109.
+
+
+Package natbib Warning: Citation `hachicha_heuristics_2000' on page 2 undefined on input line 111.
+
+
+Package natbib Warning: Citation `naji-azimi_covering_2012' on page 2 undefined on input line 111.
+
+
+Package natbib Warning: Citation `naji-azimi_covering_2012' on page 2 undefined on input line 117.
+
+
+Package natbib Warning: Citation `naji-azimi_covering_2012' on page 2 undefined on input line 129.
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 129.
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (24.06857pt too wide) in paragraph at lines 275--276
+Overfull \hbox (0.41315pt too wide) in paragraph at lines 129--130
+[]\T1/cmr/m/n/10 Le mo-dèle du CTP-CCVRP ainsi que la ré-fé-rence CTP-
+ []
+
+
+Package natbib Warning: Citation `naji-azimi_covering_2012' on page 2 undefined on input line 131.
+
+
+Overfull \hbox (10.4842pt too wide) in paragraph at lines 131--132
+\T1/cmr/m/n/10 créée ar-bi-trai-re-ment et re-prend l'exemple donné de \T1/cmr/bx/n/10 ?\T1/cmr/m/n/10 . Chaque
+ []
+
+<figures/legende.png, id=88, 496.85625pt x 292.09125pt>
+File: figures/legende.png Graphic file (type png)
+<use figures/legende.png>
+Package pdftex.def Info: figures/legende.png  used on input line 138.
+(pdftex.def)             Requested size: 180.67499pt x 106.21352pt.
+[2]
+
+Package natbib Warning: Citation `gendreau_covering_1997' on page 3 undefined on input line 150.
+
+
+Overfull \hbox (13.74323pt too wide) in paragraph at lines 163--164
+[]\T1/cmr/m/n/10 Les so-lu-tions don-nées par le mo-dèle CTP-CCVRP peuvent
+ []
+
+<figures/ctp_un_camion.png, id=107, 573.14125pt x 473.77pt>
+File: figures/ctp_un_camion.png Graphic file (type png)
+<use figures/ctp_un_camion.png>
+Package pdftex.def Info: figures/ctp_un_camion.png  used on input line 171.
+(pdftex.def)             Requested size: 245.71754pt x 203.11711pt.
+<figures/ctpccvrp_un_camion.png, id=108, 573.14125pt x 476.78125pt>
+File: figures/ctpccvrp_un_camion.png Graphic file (type png)
+<use figures/ctpccvrp_un_camion.png>
+Package pdftex.def Info: figures/ctpccvrp_un_camion.png  used on input line 176.
+(pdftex.def)             Requested size: 245.71754pt x 204.4081pt.
+
+Overfull \hbox (1.8732pt too wide) in paragraph at lines 180--186
  [][] 
  []
 
-(./figures/3000_phi_I_fit.tex
-Package epstopdf Info: Source file: <figures//./3000_phi_I_fit.eps>
-(epstopdf)                    date: 2025-10-21 14:13:44
-(epstopdf)                    size: 22063 bytes
-(epstopdf)             Output file: <figures//./3000_phi_I_fit-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-21 14:14:20
-(epstopdf)                    size: 4319 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures//./3000_phi_I_fit-eps-converted-to.pdf figures//./3000_phi_I_fit.eps>
-(epstopdf)             \includegraphics on input line 120.
-Package epstopdf Info: Output file is already uptodate.
-<figures//./3000_phi_I_fit-eps-converted-to.pdf, id=83, 361.35pt x 252.945pt>
-File: figures//./3000_phi_I_fit-eps-converted-to.pdf Graphic file (type pdf)
-<use figures//./3000_phi_I_fit-eps-converted-to.pdf>
-Package pdftex.def Info: figures//./3000_phi_I_fit-eps-converted-to.pdf  used on input line 120.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-)
-Overfull \hbox (24.06857pt too wide) in paragraph at lines 282--283
+<figures/ctp_deux_camions.png, id=109, 573.14125pt x 476.78125pt>
+File: figures/ctp_deux_camions.png Graphic file (type png)
+<use figures/ctp_deux_camions.png>
+Package pdftex.def Info: figures/ctp_deux_camions.png  used on input line 190.
+(pdftex.def)             Requested size: 245.71754pt x 204.4081pt.
+<figures/ctpccvrp_deux_camions.png, id=110, 573.14125pt x 476.78125pt>
+File: figures/ctpccvrp_deux_camions.png Graphic file (type png)
+<use figures/ctpccvrp_deux_camions.png>
+Package pdftex.def Info: figures/ctpccvrp_deux_camions.png  used on input line 195.
+(pdftex.def)             Requested size: 245.71754pt x 204.4081pt.
+
+Overfull \hbox (6.31656pt too wide) in paragraph at lines 199--205
  [][] 
  []
 
-(./figures/3000_e_I_plot.tex
-Package epstopdf Info: Source file: <figures//./3000_e_I_plot.eps>
-(epstopdf)                    date: 2025-10-21 14:13:44
-(epstopdf)                    size: 22558 bytes
-(epstopdf)             Output file: <figures//./3000_e_I_plot-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-21 14:14:21
-(epstopdf)                    size: 4409 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures//./3000_e_I_plot-eps-converted-to.pdf figures//./3000_e_I_plot.eps>
-(epstopdf)             \includegraphics on input line 126.
-Package epstopdf Info: Output file is already uptodate.
-<figures//./3000_e_I_plot-eps-converted-to.pdf, id=84, 361.35pt x 252.945pt>
-File: figures//./3000_e_I_plot-eps-converted-to.pdf Graphic file (type pdf)
-<use figures//./3000_e_I_plot-eps-converted-to.pdf>
-Package pdftex.def Info: figures//./3000_e_I_plot-eps-converted-to.pdf  used on input line 126.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-)
-Overfull \hbox (24.06857pt too wide) in paragraph at lines 289--290
+<figures/ctpccvrp_trois_camions.png, id=111, 573.14125pt x 476.78125pt>
+File: figures/ctpccvrp_trois_camions.png Graphic file (type png)
+<use figures/ctpccvrp_trois_camions.png>
+Package pdftex.def Info: figures/ctpccvrp_trois_camions.png  used on input line 210.
+(pdftex.def)             Requested size: 245.71754pt x 204.4081pt.
+
+Overfull \hbox (6.31656pt too wide) in paragraph at lines 215--221
  [][] 
  []
 
-(./figures/1000_mu_I_fit.tex
-Package epstopdf Info: Source file: <figures//./1000_mu_I_fit.eps>
-(epstopdf)                    date: 2025-10-21 15:25:19
-(epstopdf)                    size: 22087 bytes
-(epstopdf)             Output file: <figures//./1000_mu_I_fit-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-21 15:25:37
-(epstopdf)                    size: 4419 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures//./1000_mu_I_fit-eps-converted-to.pdf figures//./1000_mu_I_fit.eps>
-(epstopdf)             \includegraphics on input line 121.
-Package epstopdf Info: Output file is already uptodate.
-<figures//./1000_mu_I_fit-eps-converted-to.pdf, id=85, 361.35pt x 252.945pt>
-File: figures//./1000_mu_I_fit-eps-converted-to.pdf Graphic file (type pdf)
-<use figures//./1000_mu_I_fit-eps-converted-to.pdf>
-Package pdftex.def Info: figures//./1000_mu_I_fit-eps-converted-to.pdf  used on input line 121.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-)
-Overfull \hbox (24.06857pt too wide) in paragraph at lines 301--302
+<figures/ctpccvrp_quatre_camions.png, id=114, 573.14125pt x 476.78125pt>
+File: figures/ctpccvrp_quatre_camions.png Graphic file (type png)
+<use figures/ctpccvrp_quatre_camions.png>
+Package pdftex.def Info: figures/ctpccvrp_quatre_camions.png  used on input line 226.
+(pdftex.def)             Requested size: 245.71754pt x 204.4081pt.
+
+Overfull \hbox (6.31656pt too wide) in paragraph at lines 230--236
  [][] 
  []
 
-(./figures/1000_phi_I_fit.tex
-Package epstopdf Info: Source file: <figures//./1000_phi_I_fit.eps>
-(epstopdf)                    date: 2025-10-21 15:25:19
-(epstopdf)                    size: 22165 bytes
-(epstopdf)             Output file: <figures//./1000_phi_I_fit-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-21 15:25:38
-(epstopdf)                    size: 4416 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures//./1000_phi_I_fit-eps-converted-to.pdf figures//./1000_phi_I_fit.eps>
-(epstopdf)             \includegraphics on input line 120.
-Package epstopdf Info: Output file is already uptodate.
-<figures//./1000_phi_I_fit-eps-converted-to.pdf, id=86, 361.35pt x 252.945pt>
-File: figures//./1000_phi_I_fit-eps-converted-to.pdf Graphic file (type pdf)
-<use figures//./1000_phi_I_fit-eps-converted-to.pdf>
-Package pdftex.def Info: figures//./1000_phi_I_fit-eps-converted-to.pdf  used on input line 120.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-)
-Overfull \hbox (24.06857pt too wide) in paragraph at lines 308--309
- [][] 
- []
 
-(./figures/1000_e_I_fit.tex
-Package epstopdf Info: Source file: <figures//./1000_e_I_fit.eps>
-(epstopdf)                    date: 2025-10-21 15:25:19
-(epstopdf)                    size: 22520 bytes
-(epstopdf)             Output file: <figures//./1000_e_I_fit-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-21 15:25:38
-(epstopdf)                    size: 4495 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures//./1000_e_I_fit-eps-converted-to.pdf figures//./1000_e_I_fit.eps>
-(epstopdf)             \includegraphics on input line 124.
-Package epstopdf Info: Output file is already uptodate.
-<figures//./1000_e_I_fit-eps-converted-to.pdf, id=87, 361.35pt x 252.945pt>
-File: figures//./1000_e_I_fit-eps-converted-to.pdf Graphic file (type pdf)
-<use figures//./1000_e_I_fit-eps-converted-to.pdf>
-Package pdftex.def Info: figures//./1000_e_I_fit-eps-converted-to.pdf  used on input line 124.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-)
-Overfull \hbox (24.06857pt too wide) in paragraph at lines 315--316
- [][] 
- []
+Package natbib Warning: Citation `naji-azimi_covering_2012' on page 3 undefined on input line 258.
 
-(./main.bbl) [2 <./figures//./ComparerNP-eps-converted-to.pdf>] [3 <./figures//./3000KineticComp_q-eps-converted-to.pdf> <./figures//./3000KineticComp_ev-eps-converted-to.pdf> <./figures//./1000KineticComp-eps-converted-to.pdf> <./figures//./1000KineticExt-eps-converted-to.pdf> <./figures//./Cercle_3000_residuel-eps-converted-to.pdf>] [4 <./figures//./3000_mu_I_fit-eps-converted-to.pdf> <./figures//./3000_phi_I_fit-eps-converted-to.pdf> <./figures//./3000_e_I_plot-eps-converted-to.pdf> <./figures//./1000_mu_I_fit-eps-converted-to.pdf> <./figures//./1000_phi_I_fit-eps-converted-to.pdf> <./figures//./1000_e_I_fit-eps-converted-to.pdf>] (./main.aux
-Package cleveref Info: loaded `french' language definitions on input line 27.
+
+Package natbib Warning: Citation `gendreau_covering_1997' on page 3 undefined on input line 258.
+
+[3 <./figures/legende.png>] [4 <./figures/ctp_un_camion.png> <./figures/ctpccvrp_un_camion.png> <./figures/ctp_deux_camions.png> <./figures/ctpccvrp_deux_camions.png>]
+
+LaTeX Warning: Command \` invalid in math mode on input line 260.
+
+Missing character: There is no è in font cmr7!
+[5 <./figures/ctpccvrp_trois_camions.png> <./figures/ctpccvrp_quatre_camions.png>]
+
+Package natbib Warning: Citation `ngueveu_effective_2010' on page 6 undefined on input line 288.
+
+No file template.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[6] (./template.aux
+Package cleveref Info: loaded `french' language definitions on input line 30.
 )
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A31CFE3E0F22B39C22C0216393AA9B80;1548.
+Package rerunfilecheck Info: File `template.out' has not changed.
+(rerunfilecheck)             Checksum: 452BCCB92E483D2ACD878A58BE020666;3154.
  ) 
 Here is how much of TeX's memory you used:
- 17675 strings out of 478287
- 299966 string characters out of 5849289
- 695588 words of memory out of 5000000
- 35532 multiletter control sequences out of 15000+600000
- 490396 words of font info for 82 fonts, out of 8000000 for 9000
+ 16719 strings out of 478287
+ 278893 string characters out of 5849289
+ 658331 words of memory out of 5000000
+ 34634 multiletter control sequences out of 15000+600000
+ 480060 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,15n,77p,419b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on main.pdf (4 pages, 567899 bytes).
+ 70i,10n,77p,1568b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on template.pdf (6 pages, 564070 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 200 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 277 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

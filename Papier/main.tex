@@ -18,6 +18,8 @@
 \usepackage{subcaption}
 \usepackage{xcolor}
 \usepackage{cancel}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
 % \definecolor{refcolor}{HTML}{0000FF}        % blue for refs
 % \definecolor{citecolor}{HTML}{FF00FF}       % violet/magenta for citations
 % \definecolor{footnotecolor}{HTML}{FF00FF}   % magenta for footnotes
@@ -44,15 +46,14 @@
 % \address{LAAS-CNRS, Toulouse}
 
 \begin{abstract}
-Cet article étudie deux aspects d'un échantillon lâche sous la compression triaxiale: le nombre de particules et le nombre d'inertie. 
-L'influence des termes cinétiques semble indépendant avec le valeur de la contrainte obtenu.
- causant par le vitess de compression (i.e) le nombre d'inertie.
+Le main intérêt de cet article est étudiant deux aspects d'un échantillon lâche sous la compression triaxiale: le nombre de particules et le nombre d'inertie. 
+Dans la domaine de résiduel (l'état critique),l'influence des termes cinétiques semble indépendant avec le valeur de la contrainte obtenu. causant par le vitess de compression (i.e) le nombre d'inertie.
 C'est un pré-étude du compotement d'un volume élémentaire représentatif (VER) pour la modélisation d'un écoulement gravitaire couplant la Méthode des Élements Discrètes et la Méthode des Points Matériels.
 
 \end{abstract}
 
 \begin{keyword}
-DEM \sep termes dynamiques \sep nombre d'inertie \sep $\mu(I)$ rhéologie \sep échantillon lâche
+DEM \sep termes dynamiques \sep nombre d'inertie \sep $\mu(I)$ rhéologie \sep échantillon lâche \sep résiduel
 \end{keyword}
 
 \end{frontmatter}
@@ -63,8 +64,75 @@ DEM \sep termes dynamiques \sep nombre d'inertie \sep $\mu(I)$ rhéologie \sep �
 \section{Introduction}\label{introduction}
 Le $\mu(I)$ rhéologie caractérisé un aspects important dans la modélisation d'un écoulement gravitaire.  
 
-\section{Rhéologie} \label{rheologie}
-La rhéologie $\mu(I)$ joue un rôle crucial dans la description des écoulements granulaires. Elle établit une relation constitutive entre le tenseur des contraintes du flux et le tenseur des taux de déformation  \citep{jop2006constitutive} :
+\section{Méthodologie}\label{methode}
+
+\subsection{DEM}\label{dem}
+Originé des dynamiques moléculaires, la Méthode des Éléments Discrets (DEM) a été développée dans le but d'étudier les problèmes mécaniques liés aux matériaux granulaires et géomatériaux. Contrairement aux méthodes en milieu continu telles que MPM ou FEM, DEM modélise le matériau comme un ensemble de particules discrètes.
+
+Dans cette approche, le milieu granulaire est représenté par un assemblage de grains interagissant individuellement. Le mouvement de chaque grain est régi par la seconde loi de Newton, formulée comme suit pour le grain $i$ :
+
+    Ensuite, dans la perspective d’une intégration au couplage MPM$\times$DEM, une seconde étude est réalisée en augmentant la vitesse de déformation. Cela permet d’examiner l’influence du nombre l'inertie sur la réponse du matériau,
+Microscopic.
+\begin{figure}[h] \centering
+	\includegraphics[width=2in]{figures/modele.pdf}
+	\caption[]{Modele DEM 3D d'un échantillon lâche (un gaz)}
+	\label{echantillon} 
+\end{figure}
+
+    Le nombre d'inertie "I" est défini à partir du ``temps d'inertie'' et du ``temps de cisaillement''.
+    Le temps d'inertie caractérise le temps de déplacement d'une particule moyenne de masse $m$ et de diamètre $d$, sous la pression $P$, dans $D$ dimensions\footnote{Lecture \textit{Discrete Element Modeling} – Gaël COMBE}. Leurs expressions sont :
+    \begin{align}
+        	\tau_c &= \dfrac{1}{\dot{\epsilon}} = \dfrac{v}{H_0}, \\
+        	\tau_i &= \sqrt{\dfrac{m}{P.d^{D-2}}}
+    \end{align}
+
+    Dans notre cas (compression triaxiale en 3D, $D=3$) on obtient :
+    \begin{align}
+        I &= \dfrac{\tau_i}{\tau_c}
+        = \dot{\epsilon}\ \sqrt{\dfrac{m}{\sigma_0.d}}
+        = \dfrac{v}{H_0}\,\sqrt{\dfrac{\tfrac{4}{3}\pi R^3 \rho}{\sigma_{0}.2R}}
+    \end{align}
+
+    Où :
+    \begin{itemize}
+        \item $v$ : vitesse de compression,
+        \item $H_0$ : hauteur initiale de l'échantillon,
+        \item $R$ : rayon moyen des particules et $\rho$ : leaur masse volumique 
+        \item $\sigma_{0}$ : contrainte de confinement
+    \end{itemize}
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Symbole} & \textbf{Paramètre} & \textbf{Valeur} & \textbf{Unité} \\
+\midrule
+N & Nombre de particules & $1000 \div 3375$ &  \\
+R & Rayon des particules & $3 \div 5 $& mm \\
+$\rho$ & Masse volumique & 2500 & kg/m$^3$ \\
+$\sigma_{xx} = \sigma_{zz}$ & Contrainte isotrope & 30 & kPa \\
+$k_n$, $k_t$ & Raideur norm./tang. & $3 \times 10^6$ & N/m \\
+$\kappa$ & Niveau de raideur & 6250 &  \\
+$\mu$ & Coefficient de frottement & 0.5 &  \\
+$d_t$ & Pas de temps & $10^{-6} \div 10^{-9}$ & s \\
+$\alpha$ & Coefficient d'amortissement & 0 &  \\
+I & Nombre d'inertie & $10^{-4} \div 10^{-1}$ &  \\
+\bottomrule
+\end{tabular}
+\caption{Paramètres utilisés dans la modélisation compression triaxiale DEM}
+\label{parametres_triaxiale}
+\end{table}
+
+
+La fraction solide caractérise la dispersion des particules solides $V_s$ dans un volume $V$.  
+C'est un indice important en rhéologie de l'écoulement.  $\Phi = V_s/V$.
+Similairement, l'indice de vide : $e = (1-\Phi)/\Phi$
+
+
+\subsection{Rhéologie}\label{rheologie}
+
+À l'échelle macroscopique, la rhéologie $\mu(I)$ joue un rôle crucial dans la description des écoulements granulaires. Elle établit une relation constitutive entre le tenseur des contraintes du flux et le tenseur des taux de déformation  \citep{jop2006constitutive} :
 \begin{equation}
 \sigma_{ij} = -P \delta_{ij} + \mu(I) P \frac{\dot{\gamma}_{ij}}{\lVert \dot{\gamma} \rVert}
 \label{flowTensor}
@@ -74,224 +142,203 @@ où :
 \mu(I) = \mu_s + \dfrac{\mu_2 - \mu_s}{1 + \dfrac{I_0}{I}}
 \label{muI}
 \end{equation}
+
+En plus, la relation 
 \begin{equation}
 \Phi(I) = \Phi^{\max} - bI
 \label{phiI}
 \end{equation}
+
+où: $\mu_s,\ \mu_2,\ I_0,\ \Phi_{\text{max}},\ b $ sont les coefficients empiriques
+
 Seuls deux problèmes, à notre connaissance, appartiennent à cette catégorie : le \emph{DEM} rich MPM blah blah.
 
-Dans me programme PBC3D, nous avons ajouté 2 termes cinétiques dans la formulation de calcul:
+Dans me programme PBC3D, 2 termes cinétiques a été ajouté  dans la formulation de calcul:
 \begin{itemize}
 	\item $\dot{r} = h\dot{s} + \cancel{\dot{h}s}$
 	\item $\ddot{s} = h^{-1}(\ddot{r} - 2\dot{h}\dot{s} - \cancel{\ddot{h}s})$
 \end{itemize}
 
-\subsection{Le \emph{Covering Tour Problem}} \label{ctp}
+\begin{equation}
+    \sigma_p = -\frac{1}{|\det h_p|} \left( \sum_k f_k \otimes \ell_k + \sum_n m_n \dot{r}_n \otimes \dot{r}_n \right)
+    \label{eq:contrainteDynamique}
+\end{equation}	
+the first term denotes Love-Weber stress, while the
+second (kinetic) term may become significant during extremely rapid deformations
 
-Le \emph{Covering Tour Problem} (CTP) est caractérisé par un ensemble d'habitants et un ensemble de points de distribution. Introduit par \cite{gendreau_covering_1997}, ce problème prend en compte le fait que tous les habitants ne peuvent être visités par un camion, mais que les habitants sont capables de se déplacer vers le point de distribution le plus proche. La distance maximale que peut parcourir un habitant est fixée — on appellera le rayon de couverture cette distance. Le schéma en \cref{ctp_un_camion} donne un exemple de solution à ce problème.
+\begin{equation}
+    I = \dot{\varepsilon} \times \sqrt{\frac{m}{\sigma_{33} \times \bar{a}}}
+ = \sqrt{\frac{\pi}{6}} \times \frac{\dot{\varepsilon} .\bar{a}}{\sqrt{\sigma_{33}/\rho_s}}
+    \label{eq:placeholder_label}
+\end{equation}
 
-Ce problème respecte ainsi le principe d'équité dans l'accès à l'aide. L'objectif du CTP peut être séparé en deux étapes \citep{jozefowiez_bi-objective_2007}. D'abord un \emph{Set Covering Problem} (SCP), où on détermine un sous-ensemble minimal de points de distributions permettant la couverture de tous les habitants. Ensuite, un \emph{Travelling Salesman Problem} (TSP), où on détermine le circuit de distance minimale d'un unique camion à capacité illimitée à travers ce sous-ensemble de points de distribution.
 
-L'article de \cite{gendreau_covering_1997} cite plusieurs exemples théoriques d'utilisation du CTP : il pourrait être utilisé pour localiser les endroits optimaux pour placer des boîtes de poste, ou construire une route pour les équipes de réapprovisionnement de biens dans des pays en développement, dans lesquels les services médicaux ne peuvent être délivrés qu’à un ensemble de villages, mais où tous les habitants sont capables de marcher jusqu'au centre médical le plus proche (l'équivalent du point de distribution dans notre article).
 
-L’article de \cite{hodgson_covering_1998} implémente le CTP de \cite{gendreau_covering_1997}, et pour la première fois dans un cas réel : l’acheminement de biens vers des centres de réapprovisionnement du Suhum District au Ghana. Cette étude distingue deux saisons : la saison sèche et la saison des pluies. Durant la seconde saison, certains points de distribution accessibles durant la saison sèche deviennent inaccessibles par la route, il faut donc pouvoir établir un nouveau parcours pour distribuer un maximum d’habitants. Cet article s’intéresse à ce problème en étudiant les conséquences du choix du rayon de couverture des points de distribution.
+\subsection{Critère de rupture de Mohr} \label{Mohr}
+Dans le sable sec, autre dire sans cohésif, les interactions entre les particules sont purement frottant. 
+On utilise le critère de Mohr pour évaluer le compotment à l'échelle microscopic à l'echelle macroscopic.
+Dans le cas simplicité, l'enveloppe de Mohr est simplifié par un droit transversale tous les cercles de Mohr.
+La résistance au force de cissailement du matériau est composant de deux indices: le valeur $\mu = \tan(\phi)$, calculé selon l'angle de frottement $\phi$ de la droit et la cohésion apparente $C$, qui est est la intersection entre la droit avec l'axe y (i.e l'axe de cissailement)
+Un point particulier de la méthode DEM est que l’on agit uniquement sur les paramètres microscopiques, alors que les comportements à grande échelle émergent naturellement.  
+Cette propriété peut être vérifiée en comparant avec les comportements macroscopiques bien connus en mécanique des sols.  
 
-L’article de \cite{naji-azimi_covering_2012} se concentre sur le choix du placement de points de distribution secondaires approvisionnés depuis un dépôt unique par une flotte de camions non homogène : tous les camions ne transportent pas la même charge et ne transportent pas tous les mêmes types d'aide. Comme dans le cas du CTP classique, ces points de distributions doivent être déterminés pour permettre à chaque habitant d'être suffisamment proche d'un point de distribution. Ce CTP à plusieurs véhicules avait déjà été proposé par \cite{hachicha_heuristics_2000} (\emph{multiple-vehicle CTP}, m-CTP), mais \cite{naji-azimi_covering_2012} introduit une nouvelle notion de division de la distribution : un habitant peut être desservi par deux points de distribution. % Aussi, l'article ne donne pas de points de distribution obligatoires : ils sont tous facultatifs, contrairement au CTP classique où certains points de distributions doivent être obligatoirement visités.
+Le cercle de Mohr est une méthode bien connue pour identifier la résistance au cisaillement maximale du sol.  
+À partir de ses courbes, on peut déterminer la cohésion $c$ et l’angle de frottement interne $\varphi$ selon la relation :
+\begin{equation}
+    \tau = \sigma_n \tan(\varphi) + c
+    \label{eq:tangentMohr}
+\end{equation}
+La pente de la droite tangente aux cercles, soit $\tan(\varphi) = \mu$, reflète le frottement interne à l’état considéré.  
+Le $\mu_{\text{résiduel}}$ correspond à la pente de la droite tangente au cercle de Mohr à l’état critique.  
+On considère généralement que ce $\mu_{\text{résiduel}}$ est une valeur stationnaire.  
+Dans notre cas, le matériau étudié est du sable sec. Le point d’intersection entre la droite tangente aux cercles et l’axe vertical, selon la théorie, doit être nul, ce qui correspond à une cohésion nulle ($c=0$).
 
-\subsection{Le \emph{Cumulative Capacitated Vehicle Routing Problem}} \label{ccvrp}
+\section{Résultat et discussion}\label{resultat}
 
-Dans son article, \cite{campbell_routing_2008} remet en question l'utilisation des algorithmes de transport classiques dans le cas humanitaire. Il est expliqué que les notions d'urgence et d'équité ne sont pas respectées : la minimisation de la distance ne convient pas à l'aide humanitaire. L'une des deux formulations présentées, le \emph{Minimum-Average VRP} (minavg-VRP), est une formulation équivalente du \emph{Cumulative Capacitated Vehicle Routing Problem} (CCVRP) défini plus tard par  \cite{ngueveu_effective_2010} : à partir de plusieurs camions de capacité homogène, on veut trouver des tournées pour livrer un ensemble d'habitants. Contrairement au CTP, tous les habitants doivent être atteignables. Et contrairement au \emph{Vehicule Routing Problem} (VRP), qui minimise la distance parcourue par les camions en autorisant plusieurs camions, le CCVRP utilise une fonction objectif qui minimise la somme des temps d'arrivée chez les habitants.
+\subsection{Nombre des particules}\label{N}
 
-\cite{ngueveu_effective_2010} montre que le CCVRP  aura tendance à utiliser le plus de camions possible par souci de rapidité, contrairement au VRP qui aura tendance à utiliser le moins de camions possible par souci d'économie.
+            \begin{figure}
+                \centering
+                \scalebox{0.5}{\input{figures/ComparerNP.tex}}
+                \caption{Étude sur nombre de particules}
+                \label{comparerNP}
+            \end{figure}
+\subsection{Influence de termes dynamiques ajouté}\label{termeDynamique}
+Sauf au pic, la contrainte dans la régime résiduel n'affect pas la contrainte, consequently le $\mu_{\text{résiduel}}$
 
-\section{Analyse de l'existant et proposition d'un nouveau modèle}
-\subsection{Constat et proposition}
-Comme le suggère \cite{campbell_routing_2008}, la minimisation des coûts lors du choix d’un itinéraire ne permet pas d’assurer des temps d’arrivée convenables lorsqu’il s’agit de distribution d’aide humanitaire, et le CCVRP (ou min-avg VRP) donne de bonnes solutions respectant le critère d'urgence mais sans prendre en compte l'impossibilité d'accéder à tous les habitants, et donc ne respectant pas le critère d'équité. Au contraire, le CTP règle cette impossibilité, mais en gardant une fonction objectif basée sur la minimisation de la distance parcourue : le critère d'équité est pris en compte mais celui d'urgence ne l'est pas. Ce comparatif est résumé en \cref{comparatif}.
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \scalebox{0.5}{\input{figures/3000KineticComp_q.tex}}
+        \caption{Contrainte déviatorique}
+        \label{fig:3000_kinetic_q}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \scalebox{0.5}{\input{figures/3000KineticComp_ev.tex}}
+        \caption{Déformation volumique}
+        \label{fig:3000_kinetic_ev}
+    \end{subfigure}
+    \caption{Influence des termes cinétiques pour N=3000}
+    \label{fig:3000_kinetic_comp}
+\end{figure}
 
-Contrairement au CTP classique qui n'autorise qu'un seul véhicule, le CCVRP permet l'utilisation de plusieurs véhicules. Une variante du CTP, le \emph{Multi-Vehicle Covering Tour Problem} (m-CTP)  proposée par \cite{hachicha_heuristics_2000} et reprise dans \cite{naji-azimi_covering_2012} permet d'élargir le problème en disposant de plusieurs camions à capacité limitée.
+\subsection{Comportement microscopique à macroscopique}\label{figureMuy}
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \scalebox{0.5}{\input{figures/1000KineticComp.tex}}
+        \caption{Contrainte déviatorique compression}
+        \label{fig:3000_kinetic_q}
+    \end{subfigure}
+        \begin{subfigure}[b]{0.45\textwidth}
+                        \centering
+        \scalebox{0.5}{\input{figures/1000KineticExt.tex}}
+        \caption{Contrainte déviatorique extension}
+        \label{fig:3000_kinetic_q}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.45\textwidth}
+                    \centering
+        \scalebox{0.5}{\input{figures/Cercle_3000_residuel.tex}}
+        \caption{Déformation volumique}
+        \label{fig:3000_kinetic_ev}
+    \end{subfigure}
+    \caption{Influence des termes cinétiques pour N=3000}
+    \label{fig:3000_kinetic_comp}
+\end{figure}
+L'écart de type.
 
-%Dans notre étude, nous avons comparé les m-CTP \emph{CTP-VRP}, car nous avons gardé les notions de partage de la distribution proposé par \cite{naji-azimi_covering_2012}.
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{@{}lllllll@{}}
+\toprule
+\textbf{I} & $\boldsymbol{\mu}$ & $\boldsymbol{s_{\mu}}$(\%) & $\boldsymbol{\Phi}$ & $\boldsymbol{s_{\Phi}}$(\%) & $\boldsymbol{e}$ & $\boldsymbol{s_{e}}$(\%) \\
+\midrule
+$10^{-3}$ & 0.338 & 2.367 & 0.595 & 0.168 & 0.680 & 0.294 \\
+$10^{-2}$ & 0.360 & 4.444 & 0.590 & 0.169 & 0.695 & 0.288 \\
+$2 \times 10^{-2}$ & 0.406 & 4.926 & 0.583 & 0.172 & 0.714 & 0.280 \\
+$4 \times 10^{-2}$ & 0.444 & 4.054 & 0.572 & 0.175 & 0.748 & 0.401 \\
+$8 \times 10^{-2}$ & 0.504 & 4.365 & 0.556 & 0.180 & 0.799 & 0.375 \\
+$10^{-1}$ & 0.530 & 5.283 & 0.547 & 0.366 & 0.830 & 0.843 \\
+\bottomrule
+\end{tabular}
+\caption{Valeurs moyennes et écarts-types $\boldsymbol{s}$ de $\mu$, $\Phi$ et $e$ en fonction du nombre d'inertie pour N=3000}
+\label{table_rheologie_stats}
+\end{table}
 
-Nous proposons un modèle de CTP multi-véhicules qui où l'on remplace la minimisation de la distance parcourue (la composante VRP du CTP) par la minimisation de la somme des temps d'arrivée aux points de distribution. Nous appellerons ce modèle \emph{CTP-CCVRP}. Le modèle mathématique se trouve en \cref{modele_ctpccvrp}. Ce modèle permettrait par exemple de diffuser des médicaments liés à une épidémie à travers des points de distribution. Ainsi, les habitants auraient accès aux traitements le plus rapidement possible.
-
-Pour comparer ce nouveau modèle, nous avons pris comme référence le modèle proposé par \cite{naji-azimi_covering_2012}. Bien que très proche du m-CTP, il ajoute le partage de la distribution entre véhicules. Nous appellerons CTP-VRP ; le modèle mathématique est en \cref{modele_ctpvrp}.
-
-\begin{figure*}
-\centering \begin{tabular}{p{2cm} p{8cm} p{6cm}} \toprule
-& \multicolumn{1}{c}{CTP} & \multicolumn{1}{c}{CCVRP} \\ \midrule
-Objectif & Minimisation des coûts & Minimisation des temps d'arrivée \\ \\
-Contraintes & Le dernier point de distribution visité impose une discrimination dans l'aide apportée & Nécessite que tous les habitants soient atteignables  \\  \\ 
-Avantages & Permet de prendre en compte des situations où tous les habitants ne sont pas atteignables, ou lorsqu'on ne souhaite visiter qu'un sous-ensemble de points de distribution ; permet de respecter le critère d'équité & Permet de fournir l'aide en respectant le critère d'urgence \\ \bottomrule
-\end{tabular} \caption{Tableau comparatif CTP vs. CCVRP} \label{comparatif}
+\begin{figure*}[p]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \scalebox{0.5}{\input{figures/3000_mu_I_fit.tex}}
+        \caption{$\mu(I)$}
+        \label{fig:3000_mu_I_fit}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \scalebox{0.5}{\input{figures/3000_phi_I_fit.tex}}
+        \caption{$\Phi(I)$}
+        \label{fig:3000_phi_I_fit}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \scalebox{0.5}{\input{figures/3000_e_I_plot.tex}}
+        \caption{$e(I)$}
+        \label{fig:3000_e_I_fit}
+    \end{subfigure}
+    \caption{Rhéologies $\mu(I)$, $\Phi(I)$ et $e(I)$ quand $\epsilon_{yy} = 40 \div 60\%$ pour N=3000}
+    \label{fig:rheologies_3000}
 \end{figure*}
 
-\subsection{Méthodes de résolution utilisées}
-Le modèle du CTP-CCVRP ainsi que la référence CTP-VRP sont formulés en programmation linéaire en nombres entiers (PLNE) à partir du modèle de donné dans \cite{naji-azimi_covering_2012}. Les formulations PLNE sont disponibles en \cref{modele_ctpvrp} et \cref{modele_ctpccvrp}, et le modèle GLPK est disponible sur le dépôt GitHub : \url{https://github.com/aheba/ctp/}.
+\begin{figure*}[p]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \scalebox{0.5}{\input{figures/1000_mu_I_fit.tex}}
+        \caption{$\mu(I)$}
+        \label{fig:1000_mu_I_fit}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \scalebox{0.5}{\input{figures/1000_phi_I_fit.tex}}
+        \caption{$\Phi(I)$}
+        \label{fig:1000_phi_I_fit}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \scalebox{0.5}{\input{figures/1000_e_I_fit.tex}}
+        \caption{$e(I)$}
+        \label{fig:1000_e_I_fit}
+    \end{subfigure}
+    \caption{Rhéologies $\mu(I)$, $\Phi(I)$ et $e(I)$ quand $\epsilon_{yy} = 40 \div 60\%$ pour N=1000}
+    \label{fig:rheologies_1000}
+\end{figure*}
 
-L'instance est identique pour tous les tests. Elle a été créée arbitrairement et reprend l'exemple donné de \cite{naji-azimi_covering_2012}. Chaque habitant est couvert par au moins deux points de distribution pour que la partie SCP du CTP ait du sens et qu'un choix soit possible dans le sous-ensemble de points de distribution.
+\section{Conclusion}\label{discussion}
 
-Nous avons utilisé le solveur \emph{GLPK} sur un Macbook Air 11" de mi-2011 à 1.6 Ghz. S'agissant de PLNE et donc de méthode exacte, l'instance utilisée est suffisamment petite pour que le temps de calcul ne dépasse pas 60 minutes.
+% \begin{gather}
+% \sum_{i=0}^{m}x_{ijk} = y_{jk}\qquad \forall j\in \{0\} \cup J, k \in K \label{sommet_atteignable_a_un_arc_entrant}\\ 
+% \sum_{i=0}^{n+1+m}x_{jik} = y_{jk}\qquad \forall j\in J \cup \{m+1\}, k \in K \label{sommet_atteignable_a_un_arc_sortant}\\ 
+% \sum_{j=0}^{m}x_{0jk} = 1 \qquad \forall k \in K \label{tournee_commence_depot}\\ 
+% \sum_{j=1}^{n+1+m}x_{j0k} = 1 \qquad \forall k \in K \label{tournee_termine_depot}\\
+% \sum_{j=1}^{m}\sum_{k=1}^{l} \alpha_{ij}D_{ijk} \geqslant d_{i}\qquad \forall i\in I \label{demande_satisfaite}\\
+% \sum_{i=1}^{n}D_{ijk} \leqslant Q_{k}y_{jk}\qquad \forall k \in K, j\in J \label{distribution_sommet_atteignable}\\
+% \sum_{i=1}^{n}\sum_{j=1}^{m}D_{ijk} \leqslant Q_k\qquad \forall k \in K \label{capacite_vehicule}\\
+% u_{ik} + c_{ij} - (1 - x_{ijk})T \leqslant u{jk} \notag \\
+% \qquad \forall i \in \{0\} \cup J, j \in J \cup \{0,n+1+m\}, k \in K \label{sub_tour}\\
+% x_{ijk} \in\left\{0,1\right\} \notag \\
+% \qquad\forall i,j\in\{0\}\cup J \cup \{n+m+1\}, i \neq j, k \in K \\
+% y_{jk} \in\left\{0,1\right\} \forall j\in J, k \in K\\ 
+% u_{ik} \geqslant 0  \qquad\forall i\in J, k \in K\\ 
+% D_{ijk} \geqslant 0 \qquad\forall i\in I, j\in J, k \in K\\ 
+% \end{gather}
 
-\subsubsection{Légende des figures}
-Dans chaque figure, qu'il s'agisse du CTP-VRP ou du CTP-CCVRP, l'arc de retour n'est pas affiché pour alléger les figures. Mais l'arc de retour est bien compté dans le calcul de la distance parcourue. 
-\begin{figure}[ht]
-	\includegraphics[width=2.5in]{figures/legende}
-\end{figure}
-\subsubsection{Explication des tables de résultat}
-L'écart est calculé par la formule $(valeur_{CTP-VRP}-valeur_{CTP-CCVRP}) / valeur_{CTP-VRP}$. Si l'écart est positif, alors la valeur du CTP-CCVRP est plus grande que la valeur de référence (le CTP-VRP).
-Les temps de transport (et donc les temps d'arrivée) sont arbitrairement calculés en utilisant les distances : on obtient des ordres de grandeurs identiques pour la distance parcourue et la somme des temps d'arrivée. Le temps d'arrivée maximal correspond au point de distribution atteint le dernier.
-% * <mael65@gmail.com> 2015-04-17T15:49:28.216Z:
-%
-%  explication des colonnes du tableau
-%
-% ^ <mael65@gmail.com> 2015-04-22T14:12:53.533Z.
-
-\subsection{Unique camion à capacité illimitée}
-À partir du CTP-VRP, on peut revenir à une solution de CTP au sens de \citeauthor{gendreau_covering_1997} en limitant à un seul camion à capacité illimitée. Nous avons illustré cet exemple en \cref{ctp_un_camion}, que l'on peut comparer à la solution du CTP-CCVRP en \cref{ctpccvrp_un_camion}.
-
-On obtient un écart de $-12.5\%$ (cf. \cref{table_un_camion}) concernant la somme des temps d'arrivée (cf. \cref{table_un_camion}), avec une faible augmentation de la distance de $+6.6\%$. En revanche, le dernier point de distribution desservi attend légèrement plus : c'est le seul exemple qui montre ce cas.
-
-\subsection{Deux, trois et quatre camions}
-Avec deux camions disponibles et une capacité de 18, on remarque que le CTP-CCVRP donne de biens meilleurs résultats que le CTP-VRP (\cref{ctpccvrp_deux_camions} et \cref{ctp_deux_camions}) en terme de temps d'arrivée (\cref{table_deux_camions}).
-
-Le fait de passer à trois camions (\cref{ctpccvrp_trois_camions}) ne diminue la somme des temps d'arrivée que de $11\%$, tout en augmentant la distance parcourue de $20\%$ entre les deux solutions du CTP-CCVRP. Sans surprise, les résultats pour deux, trois et quatre camions sont les mêmes pour le CTP-VRP : celui-ci tend toujours à minimiser le nombre de camions, car son objectif est de minimiser la distance. 
-
-Le passage de trois à quatre camions (\cref{ctpccvrp_quatre_camions}) confirme le phénomène : pour une toute petite diminution de la somme des temps d'arrivée, on en arrive à augmenter très fortement la distance parcourue (\cref{table_quatre_camions}).
-
-\subsection{Conclusions}
-
-Les solutions données par le modèle CTP-CCVRP peuvent être théoriquement intéressantes dans certains cas humanitaires. On remarque cependant que le fait d'ajouter un camion, à partir d'un certain nombre de camions, ne diminuera que peu la somme des temps d'attente, tout en augmentant très significativement la distance parcourue.
-
-Pour que ce modèle puisse être utilisé, il serait d'abord nécessaire de trouver une méthode de résolution approchée (méta-heuristique par exemple) permettant de résoudre des instances de taille réelle. La formulation du problème étant différente de tous les problèmes déjà rencontrés dans la littérature, trouver une méta-heuristique n'est pas évident.
-
-Le fait d'avoir les résultats d'instances réelles permettrait aux organisations humanitaires de savoir si, oui ou non, ces résultats sont cohérents avec la réalité logistique.
-
-\section*{Annexes}
-\begin{figure}[p] \centering
-	\includegraphics[width=3.4in]{figures/ctp_un_camion}
-	\caption[]{Solution du CTP-VRP avec les contraintes du CTP classique. L'arc de retour n'est pas affiché mais fait bien partie du calcul de la fonction objectif.} \label{ctp_un_camion} 
-\end{figure}
-
-\begin{figure}[p]\centering
-	\centerline{\includegraphics[width=3.4in]{figures/ctpccvrp_un_camion}}
-	\caption[]{Solution du CTP-VRP avec un unique camion disponible et une capacité illimitée.} \label{ctpccvrp_un_camion}
-\end{figure}
-
-\begin{table}[p] \centering \begin{tabular}{@{\small}llll@{}} \toprule % utilise booktabs
- & {\footnotesize CTP-VRP} &  {\footnotesize CTP-CCVRP} & Écart \\ \midrule
-Camions utilisés & 1 parmi 1 & 1 parmi 1 &  \\
-Distance parcourue & 11.69 & 12.46 & +6.6\% \\
-Somme temps d'arrivée & 22.39 & 19.59 & -12.5\% \\
-Temps d'arrivée max. & 9.19 & 9.26 & +0.8\% \\ \bottomrule
-\end{tabular} \caption{Comparatif CTP-VRP et CTP-CCVRP avec un unique camions et une capacité illimitée.} \label{table_un_camion}
-\end{table}
-
-\begin{figure}[p]\centering
-	\centerline{\includegraphics[width=3.4in]{figures/ctp_deux_camions}}
-	\caption[]{Solution du CTP-VRP avec deux camions disponibles.} \label{ctp_deux_camions}
-\end{figure}
-
-\begin{figure}[p] \centering
-	\centerline{\includegraphics[width=3.4in]{figures/ctpccvrp_deux_camions}}
-	\caption[]{Solution du CTP-CCVRP avec deux camions disponibles.} \label{ctpccvrp_deux_camions}
-\end{figure}
-
-\begin{table}[p] \centering \begin{tabular}{@{\small}llll@{}} \toprule % utilise booktabs
- & {\footnotesize CTP-VRP} &  {\footnotesize CTP-CCVRP} & Écart \\ \midrule
-Camions utilisés & 2 parmi 2 & 2 parmi 2 &  \\
-Distance parcourue & 13.87 & 16.1 & +16.1\% \\
-Somme temps d'arrivée & 25.61 & 12.48 & -51.3\% \\
-Temps d'arrivée max. & 8.97 & 5.19 & -42.1\% \\ \bottomrule
-\end{tabular} \caption{Comparatif CTP-VRP et CTP-CCVRP avec deux camions disponibles et une capacité de 18.} \label{table_deux_camions}
-\end{table}
-
-
-\begin{figure}[p] \centering
-	\centerline{\includegraphics[width=3.4in]{figures/ctpccvrp_trois_camions}}
-	\caption[]{Solution du CTP-CCVRP avec trois camions disponibles. Le résultat du CTP-VRP étant le même pour deux, trois et quatre camions, on se référera à \cref{ctp_deux_camions}.} \label{ctpccvrp_trois_camions}
-\end{figure}
-
-
-\begin{table}[p] \centering \begin{tabular}{@{\small}llll@{}} \toprule % utilise booktabs
- & {\footnotesize CTP-VRP} &  {\footnotesize CTP-CCVRP} & Écart \\ \midrule
-Camions utilisés & 2 parmi 3 & 3 parmi 3 &  \\
-Distance parcourue & 13.87 & 19.69 & +42.0\% \\
-Somme temps d'arrivée & 25.61 & 11.07 & -56.8\% \\
-Temps d'arrivée max. & 8.97 & 4.17 & -53.5\% \\ \bottomrule
-\end{tabular} \caption{Comparatif CTP-VRP et CTP-CCVRP avec trois camions disponibles et une capacité de 18.} \label{table_trois_camions}
-\end{table}
-
-
-\begin{figure}[p] \centering
-	\centerline{\includegraphics[width=3.4in]{figures/ctpccvrp_quatre_camions}}
-	\caption[]{Solution du CTP-CCVRP avec quatre camions disponibles. Le résultat du CTP-VRP étant le même pour deux, trois et quatre camions, on se référera à \cref{ctp_deux_camions}.} \label{ctpccvrp_trois_camions} \label{ctpccvrp_quatre_camions}
-\end{figure}
-
-\begin{table}[p] \centering \begin{tabular}{@{\small}llll@{}} \toprule % utilise booktabs
- & {\footnotesize CTP-VRP} &  {\footnotesize CTP-CCVRP} & Écart \\ \midrule
-Camions utilisés & 2 parmi 4 & 4 parmi 4 &  \\
-Distance parcourue & 13.87 & 22.04 & +58.9\% \\
-Somme temps d'arrivée & 25.61 & 11.02 & -57.0\% \\
-Temps d'arrivée max. & 8.97 & 4.12 & -54.1\% \\ \bottomrule
-\end{tabular} \caption{Comparatif CTP-VRP et CTP-CCVRP avec quatre camions disponibles et une capacité de 18.} \label{table_quatre_camions}
-\end{table}
-%
-%\subsection{Modèle mathématique du CTP}\label{modele_ctp}
-%Explication des variables de décisions utilisées dans le modèle.
-%\begin{equation}
-%Minimize\sum_{i<j}c_{ij}x{ij} ,
-%\end{equation}
-%sujet aux contraintes:
-
-%\newcommand{\card}[1]{\ensuremath{\left\|#1\right\|}}
-%\begin{gather}
-%\sum_{v_k\in S_l} y_k \geqslant 1 (v_l\in W),\\%separer E de l'équation et faire un beau Sl
-%\sum_{i<k}x_{ik}+\sum_{j>k}x_{kj} = 2y_k (v_k\in V),\\
-%\sum_{v_i\in S, v_j\in V\setminus S  \textbf{ or } v_j\in S, v_i\in V\setminus S} x_{ij} \geqslant 2y_t (S \subset V , 2 \leqslant \card{S}\leqslant n-2,\\ T\setminus S \not = \emptyset),\\%voir probleme compil ici en plus \Card{S} marche pas
-%x_{ij} \in \left\{0,1\right\},\\
-%y_k =1 (v_k \in T),\\
-%y_k \in \left\{0,1\right\} (v_k \in V\setminus T).
-%\end{gather}
-%Résumé du modèle.
-\subsection{Modèle mathématique du CTP-VRP}\label{modele_ctpvrp}
-
-Nous nous sommes inspirés du problème discuté par \cite{naji-azimi_covering_2012} pour définir le modèle de référence CTP-VRP permettant d'évaluer les performances du CTP-CCVRP. Le CTP-VRP est défini par un graphe orienté complet $G=(V,A)$ dans lequel $V$ représente l'ensemble des sommets et $A$ l'ensemble des arcs. On définit $V=\left\{0\right\} \cup I \cup J \cup \{m+1\}$,  $0$ étant le dépôt de départ et $\{m+1\}$ le dépôt d'arrivée (il s'agit en réalité du même dépôt), $I= \left\{1,...,n\right\}$ l'ensemble des habitants et $J= \left\{n+1,...,n+1+m\right\}$  l'ensemble des points de distribution. On notera aussi $K= \left\{1,...,l\right\}$ l'ensemble des véhicules. Contrairement au CTP de \cite{gendreau_covering_1997}, on ne définit pas de points de distribution que l'on doit visiter obligatoirement : tous les points de distribution sont optionnels. Cependant, tous les habitants $I$ doivent être couverts. L'ensemble des arcs est défini par $A$= $\left\{(v_i,v_j):v_i,v_j\in V\right\}$, et la matrice de distance $c_{ij}$ est définie sur $A$. Une flotte de véhicules $L$ est disponible, $Q$ étant la capacité (homogène) de tous les véhicules $k \in K$. Enfin, $\alpha = \left\{\alpha_{ij} \ i \in I, j \in J\right\}$ est une matrice dans laquelle $\alpha_{ij}$ est vrai si l'habitant $i$ est couvert par $j$ avec une distance inférieure à $d$, et faux sinon. Nous définissons également les variables de décision suivantes :
-\begin{itemize}
- \item $D_{ijk}$ est la quantité de demande de l'habitant $i$ fournie par le $k^{ième}$ véhicule lors de sa visite au point de distribution $j$ ;
- \item $x_{ijk}$ est vraie si $arc(i,j)$ est utilisé par le véhicule $k$, et faux sinon ;
- \item $y_{jk}$ est vraie si le point distribution $j$ est visité par le véhicule $k$ ;
- \item $u_{jk}$ est une variable de décision libre permettant à la fois de représenter le temps d'arrivée du véhicule $k$ au point de distribution $j$ et  d'éliminer les \emph{sub-tour}.
- \end{itemize}
-
-Le modèle est formulé comme suit :
-
-\begin{equation}\label{somme_distances}
-Minimiser \sum_{i=0}^{m}\sum_{j=1}^{m+1}\sum_{k=1}^{l} c_{ij} x_{ijk}
-\end{equation}
- sous les contraintes :
-\begin{gather}
-\sum_{i=0}^{m}x_{ijk} = y_{jk}\qquad \forall j\in \{0\} \cup J, k \in K \label{sommet_atteignable_a_un_arc_entrant}\\ 
-\sum_{i=0}^{n+1+m}x_{jik} = y_{jk}\qquad \forall j\in J \cup \{m+1\}, k \in K \label{sommet_atteignable_a_un_arc_sortant}\\ 
-\sum_{j=0}^{m}x_{0jk} = 1 \qquad \forall k \in K \label{tournee_commence_depot}\\ 
-\sum_{j=1}^{n+1+m}x_{j0k} = 1 \qquad \forall k \in K \label{tournee_termine_depot}\\
-\sum_{j=1}^{m}\sum_{k=1}^{l} \alpha_{ij}D_{ijk} \geqslant d_{i}\qquad \forall i\in I \label{demande_satisfaite}\\
-\sum_{i=1}^{n}D_{ijk} \leqslant Q_{k}y_{jk}\qquad \forall k \in K, j\in J \label{distribution_sommet_atteignable}\\
-\sum_{i=1}^{n}\sum_{j=1}^{m}D_{ijk} \leqslant Q_k\qquad \forall k \in K \label{capacite_vehicule}\\
-u_{ik} + c_{ij} - (1 - x_{ijk})T \leqslant u{jk} \notag \\
-\qquad \forall i \in \{0\} \cup J, j \in J \cup \{0,n+1+m\}, k \in K \label{sub_tour}\\
-x_{ijk} \in\left\{0,1\right\} \notag \\
-\qquad\forall i,j\in\{0\}\cup J \cup \{n+m+1\}, i \neq j, k \in K \\
-y_{jk} \in\left\{0,1\right\} \forall j\in J, k \in K\\ 
-u_{ik} \geqslant 0  \qquad\forall i\in J, k \in K\\ 
-D_{ijk} \geqslant 0 \qquad\forall i\in I, j\in J, k \in K\\ 
-\end{gather}
-La fonction objectif \ref{somme_distances} minimise la distance totale parcourue par les camions. Les contraintes \ref{sommet_atteignable_a_un_arc_entrant} et \ref{sommet_atteignable_a_un_arc_sortant} assurent que, pour chaque point de distribution $j$ et pour chaque véhicule $k$, il y a à la fois autant d'arcs entrants que d'arcs sortants de $j$. Les contraintes \ref{tournee_commence_depot} et \ref{tournee_termine_depot} contraignent l'existence d'un seul arc sortant du dépôt et un seul arc entrant au dépôt pour chaque véhicule $k$. La contrainte \ref{demande_satisfaite} spécifie qu'un habitant $i$ peut être approvisionné par plusieurs point de distribution $j$ (\enquote{distribution mutualisée}). La contrainte \ref{distribution_sommet_atteignable} relie les variables de décision $D_{ijk}$ à l'utilisation de chaque véhicule $k$ pour une livraison au point de demande $j$. La contrainte \ref{capacite_vehicule} impose le respect de la capacité $Q$ pour chaque véhicule $k$. La contrainte \ref{sub_tour}, tirée de \cite{ngueveu_effective_2010}, permet à la fois l'élimination des \emph{sub-tours} et le calcul des temps d'arrivée des camions aux points de distribution. $T$ est une constante arbitrairement grande.
-
-\subsection{Modèle mathématique du CTP-CCVRP} \label{modele_ctpccvrp}
-Le modèle CTP-CCVRP que nous proposons à partir du modèle du CTP-VRP ne nécessite que de changer la fonction objectif \cref{somme_distances}. Au lieu d'une minimisation des distances, on minimise la somme des temps d'arrivée aux points de distribution, c'est à dire la somme des $u_{jk}$. Ainsi, voici la nouvelle fonction objectif :
-\begin{equation} \label{somme_temps_arrivee}
-Minimiser \sum_{j \in J, k \in L} u_{jk}
-\end{equation}
 
 
 \bibliography{bibliographie.bib}

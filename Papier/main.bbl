@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{1}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -12,94 +12,11 @@
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
 %Type = Article
-\bibitem[{Campbell et~al.(2008)Campbell, Vandenbussche and
-  Hermann}]{campbell_routing_2008}
-\bibinfo{author}{Campbell, A.M.}, \bibinfo{author}{Vandenbussche, D.},
-  \bibinfo{author}{Hermann, W.}, \bibinfo{year}{2008}.
-\newblock \bibinfo{title}{Routing for {Relief} {Efforts}}.
-\newblock \bibinfo{journal}{Transportation Science} \bibinfo{volume}{42},
-  \bibinfo{pages}{127--145}.
-\newblock \URLprefix
-  \url{http://pubsonline.informs.org/doi/abs/10.1287/trsc.1070.0209},
-  \DOIprefix\doi{10.1287/trsc.1070.0209}.
-%Type = Article
-\bibitem[{Gendreau et~al.(1997)Gendreau, Laporte and
-  Semet}]{gendreau_covering_1997}
-\bibinfo{author}{Gendreau, M.}, \bibinfo{author}{Laporte, G.},
-  \bibinfo{author}{Semet, F.}, \bibinfo{year}{1997}.
-\newblock \bibinfo{title}{The {Covering} {Tour} {Problem}}.
-\newblock \bibinfo{journal}{Operations Research} \bibinfo{volume}{45},
-  \bibinfo{pages}{568--576}.
-\newblock \URLprefix
-  \url{http://pubsonline.informs.org/doi/abs/10.1287/opre.45.4.568},
-  \DOIprefix\doi{10.1287/opre.45.4.568}.
-%Type = Article
-\bibitem[{Hachicha et~al.(2000)Hachicha, John~Hodgson, Laporte and
-  Semet}]{hachicha_heuristics_2000}
-\bibinfo{author}{Hachicha, M.}, \bibinfo{author}{John~Hodgson, M.},
-  \bibinfo{author}{Laporte, G.}, \bibinfo{author}{Semet, F.},
-  \bibinfo{year}{2000}.
-\newblock \bibinfo{title}{Heuristics for the multi-vehicle covering tour
-  problem}.
-\newblock \bibinfo{journal}{Computers \& Operations Research}
-  \bibinfo{volume}{27}, \bibinfo{pages}{29--42}.
-\newblock \URLprefix
-  \url{http://www.sciencedirect.com/science/article/pii/S0305054899000064},
-  \DOIprefix\doi{10.1016/S0305-0548(99)00006-4}.
-%Type = Article
-\bibitem[{Hodgson et~al.(1998)Hodgson, Laporte and
-  Semet}]{hodgson_covering_1998}
-\bibinfo{author}{Hodgson, M.J.}, \bibinfo{author}{Laporte, G.},
-  \bibinfo{author}{Semet, F.}, \bibinfo{year}{1998}.
-\newblock \bibinfo{title}{A {Covering} {Tour} {Model} for {Planning} {Mobile}
-  {Health} {Care} {Facilities} in {SuhumDistrict}, {Ghama}}.
-\newblock \bibinfo{journal}{Journal of Regional Science} \bibinfo{volume}{38},
-  \bibinfo{pages}{621--638}.
-\newblock \URLprefix
-  \url{http://onlinelibrary.wiley.com/doi/10.1111/0022-4146.00113/abstract},
-  \DOIprefix\doi{10.1111/0022-4146.00113}.
-%Type = Article
 \bibitem[{Jop et~al.(2006)Jop, Forterre and Pouliquen}]{jop2006constitutive}
 \bibinfo{author}{Jop, P.}, \bibinfo{author}{Forterre, Y.},
   \bibinfo{author}{Pouliquen, O.}, \bibinfo{year}{2006}.
 \newblock \bibinfo{title}{A constitutive law for dense granular flows}.
 \newblock \bibinfo{journal}{Nature} \bibinfo{volume}{441},
   \bibinfo{pages}{727--730}.
-%Type = Article
-\bibitem[{Jozefowiez et~al.(2007)Jozefowiez, Semet and
-  Talbi}]{jozefowiez_bi-objective_2007}
-\bibinfo{author}{Jozefowiez, N.}, \bibinfo{author}{Semet, F.},
-  \bibinfo{author}{Talbi, E.G.}, \bibinfo{year}{2007}.
-\newblock \bibinfo{title}{The bi-objective covering tour problem}.
-\newblock \bibinfo{journal}{Computers \& Operations Research}
-  \bibinfo{volume}{34}, \bibinfo{pages}{1929--1942}.
-\newblock \URLprefix
-  \url{http://www.sciencedirect.com/science/article/pii/S0305054805002480},
-  \DOIprefix\doi{10.1016/j.cor.2005.07.022}.
-%Type = Article
-\bibitem[{Naji-Azimi et~al.(2012)Naji-Azimi, Renaud, Ruiz and
-  Salari}]{naji-azimi_covering_2012}
-\bibinfo{author}{Naji-Azimi, Z.}, \bibinfo{author}{Renaud, J.},
-  \bibinfo{author}{Ruiz, A.}, \bibinfo{author}{Salari, M.},
-  \bibinfo{year}{2012}.
-\newblock \bibinfo{title}{A covering tour approach to the location of satellite
-  distribution centers to supply humanitarian aid}.
-\newblock \bibinfo{journal}{European Journal of Operational Research}
-  \bibinfo{volume}{222}, \bibinfo{pages}{596--605}.
-\newblock \URLprefix
-  \url{http://www.sciencedirect.com/science/article/pii/S0377221712003475},
-  \DOIprefix\doi{10.1016/j.ejor.2012.05.001}.
-%Type = Article
-\bibitem[{Ngueveu et~al.(2010)Ngueveu, Prins and
-  Wolfler~Calvo}]{ngueveu_effective_2010}
-\bibinfo{author}{Ngueveu, S.U.}, \bibinfo{author}{Prins, C.},
-  \bibinfo{author}{Wolfler~Calvo, R.}, \bibinfo{year}{2010}.
-\newblock \bibinfo{title}{An effective memetic algorithm for the cumulative
-  capacitated vehicle routing problem}.
-\newblock \bibinfo{journal}{Computers \& Operations Research}
-  \bibinfo{volume}{37}, \bibinfo{pages}{1877--1885}.
-\newblock \URLprefix
-  \url{http://www.sciencedirect.com/science/article/pii/S0305054809001725},
-  \DOIprefix\doi{10.1016/j.cor.2009.06.014}.
 
 \end{thebibliography}
