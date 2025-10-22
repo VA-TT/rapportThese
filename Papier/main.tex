@@ -48,8 +48,9 @@
 % \address{LAAS-CNRS, Toulouse}
 
 \begin{abstract}
-Le main intérêt de cet article est étudie deux aspects d'un échantillon lâche sous la compression triaxiale: le nombre de particules et le nombre d'inertie. 
-Dans la domaine de résiduel (l'état critique),l'influence des termes cinétiques semble indépendant avec le valeur de la contrainte obtenu. causant par le vitess de compression (i.e) le nombre d'inertie.
+Le main intérêt de cet article est étudie l'influence de deux aspects d'un échantillon lâche sous la compression triaxiale en DEM à régime résiduel: le nombre de particules et le nombre d'inertie. 
+Pour prenant en compte l'effet cinétique dans le model, à coté de masse des termes cinétique supplémentaire sont intégrer dans le calcul DEM.
+Particulierement dans la domaine de résiduel (l'état critique),  la contrainte obtenu semble indépendant avec des termes cinétiques causant par le vitess de compression (i.e) le nombre d'inertie.
 C'est un pré-étude du compotement d'un volume élémentaire représentatif (VER) pour la modélisation d'un écoulement gravitaire couplant la Méthode des Élements Discrètes et la Méthode des Points Matériels.
 
 \end{abstract}
@@ -65,15 +66,15 @@ DEM \sep termes dynamiques \sep nombre d'inertie \sep $\mu(I)$ rhéologie \sep �
 %\linenumbers
 \section{Introduction}\label{introduction}
 Le $\mu(I)$ rhéologie caractérisé un aspects important dans la modélisation d'un écoulement gravitaire.  
-
+Donc dans cet article, 
 \section{Méthodologie}\label{methode}
 
 \subsection{DEM}\label{dem}
 Originé des dynamiques moléculaires, la Méthode des Éléments Discrets (DEM) a été développée dans le but d'étudier les problèmes mécaniques liés aux matériaux granulaires et géomatériaux. Contrairement aux méthodes en milieu continu telles que MPM ou FEM, DEM modélise le matériau comme un ensemble de particules discrètes.
 
-Dans cette approche, le milieu granulaire est représenté par un assemblage de grains interagissant individuellement. Le mouvement de chaque grain est régi par la seconde loi de Newton, formulée comme suit pour le grain $i$ :
+Dans cette approche, le milieu granulaire est représenté par un assemblage de grains interagissant individuellement.
 
-    Ensuite, dans la perspective d’une intégration au couplage MPM$\times$DEM, une seconde étude est réalisée en augmentant la vitesse de déformation. Cela permet d’examiner l’influence du nombre l'inertie sur la réponse du matériau,
+    Ensuite, dans la perspective d'une intégration au couplage MPM$\times$DEM, une seconde étude est réalisée en augmentant la vitesse de déformation. Cela permet d'examiner l'influence du nombre l'inertie sur la réponse du matériau,
 Microscopic.
 \begin{figure}[h] \centering
 	\includegraphics[width=2in]{figures/modele.pdf}
@@ -81,8 +82,8 @@ Microscopic.
 	\label{echantillon} 
 \end{figure}
 
-    Le nombre d'inertie "I" est défini à partir du ``temps d'inertie'' et du ``temps de cisaillement''.
-    Le temps d'inertie caractérise le temps de déplacement d'une particule moyenne de masse $m$ et de diamètre $d$, sous la pression $P$, dans $D$ dimensions\footnote{Lecture \textit{Discrete Element Modeling} – Gaël COMBE}. Leurs expressions sont :
+    Le nombre d'inertie $I$ est défini à partir du ``temps d'inertie'' et du ``temps de cisaillement''.
+    Le temps d'inertie caractérise le temps de déplacement d'une particule moyenne de masse $m$ et de diamètre $d$, sous la pression $P$, dans $D$ dimensions\footnote{\citep{combe2023demlecture}}. Leurs expressions sont :
     \begin{align}
         	\tau_c &= \dfrac{1}{\dot{\epsilon}} = \dfrac{v}{H_0}, \\
         	\tau_i &= \sqrt{\dfrac{m}{P.d^{D-2}}}
@@ -133,7 +134,7 @@ C'est un indice important en rhéologie de l'écoulement.  $\Phi = V_s/V$.
 
 \subsection{Rhéologie}\label{rheologie}
 
-À l'échelle macroscopique, la rhéologie $\mu(I)$ joue un rôle crucial dans la description des écoulements granulaires. Elle établit une relation constitutive entre le tenseur des contraintes du flux et le tenseur des taux de déformation  \citep{jop2006constitutive} :
+À l'échelle macroscopique, la rhéologie $\mu(I)$ joue un rôle crucial dans la description des écoulements granulaires. Elle établit une relation constitutive entre le tenseur des contraintes du flux et le tenseur des taux de déformation  \cite{jop2006constitutive} :
 \begin{equation}
 \sigma_{ij} = -P \delta_{ij} + \mu(I) P \frac{\dot{\gamma}_{ij}}{\lVert \dot{\gamma} \rVert}
 \label{flowTensor}
@@ -160,14 +161,14 @@ Dans me programme PBC3D, 2 termes cinétiques a été ajouté  dans la formulati
 Dans le calcul de la vrai accélération: 
 \begin{equation}
 \ddot{s} = h^{-1}(\ddot{r} - \textcolor{red}{2\dot{h}\dot{s}} - \cancel{\ddot{h}s})
-    \label{eq:vraiAcc}
+    \label{vraiAcc}
 \end{equation}	
 
 
 Et dans le calcul stress tensor: 
 \begin{equation}
     \sigma_p = -\frac{1}{|\det h_p|} \left( \sum_k f_k \otimes \ell_k + \textcolor{red}{\sum_n m_n \dot{r}_n \otimes \dot{r}_n} \right) \\
-    \label{eq:contrainteDynamique}
+    \label{contrainteDynamique}
 \end{equation}	
     où: $\dot{r_n} = \textcolor{red}{h\dot{s}} + \cancel{\dot{h}s}$
 
@@ -175,10 +176,11 @@ the first term denotes Love-Weber stress, while the
 second (kinetic) term may become significant during extremely rapid deformations
 
 Les champs cancle dans l'équation sont des champs affine, jetant pour garder seulement des composants de fluctuation.
+Un petit différence ($\sqrt{\frac{\pi}{6}}$) dans la notion de nombre d'ienrtie DEM et mobobilisation d'écoulement:
 \begin{equation}
     I = \dot{\varepsilon} \times \sqrt{\frac{m}{\sigma_{33} \times \bar{a}}}
  = \sqrt{\frac{\pi}{6}} \times \frac{\dot{\varepsilon} .\bar{a}}{\sqrt{\sigma_{33}/\rho_s}}
-    \label{eq:placeholder_label}
+    \label{comparerO}
 \end{equation}
 
 
@@ -188,19 +190,19 @@ Dans le sable sec, autre dire sans cohésif, les interactions entre les particul
 On utilise le critère de Mohr pour évaluer le compotment à l'échelle microscopic à l'echelle macroscopic.
 Dans le cas simplicité, l'enveloppe de Mohr est simplifié par un droit transversale tous les cercles de Mohr.
 La résistance au force de cissailement du matériau est composant de deux indices: le valeur $\mu = \tan(\phi)$, calculé selon l'angle de frottement $\phi$ de la droit et la cohésion apparente $C$, qui est est la intersection entre la droit avec l'axe y (i.e l'axe de cissailement)
-Un point particulier de la méthode DEM est que l’on agit uniquement sur les paramètres microscopiques, alors que les comportements à grande échelle émergent naturellement.  
+Un point particulier de la méthode DEM est que l'on agit uniquement sur les paramètres microscopiques, alors que les comportements à grande échelle émergent naturellement.  
 Cette propriété peut être vérifiée en comparant avec les comportements macroscopiques bien connus en mécanique des sols.  
 
 Le cercle de Mohr est une méthode bien connue pour identifier la résistance au cisaillement maximale du sol.  
-À partir de ses courbes, on peut déterminer la cohésion $c$ et l’angle de frottement interne $\varphi$ selon la relation :
+À partir de ses courbes, on peut déterminer la cohésion $c$ et l'angle de frottement interne $\varphi$ selon la relation:
 \begin{equation}
     \tau = \sigma_n \tan(\varphi) + c
     \label{eq:tangentMohr}
 \end{equation}
-La pente de la droite tangente aux cercles, soit $\tan(\varphi) = \mu$, reflète le frottement interne à l’état considéré.  
-Le $\mu_{\text{résiduel}}$ correspond à la pente de la droite tangente au cercle de Mohr à l’état critique.  
+La pente de la droite tangente aux cercles, soit $\tan(\varphi) = \mu$, reflète le frottement interne à l'état considéré.  
+Le $\mu_{\text{résiduel}}$ correspond à la pente de la droite tangente au cercle de Mohr à l'état critique.  
 On considère généralement que ce $\mu_{\text{résiduel}}$ est une valeur stationnaire.  
-Dans notre cas, le matériau étudié est du sable sec. Le point d’intersection entre la droite tangente aux cercles et l’axe vertical, selon la théorie, doit être nul, ce qui correspond à une cohésion nulle ($c=0$).
+Dans notre cas, le matériau étudié est du sable sec. Le point d'intersection entre la droite tangente aux cercles et l'axe vertical, selon la théorie, doit être nul, ce qui correspond à une cohésion nulle ($c=0$).
 
 \section{Résultat et discussion}\label{resultat}
 
@@ -219,7 +221,7 @@ En revanche, un saute de pic de pic (i.e régime transitore) est observé et à 
 \Cref{3000_kinetic_q,3000_kinetic_ev} montrent que l'influence des termes cinétiques est négligeable lorsque seuls les champs de fluctuations sont pris en compte
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}{0.45\textwidth}
             \centering
         \scalebox{0.5}{\input{figures/3000KineticComp_q.tex}}
         \caption{Contrainte déviatorique}
@@ -238,7 +240,8 @@ En revanche, un saute de pic de pic (i.e régime transitore) est observé et à 
 
 \subsection{Comportement microscopique à macroscopique}\label{figureMuy}
 Au fait que le sable est purrement frottant, l'étude à l'échelle macroscopic via le critère de Mohr est suffisament à dessiner.
-Nonetheless, un essai de extension supplémentaire est modélisé pour vérifier la condition de cohésion null.
+Nonetheless, un essai de extension supplémentaire est modélisé pour vérifier la condition de cohésion null due to the fact that L'angle de frottement à l'état critique est identique en conditions de compression
+et d'extension \citep{gens1982degree}.
 Combiner les valeur de $\sigma_1^{\text{résiduel}}$ et $\sigma_3^{\text{résiduel}}$ dans les 2 procédure précédent, la pente des Cercles de Mohr est tracé (\cref{3000_Mohr}), showing that la cohésion est quasiment nulle et confirmant que l'angle de frottement $\Phi$ change selon nombre d'inertie $I$.
 
 \begin{figure}[htbp]
@@ -249,24 +252,26 @@ Combiner les valeur de $\sigma_1^{\text{résiduel}}$ et $\sigma_3^{\text{résidu
         \caption{Contrainte déviatorique compression}
         \label{3000_comp}
     \end{subfigure}
-        \begin{subfigure}[b]{0.45\textwidth}
-                        \centering
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
         \scalebox{0.5}{\input{figures/1000KineticExt.tex}}
         \caption{Contrainte déviatorique extension}
         \label{3000_ext}
     \end{subfigure}
+    
     \begin{subfigure}[b]{0.45\textwidth}
-                    \centering
+        \centering
         \scalebox{0.5}{\input{figures/Cercle_3000_residuel.tex}}
-        \caption{Déformation volumique}
+        \caption{Cercle de Mohr}
         \label{300_cercle}
     \end{subfigure}
     \caption{Influence des termes cinétiques pour N=3000}
     \label{3000_Mohr}
 \end{figure}
-Condidérant $\epsilon_yy = 4à \div 60$ est le régime stabilisation de contrainte (plateau de état critique), le moyenne de contrainte de leur écart de type est calculé, puis l'angle de frottment, following by $\mu$, $\Phi$ et $e$.
+Condidérant $\epsilon_yy = 40 \div 60$ est le régime stabilisation de contrainte (plateau de état critique), le moyenne de contrainte de leur écart de type est calculé, puis l'angle de frottment, following by $\mu$, $\Phi$ et $e$.
 Leur relation avec $I$ en logarithm est dessiné selon \cref{muI, phiI} et similairement, l'indice de vide : $e = (1-\Phi)/\Phi$.
-La forme des courbes est adapté au celle-ci dans \cite{da2005rheophysics}.  
+La forme des courbes est adapté au celle-ci dans \citep{da2005rheophysics}.  
 Les errors est insignificante, comme once peut observé que l'écart de l'axe y est petit.
 
 \begin{table}[htbp]
@@ -288,23 +293,23 @@ $10^{-1}$ & 0.530 & 5.283 & 0.547 & 0.366 & 0.830 & 0.843 \\
 \label{table_rheologie_stats}
 \end{table}
 
-\begin{figure*}[htbp]
+\begin{figure*}[p]
     \centering
-    \begin{subfigure}[b]{0.3\textwidth}
+    \begin{subfigure}{0.3\textwidth}
         \centering
         \scalebox{0.5}{\input{figures/3000_mu_I_fit.tex}}
         \caption{$\mu(I)$}
         \label{3000_mu_I_fit}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.3\textwidth}
+    \begin{subfigure}{0.3\textwidth}
         \centering
         \scalebox{0.5}{\input{figures/3000_phi_I_fit.tex}}
         \caption{$\Phi(I)$}
         \label{3000_phi_I_fit}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.3\textwidth}
+    \begin{subfigure}{0.3\textwidth}
         \centering
         \scalebox{0.5}{\input{figures/3000_e_I_plot.tex}}
         \caption{$e(I)$}
@@ -314,23 +319,23 @@ $10^{-1}$ & 0.530 & 5.283 & 0.547 & 0.366 & 0.830 & 0.843 \\
     \label{rheologies_3000}
 \end{figure*}
 
-\begin{figure*}[htbp]
+\begin{figure*}[p]
     \centering
-    \begin{subfigure}[b]{0.3\textwidth}
+    \begin{subfigure}{0.3\textwidth}
         \centering
         \scalebox{0.5}{\input{figures/1000_mu_I_fit.tex}}
         \caption{$\mu(I)$}
         \label{1000_mu_I_fit}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.3\textwidth}
+    \begin{subfigure}{0.3\textwidth}
         \centering
         \scalebox{0.5}{\input{figures/1000_phi_I_fit.tex}}
         \caption{$\Phi(I)$}
         \label{1000_phi_I_fit}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.3\textwidth}
+    \begin{subfigure}{0.3\textwidth}
         \centering
         \scalebox{0.5}{\input{figures/1000_e_I_fit.tex}}
         \caption{$e(I)$}
@@ -340,9 +345,12 @@ $10^{-1}$ & 0.530 & 5.283 & 0.547 & 0.366 & 0.830 & 0.843 \\
     \label{rheologies_1000}
 \end{figure*}
 
-\FloatBarrier
 \section{Conclusion}\label{discussion}
-
+Le comportement de $\mu_résiduel$ résiduel reçu par DEM est bien adapté avec le modèle à grand échelle comme esperant.
+Le termes dynamiques, sans la partie affine, i.e la dérivative rang équivalent avec le objet de calcul, exerce un influence nuisuible sur la frottment contre le cissailement dans le VER.
+Though, $\mu_transitoire$ est bien affecté par nombre de particule.
+Il n'y a pas de étude bibliographie sur la $\mu_transitoire$ qui est déja réalisé.
+Il est encore eu besion à creuser
 
 \bibliography{bibliographie.bib}
 

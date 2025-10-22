@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.27)  22 OCT 2025 07:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.27)  22 OCT 2025 08:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -595,18 +595,18 @@ Package hyperref Info: Link coloring ON on input line 37.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <figures/modele.pdf, id=43, 134.39209pt x 119.69719pt>
 File: figures/modele.pdf Graphic file (type pdf)
 <use figures/modele.pdf>
-Package pdftex.def Info: figures/modele.pdf  used on input line 79.
+Package pdftex.def Info: figures/modele.pdf  used on input line 80.
 (pdftex.def)             Requested size: 144.54pt x 128.73587pt.
 
 
@@ -634,7 +634,7 @@ Package epstopdf Info: Source file: <figures/./ComparerNP.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=figures/./ComparerNP-eps-converted-to.pdf figures/./ComparerNP.eps>
 (epstopdf)             \includegraphics on input line 130.
 Package epstopdf Info: Output file is already uptodate.
-<figures/./ComparerNP-eps-converted-to.pdf, id=75, 361.35pt x 252.945pt>
+<figures/./ComparerNP-eps-converted-to.pdf, id=77, 361.35pt x 252.945pt>
 File: figures/./ComparerNP-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/./ComparerNP-eps-converted-to.pdf>
 Package pdftex.def Info: figures/./ComparerNP-eps-converted-to.pdf  used on input line 130.
@@ -649,7 +649,7 @@ Package epstopdf Info: Source file: <figures/./3000KineticComp_q.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=figures/./3000KineticComp_q-eps-converted-to.pdf figures/./3000KineticComp_q.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
-<figures/./3000KineticComp_q-eps-converted-to.pdf, id=79, 361.35pt x 252.945pt>
+<figures/./3000KineticComp_q-eps-converted-to.pdf, id=81, 361.35pt x 252.945pt>
 File: figures/./3000KineticComp_q-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/./3000KineticComp_q-eps-converted-to.pdf>
 Package pdftex.def Info: figures/./3000KineticComp_q-eps-converted-to.pdf  used on input line 121.
@@ -664,14 +664,16 @@ Package epstopdf Info: Source file: <figures/./3000KineticComp_ev.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=figures/./3000KineticComp_ev-eps-converted-to.pdf figures/./3000KineticComp_ev.eps>
 (epstopdf)             \includegraphics on input line 112.
 Package epstopdf Info: Output file is already uptodate.
-<figures/./3000KineticComp_ev-eps-converted-to.pdf, id=80, 361.35pt x 252.945pt>
+<figures/./3000KineticComp_ev-eps-converted-to.pdf, id=82, 361.35pt x 252.945pt>
 File: figures/./3000KineticComp_ev-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/./3000KineticComp_ev-eps-converted-to.pdf>
 Package pdftex.def Info: figures/./3000KineticComp_ev-eps-converted-to.pdf  used on input line 112.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
 
-[2 <./figures/./ComparerNP-eps-converted-to.pdf>] (figures/1000KineticComp.tex
+[2]
+
+(figures/1000KineticComp.tex
 Package epstopdf Info: Source file: <figures/./1000KineticComp.eps>
 (epstopdf)                    date: 2025-10-21 17:50:56
 (epstopdf)                    size: 68005 bytes
@@ -681,7 +683,7 @@ Package epstopdf Info: Source file: <figures/./1000KineticComp.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=figures/./1000KineticComp-eps-converted-to.pdf figures/./1000KineticComp.eps>
 (epstopdf)             \includegraphics on input line 142.
 Package epstopdf Info: Output file is already uptodate.
-<figures/./1000KineticComp-eps-converted-to.pdf, id=106, 361.35pt x 252.945pt>
+<figures/./1000KineticComp-eps-converted-to.pdf, id=110, 361.35pt x 252.945pt>
 File: figures/./1000KineticComp-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/./1000KineticComp-eps-converted-to.pdf>
 Package pdftex.def Info: figures/./1000KineticComp-eps-converted-to.pdf  used on input line 142.
@@ -696,7 +698,7 @@ Package epstopdf Info: Source file: <figures/./1000KineticExt.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=figures/./1000KineticExt-eps-converted-to.pdf figures/./1000KineticExt.eps>
 (epstopdf)             \includegraphics on input line 134.
 Package epstopdf Info: Output file is already uptodate.
-<figures/./1000KineticExt-eps-converted-to.pdf, id=107, 361.35pt x 252.945pt>
+<figures/./1000KineticExt-eps-converted-to.pdf, id=111, 361.35pt x 252.945pt>
 File: figures/./1000KineticExt-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/./1000KineticExt-eps-converted-to.pdf>
 Package pdftex.def Info: figures/./1000KineticExt-eps-converted-to.pdf  used on input line 134.
@@ -711,21 +713,14 @@ Package epstopdf Info: Source file: <figures/./Cercle_3000_residuel.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=figures/./Cercle_3000_residuel-eps-converted-to.pdf figures/./Cercle_3000_residuel.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
-<figures/./Cercle_3000_residuel-eps-converted-to.pdf, id=108, 454.69875pt x 454.69875pt>
+<figures/./Cercle_3000_residuel-eps-converted-to.pdf, id=112, 454.69875pt x 454.69875pt>
 File: figures/./Cercle_3000_residuel-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/./Cercle_3000_residuel-eps-converted-to.pdf>
 Package pdftex.def Info: figures/./Cercle_3000_residuel-eps-converted-to.pdf  used on input line 121.
 (pdftex.def)             Requested size: 455.2041pt x 455.2041pt.
 )
 
-LaTeX Warning: Command \` invalid in math mode on input line 267.
-
-Missing character: There is no à in font cmr10!
-
-LaTeX Warning: Reference ` phiI' on page 1 undefined on input line 268.
-
-
-Package natbib Warning: Citation `da2005rheophysics' on page 3 undefined on input line 269.
+LaTeX Warning: Reference ` phiI' on page 1 undefined on input line 273.
 
 (figures/3000_mu_I_fit.tex
 Package epstopdf Info: Source file: <figures/./3000_mu_I_fit.eps>
@@ -737,13 +732,13 @@ Package epstopdf Info: Source file: <figures/./3000_mu_I_fit.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=figures/./3000_mu_I_fit-eps-converted-to.pdf figures/./3000_mu_I_fit.eps>
 (epstopdf)             \includegraphics on input line 119.
 Package epstopdf Info: Output file is already uptodate.
-<figures/./3000_mu_I_fit-eps-converted-to.pdf, id=110, 361.35pt x 252.945pt>
+<figures/./3000_mu_I_fit-eps-converted-to.pdf, id=116, 361.35pt x 252.945pt>
 File: figures/./3000_mu_I_fit-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/./3000_mu_I_fit-eps-converted-to.pdf>
 Package pdftex.def Info: figures/./3000_mu_I_fit-eps-converted-to.pdf  used on input line 119.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (24.06857pt too wide) in paragraph at lines 295--296
+Overfull \hbox (24.06857pt too wide) in paragraph at lines 300--301
  [][] 
  []
 
@@ -757,13 +752,13 @@ Package epstopdf Info: Source file: <figures/./3000_phi_I_fit.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=figures/./3000_phi_I_fit-eps-converted-to.pdf figures/./3000_phi_I_fit.eps>
 (epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
-<figures/./3000_phi_I_fit-eps-converted-to.pdf, id=111, 361.35pt x 252.945pt>
+<figures/./3000_phi_I_fit-eps-converted-to.pdf, id=117, 361.35pt x 252.945pt>
 File: figures/./3000_phi_I_fit-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/./3000_phi_I_fit-eps-converted-to.pdf>
 Package pdftex.def Info: figures/./3000_phi_I_fit-eps-converted-to.pdf  used on input line 120.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (24.06857pt too wide) in paragraph at lines 302--303
+Overfull \hbox (24.06857pt too wide) in paragraph at lines 307--308
  [][] 
  []
 
@@ -777,21 +772,17 @@ Package epstopdf Info: Source file: <figures/./3000_e_I_plot.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=figures/./3000_e_I_plot-eps-converted-to.pdf figures/./3000_e_I_plot.eps>
 (epstopdf)             \includegraphics on input line 126.
 Package epstopdf Info: Output file is already uptodate.
-<figures/./3000_e_I_plot-eps-converted-to.pdf, id=112, 361.35pt x 252.945pt>
+<figures/./3000_e_I_plot-eps-converted-to.pdf, id=118, 361.35pt x 252.945pt>
 File: figures/./3000_e_I_plot-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/./3000_e_I_plot-eps-converted-to.pdf>
 Package pdftex.def Info: figures/./3000_e_I_plot-eps-converted-to.pdf  used on input line 126.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (24.06857pt too wide) in paragraph at lines 309--310
+Overfull \hbox (24.06857pt too wide) in paragraph at lines 314--315
  [][] 
  []
 
-
-
-
-
-[3 <./figures/./3000KineticComp_q-eps-converted-to.pdf> <./figures/./3000KineticComp_ev-eps-converted-to.pdf> <./figures/./1000KineticComp-eps-converted-to.pdf> <./figures/./1000KineticExt-eps-converted-to.pdf> <./figures/./Cercle_3000_residuel-eps-converted-to.pdf>] (figures/1000_mu_I_fit.tex
+(figures/1000_mu_I_fit.tex
 Package epstopdf Info: Source file: <figures/./1000_mu_I_fit.eps>
 (epstopdf)                    date: 2025-10-21 17:50:56
 (epstopdf)                    size: 23102 bytes
@@ -801,13 +792,13 @@ Package epstopdf Info: Source file: <figures/./1000_mu_I_fit.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=figures/./1000_mu_I_fit-eps-converted-to.pdf figures/./1000_mu_I_fit.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
-<figures/./1000_mu_I_fit-eps-converted-to.pdf, id=133, 361.35pt x 252.945pt>
+<figures/./1000_mu_I_fit-eps-converted-to.pdf, id=119, 361.35pt x 252.945pt>
 File: figures/./1000_mu_I_fit-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/./1000_mu_I_fit-eps-converted-to.pdf>
 Package pdftex.def Info: figures/./1000_mu_I_fit-eps-converted-to.pdf  used on input line 121.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (24.06857pt too wide) in paragraph at lines 321--322
+Overfull \hbox (24.06857pt too wide) in paragraph at lines 326--327
  [][] 
  []
 
@@ -821,13 +812,13 @@ Package epstopdf Info: Source file: <figures/./1000_phi_I_fit.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=figures/./1000_phi_I_fit-eps-converted-to.pdf figures/./1000_phi_I_fit.eps>
 (epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
-<figures/./1000_phi_I_fit-eps-converted-to.pdf, id=134, 361.35pt x 252.945pt>
+<figures/./1000_phi_I_fit-eps-converted-to.pdf, id=120, 361.35pt x 252.945pt>
 File: figures/./1000_phi_I_fit-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/./1000_phi_I_fit-eps-converted-to.pdf>
 Package pdftex.def Info: figures/./1000_phi_I_fit-eps-converted-to.pdf  used on input line 120.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (24.06857pt too wide) in paragraph at lines 328--329
+Overfull \hbox (24.06857pt too wide) in paragraph at lines 333--334
  [][] 
  []
 
@@ -841,25 +832,37 @@ Package epstopdf Info: Source file: <figures/./1000_e_I_fit.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=figures/./1000_e_I_fit-eps-converted-to.pdf figures/./1000_e_I_fit.eps>
 (epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
-<figures/./1000_e_I_fit-eps-converted-to.pdf, id=135, 361.35pt x 252.945pt>
+<figures/./1000_e_I_fit-eps-converted-to.pdf, id=121, 361.35pt x 252.945pt>
 File: figures/./1000_e_I_fit-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/./1000_e_I_fit-eps-converted-to.pdf>
 Package pdftex.def Info: figures/./1000_e_I_fit-eps-converted-to.pdf  used on input line 124.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (24.06857pt too wide) in paragraph at lines 335--336
+Overfull \hbox (24.06857pt too wide) in paragraph at lines 340--341
  [][] 
  []
 
-[4 <./figures/./3000_mu_I_fit-eps-converted-to.pdf> <./figures/./3000_phi_I_fit-eps-converted-to.pdf> <./figures/./3000_e_I_plot-eps-converted-to.pdf> <./figures/./1000_mu_I_fit-eps-converted-to.pdf> <./figures/./1000_phi_I_fit-eps-converted-to.pdf> <./figures/./1000_e_I_fit-eps-converted-to.pdf>] (main.bbl)
-
-Package natbib Warning: There were undefined citations.
 
 
+[3 <./figures/./ComparerNP-eps-converted-to.pdf> <./figures/./3000KineticComp_q-eps-converted-to.pdf> <./figures/./3000KineticComp_ev-eps-converted-to.pdf>]
 
 
 
-[5
+[4 <./figures/./1000KineticComp-eps-converted-to.pdf> <./figures/./1000KineticExt-eps-converted-to.pdf> <./figures/./Cercle_3000_residuel-eps-converted-to.pdf>] [5 <./figures/./3000_mu_I_fit-eps-converted-to.pdf> <./figures/./3000_phi_I_fit-eps-converted-to.pdf> <./figures/./3000_e_I_plot-eps-converted-to.pdf> <./figures/./1000_mu_I_fit-eps-converted-to.pdf> <./figures/./1000_phi_I_fit-eps-converted-to.pdf> <./figures/./1000_e_I_fit-eps-converted-to.pdf>]
+
+LaTeX Warning: Command \' invalid in math mode on input line 349.
+
+Missing character: There is no é in font cmr10!
+(main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 16--23
+[]\T1/cmr/m/n/8 Combe, G., 2023.  DEM lec-ture.  [][]$\T1/cmtt/m/n/8 https : / / cloud .
+ []
+
+)
+
+
+
+[6
 
 
 ] (main.aux
@@ -877,17 +880,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: A31CFE3E0F22B39C22C0216393AA9B80;1548.
  ) 
 Here is how much of TeX's memory you used:
- 18237 strings out of 468219
- 313142 string characters out of 5433353
- 808507 words of memory out of 5000000
- 46428 multiletter control sequences out of 15000+600000
- 647962 words of font info for 94 fonts, out of 8000000 for 9000
+ 18255 strings out of 468219
+ 313467 string characters out of 5433353
+ 819507 words of memory out of 5000000
+ 46441 multiletter control sequences out of 15000+600000
+ 648275 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,79p,400b,614s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc0800.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on main.pdf (5 pages, 471628 bytes).
+ 75i,15n,79p,400b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc0800.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb>
+Output written on main.pdf (6 pages, 486125 bytes).
 PDF statistics:
- 627 PDF objects out of 1000 (max. 8388607)
- 37 named destinations out of 1000 (max. 500000)
+ 679 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
