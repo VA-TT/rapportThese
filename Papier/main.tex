@@ -48,10 +48,11 @@
 % \address{LAAS-CNRS, Toulouse}
 
 \begin{abstract}
-Le main intérêt de cet article est étudie l'influence de deux aspects d'un échantillon lâche sous la compression triaxiale en DEM à régime résiduel: le nombre de particules et le nombre d'inertie. 
-Pour prenant en compte l'effet cinétique dans le model, à coté de masse des termes cinétique supplémentaire sont intégrer dans le calcul DEM.
-Particulierement dans la domaine de résiduel (l'état critique),  la contrainte obtenu semble indépendant avec des termes cinétiques causant par le vitess de compression (i.e) le nombre d'inertie.
-C'est un pré-étude du compotement d'un volume élémentaire représentatif (VER) pour la modélisation d'un écoulement gravitaire couplant la Méthode des Élements Discrètes et la Méthode des Points Matériels.
+
+L'objectif principal de cet article est d'étudier l'influence des effets cinétiques sur un échantillon granulaire lâche soumis à une compression triaxiale, à l'aide de la Méthode des Éléments Discrets (DEM) en régime résiduel.
+Pour cela, en plus de la masse définie au niveau des grains, des termes cinétiques supplémentaires sont intégrés dans le calcul DEM.
+En particulier, dans le domaine résiduel, la rhéologie $\mu_{\text{résiduel}}(I)$ semble indépendante de ces modifications, pour différentes vitesses de compression (c'est-à-dire différents nombres d'inertie $I$).
+Ce travail constitue une pré-étude du comportement d'un volume élémentaire représentatif (VER) en vue de la modélisation d'un écoulement gravitaire couplant la Méthode des Éléments Discrets et la Méthode des Points Matériels.
 
 \end{abstract}
 
@@ -65,25 +66,32 @@ DEM \sep termes dynamiques \sep nombre d'inertie \sep $\mu(I)$ rhéologie \sep �
 
 %\linenumbers
 \section{Introduction}\label{introduction}
-Le $\mu(I)$ rhéologie caractérisé un aspects important dans la modélisation d'un écoulement gravitaire.  
-Donc dans cet article, 
+La rhéologie $\mu(I)$ caractérise un aspect fondamental dans la modélisation des écoulements granulaires, notamment pour les phénomènes gravitaires.
+
+Actuellement, de nombreuses études bibliographiques détaillées ont été réalisées sur la rhéologie en régime résiduel. Ces travaux constituent une base solide pour la vérification des calculs DEM présentés ici : en extrayant la contrainte dans la zone d’état critique, on la convertit en coefficient de frottement $\mu$ via le critère de Mohr-Coulomb, puis on la compare aux courbes expérimentales issues de la littérature.
+
+Pour mener à bien cette démarche, le modèle DEM utilisé dans ce travail dépasse le cadre quasi-statique dès que $I > 10^{-3}$. Afin d’intégrer les effets dynamiques dans les calculs, des termes cinétiques supplémentaires ont été ajoutés, comme détaillé dans la suite de l’article.
 \section{Méthodologie}\label{methode}
 
 \subsection{DEM}\label{dem}
-Originé des dynamiques moléculaires, la Méthode des Éléments Discrets (DEM) a été développée dans le but d'étudier les problèmes mécaniques liés aux matériaux granulaires et géomatériaux. Contrairement aux méthodes en milieu continu telles que MPM ou FEM, DEM modélise le matériau comme un ensemble de particules discrètes.
 
-Dans cette approche, le milieu granulaire est représenté par un assemblage de grains interagissant individuellement.
+La Méthode des Éléments Discrets (DEM) a été développée pour étudier les problèmes mécaniques des matériaux granulaires et géomatériaux.
+Dans cette approche, le milieu granulaire est modélisé comme un assemblage de grains interagissant individuellement.
+Dans le contexte de l'homogénéisation multi-échelle, la DEM constitue un bon candidat pour servir de loi constitutive homogénéisée numériquement.
 
-    Ensuite, dans la perspective d'une intégration au couplage MPM$\times$DEM, une seconde étude est réalisée en augmentant la vitesse de déformation. Cela permet d'examiner l'influence du nombre l'inertie sur la réponse du matériau,
-Microscopic.
 \begin{figure}[h] \centering
 	\includegraphics[width=2in]{figures/modele.pdf}
 	\caption[]{Modele DEM 3D d'un échantillon lâche (un gaz)}
 	\label{echantillon} 
 \end{figure}
 
+
+Dans la modélisation, l’échantillon est soumis à une contrainte de confinement constante selon les directions $x$ et $z$, puis une déformation axiale est appliquée suivant l’axe vertical $y$ (\cref{echantillon}).
+L’augmentation progressive de la vitesse de déformation est contrôlée par le nombre d'inertie.
+
+
     Le nombre d'inertie $I$ est défini à partir du ``temps d'inertie'' et du ``temps de cisaillement''.
-    Le temps d'inertie caractérise le temps de déplacement d'une particule moyenne de masse $m$ et de diamètre $d$, sous la pression $P$, dans $D$ dimensions\footnote{\citep{combe2023demlecture}}. Leurs expressions sont :
+    Le temps d'inertie caractérise la durée de déplacement d'une particule moyenne de masse $m$ et de diamètre $d$, sous la pression $P$, en $D$ dimensions\footnote{\citep{combe2023demlecture}}. Leurs expressions sont :
     \begin{align}
         	\tau_c &= \dfrac{1}{\dot{\epsilon}} = \dfrac{v}{H_0}, \\
         	\tau_i &= \sqrt{\dfrac{m}{P.d^{D-2}}}
@@ -100,7 +108,8 @@ Microscopic.
     \begin{itemize}
         \item $v$ : vitesse de compression,
         \item $H_0$ : hauteur initiale de l'échantillon,
-        \item $R$ : rayon moyen des particules et $\rho$ : leaur masse volumique 
+        \item $R$ : rayon moyen des particules,
+        \item $\rho$ : masse volumique des particules,
         \item $\sigma_{0}$ : contrainte de confinement
     \end{itemize}
 
@@ -128,9 +137,6 @@ I & Nombre d'inertie & $10^{-4} \div 10^{-1}$ &  \\
 \end{table}
 
 
-La fraction solide caractérise la dispersion des particules solides $V_s$ dans un volume $V$.  
-C'est un indice important en rhéologie de l'écoulement.  $\Phi = V_s/V$.
-
 
 \subsection{Rhéologie}\label{rheologie}
 
@@ -145,7 +151,8 @@ où :
 \label{muI}
 \end{equation}
 
-En plus, la relation 
+La fraction solide caractérise la dispersion des particules solides $V_s$ dans un volume $V$ : $\Phi = V_s/V$..  
+Leur evolution est prescrit égalementen fonction du $I$ comme suivant  
 \begin{equation}
 \Phi(I) = \Phi^{\max} - bI
 \label{phiI}
@@ -153,9 +160,9 @@ En plus, la relation
 
 où: $\mu_s,\ \mu_2,\ I_0,\ \Phi_{\text{max}},\ b $ sont les coefficients empiriques
 
-Seuls deux problèmes, à notre connaissance, appartiennent à cette catégorie : le \emph{DEM} rich MPM blah blah.
-
-Dans me programme PBC3D, 2 termes cinétiques a été ajouté  dans la formulation de calcul:
+\subsection{Termes Cinétiques}\label{termeCinetique}
+Seuls deux problèmes, à notre connaissance, appartiennent à cette catégorie, 
+thus dans le programme PBC3D, 2 termes cinétiques a été ajouté  dans la formulation de calcul:
 
 
 Dans le calcul de la vrai accélération: 
@@ -208,41 +215,43 @@ Dans notre cas, le matériau étudié est du sable sec. Le point d'intersection 
 
 \subsection{Nombre des particules}\label{N}
 
-            \begin{figure}
-                \centering
-                \scalebox{0.5}{\input{figures/ComparerNP.tex}}
-                \caption{Étude sur nombre de particules}
-                \label{comparerNP}
-            \end{figure}
-            En regardant \cref{comparerNP}, sauf au pic, la contrainte dans la régime résiduel n'affect pas par le nombre de particule, consequently le $\mu_{\text{résiduel}}$.
-En revanche, un saute de pic de pic (i.e régime transitore) est observé et à creuser, indiquer que $\mu_transitore$ varie selon le nombre de particule.
+\begin{figure}[htbp]
+    \centering
+    \scalebox{0.5}{\input{figures/ComparerNP.tex}}
+    \caption{Influence du nombre de particules sur la contrainte résiduelle}
+    \label{comparerNP}
+\end{figure}
+
+Comme on l'observe sur la \cref{comparerNP}, à l'exception du pic, la contrainte dans le régime résiduel n'est pas affectée par le nombre de particules, et donc par $\mu_{\text{résiduel}}$.
+En revanche, un saut de contrainte au pic (régime transitoire) est observé et mérite d'être approfondi, indiquant que $\mu_{\text{transitoire}}$ varie selon le nombre de particules.
 
 \subsection{Influence de termes dynamiques ajouté}\label{termeDynamique}
-\Cref{3000_kinetic_q,3000_kinetic_ev} montrent que l'influence des termes cinétiques est négligeable lorsque seuls les champs de fluctuations sont pris en compte
+
+\Cref{3000_kinetic_q,3000_kinetic_ev} montrent que l'influence des termes cinétiques est négligeable lorsque seuls les champs de fluctuations sont pris en compte.
 \begin{figure}[htbp]
     \centering
     \begin{subfigure}{0.45\textwidth}
-            \centering
+        \centering
         \scalebox{0.5}{\input{figures/3000KineticComp_q.tex}}
         \caption{Contrainte déviatorique}
         \label{3000_kinetic_q}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-            \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
         \scalebox{0.5}{\input{figures/3000KineticComp_ev.tex}}
         \caption{Déformation volumique}
         \label{3000_kinetic_ev}
     \end{subfigure}
-    \caption{Influence des termes cinétiques pour N=3000}
+    \caption{Effet des termes cinétiques sur la réponse mécanique pour $N=3000$. L'influence est négligeable dans le régime de fluctuations.}
     \label{3000_kinetic_comp}
 \end{figure}
 
 \subsection{Comportement microscopique à macroscopique}\label{figureMuy}
-Au fait que le sable est purrement frottant, l'étude à l'échelle macroscopic via le critère de Mohr est suffisament à dessiner.
-Nonetheless, un essai de extension supplémentaire est modélisé pour vérifier la condition de cohésion null due to the fact that L'angle de frottement à l'état critique est identique en conditions de compression
-et d'extension \citep{gens1982degree}.
-Combiner les valeur de $\sigma_1^{\text{résiduel}}$ et $\sigma_3^{\text{résiduel}}$ dans les 2 procédure précédent, la pente des Cercles de Mohr est tracé (\cref{3000_Mohr}), showing that la cohésion est quasiment nulle et confirmant que l'angle de frottement $\Phi$ change selon nombre d'inertie $I$.
+
+Étant donné que le sable est purement frottant, l'étude macroscopique via le critère de Mohr est suffisante pour caractériser le comportement à l'état critique.
+Un essai d'extension supplémentaire est également modélisé pour vérifier la condition de cohésion nulle, car l'angle de frottement à l'état critique est identique en compression et en extension \citep{gens1982degree}.
+En combinant les valeurs de $\sigma_1^{\text{résiduel}}$ et $\sigma_3^{\text{résiduel}}$ issues des deux procédures précédentes, la pente des cercles de Mohr est tracée (\cref{3000_Mohr}), montrant que la cohésion est quasiment nulle et confirmant que l'angle de frottement $\Phi$ varie avec le nombre d'inertie $I$.
 
 \begin{figure}[htbp]
     \centering
@@ -269,10 +278,11 @@ Combiner les valeur de $\sigma_1^{\text{résiduel}}$ et $\sigma_3^{\text{résidu
     \caption{Influence des termes cinétiques pour N=3000}
     \label{3000_Mohr}
 \end{figure}
-Condidérant $\epsilon_yy = 40 \div 60$ est le régime stabilisation de contrainte (plateau de état critique), le moyenne de contrainte de leur écart de type est calculé, puis l'angle de frottment, following by $\mu$, $\Phi$ et $e$.
-Leur relation avec $I$ en logarithm est dessiné selon \cref{muI, phiI} et similairement, l'indice de vide : $e = (1-\Phi)/\Phi$.
-La forme des courbes est adapté au celle-ci dans \citep{da2005rheophysics}.  
-Les errors est insignificante, comme once peut observé que l'écart de l'axe y est petit.
+
+En considérant $\epsilon_{yy} = 40 \div 60\%$ comme le régime de stabilisation des contraintes (plateau d'état critique), la moyenne et l'écart-type des contraintes sont calculés, puis l'angle de frottement, ainsi que $\mu$, $\Phi$ et $e$.
+Leur relation avec $I$ en échelle logarithmique est tracée selon \cref{muI, phiI}, et de même, l'indice de vide : $e = (1-\Phi)/\Phi$.
+La forme des courbes est similaire à celle présentée dans \citep{da2005rheophysics}.
+Les erreurs sont négligeables, comme on peut l'observer par la faible dispersion sur l'axe des ordonnées.
 
 \begin{table}[htbp]
 \centering
@@ -292,24 +302,25 @@ $10^{-1}$ & 0.530 & 5.283 & 0.547 & 0.366 & 0.830 & 0.843 \\
 \caption{Valeurs moyennes et écarts-types $\boldsymbol{s}$ de $\mu$, $\Phi$ et $e$ en fonction du nombre d'inertie pour N=3000}
 \label{table_rheologie_stats}
 \end{table}
+% Table des valeurs moyennes et écarts-types de $\mu$, $\Phi$ et $e$ en fonction du nombre d'inertie pour N=3000
 
-\begin{figure*}[p]
+\begin{figure}[htbp]
     \centering
-    \begin{subfigure}{0.3\textwidth}
+    \begin{subfigure}{0.9\linewidth}
         \centering
         \scalebox{0.5}{\input{figures/3000_mu_I_fit.tex}}
         \caption{$\mu(I)$}
         \label{3000_mu_I_fit}
     \end{subfigure}
-    \hfill
-    \begin{subfigure}{0.3\textwidth}
+    
+    \begin{subfigure}{0.9\linewidth}
         \centering
         \scalebox{0.5}{\input{figures/3000_phi_I_fit.tex}}
         \caption{$\Phi(I)$}
         \label{3000_phi_I_fit}
     \end{subfigure}
-    \hfill
-    \begin{subfigure}{0.3\textwidth}
+    
+    \begin{subfigure}{0.9\linewidth}
         \centering
         \scalebox{0.5}{\input{figures/3000_e_I_plot.tex}}
         \caption{$e(I)$}
@@ -317,25 +328,26 @@ $10^{-1}$ & 0.530 & 5.283 & 0.547 & 0.366 & 0.830 & 0.843 \\
     \end{subfigure}
     \caption{Rhéologies $\mu(I)$, $\Phi(I)$ et $e(I)$ quand $\epsilon_{yy} = 40 \div 60\%$ pour N=3000}
     \label{rheologies_3000}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[p]
+
+\begin{figure}[htbp]
     \centering
-    \begin{subfigure}{0.3\textwidth}
+    \begin{subfigure}{0.9\linewidth}
         \centering
         \scalebox{0.5}{\input{figures/1000_mu_I_fit.tex}}
         \caption{$\mu(I)$}
         \label{1000_mu_I_fit}
     \end{subfigure}
-    \hfill
-    \begin{subfigure}{0.3\textwidth}
+    
+    \begin{subfigure}{0.9\linewidth}
         \centering
         \scalebox{0.5}{\input{figures/1000_phi_I_fit.tex}}
         \caption{$\Phi(I)$}
         \label{1000_phi_I_fit}
     \end{subfigure}
-    \hfill
-    \begin{subfigure}{0.3\textwidth}
+    
+    \begin{subfigure}{0.9\linewidth}
         \centering
         \scalebox{0.5}{\input{figures/1000_e_I_fit.tex}}
         \caption{$e(I)$}
@@ -343,14 +355,14 @@ $10^{-1}$ & 0.530 & 5.283 & 0.547 & 0.366 & 0.830 & 0.843 \\
     \end{subfigure}
     \caption{Rhéologies $\mu(I)$, $\Phi(I)$ et $e(I)$ quand $\epsilon_{yy} = 40 \div 60\%$ pour N=1000}
     \label{rheologies_1000}
-\end{figure*}
+\end{figure}
 
 \section{Conclusion}\label{discussion}
-Le comportement de $\mu_résiduel$ résiduel reçu par DEM est bien adapté avec le modèle à grand échelle comme esperant.
-Le termes dynamiques, sans la partie affine, i.e la dérivative rang équivalent avec le objet de calcul, exerce un influence nuisuible sur la frottment contre le cissailement dans le VER.
-Though, $\mu_transitoire$ est bien affecté par nombre de particule.
-Il n'y a pas de étude bibliographie sur la $\mu_transitoire$ qui est déja réalisé.
-Il est encore eu besion à creuser
+
+Les termes dynamiques, sans la partie affine (c'est-à-dire la dérivée de la limite périodique), n'exercent pas d'influence notable sur le frottement au cisaillement dans le VER.
+Le comportement de $\mu_{\text{résiduel}}$ obtenu par DEM est cohérent avec les modèles à grande échelle comme attendu.
+En revanche, $\mu_{\text{transitoire}}$ est significativement affecté par le nombre de particules.
+À notre connaissance, il n'existe pas encore d'étude bibliographique approfondie sur $\mu_{\text{transitoire}}$ ; ce point mérite donc d'être exploré davantage.
 
 \bibliography{bibliographie.bib}
 
