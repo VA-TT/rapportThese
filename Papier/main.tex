@@ -19,6 +19,8 @@
 \usepackage{xcolor}
 \usepackage{cancel}
 \usepackage{graphicx}
+\usepackage[section]{placeins} % Empêcher les flottants de dépasser la section
+\usepackage{dblfloatfix} % Améliorer le placement des figures* en deux colonnes
 \graphicspath{{figures/}}
 % \definecolor{refcolor}{HTML}{0000FF}        % blue for refs
 % \definecolor{citecolor}{HTML}{FF00FF}       % violet/magenta for citations
@@ -39,14 +41,14 @@
 \title{\textbf{Modélisation de l'effet dynamique d'un échantillon granulaire lâche par Méthode des Élements Discrètes}}
 
 %% Group authors per affiliation:
-\author{Viet Anh QUACH, Gaël COMBE, Vincent RICHEFEU}
+\author{Gaël COMBE, Vincent RICHEFEU, Viet Anh QUACH}
 \address{Laboratoire 3SR, Université Grenoble Alpes}
 
 % \author{Encadré par Sandra Ulrich Ngueveu}
 % \address{LAAS-CNRS, Toulouse}
 
 \begin{abstract}
-Le main intérêt de cet article est étudiant deux aspects d'un échantillon lâche sous la compression triaxiale: le nombre de particules et le nombre d'inertie. 
+Le main intérêt de cet article est étudie deux aspects d'un échantillon lâche sous la compression triaxiale: le nombre de particules et le nombre d'inertie. 
 Dans la domaine de résiduel (l'état critique),l'influence des termes cinétiques semble indépendant avec le valeur de la contrainte obtenu. causant par le vitess de compression (i.e) le nombre d'inertie.
 C'est un pré-étude du compotement d'un volume élémentaire représentatif (VER) pour la modélisation d'un écoulement gravitaire couplant la Méthode des Élements Discrètes et la Méthode des Points Matériels.
 
@@ -127,7 +129,6 @@ I & Nombre d'inertie & $10^{-4} \div 10^{-1}$ &  \\
 
 La fraction solide caractérise la dispersion des particules solides $V_s$ dans un volume $V$.  
 C'est un indice important en rhéologie de l'écoulement.  $\Phi = V_s/V$.
-Similairement, l'indice de vide : $e = (1-\Phi)/\Phi$
 
 
 \subsection{Rhéologie}\label{rheologie}
@@ -154,18 +155,26 @@ où: $\mu_s,\ \mu_2,\ I_0,\ \Phi_{\text{max}},\ b $ sont les coefficients empiri
 Seuls deux problèmes, à notre connaissance, appartiennent à cette catégorie : le \emph{DEM} rich MPM blah blah.
 
 Dans me programme PBC3D, 2 termes cinétiques a été ajouté  dans la formulation de calcul:
-\begin{itemize}
-	\item $\dot{r} = h\dot{s} + \cancel{\dot{h}s}$
-	\item $\ddot{s} = h^{-1}(\ddot{r} - 2\dot{h}\dot{s} - \cancel{\ddot{h}s})$
-\end{itemize}
 
+
+Dans le calcul de la vrai accélération: 
 \begin{equation}
-    \sigma_p = -\frac{1}{|\det h_p|} \left( \sum_k f_k \otimes \ell_k + \sum_n m_n \dot{r}_n \otimes \dot{r}_n \right)
+\ddot{s} = h^{-1}(\ddot{r} - \textcolor{red}{2\dot{h}\dot{s}} - \cancel{\ddot{h}s})
+    \label{eq:vraiAcc}
+\end{equation}	
+
+
+Et dans le calcul stress tensor: 
+\begin{equation}
+    \sigma_p = -\frac{1}{|\det h_p|} \left( \sum_k f_k \otimes \ell_k + \textcolor{red}{\sum_n m_n \dot{r}_n \otimes \dot{r}_n} \right) \\
     \label{eq:contrainteDynamique}
 \end{equation}	
+    où: $\dot{r_n} = \textcolor{red}{h\dot{s}} + \cancel{\dot{h}s}$
+
 the first term denotes Love-Weber stress, while the
 second (kinetic) term may become significant during extremely rapid deformations
 
+Les champs cancle dans l'équation sont des champs affine, jetant pour garder seulement des composants de fluctuation.
 \begin{equation}
     I = \dot{\varepsilon} \times \sqrt{\frac{m}{\sigma_{33} \times \bar{a}}}
  = \sqrt{\frac{\pi}{6}} \times \frac{\dot{\varepsilon} .\bar{a}}{\sqrt{\sigma_{33}/\rho_s}}
@@ -203,51 +212,62 @@ Dans notre cas, le matériau étudié est du sable sec. Le point d’intersectio
                 \caption{Étude sur nombre de particules}
                 \label{comparerNP}
             \end{figure}
-\subsection{Influence de termes dynamiques ajouté}\label{termeDynamique}
-Sauf au pic, la contrainte dans la régime résiduel n'affect pas la contrainte, consequently le $\mu_{\text{résiduel}}$
+            En regardant \cref{comparerNP}, sauf au pic, la contrainte dans la régime résiduel n'affect pas par le nombre de particule, consequently le $\mu_{\text{résiduel}}$.
+En revanche, un saute de pic de pic (i.e régime transitore) est observé et à creuser, indiquer que $\mu_transitore$ varie selon le nombre de particule.
 
+\subsection{Influence de termes dynamiques ajouté}\label{termeDynamique}
+\Cref{3000_kinetic_q,3000_kinetic_ev} montrent que l'influence des termes cinétiques est négligeable lorsque seuls les champs de fluctuations sont pris en compte
 \begin{figure}[htbp]
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
+            \centering
         \scalebox{0.5}{\input{figures/3000KineticComp_q.tex}}
         \caption{Contrainte déviatorique}
-        \label{fig:3000_kinetic_q}
+        \label{3000_kinetic_q}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
+            \centering
         \scalebox{0.5}{\input{figures/3000KineticComp_ev.tex}}
         \caption{Déformation volumique}
-        \label{fig:3000_kinetic_ev}
+        \label{3000_kinetic_ev}
     \end{subfigure}
     \caption{Influence des termes cinétiques pour N=3000}
-    \label{fig:3000_kinetic_comp}
+    \label{3000_kinetic_comp}
 \end{figure}
 
 \subsection{Comportement microscopique à macroscopique}\label{figureMuy}
+Au fait que le sable est purrement frottant, l'étude à l'échelle macroscopic via le critère de Mohr est suffisament à dessiner.
+Nonetheless, un essai de extension supplémentaire est modélisé pour vérifier la condition de cohésion null.
+Combiner les valeur de $\sigma_1^{\text{résiduel}}$ et $\sigma_3^{\text{résiduel}}$ dans les 2 procédure précédent, la pente des Cercles de Mohr est tracé (\cref{3000_Mohr}), showing that la cohésion est quasiment nulle et confirmant que l'angle de frottement $\Phi$ change selon nombre d'inertie $I$.
+
 \begin{figure}[htbp]
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \scalebox{0.5}{\input{figures/1000KineticComp.tex}}
         \caption{Contrainte déviatorique compression}
-        \label{fig:3000_kinetic_q}
+        \label{3000_comp}
     \end{subfigure}
         \begin{subfigure}[b]{0.45\textwidth}
                         \centering
         \scalebox{0.5}{\input{figures/1000KineticExt.tex}}
         \caption{Contrainte déviatorique extension}
-        \label{fig:3000_kinetic_q}
+        \label{3000_ext}
     \end{subfigure}
     \begin{subfigure}[b]{0.45\textwidth}
                     \centering
         \scalebox{0.5}{\input{figures/Cercle_3000_residuel.tex}}
         \caption{Déformation volumique}
-        \label{fig:3000_kinetic_ev}
+        \label{300_cercle}
     \end{subfigure}
     \caption{Influence des termes cinétiques pour N=3000}
-    \label{fig:3000_kinetic_comp}
+    \label{3000_Mohr}
 \end{figure}
-L'écart de type.
+Condidérant $\epsilon_yy = 4à \div 60$ est le régime stabilisation de contrainte (plateau de état critique), le moyenne de contrainte de leur écart de type est calculé, puis l'angle de frottment, following by $\mu$, $\Phi$ et $e$.
+Leur relation avec $I$ en logarithm est dessiné selon \cref{muI, phiI} et similairement, l'indice de vide : $e = (1-\Phi)/\Phi$.
+La forme des courbes est adapté au celle-ci dans \cite{da2005rheophysics}.  
+Les errors est insignificante, comme once peut observé que l'écart de l'axe y est petit.
 
 \begin{table}[htbp]
 \centering
@@ -268,77 +288,60 @@ $10^{-1}$ & 0.530 & 5.283 & 0.547 & 0.366 & 0.830 & 0.843 \\
 \label{table_rheologie_stats}
 \end{table}
 
-\begin{figure*}[p]
+\begin{figure*}[htbp]
     \centering
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \scalebox{0.5}{\input{figures/3000_mu_I_fit.tex}}
         \caption{$\mu(I)$}
-        \label{fig:3000_mu_I_fit}
+        \label{3000_mu_I_fit}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \scalebox{0.5}{\input{figures/3000_phi_I_fit.tex}}
         \caption{$\Phi(I)$}
-        \label{fig:3000_phi_I_fit}
+        \label{3000_phi_I_fit}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \scalebox{0.5}{\input{figures/3000_e_I_plot.tex}}
         \caption{$e(I)$}
-        \label{fig:3000_e_I_fit}
+        \label{3000_e_I_fit}
     \end{subfigure}
     \caption{Rhéologies $\mu(I)$, $\Phi(I)$ et $e(I)$ quand $\epsilon_{yy} = 40 \div 60\%$ pour N=3000}
-    \label{fig:rheologies_3000}
+    \label{rheologies_3000}
 \end{figure*}
 
-\begin{figure*}[p]
+\begin{figure*}[htbp]
     \centering
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \scalebox{0.5}{\input{figures/1000_mu_I_fit.tex}}
         \caption{$\mu(I)$}
-        \label{fig:1000_mu_I_fit}
+        \label{1000_mu_I_fit}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \scalebox{0.5}{\input{figures/1000_phi_I_fit.tex}}
         \caption{$\Phi(I)$}
-        \label{fig:1000_phi_I_fit}
+        \label{1000_phi_I_fit}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \scalebox{0.5}{\input{figures/1000_e_I_fit.tex}}
         \caption{$e(I)$}
-        \label{fig:1000_e_I_fit}
+        \label{1000_e_I_fit}
     \end{subfigure}
     \caption{Rhéologies $\mu(I)$, $\Phi(I)$ et $e(I)$ quand $\epsilon_{yy} = 40 \div 60\%$ pour N=1000}
-    \label{fig:rheologies_1000}
+    \label{rheologies_1000}
 \end{figure*}
 
+\FloatBarrier
 \section{Conclusion}\label{discussion}
-
-% \begin{gather}
-% \sum_{i=0}^{m}x_{ijk} = y_{jk}\qquad \forall j\in \{0\} \cup J, k \in K \label{sommet_atteignable_a_un_arc_entrant}\\ 
-% \sum_{i=0}^{n+1+m}x_{jik} = y_{jk}\qquad \forall j\in J \cup \{m+1\}, k \in K \label{sommet_atteignable_a_un_arc_sortant}\\ 
-% \sum_{j=0}^{m}x_{0jk} = 1 \qquad \forall k \in K \label{tournee_commence_depot}\\ 
-% \sum_{j=1}^{n+1+m}x_{j0k} = 1 \qquad \forall k \in K \label{tournee_termine_depot}\\
-% \sum_{j=1}^{m}\sum_{k=1}^{l} \alpha_{ij}D_{ijk} \geqslant d_{i}\qquad \forall i\in I \label{demande_satisfaite}\\
-% \sum_{i=1}^{n}D_{ijk} \leqslant Q_{k}y_{jk}\qquad \forall k \in K, j\in J \label{distribution_sommet_atteignable}\\
-% \sum_{i=1}^{n}\sum_{j=1}^{m}D_{ijk} \leqslant Q_k\qquad \forall k \in K \label{capacite_vehicule}\\
-% u_{ik} + c_{ij} - (1 - x_{ijk})T \leqslant u{jk} \notag \\
-% \qquad \forall i \in \{0\} \cup J, j \in J \cup \{0,n+1+m\}, k \in K \label{sub_tour}\\
-% x_{ijk} \in\left\{0,1\right\} \notag \\
-% \qquad\forall i,j\in\{0\}\cup J \cup \{n+m+1\}, i \neq j, k \in K \\
-% y_{jk} \in\left\{0,1\right\} \forall j\in J, k \in K\\ 
-% u_{ik} \geqslant 0  \qquad\forall i\in J, k \in K\\ 
-% D_{ijk} \geqslant 0 \qquad\forall i\in I, j\in J, k \in K\\ 
-% \end{gather}
-
 
 
 \bibliography{bibliographie.bib}
