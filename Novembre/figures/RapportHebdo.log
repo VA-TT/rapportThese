@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.4.17)  15 OCT 2025 09:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.4.17)  3 NOV 2025 17:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/3S-LAB/vquach/Documents/rapportThese/RapportHebdo
-(/home/3S-LAB/vquach/Documents/rapportThese/RapportHebdo.tex
+**/home/3S-LAB/vquach/Documents/rapportThese/Novembre/figures/RapportHebdo
+(/home/3S-LAB/vquach/Documents/rapportThese/Novembre/figures/RapportHebdo.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2022/01/21 v3.65 A class for typesetting presentations
@@ -788,8 +788,7 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@cntb=\count380
 \multirow@dima=\skip72
 \bigstrutjot=\dimen340
-)
-No file RapportHebdo.aux.
+) (./RapportHebdo.aux)
 \openout1 = `RapportHebdo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
@@ -810,6 +809,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
 LaTeX Font Info:    ... okay on input line 45.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
 LaTeX Font Info:    ... okay on input line 45.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -876,6 +876,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 45.
 LaTeX Info: Redefining \pageref on input line 45.
 LaTeX Info: Redefining \nameref on input line 45.
+ (./RapportHebdo.out) (./RapportHebdo.out)
 \@outlinefile=\write5
 \openout5 = `RapportHebdo.out'.
 
@@ -955,7 +956,7 @@ LaTeX Info: Redefining \up on input line 45.
 (./RapportHebdo.nav) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<Nonlinear_Dense.png, id=60, 2499.3375pt x 1316.92pt>
+<Nonlinear_Dense.png, id=64, 2499.3375pt x 1316.92pt>
 File: Nonlinear_Dense.png Graphic file (type png)
 <use Nonlinear_Dense.png>
 Package pdftex.def Info: Nonlinear_Dense.png  used on input line 76.
@@ -977,7 +978,7 @@ LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inpu
  (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
-<angleFrictionInterne.png, id=61, 790.955pt x 670.505pt>
+<angleFrictionInterne.png, id=65, 790.955pt x 670.505pt>
 File: angleFrictionInterne.png Graphic file (type png)
 <use angleFrictionInterne.png>
 Package pdftex.def Info: angleFrictionInterne.png  used on input line 76.
@@ -986,43 +987,43 @@ Package pdftex.def Info: angleFrictionInterne.png  used on input line 76.
 
  <./Nonlinear_Dense.png> <./angleFrictionInterne.png>] [3
 
-] (./KineticComp.tex
+] (./3000KineticComp.tex
 \gptboxheight=\skip73
 \gptboxwidth=\skip74
 \gptboxtext=\box90
-Package epstopdf Info: Source file: <./KineticComp.eps>
-(epstopdf)                    date: 2025-10-13 16:45:34
-(epstopdf)                    size: 58455 bytes
-(epstopdf)             Output file: <./KineticComp-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-13 16:46:19
-(epstopdf)                    size: 26372 bytes
-(epstopdf)             Command: <repstopdf --outfile=./KineticComp-eps-converted-to.pdf ./KineticComp.eps>
-(epstopdf)             \includegraphics on input line 146.
+Package epstopdf Info: Source file: <./3000KineticComp.eps>
+(epstopdf)                    date: 2025-10-16 10:29:11
+(epstopdf)                    size: 80002 bytes
+(epstopdf)             Output file: <./3000KineticComp-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-11-03 17:20:59
+(epstopdf)                    size: 37007 bytes
+(epstopdf)             Command: <repstopdf --outfile=./3000KineticComp-eps-converted-to.pdf ./3000KineticComp.eps>
+(epstopdf)             \includegraphics on input line 134.
 Package epstopdf Info: Output file is already uptodate.
-<./KineticComp-eps-converted-to.pdf, id=129, 361.35pt x 252.945pt>
-File: ./KineticComp-eps-converted-to.pdf Graphic file (type pdf)
-<use ./KineticComp-eps-converted-to.pdf>
-Package pdftex.def Info: ./KineticComp-eps-converted-to.pdf  used on input line 146.
+<./3000KineticComp-eps-converted-to.pdf, id=132, 361.35pt x 252.945pt>
+File: ./3000KineticComp-eps-converted-to.pdf Graphic file (type pdf)
+<use ./3000KineticComp-eps-converted-to.pdf>
+Package pdftex.def Info: ./3000KineticComp-eps-converted-to.pdf  used on input line 134.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
 Overfull \hbox (8.57005pt too wide) in paragraph at lines 120--120
  [] 
  []
 
-(./SansKineticComp.tex
-Package epstopdf Info: Source file: <./SansKineticComp.eps>
-(epstopdf)                    date: 2025-10-13 16:44:24
-(epstopdf)                    size: 58477 bytes
-(epstopdf)             Output file: <./SansKineticComp-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-13 16:46:22
-(epstopdf)                    size: 26485 bytes
-(epstopdf)             Command: <repstopdf --outfile=./SansKineticComp-eps-converted-to.pdf ./SansKineticComp.eps>
-(epstopdf)             \includegraphics on input line 146.
+(./3000SansKineticComp.tex
+Package epstopdf Info: Source file: <./3000SansKineticComp.eps>
+(epstopdf)                    date: 2025-10-14 18:07:29
+(epstopdf)                    size: 62656 bytes
+(epstopdf)             Output file: <./3000SansKineticComp-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-11-03 17:21:32
+(epstopdf)                    size: 29409 bytes
+(epstopdf)             Command: <repstopdf --outfile=./3000SansKineticComp-eps-converted-to.pdf ./3000SansKineticComp.eps>
+(epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
-<./SansKineticComp-eps-converted-to.pdf, id=130, 361.35pt x 252.945pt>
-File: ./SansKineticComp-eps-converted-to.pdf Graphic file (type pdf)
-<use ./SansKineticComp-eps-converted-to.pdf>
-Package pdftex.def Info: ./SansKineticComp-eps-converted-to.pdf  used on input line 146.
+<./3000SansKineticComp-eps-converted-to.pdf, id=133, 361.35pt x 252.945pt>
+File: ./3000SansKineticComp-eps-converted-to.pdf Graphic file (type pdf)
+<use ./3000SansKineticComp-eps-converted-to.pdf>
+Package pdftex.def Info: ./3000SansKineticComp-eps-converted-to.pdf  used on input line 122.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
 Overfull \hbox (8.57005pt too wide) in paragraph at lines 120--120
@@ -1031,17 +1032,17 @@ Overfull \hbox (8.57005pt too wide) in paragraph at lines 120--120
 
 [4
 
- <./KineticComp-eps-converted-to.pdf> <./SansKineticComp-eps-converted-to.pdf>] (./NombreCoordination.tex
+ <./3000KineticComp-eps-converted-to.pdf> <./3000SansKineticComp-eps-converted-to.pdf>] (./NombreCoordination.tex
 Package epstopdf Info: Source file: <./NombreCoordination.eps>
 (epstopdf)                    date: 2025-10-14 13:32:55
 (epstopdf)                    size: 23018 bytes
 (epstopdf)             Output file: <./NombreCoordination-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-14 13:33:26
+(epstopdf)                    date: 2025-11-03 17:21:32
 (epstopdf)                    size: 4581 bytes
 (epstopdf)             Command: <repstopdf --outfile=./NombreCoordination-eps-converted-to.pdf ./NombreCoordination.eps>
 (epstopdf)             \includegraphics on input line 132.
 Package epstopdf Info: Output file is already uptodate.
-<./NombreCoordination-eps-converted-to.pdf, id=164, 361.35pt x 252.945pt>
+<./NombreCoordination-eps-converted-to.pdf, id=167, 361.35pt x 252.945pt>
 File: ./NombreCoordination-eps-converted-to.pdf Graphic file (type pdf)
 <use ./NombreCoordination-eps-converted-to.pdf>
 Package pdftex.def Info: ./NombreCoordination-eps-converted-to.pdf  used on input line 132.
@@ -1056,12 +1057,12 @@ Package epstopdf Info: Source file: <./ComparerNP.eps>
 (epstopdf)                    date: 2025-10-14 10:55:58
 (epstopdf)                    size: 56360 bytes
 (epstopdf)             Output file: <./ComparerNP-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-14 10:58:12
+(epstopdf)                    date: 2025-10-21 16:23:15
 (epstopdf)                    size: 26320 bytes
 (epstopdf)             Command: <repstopdf --outfile=./ComparerNP-eps-converted-to.pdf ./ComparerNP.eps>
 (epstopdf)             \includegraphics on input line 130.
 Package epstopdf Info: Output file is already uptodate.
-<./ComparerNP-eps-converted-to.pdf, id=165, 361.35pt x 252.945pt>
+<./ComparerNP-eps-converted-to.pdf, id=168, 361.35pt x 252.945pt>
 File: ./ComparerNP-eps-converted-to.pdf Graphic file (type pdf)
 <use ./ComparerNP-eps-converted-to.pdf>
 Package pdftex.def Info: ./ComparerNP-eps-converted-to.pdf  used on input line 130.
@@ -1079,161 +1080,108 @@ Overfull \vbox (4.9548pt too high) detected at line 142
 
  <./NombreCoordination-eps-converted-to.pdf> <./ComparerNP-eps-converted-to.pdf>] (./1000KineticComp.tex
 Package epstopdf Info: Source file: <./1000KineticComp.eps>
-(epstopdf)                    date: 2025-10-13 17:54:32
+(epstopdf)                    date: 2025-10-17 17:17:39
 (epstopdf)                    size: 61733 bytes
 (epstopdf)             Output file: <./1000KineticComp-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-13 17:54:46
+(epstopdf)                    date: 2025-10-21 17:15:29
 (epstopdf)                    size: 26150 bytes
 (epstopdf)             Command: <repstopdf --outfile=./1000KineticComp-eps-converted-to.pdf ./1000KineticComp.eps>
 (epstopdf)             \includegraphics on input line 142.
 Package epstopdf Info: Output file is already uptodate.
-<./1000KineticComp-eps-converted-to.pdf, id=199, 361.35pt x 252.945pt>
+<./1000KineticComp-eps-converted-to.pdf, id=202, 361.35pt x 252.945pt>
 File: ./1000KineticComp-eps-converted-to.pdf Graphic file (type pdf)
 <use ./1000KineticComp-eps-converted-to.pdf>
 Package pdftex.def Info: ./1000KineticComp-eps-converted-to.pdf  used on input line 142.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 162--162
- [] 
- []
-
-(./1000Deformation.tex
-Package epstopdf Info: Source file: <./1000Deformation.eps>
-(epstopdf)                    date: 2025-10-14 18:45:54
-(epstopdf)                    size: 57166 bytes
-(epstopdf)             Output file: <./1000Deformation-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-14 18:46:07
-(epstopdf)                    size: 26257 bytes
-(epstopdf)             Command: <repstopdf --outfile=./1000Deformation-eps-converted-to.pdf ./1000Deformation.eps>
-(epstopdf)             \includegraphics on input line 142.
-Package epstopdf Info: Output file is already uptodate.
-<./1000Deformation-eps-converted-to.pdf, id=200, 361.35pt x 252.945pt>
-File: ./1000Deformation-eps-converted-to.pdf Graphic file (type pdf)
-<use ./1000Deformation-eps-converted-to.pdf>
-Package pdftex.def Info: ./1000Deformation-eps-converted-to.pdf  used on input line 142.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-)
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 162--162
- [] 
- []
-
-/home/3S-LAB/vquach/Documents/rapportThese/RapportHebdo.tex:162: Undefined control sequence.
-\beamer@doifinframe ...0 \text {kPa}, N\particule 
-                                                  = 1000$ \end {beamer@frame...
-l.162 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[6
-
- <./1000KineticComp-eps-converted-to.pdf> <./1000Deformation-eps-converted-to.pdf>] (./1000KineticComp.tex
-Package epstopdf Info: Source file: <./1000KineticComp.eps>
-(epstopdf)                    date: 2025-10-13 17:54:32
-(epstopdf)                    size: 61733 bytes
-(epstopdf)             Output file: <./1000KineticComp-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-13 17:54:46
-(epstopdf)                    size: 26150 bytes
-(epstopdf)             Command: <repstopdf --outfile=./1000KineticComp-eps-converted-to.pdf ./1000KineticComp.eps>
-(epstopdf)             \includegraphics on input line 142.
-Package epstopdf Info: Output file is already uptodate.
-File: ./1000KineticComp-eps-converted-to.pdf Graphic file (type pdf)
-<use ./1000KineticComp-eps-converted-to.pdf>
-Package pdftex.def Info: ./1000KineticComp-eps-converted-to.pdf  used on input line 142.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-)
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 182--182
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 164--164
  [] 
  []
 
 (./1000KineticExt.tex
 Package epstopdf Info: Source file: <./1000KineticExt.eps>
-(epstopdf)                    date: 2025-10-13 17:53:14
-(epstopdf)                    size: 84579 bytes
+(epstopdf)                    date: 2025-10-21 17:02:12
+(epstopdf)                    size: 64954 bytes
 (epstopdf)             Output file: <./1000KineticExt-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-13 17:53:26
-(epstopdf)                    size: 39586 bytes
+(epstopdf)                    date: 2025-10-21 17:20:08
+(epstopdf)                    size: 28997 bytes
 (epstopdf)             Command: <repstopdf --outfile=./1000KineticExt-eps-converted-to.pdf ./1000KineticExt.eps>
 (epstopdf)             \includegraphics on input line 134.
 Package epstopdf Info: Output file is already uptodate.
-<./1000KineticExt-eps-converted-to.pdf, id=231, 361.35pt x 252.945pt>
+<./1000KineticExt-eps-converted-to.pdf, id=203, 361.35pt x 252.945pt>
 File: ./1000KineticExt-eps-converted-to.pdf Graphic file (type pdf)
 <use ./1000KineticExt-eps-converted-to.pdf>
 Package pdftex.def Info: ./1000KineticExt-eps-converted-to.pdf  used on input line 134.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 182--182
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 164--164
  [] 
  []
 
-[7
+[6
 
- <./1000KineticExt-eps-converted-to.pdf>] (./Cercle_1000_residuel.tex
+ <./1000KineticComp-eps-converted-to.pdf> <./1000KineticExt-eps-converted-to.pdf>] (./Cercle_1000_residuel.tex
 Package epstopdf Info: Source file: <./Cercle_1000_residuel.eps>
 (epstopdf)                    date: 2025-10-14 12:51:35
 (epstopdf)                    size: 44742 bytes
 (epstopdf)             Output file: <./Cercle_1000_residuel-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-14 13:05:09
+(epstopdf)                    date: 2025-11-03 17:21:33
 (epstopdf)                    size: 10916 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Cercle_1000_residuel-eps-converted-to.pdf ./Cercle_1000_residuel.eps>
 (epstopdf)             \includegraphics on input line 123.
 Package epstopdf Info: Output file is already uptodate.
-<./Cercle_1000_residuel-eps-converted-to.pdf, id=263, 454.69875pt x 454.69875pt>
+<./Cercle_1000_residuel-eps-converted-to.pdf, id=234, 454.69875pt x 454.69875pt>
 File: ./Cercle_1000_residuel-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Cercle_1000_residuel-eps-converted-to.pdf>
 Package pdftex.def Info: ./Cercle_1000_residuel-eps-converted-to.pdf  used on input line 123.
 (pdftex.def)             Requested size: 455.2041pt x 455.2041pt.
 )
-Overfull \hbox (9.97247pt too wide) in paragraph at lines 203--203
+Overfull \hbox (9.97247pt too wide) in paragraph at lines 185--185
  [] 
  []
 
-(./mu_I_1000.tex
-Package epstopdf Info: Source file: <./mu_I_1000.eps>
-(epstopdf)                    date: 2025-10-14 12:51:35
-(epstopdf)                    size: 20993 bytes
-(epstopdf)             Output file: <./mu_I_1000-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-14 13:05:09
-(epstopdf)                    size: 4000 bytes
-(epstopdf)             Command: <repstopdf --outfile=./mu_I_1000-eps-converted-to.pdf ./mu_I_1000.eps>
-(epstopdf)             \includegraphics on input line 127.
+(./1000_mu_I_fit.tex
+Package epstopdf Info: Source file: <./1000_mu_I_fit.eps>
+(epstopdf)                    date: 2025-10-21 15:25:19
+(epstopdf)                    size: 22087 bytes
+(epstopdf)             Output file: <./1000_mu_I_fit-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-10-21 15:25:37
+(epstopdf)                    size: 4419 bytes
+(epstopdf)             Command: <repstopdf --outfile=./1000_mu_I_fit-eps-converted-to.pdf ./1000_mu_I_fit.eps>
+(epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
-<./mu_I_1000-eps-converted-to.pdf, id=264, 361.35pt x 252.945pt>
-File: ./mu_I_1000-eps-converted-to.pdf Graphic file (type pdf)
-<use ./mu_I_1000-eps-converted-to.pdf>
-Package pdftex.def Info: ./mu_I_1000-eps-converted-to.pdf  used on input line 127.
+<./1000_mu_I_fit-eps-converted-to.pdf, id=235, 361.35pt x 252.945pt>
+File: ./1000_mu_I_fit-eps-converted-to.pdf Graphic file (type pdf)
+<use ./1000_mu_I_fit-eps-converted-to.pdf>
+Package pdftex.def Info: ./1000_mu_I_fit-eps-converted-to.pdf  used on input line 121.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 203--203
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 185--185
  [] 
  []
 
 
-Overfull \vbox (23.6143pt too high) detected at line 203
+Overfull \vbox (23.6143pt too high) detected at line 185
  []
 
-[8
+[7
 
- <./Cercle_1000_residuel-eps-converted-to.pdf> <./mu_I_1000-eps-converted-to.pdf>] (./3000KineticComp.tex
+ <./Cercle_1000_residuel-eps-converted-to.pdf> <./1000_mu_I_fit-eps-converted-to.pdf>] (./3000KineticComp.tex
 Package epstopdf Info: Source file: <./3000KineticComp.eps>
-(epstopdf)                    date: 2025-10-14 18:11:34
-(epstopdf)                    size: 62675 bytes
+(epstopdf)                    date: 2025-10-16 10:29:11
+(epstopdf)                    size: 80002 bytes
 (epstopdf)             Output file: <./3000KineticComp-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-14 18:11:53
-(epstopdf)                    size: 29484 bytes
+(epstopdf)                    date: 2025-11-03 17:20:59
+(epstopdf)                    size: 37007 bytes
 (epstopdf)             Command: <repstopdf --outfile=./3000KineticComp-eps-converted-to.pdf ./3000KineticComp.eps>
-(epstopdf)             \includegraphics on input line 122.
+(epstopdf)             \includegraphics on input line 134.
 Package epstopdf Info: Output file is already uptodate.
-<./3000KineticComp-eps-converted-to.pdf, id=297, 361.35pt x 252.945pt>
 File: ./3000KineticComp-eps-converted-to.pdf Graphic file (type pdf)
 <use ./3000KineticComp-eps-converted-to.pdf>
-Package pdftex.def Info: ./3000KineticComp-eps-converted-to.pdf  used on input line 122.
+Package pdftex.def Info: ./3000KineticComp-eps-converted-to.pdf  used on input line 134.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 223--223
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 205--205
  [] 
  []
 
@@ -1242,70 +1190,69 @@ Package epstopdf Info: Source file: <./3000SansKineticComp.eps>
 (epstopdf)                    date: 2025-10-14 18:07:29
 (epstopdf)                    size: 62656 bytes
 (epstopdf)             Output file: <./3000SansKineticComp-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-14 18:09:35
+(epstopdf)                    date: 2025-11-03 17:21:32
 (epstopdf)                    size: 29409 bytes
 (epstopdf)             Command: <repstopdf --outfile=./3000SansKineticComp-eps-converted-to.pdf ./3000SansKineticComp.eps>
 (epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
-<./3000SansKineticComp-eps-converted-to.pdf, id=298, 361.35pt x 252.945pt>
 File: ./3000SansKineticComp-eps-converted-to.pdf Graphic file (type pdf)
 <use ./3000SansKineticComp-eps-converted-to.pdf>
 Package pdftex.def Info: ./3000SansKineticComp-eps-converted-to.pdf  used on input line 122.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 223--223
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 205--205
  [] 
+ []
+
+[8
+
+] (./Cercle_3000_residuel.tex
+Package epstopdf Info: Source file: <./Cercle_3000_residuel.eps>
+(epstopdf)                    date: 2025-10-21 17:10:32
+(epstopdf)                    size: 41652 bytes
+(epstopdf)             Output file: <./Cercle_3000_residuel-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-10-21 17:12:04
+(epstopdf)                    size: 9736 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Cercle_3000_residuel-eps-converted-to.pdf ./Cercle_3000_residuel.eps>
+(epstopdf)             \includegraphics on input line 121.
+Package epstopdf Info: Output file is already uptodate.
+<./Cercle_3000_residuel-eps-converted-to.pdf, id=297, 454.69875pt x 454.69875pt>
+File: ./Cercle_3000_residuel-eps-converted-to.pdf Graphic file (type pdf)
+<use ./Cercle_3000_residuel-eps-converted-to.pdf>
+Package pdftex.def Info: ./Cercle_3000_residuel-eps-converted-to.pdf  used on input line 121.
+(pdftex.def)             Requested size: 455.2041pt x 455.2041pt.
+)
+Overfull \hbox (9.97247pt too wide) in paragraph at lines 224--224
+ [] 
+ []
+
+(./3000_mu_I_fit.tex
+Package epstopdf Info: Source file: <./3000_mu_I_fit.eps>
+(epstopdf)                    date: 2025-10-21 14:13:44
+(epstopdf)                    size: 21823 bytes
+(epstopdf)             Output file: <./3000_mu_I_fit-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-10-21 14:14:20
+(epstopdf)                    size: 4292 bytes
+(epstopdf)             Command: <repstopdf --outfile=./3000_mu_I_fit-eps-converted-to.pdf ./3000_mu_I_fit.eps>
+(epstopdf)             \includegraphics on input line 119.
+Package epstopdf Info: Output file is already uptodate.
+<./3000_mu_I_fit-eps-converted-to.pdf, id=298, 361.35pt x 252.945pt>
+File: ./3000_mu_I_fit-eps-converted-to.pdf Graphic file (type pdf)
+<use ./3000_mu_I_fit-eps-converted-to.pdf>
+Package pdftex.def Info: ./3000_mu_I_fit-eps-converted-to.pdf  used on input line 119.
+(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
+)
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 224--224
+ [] 
+ []
+
+
+Overfull \vbox (6.91434pt too high) detected at line 224
  []
 
 [9
 
- <./3000KineticComp-eps-converted-to.pdf> <./3000SansKineticComp-eps-converted-to.pdf>] (./Cercle_3000_residuel.tex
-Package epstopdf Info: Source file: <./Cercle_3000_residuel.eps>
-(epstopdf)                    date: 2025-10-14 13:26:12
-(epstopdf)                    size: 27977 bytes
-(epstopdf)             Output file: <./Cercle_3000_residuel-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-14 13:26:19
-(epstopdf)                    size: 5965 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Cercle_3000_residuel-eps-converted-to.pdf ./Cercle_3000_residuel.eps>
-(epstopdf)             \includegraphics on input line 114.
-Package epstopdf Info: Output file is already uptodate.
-<./Cercle_3000_residuel-eps-converted-to.pdf, id=328, 454.69875pt x 454.69875pt>
-File: ./Cercle_3000_residuel-eps-converted-to.pdf Graphic file (type pdf)
-<use ./Cercle_3000_residuel-eps-converted-to.pdf>
-Package pdftex.def Info: ./Cercle_3000_residuel-eps-converted-to.pdf  used on input line 114.
-(pdftex.def)             Requested size: 455.2041pt x 455.2041pt.
-)
-Overfull \hbox (9.97247pt too wide) in paragraph at lines 242--242
- [] 
- []
-
-(./mu_I_3000.tex
-Package epstopdf Info: Source file: <./mu_I_3000.eps>
-(epstopdf)                    date: 2025-10-14 13:26:12
-(epstopdf)                    size: 23399 bytes
-(epstopdf)             Output file: <./mu_I_3000-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-10-14 13:26:19
-(epstopdf)                    size: 4837 bytes
-(epstopdf)             Command: <repstopdf --outfile=./mu_I_3000-eps-converted-to.pdf ./mu_I_3000.eps>
-(epstopdf)             \includegraphics on input line 149.
-Package epstopdf Info: Output file is already uptodate.
-<./mu_I_3000-eps-converted-to.pdf, id=329, 361.35pt x 252.945pt>
-File: ./mu_I_3000-eps-converted-to.pdf Graphic file (type pdf)
-<use ./mu_I_3000-eps-converted-to.pdf>
-Package pdftex.def Info: ./mu_I_3000-eps-converted-to.pdf  used on input line 149.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-)
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 242--242
- [] 
- []
-
-
-Overfull \vbox (6.91434pt too high) detected at line 242
- []
-
-[10
-
- <./Cercle_3000_residuel-eps-converted-to.pdf> <./mu_I_3000-eps-converted-to.pdf>]
+ <./Cercle_3000_residuel-eps-converted-to.pdf> <./3000_mu_I_fit-eps-converted-to.pdf>]
 \tf@nav=\write6
 \openout6 = `RapportHebdo.nav'.
 
@@ -1315,32 +1262,23 @@ Overfull \vbox (6.91434pt too high) detected at line 242
 \tf@snm=\write8
 \openout8 = `RapportHebdo.snm'.
 
- [11] (./RapportHebdo.aux)
-
-LaTeX Warning: Temporary extra page added at the end. Rerun to get it removed.
-
-
-Package rerunfilecheck Warning: File `RapportHebdo.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `RapportHebdo.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  5347B60332A058CF323F57855E330CB0;58.
+ (./RapportHebdo.aux)
+Package rerunfilecheck Info: File `RapportHebdo.out' has not changed.
+(rerunfilecheck)             Checksum: 5347B60332A058CF323F57855E330CB0;58.
  ) 
 Here is how much of TeX's memory you used:
- 41284 strings out of 478287
- 967929 string characters out of 5849289
- 1344745 words of memory out of 5000000
- 58643 multiletter control sequences out of 15000+600000
- 485173 words of font info for 72 fonts, out of 8000000 for 9000
+ 41167 strings out of 478287
+ 965092 string characters out of 5849289
+ 1340790 words of memory out of 5000000
+ 58530 multiletter control sequences out of 15000+600000
+ 484414 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,19n,122p,772b,928s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb>
-Output written on RapportHebdo.pdf (11 pages, 706536 bytes).
+ 128i,19n,122p,789b,928s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb>
+Output written on RapportHebdo.pdf (9 pages, 617415 bytes).
 PDF statistics:
- 454 PDF objects out of 1000 (max. 8388607)
- 368 compressed objects within 4 object streams
- 22 named destinations out of 1000 (max. 500000)
- 154 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 416 PDF objects out of 1000 (max. 8388607)
+ 337 compressed objects within 4 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 147 words of extra memory for PDF output out of 10000 (max. 10000000)
 

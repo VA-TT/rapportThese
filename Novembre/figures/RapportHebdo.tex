@@ -103,14 +103,14 @@ ASCE...
         \begin{column}{0.5\textwidth}
             \begin{figure}
                 \centering
-                \scalebox{0.5}{\input{KineticComp.tex}}
+                \scalebox{0.5}{\input{3000KineticComp.tex}}
                 \caption{kineticStress = 1}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
             \begin{figure}
                 \centering
-                \scalebox{0.5}{\input{SansKineticComp.tex}}
+                \scalebox{0.5}{\input{3000SansKineticComp.tex}}
                 \caption{kineticStress = 0}
             \end{figure}
         \end{column}
@@ -141,25 +141,7 @@ ASCE...
 
 \end{frame}
 
-\begin{frame}{1000 particules}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{figure}
-                \centering
-                \scalebox{0.5}{\input{1000KineticComp.tex}}
-                \caption{Contrainte déviatorique}
-            \end{figure}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \begin{figure}
-                \centering
-                \scalebox{0.5}{\input{1000Deformation.tex}}
-                \caption{Déformation Volumique}
-            \end{figure}
-        \end{column}
-    \end{columns}
-    $\sigma3 = 30 \text{kPa}, N\particule = 1000$
-\end{frame}
+
 
 \begin{frame}{1000 particules}
     \begin{columns}
@@ -195,7 +177,7 @@ ASCE...
         \begin{column}{0.5\textwidth}
             \begin{figure}
                 \centering
-                \scalebox{0.5}{\input{mu_I_1000.tex}}
+                \scalebox{0.5}{\input{1000_mu_I_fit.tex}}
                 \caption{$\mu(I)$ rhéologie}
             \end{figure}
         \end{column}
@@ -234,12 +216,31 @@ ASCE...
         \begin{column}{0.5\textwidth}
             \begin{figure}[h]
                 \centering
-                \scalebox{0.5}{\input{mu_I_3000.tex}}
+                \scalebox{0.5}{\input{3000_mu_I_fit.tex}}
                 \caption{$\mu(I)$ rhéologie}
             \end{figure}
         \end{column}
     \end{columns}
 \end{frame}
+
+% \begin{frame}{3375 particules}
+%     \begin{columns}
+%         \begin{column}{0.5\textwidth}
+%             \begin{figure}[h]
+%                 \centering
+%                 \scalebox{0.4}{\input{epsyy_epsv.tex}}
+%                 \caption{Cercles de Mohr}
+%             \end{figure}
+%         \end{column}
+%         \begin{column}{0.5\textwidth}
+%             \begin{figure}[h]
+%                 \centering
+%                 \scalebox{0.5}{\input{epsyy_phi.tex}}
+%                 \caption{$\mu(I)$ rhéologie}
+%             \end{figure}
+%         \end{column}
+%     \end{columns}
+% \end{frame}
 
 
 \end{document}
