@@ -1,0 +1,36 @@
+\begin{frontmatter}
+
+\title{\textbf{Modélisation de l'effet dynamique d'un échantillon granulaire lâche par la Méthode des Éléments Discrets}}
+
+\author{Gaël COMBE, Vincent RICHEFEU, Tuệ Thông QUACH}
+\address{Laboratoire 3SR, Université Grenoble Alpes}
+
+\begin{abstract}
+L’objectif principal de cet article est d’étudier l’influence des effets dynamiques sur le comportement d’un échantillon granulaire lâche soumis à une compression triaxiale, à l’aide de la Méthode des Éléments Discrets (DEM), dans le régime résiduel. 
+Pour en tenir compte, des termes cinétiques supplémentaires ont été intégrés dans le calcul DEM, en plus de la masse définie au niveau des grains.
+Les résultats montrent qu’à l’état résiduel, la rhéologie $\mu_{\text{résiduel}}(I)$ semble indépendante de ces modifications, quelle que soit la vitesse de compression (c’est-à-dire du nombre d’inertie $I$). 
+Ce travail constitue une étude préliminaire du comportement d’un volume élémentaire représentatif (VER) en vue de la modélisation d’un écoulement gravitaire couplant la Méthode des Éléments Discrets et la Méthode des Points Matériels.
+\end{abstract}
+
+\begin{keyword}
+DEM \sep effets dynamiques \sep nombre d’inertie \sep rhéologie $\mu(I)$ \sep échantillon lâche \sep régime résiduel
+\end{keyword}
+
+\end{frontmatter}
+
+\section{Introduction}
+
+La compréhension du comportement mécanique des matériaux granulaires constitue un enjeu majeur dans de nombreux domaines, tels que le génie civil, la géophysique ou encore l’industrie des matériaux. 
+Ces matériaux présentent un comportement complexe résultant de la combinaison d’effets microscopiques (interactions entre particules) et macroscopiques (déformation globale et localisation). 
+Parmi les approches de modélisation, la Méthode des Éléments Discrets (DEM) s’est imposée comme un outil puissant pour étudier la mécanique des milieux granulaires, car elle permet de relier directement les mécanismes à l’échelle des grains au comportement global du matériau.
+
+Dans le cadre des essais triaxiaux simulés par DEM, plusieurs paramètres influencent la réponse mécanique, notamment la densité initiale, la vitesse de déformation et les conditions aux limites. 
+La rhéologie dite $\mu(I)$, introduite par \textit{Jop et al.} (2006), a permis de relier le frottement effectif $\mu$ au nombre d’inertie $I$, représentant le rapport entre les échelles de temps inertielle et de déformation. 
+Cette approche a été largement utilisée pour décrire les régimes quasi-statiques, transitoires et d’écoulement dense.
+
+Cependant, la majorité des études disponibles se concentrent sur des matériaux denses, alors que le comportement des assemblages lâches reste encore peu exploré, en particulier sous sollicitations dynamiques. 
+Dans ce contexte, le présent travail vise à analyser l’influence des effets dynamiques sur la réponse mécanique d’un échantillon granulaire lâche soumis à une compression triaxiale dans le régime résiduel. 
+L’objectif est d’évaluer la pertinence du modèle rhéologique $\mu(I)$ dans ces conditions et de déterminer dans quelle mesure les effets d’inertie modifient la relation entre la contrainte de cisaillement et la pression moyenne.
+
+Ce travail s’inscrit dans le cadre d’une étude plus large visant à développer une approche couplée DEM–MPM (Méthode des Points Matériels) pour la modélisation des écoulements granulaires à grande échelle. 
+L’analyse du comportement d’un volume élémentaire représentatif (VER) en régime résiduel constitue ici une étape préliminaire essentielle avant la mise en œuvre de ce couplage.
