@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.4.17)  3 NOV 2025 18:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.4.17)  4 NOV 2025 10:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -468,8 +468,7 @@ Package csquotes Info: ... found 'babel' package.
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count319
 \l__pdf_internal_box=\box58
-)
-No file main.aux.
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
@@ -490,7 +489,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count320
 \scratchdimen=\dimen197
@@ -569,6 +568,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 37.
 LaTeX Info: Redefining \pageref on input line 37.
 LaTeX Info: Redefining \nameref on input line 37.
+ (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -580,7 +580,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<figures/modele.pdf, id=4, 134.39209pt x 119.69719pt>
+<figures/modele.pdf, id=48, 134.39209pt x 119.69719pt>
 File: figures/modele.pdf Graphic file (type pdf)
 <use figures/modele.pdf>
 Package pdftex.def Info: figures/modele.pdf  used on input line 83.
@@ -589,20 +589,10 @@ Package pdftex.def Info: figures/modele.pdf  used on input line 83.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `echantillon' on page 1 undefined on input line 89.
-
-
-Package natbib Warning: Citation `combe2023demlecture' on page 1 undefined on input line 94.
-
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./figures/modele.pdf>]
-
-Package natbib Warning: Citation `jop2006constitutive' on page 2 undefined on input line 143.
-
-
 Overfull \hbox (1.32814pt too wide) in paragraph at lines 164--166
 \T1/cmr/m/n/10 tiennent à cette ca-té-go-rie, thus dans le pro-gramme PBC3D,
  []
@@ -620,22 +610,12 @@ Package epstopdf Info: Source file: <figures//./ComparerNP.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures//./ComparerNP-eps-converted-to.pdf figures//./ComparerNP.eps>
 (epstopdf)             \includegraphics on input line 130.
 Package epstopdf Info: Output file is already uptodate.
-<figures//./ComparerNP-eps-converted-to.pdf, id=37, 361.35pt x 252.945pt>
+<figures//./ComparerNP-eps-converted-to.pdf, id=82, 361.35pt x 252.945pt>
 File: figures//./ComparerNP-eps-converted-to.pdf Graphic file (type pdf)
 <use figures//./ComparerNP-eps-converted-to.pdf>
 Package pdftex.def Info: figures//./ComparerNP-eps-converted-to.pdf  used on input line 130.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-)
-
-LaTeX Warning: Reference `comparerNP' on page 1 undefined on input line 225.
-
-
-LaTeX Warning: Reference `3000_kinetic_ev' on page 1 undefined on input line 230.
-
-
-LaTeX Warning: Reference `3000_kinetic_q' on page 1 undefined on input line 230.
-
-(./figures/3000KineticComp_q.tex
+) [2] (./figures/3000KineticComp_q.tex
 Package epstopdf Info: Source file: <figures//./3000KineticComp_q.eps>
 (epstopdf)                    date: 2025-10-21 16:17:24
 (epstopdf)                    size: 21071 bytes
@@ -645,7 +625,7 @@ Package epstopdf Info: Source file: <figures//./3000KineticComp_q.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures//./3000KineticComp_q-eps-converted-to.pdf figures//./3000KineticComp_q.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
-<figures//./3000KineticComp_q-eps-converted-to.pdf, id=38, 361.35pt x 252.945pt>
+<figures//./3000KineticComp_q-eps-converted-to.pdf, id=110, 361.35pt x 252.945pt>
 File: figures//./3000KineticComp_q-eps-converted-to.pdf Graphic file (type pdf)
 <use figures//./3000KineticComp_q-eps-converted-to.pdf>
 Package pdftex.def Info: figures//./3000KineticComp_q-eps-converted-to.pdf  used on input line 121.
@@ -660,19 +640,12 @@ Package epstopdf Info: Source file: <figures//./3000KineticComp_ev.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures//./3000KineticComp_ev-eps-converted-to.pdf figures//./3000KineticComp_ev.eps>
 (epstopdf)             \includegraphics on input line 112.
 Package epstopdf Info: Output file is already uptodate.
-<figures//./3000KineticComp_ev-eps-converted-to.pdf, id=39, 361.35pt x 252.945pt>
+<figures//./3000KineticComp_ev-eps-converted-to.pdf, id=111, 361.35pt x 252.945pt>
 File: figures//./3000KineticComp_ev-eps-converted-to.pdf Graphic file (type pdf)
 <use figures//./3000KineticComp_ev-eps-converted-to.pdf>
 Package pdftex.def Info: figures//./3000KineticComp_ev-eps-converted-to.pdf  used on input line 112.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-) [2]
-
-Package natbib Warning: Citation `gens1982degree' on page 3 undefined on input line 253.
-
-
-LaTeX Warning: Reference `3000_Mohr' on page 1 undefined on input line 254.
-
-(./figures/1000KineticComp.tex
+) (./figures/1000KineticComp.tex
 Package epstopdf Info: Source file: <figures//./1000KineticComp.eps>
 (epstopdf)                    date: 2025-10-17 17:17:39
 (epstopdf)                    size: 61733 bytes
@@ -682,7 +655,7 @@ Package epstopdf Info: Source file: <figures//./1000KineticComp.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures//./1000KineticComp-eps-converted-to.pdf figures//./1000KineticComp.eps>
 (epstopdf)             \includegraphics on input line 142.
 Package epstopdf Info: Output file is already uptodate.
-<figures//./1000KineticComp-eps-converted-to.pdf, id=65, 361.35pt x 252.945pt>
+<figures//./1000KineticComp-eps-converted-to.pdf, id=115, 361.35pt x 252.945pt>
 File: figures//./1000KineticComp-eps-converted-to.pdf Graphic file (type pdf)
 <use figures//./1000KineticComp-eps-converted-to.pdf>
 Package pdftex.def Info: figures//./1000KineticComp-eps-converted-to.pdf  used on input line 142.
@@ -697,7 +670,7 @@ Package epstopdf Info: Source file: <figures//./1000KineticExt.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures//./1000KineticExt-eps-converted-to.pdf figures//./1000KineticExt.eps>
 (epstopdf)             \includegraphics on input line 134.
 Package epstopdf Info: Output file is already uptodate.
-<figures//./1000KineticExt-eps-converted-to.pdf, id=66, 361.35pt x 252.945pt>
+<figures//./1000KineticExt-eps-converted-to.pdf, id=116, 361.35pt x 252.945pt>
 File: figures//./1000KineticExt-eps-converted-to.pdf Graphic file (type pdf)
 <use figures//./1000KineticExt-eps-converted-to.pdf>
 Package pdftex.def Info: figures//./1000KineticExt-eps-converted-to.pdf  used on input line 134.
@@ -712,7 +685,7 @@ Package epstopdf Info: Source file: <figures//./Cercle_3000_residuel.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures//./Cercle_3000_residuel-eps-converted-to.pdf figures//./Cercle_3000_residuel.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
-<figures//./Cercle_3000_residuel-eps-converted-to.pdf, id=67, 454.69875pt x 454.69875pt>
+<figures//./Cercle_3000_residuel-eps-converted-to.pdf, id=117, 454.69875pt x 454.69875pt>
 File: figures//./Cercle_3000_residuel-eps-converted-to.pdf Graphic file (type pdf)
 <use figures//./Cercle_3000_residuel-eps-converted-to.pdf>
 Package pdftex.def Info: figures//./Cercle_3000_residuel-eps-converted-to.pdf  used on input line 121.
@@ -720,12 +693,6 @@ Package pdftex.def Info: figures//./Cercle_3000_residuel-eps-converted-to.pdf  u
 )
 
 LaTeX Warning: Reference ` phiI' on page 1 undefined on input line 283.
-
-
-LaTeX Warning: Reference `muI' on page 1 undefined on input line 283.
-
-
-Package natbib Warning: Citation `da2005rheophysics' on page 3 undefined on input line 284.
 
 (./figures/3000_mu_I_fit.tex
 Package epstopdf Info: Source file: <figures//./3000_mu_I_fit.eps>
@@ -737,7 +704,7 @@ Package epstopdf Info: Source file: <figures//./3000_mu_I_fit.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures//./3000_mu_I_fit-eps-converted-to.pdf figures//./3000_mu_I_fit.eps>
 (epstopdf)             \includegraphics on input line 119.
 Package epstopdf Info: Output file is already uptodate.
-<figures//./3000_mu_I_fit-eps-converted-to.pdf, id=68, 361.35pt x 252.945pt>
+<figures//./3000_mu_I_fit-eps-converted-to.pdf, id=121, 361.35pt x 252.945pt>
 File: figures//./3000_mu_I_fit-eps-converted-to.pdf Graphic file (type pdf)
 <use figures//./3000_mu_I_fit-eps-converted-to.pdf>
 Package pdftex.def Info: figures//./3000_mu_I_fit-eps-converted-to.pdf  used on input line 119.
@@ -752,7 +719,7 @@ Package epstopdf Info: Source file: <figures//./3000_phi_I_fit.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures//./3000_phi_I_fit-eps-converted-to.pdf figures//./3000_phi_I_fit.eps>
 (epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
-<figures//./3000_phi_I_fit-eps-converted-to.pdf, id=69, 361.35pt x 252.945pt>
+<figures//./3000_phi_I_fit-eps-converted-to.pdf, id=122, 361.35pt x 252.945pt>
 File: figures//./3000_phi_I_fit-eps-converted-to.pdf Graphic file (type pdf)
 <use figures//./3000_phi_I_fit-eps-converted-to.pdf>
 Package pdftex.def Info: figures//./3000_phi_I_fit-eps-converted-to.pdf  used on input line 120.
@@ -767,7 +734,7 @@ Package epstopdf Info: Source file: <figures//./3000_e_I_plot.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures//./3000_e_I_plot-eps-converted-to.pdf figures//./3000_e_I_plot.eps>
 (epstopdf)             \includegraphics on input line 126.
 Package epstopdf Info: Output file is already uptodate.
-<figures//./3000_e_I_plot-eps-converted-to.pdf, id=70, 361.35pt x 252.945pt>
+<figures//./3000_e_I_plot-eps-converted-to.pdf, id=123, 361.35pt x 252.945pt>
 File: figures//./3000_e_I_plot-eps-converted-to.pdf Graphic file (type pdf)
 <use figures//./3000_e_I_plot-eps-converted-to.pdf>
 Package pdftex.def Info: figures//./3000_e_I_plot-eps-converted-to.pdf  used on input line 126.
@@ -782,7 +749,7 @@ Package epstopdf Info: Source file: <figures//./1000_mu_I_fit.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures//./1000_mu_I_fit-eps-converted-to.pdf figures//./1000_mu_I_fit.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
-<figures//./1000_mu_I_fit-eps-converted-to.pdf, id=71, 361.35pt x 252.945pt>
+<figures//./1000_mu_I_fit-eps-converted-to.pdf, id=124, 361.35pt x 252.945pt>
 File: figures//./1000_mu_I_fit-eps-converted-to.pdf Graphic file (type pdf)
 <use figures//./1000_mu_I_fit-eps-converted-to.pdf>
 Package pdftex.def Info: figures//./1000_mu_I_fit-eps-converted-to.pdf  used on input line 121.
@@ -797,103 +764,30 @@ Package epstopdf Info: Source file: <figures//./1000_phi_I_fit.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures//./1000_phi_I_fit-eps-converted-to.pdf figures//./1000_phi_I_fit.eps>
 (epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
-<figures//./1000_phi_I_fit-eps-converted-to.pdf, id=72, 361.35pt x 252.945pt>
+<figures//./1000_phi_I_fit-eps-converted-to.pdf, id=125, 361.35pt x 252.945pt>
 File: figures//./1000_phi_I_fit-eps-converted-to.pdf Graphic file (type pdf)
 <use figures//./1000_phi_I_fit-eps-converted-to.pdf>
 Package pdftex.def Info: figures//./1000_phi_I_fit-eps-converted-to.pdf  used on input line 120.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 ) (./figures/epsyy_epsv.tex
 Package epstopdf Info: Source file: <figures//epsyy_epsv.eps>
-(epstopdf)                    date: 2025-11-03 17:57:13
-(epstopdf)                    size: 55992 bytes
+(epstopdf)                    date: 2025-11-04 10:46:44
+(epstopdf)                    size: 56008 bytes
 (epstopdf)             Output file: <figures//epsyy_epsv-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-11-03 18:01:20
-(epstopdf)                    size: 26095 bytes
+(epstopdf)                    date: 2025-11-04 10:45:20
+(epstopdf)                    size: 26097 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures//epsyy_epsv-eps-converted-to.pdf figures//epsyy_epsv.eps>
 (epstopdf)             \includegraphics on input line 136.
-Package epstopdf Info: Output file is already uptodate.
-<figures//epsyy_epsv-eps-converted-to.pdf, id=73, 361.35pt x 252.945pt>
+runsystem(repstopdf --outfile=figures//epsyy_epsv-eps-converted-to.pdf figures//epsyy_epsv.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures//epsyy_epsv-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-11-04 10:47:05
+(epstopdf)                    size: 26105 bytes.
+<figures//epsyy_epsv-eps-converted-to.pdf, id=126, 361.35pt x 252.945pt>
 File: figures//epsyy_epsv-eps-converted-to.pdf Graphic file (type pdf)
 <use figures//epsyy_epsv-eps-converted-to.pdf>
 Package pdftex.def Info: figures//epsyy_epsv-eps-converted-to.pdf  used on input line 136.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-
-./figures/epsyy_epsv.tex:137: Missing $ inserted.
-<inserted text> 
-                $
-l.137     \gplfronttext
-                       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./figures/epsyy_epsv.tex:137: Extra }, or forgotten $.
-\@imakepicbox ...b@xt@ \@tempdimc {\mb@l #4\mb@r }
-                                                  \mb@b \kern \z@ }
-l.137     \gplfronttext
-                       
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./figures/epsyy_epsv.tex:137: Missing $ inserted.
-<inserted text> 
-                $
-l.137     \gplfronttext
-                       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./figures/epsyy_epsv.tex:137: Missing } inserted.
-<inserted text> 
-                }
-l.137     \gplfronttext
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./figures/epsyy_epsv.tex:137: Missing $ inserted.
-<inserted text> 
-                $
-l.137     \gplfronttext
-                       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./figures/epsyy_epsv.tex:137: Extra }, or forgotten $.
-\@imakepicbox ...b@xt@ \@tempdimc {\mb@l #4\mb@r }
-                                                  \mb@b \kern \z@ }
-l.137     \gplfronttext
-                       
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./figures/epsyy_epsv.tex:137: Missing $ inserted.
-<inserted text> 
-                $
-l.137     \gplfronttext
-                       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./figures/epsyy_epsv.tex:137: Missing } inserted.
-<inserted text> 
-                }
-l.137     \gplfronttext
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
 ) (./figures/1000_e_I_fit.tex
 Package epstopdf Info: Source file: <figures//./1000_e_I_fit.eps>
 (epstopdf)                    date: 2025-10-21 15:25:19
@@ -904,7 +798,7 @@ Package epstopdf Info: Source file: <figures//./1000_e_I_fit.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures//./1000_e_I_fit-eps-converted-to.pdf figures//./1000_e_I_fit.eps>
 (epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
-<figures//./1000_e_I_fit-eps-converted-to.pdf, id=74, 361.35pt x 252.945pt>
+<figures//./1000_e_I_fit-eps-converted-to.pdf, id=127, 361.35pt x 252.945pt>
 File: figures//./1000_e_I_fit-eps-converted-to.pdf Graphic file (type pdf)
 <use figures//./1000_e_I_fit-eps-converted-to.pdf>
 Package pdftex.def Info: figures//./1000_e_I_fit-eps-converted-to.pdf  used on input line 124.
@@ -918,46 +812,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--23
 []\T1/cmr/m/n/8 Combe, G., 2023.  DEM lec-ture.  [][]$\T1/cmtt/m/n/8 https : / / cloud .
  []
 
-)
-
-Package natbib Warning: There were undefined citations.
-
-[5 <./figures//./1000_mu_I_fit-eps-converted-to.pdf> <./figures//./1000_phi_I_fit-eps-converted-to.pdf> <./figures//epsyy_epsv-eps-converted-to.pdf> <./figures//./1000_e_I_fit-eps-converted-to.pdf>] (./main.aux
+) [5 <./figures//./1000_mu_I_fit-eps-converted-to.pdf> <./figures//./1000_phi_I_fit-eps-converted-to.pdf> <./figures//epsyy_epsv-eps-converted-to.pdf> <./figures//./1000_e_I_fit-eps-converted-to.pdf>] (./main.aux
 Package cleveref Info: loaded `french' language definitions on input line 27.
-
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
 )
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  C88AE8E1C86C43B37BAFAC29EB895887;1697.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: C88AE8E1C86C43B37BAFAC29EB895887;1697.
  ) 
 Here is how much of TeX's memory you used:
- 17855 strings out of 478287
- 304690 string characters out of 5849289
- 689362 words of memory out of 5000000
- 35692 multiletter control sequences out of 15000+600000
+ 17873 strings out of 478287
+ 304902 string characters out of 5849289
+ 690362 words of memory out of 5000000
+ 35704 multiletter control sequences out of 15000+600000
  490709 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,15n,77p,519b,643s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,15n,77p,519b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb>
-Output written on main.pdf (5 pages, 630648 bytes).
+Output written on main.pdf (5 pages, 632364 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 184 compressed objects within 2 object streams
+ 323 PDF objects out of 1000 (max. 8388607)
+ 233 compressed objects within 3 object streams
  41 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 
