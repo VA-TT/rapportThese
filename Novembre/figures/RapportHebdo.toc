@@ -1,5 +1,5 @@
 \babel@toc {french}{}\relax 
 \beamer@sectionintoc {1}{Étude bibliographie}{1}{0}{1}
 \beamer@sectionintoc {2}{DEM}{2}{0}{2}
-\beamer@sectionintoc {3}{MPM}{6}{0}{3}
-\beamer@sectionintoc {4}{MPM-DEM}{9}{0}{4}
+\beamer@sectionintoc {3}{MPM}{5}{0}{3}
+\beamer@sectionintoc {4}{MPM-DEM}{7}{0}{4}

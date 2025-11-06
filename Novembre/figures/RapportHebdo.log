@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.27)  6 NOV 2025 07:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.27)  6 NOV 2025 09:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -984,56 +984,43 @@ Package caption Info: End \AtBeginDocument code.
 LaTeX Info: Redefining \degres on input line 45.
 LaTeX Info: Redefining \up on input line 45.
 (RapportHebdo.nav)
-<Nonlinear_Dense.png, id=31, 2499.3375pt x 1316.92pt>
-File: Nonlinear_Dense.png Graphic file (type png)
-<use Nonlinear_Dense.png>
-Package pdftex.def Info: Nonlinear_Dense.png  used on input line 73.
-(pdftex.def)             Requested size: 2499.33142pt x 1316.9168pt.
-
-Overfull \hbox (27.85097pt too wide) in paragraph at lines 73--73
- [] 
- []
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+<Experiment.png, id=31, 328.8285pt x 326.72063pt>
+File: Experiment.png Graphic file (type png)
+<use Experiment.png>
+Package pdftex.def Info: Experiment.png  used on input line 69.
+(pdftex.def)             Requested size: 328.8277pt x 326.71982pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
+ (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 73.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 69.
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
-<angleFrictionInterne.png, id=32, 790.955pt x 670.505pt>
-File: angleFrictionInterne.png Graphic file (type png)
-<use angleFrictionInterne.png>
-Package pdftex.def Info: angleFrictionInterne.png  used on input line 73.
-(pdftex.def)             Requested size: 790.95308pt x 670.50337pt.
+<muy=constant.png, id=33, 427.5975pt x 277.035pt>
+File: muy=constant.png Graphic file (type png)
+<use muy=constant.png>
+Package pdftex.def Info: muy=constant.png  used on input line 69.
+(pdftex.def)             Requested size: 427.59645pt x 277.03432pt.
 
 
 [1{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
- <./Nonlinear_Dense.png> <./angleFrictionInterne.png>]
-File: Nonlinear_Dense.png Graphic file (type png)
-<use Nonlinear_Dense.png>
-Package pdftex.def Info: Nonlinear_Dense.png  used on input line 99.
-(pdftex.def)             Requested size: 2499.33142pt x 1316.9168pt.
-
-Overfull \hbox (27.85097pt too wide) in paragraph at lines 99--99
- [] 
- []
-
-File: angleFrictionInterne.png Graphic file (type png)
-<use angleFrictionInterne.png>
-Package pdftex.def Info: angleFrictionInterne.png  used on input line 99.
-(pdftex.def)             Requested size: 790.95308pt x 670.50337pt.
+ <./Experiment.png> <./muy=constant.png>]
+<StrainRate.png, id=74, 483.90787pt x 353.82187pt>
+File: StrainRate.png Graphic file (type png)
+<use StrainRate.png>
+Package pdftex.def Info: StrainRate.png  used on input line 82.
+(pdftex.def)             Requested size: 483.90668pt x 353.821pt.
 
 
 [2
 
-] (3000KineticComp_ev.tex
+ <./StrainRate.png>] (3000KineticComp_ev.tex
 \gptboxheight=\skip75
 \gptboxwidth=\skip76
 \gptboxtext=\box92
@@ -1046,13 +1033,13 @@ Package epstopdf Info: Source file: <./3000KineticComp_ev.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=./3000KineticComp_ev-eps-converted-to.pdf ./3000KineticComp_ev.eps>
 (epstopdf)             \includegraphics on input line 112.
 Package epstopdf Info: Output file is already uptodate.
-<./3000KineticComp_ev-eps-converted-to.pdf, id=106, 361.35pt x 252.945pt>
+<./3000KineticComp_ev-eps-converted-to.pdf, id=108, 361.35pt x 252.945pt>
 File: ./3000KineticComp_ev-eps-converted-to.pdf Graphic file (type pdf)
 <use ./3000KineticComp_ev-eps-converted-to.pdf>
 Package pdftex.def Info: ./3000KineticComp_ev-eps-converted-to.pdf  used on input line 112.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 121--121
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 104--104
  [] 
  []
 
@@ -1066,13 +1053,13 @@ Package epstopdf Info: Source file: <epsyy_epsv.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=epsyy_epsv-eps-converted-to.pdf epsyy_epsv.eps>
 (epstopdf)             \includegraphics on input line 136.
 Package epstopdf Info: Output file is already uptodate.
-<epsyy_epsv-eps-converted-to.pdf, id=107, 361.35pt x 252.945pt>
+<epsyy_epsv-eps-converted-to.pdf, id=109, 361.35pt x 252.945pt>
 File: epsyy_epsv-eps-converted-to.pdf Graphic file (type pdf)
 <use epsyy_epsv-eps-converted-to.pdf>
 Package pdftex.def Info: epsyy_epsv-eps-converted-to.pdf  used on input line 136.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 121--121
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 104--104
  [] 
  []
 
@@ -1090,13 +1077,13 @@ Package epstopdf Info: Source file: <epsyy_phi.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=epsyy_phi-eps-converted-to.pdf epsyy_phi.eps>
 (epstopdf)             \includegraphics on input line 138.
 Package epstopdf Info: Output file is already uptodate.
-<epsyy_phi-eps-converted-to.pdf, id=147, 361.35pt x 252.945pt>
+<epsyy_phi-eps-converted-to.pdf, id=149, 361.35pt x 252.945pt>
 File: epsyy_phi-eps-converted-to.pdf Graphic file (type pdf)
 <use epsyy_phi-eps-converted-to.pdf>
 Package pdftex.def Info: epsyy_phi-eps-converted-to.pdf  used on input line 138.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 140--140
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 123--123
  [] 
  []
 
@@ -1110,13 +1097,13 @@ Package epstopdf Info: Source file: <./3000_phi_I_fit.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=./3000_phi_I_fit-eps-converted-to.pdf ./3000_phi_I_fit.eps>
 (epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
-<./3000_phi_I_fit-eps-converted-to.pdf, id=148, 361.35pt x 252.945pt>
+<./3000_phi_I_fit-eps-converted-to.pdf, id=150, 361.35pt x 252.945pt>
 File: ./3000_phi_I_fit-eps-converted-to.pdf Graphic file (type pdf)
 <use ./3000_phi_I_fit-eps-converted-to.pdf>
 Package pdftex.def Info: ./3000_phi_I_fit-eps-converted-to.pdf  used on input line 124.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 140--140
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 123--123
  [] 
  []
 
@@ -1124,153 +1111,155 @@ Overfull \hbox (8.57005pt too wide) in paragraph at lines 140--140
 
 [4
 
- <./epsyy_phi-eps-converted-to.pdf> <./3000_phi_I_fit-eps-converted-to.pdf>] (Cercle_3000_residuel.tex
-Package epstopdf Info: Source file: <./Cercle_3000_residuel.eps>
-(epstopdf)                    date: 2025-11-05 09:38:43
-(epstopdf)                    size: 44836 bytes
-(epstopdf)             Output file: <./Cercle_3000_residuel-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-11-05 09:38:43
-(epstopdf)                    size: 9736 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=./Cercle_3000_residuel-eps-converted-to.pdf ./Cercle_3000_residuel.eps>
-(epstopdf)             \includegraphics on input line 121.
-Package epstopdf Info: Output file is already uptodate.
-<./Cercle_3000_residuel-eps-converted-to.pdf, id=182, 454.69875pt x 454.69875pt>
-File: ./Cercle_3000_residuel-eps-converted-to.pdf Graphic file (type pdf)
-<use ./Cercle_3000_residuel-eps-converted-to.pdf>
-Package pdftex.def Info: ./Cercle_3000_residuel-eps-converted-to.pdf  used on input line 121.
-(pdftex.def)             Requested size: 455.2041pt x 455.2041pt.
-)
-Overfull \hbox (9.97247pt too wide) in paragraph at lines 159--159
- [] 
- []
-
-(3000_mu_I_fit.tex
-Package epstopdf Info: Source file: <./3000_mu_I_fit.eps>
-(epstopdf)                    date: 2025-11-05 17:16:28
-(epstopdf)                    size: 23381 bytes
-(epstopdf)             Output file: <./3000_mu_I_fit-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-11-06 05:16:45
-(epstopdf)                    size: 4868 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=./3000_mu_I_fit-eps-converted-to.pdf ./3000_mu_I_fit.eps>
-(epstopdf)             \includegraphics on input line 121.
-Package epstopdf Info: Output file is already uptodate.
-<./3000_mu_I_fit-eps-converted-to.pdf, id=183, 361.35pt x 252.945pt>
-File: ./3000_mu_I_fit-eps-converted-to.pdf Graphic file (type pdf)
-<use ./3000_mu_I_fit-eps-converted-to.pdf>
-Package pdftex.def Info: ./3000_mu_I_fit-eps-converted-to.pdf  used on input line 121.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-)
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 159--159
- [] 
- []
-
-
-Overfull \vbox (6.91434pt too high) detected at line 159
- []
-
-
+ <./epsyy_phi-eps-converted-to.pdf> <./3000_phi_I_fit-eps-converted-to.pdf>]
+<MP=12_0.png, id=184, 823.075pt x 657.45625pt>
+File: MP=12_0.png Graphic file (type png)
+<use MP=12_0.png>
+Package pdftex.def Info: MP=12_0.png  used on input line 144.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=12_0.png> <a0,fr0>
+<MP=12_1.png, id=188, 823.075pt x 657.45625pt>
+File: MP=12_1.png Graphic file (type png)
+<use MP=12_1.png>
+Package pdftex.def Info: MP=12_1.png  used on input line 144.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=12_1.png> <a0,fr1>
+<MP=12_2.png, id=192, 823.075pt x 657.45625pt>
+File: MP=12_2.png Graphic file (type png)
+<use MP=12_2.png>
+Package pdftex.def Info: MP=12_2.png  used on input line 144.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=12_2.png> <a0,fr2>
+<MP=12+_0.png, id=229, 823.075pt x 657.45625pt>
+File: MP=12+_0.png Graphic file (type png)
+<use MP=12+_0.png>
+Package pdftex.def Info: MP=12+_0.png  used on input line 144.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=12+_0.png> <a1,fr0>
+<MP=12+_1.png, id=233, 823.075pt x 657.45625pt>
+File: MP=12+_1.png Graphic file (type png)
+<use MP=12+_1.png>
+Package pdftex.def Info: MP=12+_1.png  used on input line 144.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=12+_1.png> <a1,fr1>
+<MP=12+_2.png, id=237, 823.075pt x 657.45625pt>
+File: MP=12+_2.png Graphic file (type png)
+<use MP=12+_2.png>
+Package pdftex.def Info: MP=12+_2.png  used on input line 144.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=12+_2.png> <a1,fr2>
 
 [5
 
- <./Cercle_3000_residuel-eps-converted-to.pdf> <./3000_mu_I_fit-eps-converted-to.pdf>]
-<MPM_0.png, id=219, 2499.3375pt x 1418.29875pt>
+]
+<MP=1200_0.png, id=291, 823.075pt x 657.45625pt>
+File: MP=1200_0.png Graphic file (type png)
+<use MP=1200_0.png>
+Package pdftex.def Info: MP=1200_0.png  used on input line 163.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=1200_0.png> <a2,fr0>
+<MP=1200_1.png, id=295, 823.075pt x 657.45625pt>
+File: MP=1200_1.png Graphic file (type png)
+<use MP=1200_1.png>
+Package pdftex.def Info: MP=1200_1.png  used on input line 163.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=1200_1.png> <a2,fr1>
+<MP=1200_2.png, id=299, 823.075pt x 657.45625pt>
+File: MP=1200_2.png Graphic file (type png)
+<use MP=1200_2.png>
+Package pdftex.def Info: MP=1200_2.png  used on input line 163.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=1200_2.png> <a2,fr2>
+<MPM_0.png, id=323, 2499.3375pt x 1418.29875pt>
 File: MPM_0.png Graphic file (type png)
 <use MPM_0.png>
-Package pdftex.def Info: MPM_0.png  used on input line 168.
+Package pdftex.def Info: MPM_0.png  used on input line 163.
 (pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
- <./MPM_0.png> <a0,fr0>
-<MPM_1.png, id=223, 2499.3375pt x 1418.29875pt>
+ <./MPM_0.png> <a3,fr0>
+<MPM_1.png, id=327, 2499.3375pt x 1418.29875pt>
 File: MPM_1.png Graphic file (type png)
 <use MPM_1.png>
-Package pdftex.def Info: MPM_1.png  used on input line 168.
+Package pdftex.def Info: MPM_1.png  used on input line 163.
 (pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
- <./MPM_1.png> <a0,fr1>
-<MPM_2.png, id=227, 2499.3375pt x 1418.29875pt>
+ <./MPM_1.png> <a3,fr1>
+<MPM_2.png, id=331, 2499.3375pt x 1418.29875pt>
 File: MPM_2.png Graphic file (type png)
 <use MPM_2.png>
-Package pdftex.def Info: MPM_2.png  used on input line 168.
+Package pdftex.def Info: MPM_2.png  used on input line 163.
 (pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
- <./MPM_2.png> <a0,fr2>
-<MPM_3.png, id=231, 2499.3375pt x 1418.29875pt>
+ <./MPM_2.png> <a3,fr2>
+<MPM_3.png, id=335, 2499.3375pt x 1418.29875pt>
 File: MPM_3.png Graphic file (type png)
 <use MPM_3.png>
-Package pdftex.def Info: MPM_3.png  used on input line 168.
+Package pdftex.def Info: MPM_3.png  used on input line 163.
 (pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
- <./MPM_3.png> <a0,fr3>
-<MPM_4.png, id=235, 2499.3375pt x 1418.29875pt>
+ <./MPM_3.png> <a3,fr3>
+<MPM_4.png, id=339, 2499.3375pt x 1418.29875pt>
 File: MPM_4.png Graphic file (type png)
 <use MPM_4.png>
-Package pdftex.def Info: MPM_4.png  used on input line 168.
+Package pdftex.def Info: MPM_4.png  used on input line 163.
 (pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
- <./MPM_4.png> <a0,fr4>
-<MPM_5.png, id=239, 2499.3375pt x 1418.29875pt>
+ <./MPM_4.png> <a3,fr4>
+<MPM_5.png, id=343, 2499.3375pt x 1418.29875pt>
 File: MPM_5.png Graphic file (type png)
 <use MPM_5.png>
-Package pdftex.def Info: MPM_5.png  used on input line 168.
+Package pdftex.def Info: MPM_5.png  used on input line 163.
 (pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
- <./MPM_5.png> <a0,fr5>
-<MPM_6.png, id=243, 2499.3375pt x 1418.29875pt>
+ <./MPM_5.png> <a3,fr5>
+<MPM_6.png, id=347, 2499.3375pt x 1418.29875pt>
 File: MPM_6.png Graphic file (type png)
 <use MPM_6.png>
-Package pdftex.def Info: MPM_6.png  used on input line 168.
+Package pdftex.def Info: MPM_6.png  used on input line 163.
 (pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
- <./MPM_6.png> <a0,fr6>
-<MPM_7.png, id=247, 2499.3375pt x 1418.29875pt>
+ <./MPM_6.png> <a3,fr6>
+<MPM_7.png, id=351, 2499.3375pt x 1418.29875pt>
 File: MPM_7.png Graphic file (type png)
 <use MPM_7.png>
-Package pdftex.def Info: MPM_7.png  used on input line 168.
+Package pdftex.def Info: MPM_7.png  used on input line 163.
 (pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
- <./MPM_7.png> <a0,fr7>
-<MPM_8.png, id=251, 2499.3375pt x 1418.29875pt>
+ <./MPM_7.png> <a3,fr7>
+<MPM_8.png, id=355, 2499.3375pt x 1418.29875pt>
 File: MPM_8.png Graphic file (type png)
 <use MPM_8.png>
-Package pdftex.def Info: MPM_8.png  used on input line 168.
+Package pdftex.def Info: MPM_8.png  used on input line 163.
 (pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
- <./MPM_8.png> <a0,fr8>
-<MPM_9.png, id=255, 2499.3375pt x 1418.29875pt>
+ <./MPM_8.png> <a3,fr8>
+<MPM_9.png, id=359, 2499.3375pt x 1418.29875pt>
 File: MPM_9.png Graphic file (type png)
 <use MPM_9.png>
-Package pdftex.def Info: MPM_9.png  used on input line 168.
+Package pdftex.def Info: MPM_9.png  used on input line 163.
 (pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
- <./MPM_9.png> <a0,fr9>
-<MPM_10.png, id=259, 2499.3375pt x 1418.29875pt>
+ <./MPM_9.png> <a3,fr9>
+<MPM_10.png, id=363, 2499.3375pt x 1418.29875pt>
 File: MPM_10.png Graphic file (type png)
 <use MPM_10.png>
-Package pdftex.def Info: MPM_10.png  used on input line 168.
+Package pdftex.def Info: MPM_10.png  used on input line 163.
 (pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
- <./MPM_10.png> <a0,fr10>
-<MPM_11.png, id=263, 2499.3375pt x 1418.29875pt>
+ <./MPM_10.png> <a3,fr10>
+<MPM_11.png, id=367, 2499.3375pt x 1418.29875pt>
 File: MPM_11.png Graphic file (type png)
 <use MPM_11.png>
-Package pdftex.def Info: MPM_11.png  used on input line 168.
+Package pdftex.def Info: MPM_11.png  used on input line 163.
 (pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
- <./MPM_11.png> <a0,fr11>
-<MPM_12.png, id=267, 2499.3375pt x 1418.29875pt>
+ <./MPM_11.png> <a3,fr11>
+<MPM_12.png, id=371, 2499.3375pt x 1418.29875pt>
 File: MPM_12.png Graphic file (type png)
 <use MPM_12.png>
-Package pdftex.def Info: MPM_12.png  used on input line 168.
+Package pdftex.def Info: MPM_12.png  used on input line 163.
 (pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
- <./MPM_12.png> <a0,fr12>
-<MPM_13.png, id=271, 2499.3375pt x 1418.29875pt>
+ <./MPM_12.png> <a3,fr12>
+<MPM_13.png, id=375, 2499.3375pt x 1418.29875pt>
 File: MPM_13.png Graphic file (type png)
 <use MPM_13.png>
-Package pdftex.def Info: MPM_13.png  used on input line 168.
+Package pdftex.def Info: MPM_13.png  used on input line 163.
 (pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
- <./MPM_13.png> <a0,fr13>
+ <./MPM_13.png> <a3,fr13>
 
 [6
 
-] <a1,fr0> <a1,fr1> <a1,fr2> <a1,fr3> <a1,fr4> <a1,fr5> <a1,fr6> <a1,fr7> <a1,fr8> <a1,fr9> <a1,fr10> <a1,fr11> <a1,fr12> <a1,fr13>
-
-[7
-
-] <a2,fr0> <a2,fr1> <a2,fr2> <a2,fr3> <a2,fr4> <a2,fr5> <a2,fr6> <a2,fr7> <a2,fr8> <a2,fr9> <a2,fr10> <a2,fr11> <a2,fr12> <a2,fr13>
-
-[8
-
 ]
 
-[9
+[7
 
 ]
 \tf@nav=\write6
@@ -1291,17 +1280,17 @@ Package rerunfilecheck Info: File `RapportHebdo.out' has not changed.
 (rerunfilecheck)             Checksum: AC861A1428A4005764E541E3CACF3C45;338.
  ) 
 Here is how much of TeX's memory you used:
- 41380 strings out of 468219
- 972295 string characters out of 5433353
- 1478101 words of memory out of 5000000
- 69119 multiletter control sequences out of 15000+600000
- 640023 words of font info for 76 fonts, out of 8000000 for 9000
+ 41404 strings out of 468219
+ 971904 string characters out of 5433353
+ 1478102 words of memory out of 5000000
+ 69161 multiletter control sequences out of 15000+600000
+ 635347 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,16n,123p,770b,823s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0700.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0900.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0500.pk><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi9.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on RapportHebdo.pdf (9 pages, 2631780 bytes).
+ 128i,16n,123p,770b,822s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0700.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0900.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0500.pk><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on RapportHebdo.pdf (7 pages, 3109350 bytes).
 PDF statistics:
- 726 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 353 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 680 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
+ 455 words of extra memory for PDF output out of 10000 (max. 10000000)
 

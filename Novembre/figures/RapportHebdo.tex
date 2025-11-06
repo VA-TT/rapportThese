@@ -49,53 +49,36 @@
 % \end{frame}
 
 \section{Étude bibliographie}
-\begin{frame}{Non-linéaire critère de Coulomb au pic - échantillons denses}
+\begin{frame}{Auteur Kostas Senetakis}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{figure}[h]
                 \centering
-                \scalebox{0.08}{\includegraphics{Nonlinear_Dense.png}}
-                \caption{Non-linéaire critère de Coulomb au pic des échantillons denses}
+                \scalebox{0.4}{\includegraphics{Experiment.png}}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
             \begin{figure}[h]
                 \centering
-                \scalebox{0.2}{\includegraphics{angleFrictionInterne.png}}
-                \caption{Non-linéaire critère de Coulomb au pic des échantillons denses}
+                \scalebox{0.4}{\includegraphics{muy=constant.png}}
             \end{figure}
         \end{column}
-    \end{columns}
-                Aucune explication sur le phénomène nonlinéaire: Ponce and Bell,1971, Stroud, 1971; Shinji Fukushima 1984;
-Papier: M. Vivoda Prodan et al, 2024 ;
-Daosheng Ling et al 2024;
-ASCE...
+        \end{columns}
+[Kostas Senetakis, 2017,2018]:  "Under the low normal load range applied in the study, between 1 and 5 N, we found
+that the frictional force is linearly correlated with the applied normal load"
 \end{frame}
 
 \section{DEM}
 
 % 03102025
-\begin{frame}{Non-linéaire critère de Coulomb au pic - échantillons denses}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
+\begin{frame}{Article Stress-strain behavior of sand at high strain rates (Mehdi Omidvar et al,2012)}
             \begin{figure}[h]
                 \centering
-                \scalebox{0.08}{\includegraphics{Nonlinear_Dense.png}}
-                \caption{Non-linéaire critère de Coulomb au pic des échantillons denses}
+                \scalebox{0.4}{\includegraphics{StrainRate.png}}
             \end{figure}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \begin{figure}[h]
-                \centering
-                \scalebox{0.2}{\includegraphics{angleFrictionInterne.png}}
-                \caption{Non-linéaire critère de Coulomb au pic des échantillons denses}
-            \end{figure}
-        \end{column}
-    \end{columns}
-                Aucune explication sur le phénomène nonlinéaire: Ponce and Bell,1971, Stroud, 1971; Shinji Fukushima 1984;
-Papier: M. Vivoda Prodan et al, 2024 ;
-Daosheng Ling et al 2024;
-ASCE...
+            "Under HSR loading, there is not enough time for strain energy
+accumulation, which prohibits crushing and promotes
+rolling-rearrangement resulting in a higher resistance to shear"
 \end{frame}
 
 
@@ -139,45 +122,46 @@ ASCE...
     \end{columns}
 \end{frame}
 
-\begin{frame}{3375 particules}
+
+\section{MPM}
+\begin{frame}{Stabilisation d'une colonne de sol par Mohr-Coulomb}
     \begin{columns}
         \begin{column}{0.5\textwidth}
-            \begin{figure}[h]
+            \begin{figure}
                 \centering
-                \scalebox{0.4}{\input{Cercle_3000_residuel.tex}}
-                \caption{Cercles de Mohr}
+                \animategraphics[loop,autoplay,controls, width=5cm]{1}{MP=12_}{0}{2}
+                \caption{MP=12}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
-            \begin{figure}[h]
+            \begin{figure}
                 \centering
-                \scalebox{0.5}{\input{3000_mu_I_fit.tex}}
-                \caption{$\mu(I)$ rhéologie}
+                \animategraphics[loop,autoplay,controls, width=5cm]{1}{MP=12+_}{0}{2}
+                \caption{augementer rigidité de condition aux limites}
             \end{figure}
         \end{column}
     \end{columns}
-\end{frame}
-
-\section{MPM}
-\begin{frame}{Effondrement d'une colonne de sol par Mohr-Coulomb}
-            \begin{figure}[h]
-                \centering
-                \animategraphics[loop,autoplay,controls, width=10cm]{1}{MPM_}{0}{13}
-                \caption{MP=1111}
-            \end{figure}
-        \end{frame}\begin{frame}{Effondrement d'une colonne de sol par Mohr-Coulomb}
-            \begin{figure}[h]
-                \centering
-                \animategraphics[loop,autoplay,controls, width=10cm]{1}{MPM_}{0}{13}
-                \caption{MP=01}
-            \end{figure}
-        \end{frame}\begin{frame}{Effondrement d'une colonne de sol par Mohr-Coulomb}
-            \begin{figure}[h]
-                \centering
-                \animategraphics[loop,autoplay,controls, width=10cm]{1}{MPM_}{0}{13}
-                \caption{augementer le rigidité}
-            \end{figure}
         \end{frame}
+
+    \begin{frame}{Effondrement d'une colonne de sol par Mohr-Coulomb}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \animategraphics[loop,autoplay,controls, width=5cm]{1}{MP=1200_}{0}{2}
+                \caption{MP=1200}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \animategraphics[loop,autoplay,controls, width=5cm]{1}{MPM_}{0}{13}
+                \caption{MP=1200 Effondrement}
+                       \end{figure}
+        \end{column}
+    \end{columns}
+        \end{frame}
+
 \section{MPM-DEM}
 Poster pour la conférence "Powder and grains"
 
