@@ -1,0 +1,99 @@
+% =========================================================================
+% Example Manuscript using manuscript.cls v0.9
+% =========================================================================
+%
+% Class options for manuscript.cls:
+%
+% 1. Language options:
+%    - english  : Set the document language to English (default)
+%    - french   : Set the document language to French
+%
+% 2. Column options:
+%    - onecolumn : Single-column layout (default)
+%    - twocolumn : Two-column layout
+%
+% 3. Font options:
+%    - sansserif : Use a modern sans-serif font for the whole document
+%
+% 4. Title page options:
+%    - coverfooter : Adds a footer on the title page: "Student Manuscript -- Confidential"
+%
+% 5. Hyperlink options:
+%    - colorlinks : Make hyperlinks colored (blue by default)
+%                    Without this option, links are black and discrete
+%
+% Compilation instructions: edit Makefile and type make
+%
+% =========================================================================
+
+\documentclass[french,twocolumn,coverfooter]{manuscript}
+
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{bm}
+\usepackage{comment}
+\usepackage{cuted} % pour passer en 1 colonne (en début de chapitre)
+\usepackage{asymptote}
+ \usepackage{algorithm} 
+
+
+% =========================================================================
+% DOCUMENT START
+% =========================================================================
+
+\begin{document}
+
+% -------------------------------------------------------------------------
+% TITLE PAGE
+% -------------------------------------------------------------------------
+% Usage:
+%   \maketitlepage{Title}{Author}{Supervisor}{Department}
+% Options:
+%   - coverfooter: adds footer text on title page
+%   - watermark: automatically DRAFT (English) or PROVISOIRE (French)
+\maketitlepage
+  {Homogénéisation numérique à double échelle pour la modélisation de mouvements gravitaires liés aux changements climatiques}
+  {Viet Anh QUACH}
+  {Supervisé par : Vincent Richefeu et Gaël Combe}
+  {Universit\'e Grenoble Alpes, Laboratoire 3SR}
+
+% -------------------------------------------------------------------------
+% ABSTRACT
+% -------------------------------------------------------------------------
+% Environment: abstractpage
+% - Always single column
+% - Text is normal font (not italic)
+\begin{abstractpage}
+\lipsum[1-2] % Replace with your own abstract
+\end{abstractpage}
+
+% -------------------------------------------------------------------------
+% TABLE OF CONTENTS
+% -------------------------------------------------------------------------
+% Command: \tableofcontents
+% - Automatically hyperlinked
+% - Compact spacing (parskip=0pt, itemsep=0pt)
+% - Shows chapters and sections by default (tocdepth=2)
+\tableofcontents
+
+% =========================================================================
+% MAIN TEXT
+% =========================================================================
+
+\include{introduction}
+\include{dem}
+
+% =========================================================================
+% BIBLIOGRAPHY
+% =========================================================================
+% Usage: \bibliographyfile{filename}
+% - Requires external .bib file
+\bibliographyfile{references}
+
+% =========================================================================
+% END OF DOCUMENT
+% =========================================================================
+
+\end{document}

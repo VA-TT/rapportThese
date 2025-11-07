@@ -1,0 +1,355 @@
+%!TEX root = main.tex
+\chapter{Méthode de éléments discrets à périodicité générale}
+
+\begin{strip}
+L'utilisation de la Méthode des Éléments Discrets (DEM) pour étudier la rheologie des matériaux granulaires est limitée par le nombre relativement faible de particules qui peuvent être traitées informatiquement par rapport aux quantités en jeu dans le monde réel. Dans la plupart des simulations DEM, en deux dimensions et trois dimensions, le nombre de particules est généralement inférieur à \num{10000}. Cette limitation s'explique principalement par les contraintes de puissance de calcul et de mémoire. En conséquence, les échantillons numériques ne sont pas systématiquement représentatifs du comportement massif et peuvent être souvent perturbés par des effets liés aux parois. La compacité est généralement plus faible près des murs rigides, et l'ordre induit par le mur peut se développer significativement dans le volume. 
+De plus, les déformations des murs de confinement peuvent causer la formation d'arches aux angles et créer des gradients de contraintes à longue distance au sein de l'échantillon numérique. Bien que ces effets soient réels et également observés lors des expériences avec des matériaux granulaires, les expériences impliquent généralement beaucoup plus de particules, ce qui rend les effets du mur plus prononcé et problématiques dans les simulations numériques.\\[5mm]
+\end{strip}
+
+
+\begin{comment}
+Key Concepts
+%
+Simulation Cell: The basic unit of the simulation, which is repeated in all directions to create an infinite system. This cell is often a box (in 3D) or a rectangle (in 2D).
+%
+Periodicity: The simulation cell is replicated in all spatial directions. When a particle exits one side of the cell, it re-enters from the opposite side. This creates the illusion of an infinite system.
+%
+Homogeneity: By using periodic boundary conditions, the simulation assumes that the properties of the system are homogeneous and isotropic at a macroscopic level, meaning the bulk behavior is consistent throughout the material.
+%
+How It Works
+%
+Particle Interaction: Particles within the primary simulation cell interact not only with each other but also with particles in the neighboring cells. This interaction is handled by considering the minimum image convention, where each particle interacts only with the closest copy (or image) of another particle, whether it is in the primary cell or a neighboring cell.
+%
+Continuity: As particles move within the simulation, those that move out of one boundary of the cell are reintroduced at the opposite boundary. This maintains a constant number of particles within the primary cell and ensures continuity.
+%
+Applications
+%
+Material Science: Used to study the bulk properties of materials, such as granular materials, crystals, and polymers.
+Molecular Dynamics: Helps in simulating large molecular systems by reducing edge effects and allowing the study of bulk phase behavior.
+%
+Fluid Dynamics: Applied in computational fluid dynamics to simulate fluid flow in a continuous manner without edge effects.
+%
+Advantages
+%
+Reduction of Edge Effects: By eliminating physical boundaries, periodic boundary conditions reduce artifacts that can arise from the edges or surfaces of a finite simulation domain.
+Simulation of Bulk Properties: Allows for the simulation of bulk material properties with a relatively small number of particles, making it computationally feasible.
+Consistency: Ensures that the simulated system is consistent and homogeneous, providing more accurate results for bulk behavior studies.
+%
+Limitations
+%
+Assumption of Homogeneity: Periodic boundary conditions assume that the system is homogeneous and infinite, which may not be the case for all materials or conditions.
+Artifacts: Can introduce artifacts if the simulation cell is not large enough or if the system being modeled has inherent inhomogeneities.
+
+\end{comment}
+
+
+
+
+Dans des études passées, mon équipe encadrante a eu une expertise sur les situations à évolution lente, où le comportement du système granulaire peut être considéré comme quasi-statique. Pour le sujet abordé dans ce travail de thèse, la situation est différente : il s'agit d'analyser des sollicitations rapides, avec possiblement des régimes de transition tout aussi rapides. Ces changements de régimes demandent une attention particulière, notamment parce qu'ils sortent du domaine d’expertise initial.
+
+Les premiers calculs réalisés dans ce nouveau cadre ont d’ailleurs soulevé des doutes : certains résultats semblaient incohérents ou difficiles à interpréter. Pour comprendre l’origine de ces écarts, il a été nécessaire de reprendre en détail l’ensemble de la mise en œuvre numérique de la méthode DEM. Cette remise à plat s’est avérée indispensable pour vérifier la cohérence de l'approche, notamment dans le cadre des conditions de périodicité générales qui doivent être respectées si l’on souhaite envisager un couplage multi-échelle de type MPM$\times$DEM.
+
+\section {Loi de contact}
+\subsection{La force tangentielle}
+
+La force tangentielle est calculée selon le modèle ressort-amortisseur avec glissement de Coulomb :
+
+\begin{align}
+    \vec{v}_t &= \vec{v}_{\text{contact}} - (\vec{v}_{\text{contact}} \cdot \hat{n})\hat{n} \\
+    \Delta\vec{f}_t &= -k_t \vec{v}_t \Delta t \\
+    \vec{f}_t^{\text{essai}} &= \vec{f}_t^{\text{ancien}} + \Delta\vec{f}_t \\
+    \vec{f}_t &= \begin{cases}
+        \vec{f}_t^{\text{essai}} & \text{si } \|\vec{f}_t^{\text{essai}}\| \leq \mu |\vec{f}_n| \\
+        \mu |\vec{f}_n| \frac{\vec{f}_t^{\text{essai}}}{\|\vec{f}_t^{\text{essai}}\|} & \text{sinon (glissement)}
+    \end{cases}
+    \label{eq:forceTangentielle}
+\end{align}
+
+où :
+\begin{itemize}
+    \item $\vec{v}_t$ : vitesse tangentielle au contact
+    \item $k_t$ : rigidité tangentielle
+    \item $\mu$ : coefficient de frottement
+    \item $\Delta t$ : pas de temps
+\end{itemize}
+
+\subsection{Correction objective de la force tangentielle}
+
+Dans le cas de grandes déformations, une correction objective est appliquée pour tenir compte de la rotation du repère local :
+
+\begin{align}
+    \vec{f}_t^{\text{corr}} &= \vec{f}_t - \vec{f}_t \times (\vec{n}_{\text{ancien}} \times \vec{n}) \\
+    \vec{f}_t^{\text{corr}} &= \vec{f}_t^{\text{corr}} - \vec{f}_t^{\text{corr}} \times \left(\frac{\Delta t}{2} (\vec{\omega}_i + \vec{\omega}_j) \times \vec{n}\right) \times \vec{n}
+    \label{eq:correctionObjective}
+\end{align}
+
+Cette correction comprend deux termes :
+\begin{itemize}
+    \item Premier terme : correction due au changement d'orientation du vecteur normal
+    \item Deuxième terme : correction due à la rotation des particules
+\end{itemize}
+
+\subsection{Calcul du moment (torque)}
+
+Le moment résultant sur chaque particule provient de deux sources principales :
+
+\subsubsection{Moment dû aux forces de contact}
+\begin{align}
+    \vec{M}_i &= -R_i (\hat{n} \times \vec{f}_t) \\
+    \vec{M}_j &= R_j (\hat{n} \times \vec{f}_t)
+    \label{eq:momentContact}
+\end{align}
+
+\subsubsection{Moment dû au roulement (si activé)}
+Pour simuler la résistance au roulement, un moment supplémentaire peut être ajouté :
+
+\begin{align}
+    \vec{\omega}_{\text{rel}} &= \vec{\omega}_i - \vec{\omega}_j \\
+    \vec{M}_{\text{roulement}} &= -k_r \vec{\omega}_{\text{rel}} - c_r \frac{d(\vec{\omega}_{\text{rel}})}{dt} \\
+    \vec{M}_i &= \vec{M}_i + \vec{M}_{\text{roulement}} \\
+    \vec{M}_j &= \vec{M}_j - \vec{M}_{\text{roulement}}
+    \label{eq:momentRoulement}
+\end{align}
+
+où :
+\begin{itemize}
+    \item $k_r$ : rigidité en roulement
+    \item $c_r$ : amortissement en roulement
+    \item $\vec{\omega}_{\text{rel}}$ : vitesse angulaire relative
+\end{itemize}
+
+\subsection{Intégration des moments dans l'équation du mouvement}
+
+L'équation de rotation pour chaque particule devient :
+\begin{align}
+    I_i \frac{d\vec{\omega}_i}{dt} &= \sum_{\text{contacts}} \vec{M}_i \\
+    \vec{\alpha}_i &= \frac{\sum_{\text{contacts}} \vec{M}_i}{I_i}
+    \label{eq:equationRotation}
+\end{align}
+
+où :
+\begin{itemize}
+    \item $I_i$ : moment d'inertie de la particule $i$
+    \item $\vec{\alpha}_i$ : accélération angulaire de la particule $i$
+\end{itemize}
+
+% \subsection{Algorithme complet pour les forces et moments}
+
+% L'algorithme de calcul des forces et moments suit ces étapes :
+
+% \begin{algorithm}[H]
+% \caption{Calcul des forces et moments}
+% \begin{algorithmic}[1]
+% \For{chaque interaction $k$}
+%     \State Calculer $\vec{s}_{ij}$ et appliquer les conditions périodiques
+%     \State Calculer $\vec{branch} = \underline{\underline{H}} \vec{s}_{ij}$
+%     \State Calculer $\hat{n} = \vec{branch}/\|\vec{branch}\|$
+%     \State Calculer $\delta_n$ (pénétration normale)
+%     \State Calculer $\vec{v}_{\text{contact}}$ (vitesse relative au contact)
+    
+%     \If{contact avec liaison (bonded)}
+%         \State Calculer $\vec{f}_n$ et $\vec{f}_t$ sans limite de glissement
+%         \State Vérifier critère de rupture
+%     \Else
+%         \State Calculer $\vec{f}_n$ (force normale)
+%         \State Calculer $\vec{f}_t^{\text{essai}}$ (force tangentielle d'essai)
+%         \State Appliquer correction objective si nécessaire
+%         \State Appliquer critère de Coulomb pour $\vec{f}_t$
+%     \EndIf
+    
+%     \State Calculer moments : $\vec{M}_i = -R_i (\hat{n} \times \vec{f}_t)$
+%     \State Ajouter forces : $\vec{F}_i = \vec{F}_i - (\vec{f}_n + \vec{f}_t)$
+%     \State Ajouter moments : $\vec{M}_i = \vec{M}_i + \vec{M}_{\text{contact}}$
+% \EndFor
+% \end{algorithmic}
+% \end{algorithm}
+
+% Cette approche complète permet de simuler correctement le comportement mécanique des matériaux granulaires avec prise en compte des effets de frottement, roulement et grandes déformations.
+
+
+\section {Cinématique}
+
+
+[explications habituelles avec schémas]
+
+\begin{equation}
+\underline{r} = \bm{h} \cdot \underline{s}
+\end{equation}
+
+\begin{equation}
+\underline{\dot r} = \bm{\dot{h}} \cdot \underline{s} + \bm{h} \cdot \underline{\dot{s}} 
+\end{equation}
+
+
+\section {Répliques des particules}
+
+
+Insister un peu sur l'image en donut pour le cas 2D.
+I est quand même nécessaire de parler de répliques (images) de particules. 
+
+Reduced position of image:
+%
+\begin{equation}
+\underline{s}'(\underline{\xi}) = \underline{s} + \underline{\xi}
+\end{equation}
+%
+$\underline{\xi}$ is the unit-cell shift with each component being  $-1$, $0$ or $1$
+%
+
+
+Position of image:
+\begin{equation}
+\underline{r}'(\underline{\xi}) = \bm{h} \cdot \underline{s}' = \bm{h} \cdot(\underline{s} + \underline{\xi})
+\end{equation}
+
+Velocity of image:
+\begin{equation}
+\underline{\dot{r}}'(\underline{\xi}) = \bm{\dot{h}} \cdot (\underline{s} + \underline{\xi}) + \bm{h} \cdot (\underline{\dot{s}} + \underline{\dot{\xi}})
+\end{equation}
+%
+But since $\underline{\dot{\xi}} = \underline{0}$:
+%
+\begin{equation}
+\underline{\dot{r}}'(\underline{\xi}) = \bm{\dot{h}} \cdot (\underline{s} + \underline{\xi}) + \bm{h} \cdot \underline{\dot{s}}
+\end{equation}
+
+
+[ expliquer que les sauts périodiques nécessitent une correction des vitesses ]
+
+Relative position between a point $\underline{s}_{\,i}$ in the periodic cell and a point image $\underline{s}'_{\,j}$ that can be in the cell or any surrounding cell:
+%
+\begin{equation}
+\underline{s}_{\,ij}\left(\underline{\xi}_{\,j}\right) 
+= \left \langle  \underline{s}'_{\,j}\left(\underline{\xi}_{\,j}\right) - \underline{s}_{\,i} \right \rangle_\text{inf}
+\end{equation}
+%
+So
+%
+\begin{equation}
+\underline{s}_{\,ij}\left(\underline{\xi}_{\,j}\right) = \left(\underline{s}_{\,j} + \underline{\xi}_{\,j}\right) -  \underline{s}_{\,i}
+\end{equation}
+%
+with
+%
+\begin{equation}
+\underline{\xi}_j = -
+\begin{pmatrix}
+\text{\texttt{round}}\left(s_j^x - s_i^x\right) \\[0.25em]
+\text{\texttt{round}}\left(s_j^y - s_i^y\right) \\[0.25em]
+\text{\texttt{round}}\left(s_j^z - s_i^z\right) 
+\end{pmatrix}
+\end{equation}
+%
+where the \texttt{round} operator adjusts a number to the nearest integer. Given that both points $i$ and $j$ are located within the periodic cell, the results of rounding can only be $-1$, $0$, or $1$.
+\begin{asy}
+    size(8cm);
+    
+    // Première boîte avec particules
+    path thebox = box((0,0), (1,1));
+    draw(thebox, blue + linewidth(2pt));
+    pair c1 = (0.1,0.2);
+    pair c2 = (0.9,0.8);
+    real R = 0.02;
+    label("$P1$", c1, 2S);
+    label("$P2$", c2, 2N);
+    path particule1 = circle(c1, R);
+    path particule2 = circle(c2, R);
+    fill(particule1, magenta);
+    fill(particule2, magenta);
+    draw(particule1, black + linewidth(1pt));  // Ajout du contour pour particule1
+    draw(particule2, black + linewidth(1pt));  // Ajout du contour pour particule2
+    
+    // Deuxième boîte
+    draw(shift(1.0,0.0)*thebox, blue + linewidth(2pt));
+    fill(shift(1.0,0.0)*particule1, magenta);
+    fill(shift(1.0,0.0)*particule2, magenta);
+    draw(shift(1.0,0.0)*particule1, black + linewidth(1pt));
+    draw(shift(1.0,0.0)*particule2, black + linewidth(1pt));
+    label("$P'1$", c1 + (1,0), 2S);
+    label("$P'2$", c2 + (1,0), 2N);
+
+    //Sij
+    draw(c1 -- c2, arrow = Arrows(), L = "$s_{ij}$");
+    draw(c2 -- (c1 + (1,0)), arrow = Arrows(), L = "$s'_{ij}$");
+
+\end{asy}
+
+The branch vector to be considered in actual coordinate is 
+%
+\begin{equation}
+\underline{r}_{\,ij}(\underline{\xi}_{\,j}) = \bm{h} \cdot \left((\underline{s}_{\,j} + \underline{\xi}_{\,j}) -  \underline{s}_{\,i} \right)
+\end{equation}
+
+This branch vector is used to find the contact point, local frame...
+For the relative velocity...
+
+%\begin{strip}
+\begin{flalign}
+ \underline{\dot{r}}_{\,ij}\left(\underline{\xi}_{\,j}\right) &= \underline{\dot{r}}'_{\,j}\left(\underline{\xi}_{\,j}\right) - \underline{\dot{r}}_{\,i} \nonumber \\ 
+ \underline{\dot{r}}_{\,ij}\left(\underline{\xi}_{\,j}\right)   &= \bm{\dot{h}} \cdot \left(\underline{s}_{\,j} + \underline{\xi}_{\,j}\right) + \bm{h} \cdot \underline{\dot{s}}_{\,j}  \nonumber \\
+   & - \left(\bm{\dot{h}} \cdot \underline{s}_{\,i} + \bm{h} \cdot \underline{\dot{s}}_{\,i} \right) \nonumber \\
+ \underline{\dot{r}}_{\,ij}\left(\underline{\xi}_{\,j}\right)   &= \bm{\dot{h}} \cdot \left(\underline{s}_{\,j} - \underline{s}_{\,i} + \underline{\xi}_{\,j}\right) + \bm{h} \cdot \left(\underline{\dot{s}}_{\,j} - \underline{\dot{s}}_{\,i}\right) \nonumber \\
+ \underline{\dot{r}}_{\,ij}\left(\underline{\xi}_{\,j}\right)   &= \bm{\dot{h}} \cdot \left(\underline{s}'_{\,j}(\underline{\xi}_{\,j}) - \underline{s}_{\,i}\right) + \bm{h} \cdot \left(\underline{\dot{s}}_{\,j} - \underline{\dot{s}}_{\,i}\right) \nonumber \\
+ \underline{\dot{r}}_{\,ij}\left(\underline{\xi}_{\,j}\right)     &= \bm{\dot{h}} \cdot \underline{s}_{\,ij}(\underline{\xi}_{\,j}) + \bm{h} \cdot \underline{\dot{s}}_{\,ij}
+\end{flalign}
+%\end{strip}
+
+Le premier terme tient bien compte du fait que la composante affine de la vitesse n'est pas périodique.
+En fait, ce qu'on faisait était bien ok. (Je vais re-mettre le code comme il était avant.)
+
+[ ... ]
+
+\section{Dynamique collective}
+
+[ ... ]
+
+\begin{equation}
+m_h \ddot{\bm{h}} = \vert \det(\bm{h}) \vert\ \bm{h}^{-1}\left( \bm{\sigma} + \bm{\sigma}_\text{load} \right)
+\end{equation}
+
+
+\section{L'Algorithme Vélocité Verlet}
+Commencer avec le développement de Taylor au second ordre:
+
+\begin{align}
+f(x+h) = f(x) + hf'(x) + \dfrac{h^2} {2!}f''(x) + \mathcal{O}(h^2) \\
+f(x-h) = f(x) - hf'(x) + \dfrac{h^2} {2!}f''(x) + \mathcal{O}(h^2)
+\label{eq:SerieTaylor}
+\end{align}
+
+Dimunuer équation (2) et (1) alors la formule de $f'(x)$ selon erreur au second ordre est obtenu:
+\begin{align}
+f'(x) = \dfrac{f(x+h) - f(x-h)}{2h}
+\label{eq:dérivéePremière}
+\end{align}
+
+Similairement, la somme de (1) et (2) donne:
+\begin{align}
+f''(x) = \dfrac{f(x+h) + f(x-h) - 2f(x)}{h^2}
+\Rightarrow f''(x+h) = \dfrac{f(x+2h) + f(x) - 2f(x+h)}{h^2}\\
+\Rightarrow f''(x) + f''(x+h) = \dfrac{[f(x+2h) - f(x)] - [f(x+h) + f(x-h)]}{h^2}
+\end{align}
+Selon \ref{eq:dérivéePremière}, $f(x+h) + f(x-h) =  2hf'(x)$, alors:
+\begin{align}
+f''(x) + f''(x+h) &= \frac{f(x+2h) + f(x) - 2f(x+h)}{h^2} + \frac{f(x+h) + f(x-h) - 2f(x)}{h^2} \\
+&= \frac{f(x+2h) - f(x) - 2hf'(x)}{h^2} \\
+&= \frac{2h[f'(x+h) - f'(x)]}{h^2} \\
+\Rightarrow f'(x+h) &= f'(x) + \frac{h}{2}[f''(x) + f''(x+h)]
+\label{eq:dérivéeDeuxieme}
+\end{align}
+Depuis ici, grâces aux \ref{eq:SerieTaylor} et \ref{eq:dérivéeDeuxieme}, la schème de Verlet est claîr:
+\begin{align}
+    x (t + \Delta t) & = x(t) + v(t)\,\Delta t + \dfrac{1}{2} a(t)\,\Delta t^2 \\
+    v (t + \Delta t) & = v(t) + \dfrac{a(t) + a(t+\Delta t)}{2}\,\Delta t
+    \label{eq:velociteVerlet}
+\end{align}
+
+
+L'implémentation scheme:
+
+\begin{enumerate}
+    \item erfze
+    \item fdsfs
+\end{enumerate}
+
+
