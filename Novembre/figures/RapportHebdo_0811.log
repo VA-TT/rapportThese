@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.4.17)  12 NOV 2025 17:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.4.17)  12 NOV 2025 15:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/3S-LAB/vquach/Documents/rapportThese/Novembre/figures/RapportHebdo
-(/home/3S-LAB/vquach/Documents/rapportThese/Novembre/figures/RapportHebdo.tex
+**/home/3S-LAB/vquach/Documents/rapportThese/Novembre/figures/RapportHebdo_0811
+(/home/3S-LAB/vquach/Documents/rapportThese/Novembre/figures/RapportHebdo_0811.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2022/01/21 v3.65 A class for typesetting presentations
@@ -782,102 +782,34 @@ Package french.ldf Info: No list customisation for the beamer class,
 \ULC@box=\box88
 Package: ulem 2019/11/18
 \ULdepth=\dimen339
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
-\c@tracingmulticols=\count380
-\mult@box=\box89
-\multicol@leftmargin=\dimen340
-\c@unbalance=\count381
-\c@collectmore=\count382
-\doublecol@number=\count383
-\multicoltolerance=\count384
-\multicolpretolerance=\count385
-\full@width=\dimen341
-\page@free=\dimen342
-\premulticols=\dimen343
-\postmulticols=\dimen344
-\multicolsep=\skip71
-\multicolbaselineskip=\skip72
-\partial@page=\box90
-\last@line=\box91
-\maxbalancingoverflow=\dimen345
-\mult@rightbox=\box92
-\mult@grightbox=\box93
-\mult@firstbox=\box94
-\mult@gfirstbox=\box95
-\@tempa=\box96
-\@tempa=\box97
-\@tempa=\box98
-\@tempa=\box99
-\@tempa=\box100
-\@tempa=\box101
-\@tempa=\box102
-\@tempa=\box103
-\@tempa=\box104
-\@tempa=\box105
-\@tempa=\box106
-\@tempa=\box107
-\@tempa=\box108
-\@tempa=\box109
-\@tempa=\box110
-\@tempa=\box111
-\@tempa=\box112
-\@tempa=\box113
-\@tempa=\box114
-\@tempa=\box115
-\@tempa=\box116
-\@tempa=\box117
-\@tempa=\box118
-\@tempa=\box119
-\@tempa=\box120
-\@tempa=\box121
-\@tempa=\box122
-\@tempa=\box123
-\@tempa=\box124
-\@tempa=\box125
-\@tempa=\box126
-\@tempa=\box127
-\@tempa=\box128
-\@tempa=\box129
-\@tempa=\box130
-\@tempa=\box131
-\c@minrows=\count386
-\c@columnbadness=\count387
-\c@finalcolumnbadness=\count388
-\last@try=\dimen346
-\multicolovershoot=\dimen347
-\multicolundershoot=\dimen348
-\mult@nat@firstbox=\box132
-\colbreak@box=\box133
-\mc@col@check@num=\count389
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeAnnArbor.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewolverine.sty)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeseahorse.sty) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip73
-\multirow@cntb=\count390
-\multirow@dima=\skip74
-\bigstrutjot=\dimen349
-) (./RapportHebdo.aux)
-\openout1 = `RapportHebdo.aux'.
+\multirow@colwidth=\skip71
+\multirow@cntb=\count380
+\multirow@dima=\skip72
+\bigstrutjot=\dimen340
+)
+No file RapportHebdo_0811.aux.
+\openout1 = `RapportHebdo_0811.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -901,7 +833,7 @@ LaTeX Font Info:    ... okay on input line 50.
 * \footskip=14.22636pt
 * \marginparwidth=3.0pt
 * \marginparsep=11.0pt
-* \columnsep=28.45274pt
+* \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
@@ -914,16 +846,16 @@ LaTeX Font Info:    ... okay on input line 50.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count391
-\scratchdimen=\dimen350
-\scratchbox=\box134
-\nofMPsegments=\count392
-\nofMParguments=\count393
+\scratchcounter=\count381
+\scratchdimen=\dimen341
+\scratchbox=\box89
+\nofMPsegments=\count382
+\nofMParguments=\count383
 \everyMPshowfont=\toks59
-\MPscratchCnt=\count394
-\MPscratchDim=\dimen351
-\MPnumerator=\count395
-\makeMPintoPDFobject=\count396
+\MPscratchCnt=\count384
+\MPscratchDim=\dimen342
+\MPnumerator=\count385
+\makeMPintoPDFobject=\count386
 \everyMPtoPDFconversion=\toks60
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -931,7 +863,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 50.
+Package hyperref Info: Link coloring OFF on input line 45.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -939,68 +871,67 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count397
+\c@section@level=\count387
 )
-LaTeX Info: Redefining \ref on input line 50.
-LaTeX Info: Redefining \pageref on input line 50.
-LaTeX Info: Redefining \nameref on input line 50.
- (./RapportHebdo.out) (./RapportHebdo.out)
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
 \@outlinefile=\write5
-\openout5 = `RapportHebdo.out'.
+\openout5 = `RapportHebdo_0811.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 50.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 45.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 50.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 45.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 50.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 50.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 50.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 50.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 50.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 50.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 50.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 50.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 50.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 50.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 50.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 50.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 50.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 45.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 50.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 45.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 50.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 50.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 50.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 50.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 50.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 50.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 50.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 45.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 45.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 50.
+(Font)              `pureletters' in the math version `normal' on input line 45.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 50.
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 45.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 50.
+(Font)              `pureletters' in the math version `bold' on input line 45.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 50.
+(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 45.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 50.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 45.
  (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1019,32 +950,129 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: french babel package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \degres on input line 50.
-LaTeX Info: Redefining \up on input line 50.
-(./RapportHebdo.nav)
-<StrainRate.png, id=22, 483.90787pt x 353.82187pt>
-File: StrainRate.png Graphic file (type png)
-<use StrainRate.png>
-Package pdftex.def Info: StrainRate.png  used on input line 69.
-(pdftex.def)             Requested size: 483.90668pt x 353.821pt.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
- <./StrainRate.png>] (./NombreCoordination.tex
-\gptboxheight=\skip75
-\gptboxwidth=\skip76
-\gptboxtext=\box135
-LaTeX Font Info:    Trying to load font information for U+msa on input line 133.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Info: Redefining \degres on input line 45.
+LaTeX Info: Redefining \up on input line 45.
+No file RapportHebdo_0811.nav.
+<Experiment.png, id=14, 328.8285pt x 326.72063pt>
+File: Experiment.png Graphic file (type png)
+<use Experiment.png>
+Package pdftex.def Info: Experiment.png  used on input line 69.
+(pdftex.def)             Requested size: 328.8277pt x 326.71982pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 133.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 133.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 69.
  (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
+<muy=constant.png, id=16, 427.5975pt x 277.035pt>
+File: muy=constant.png Graphic file (type png)
+<use muy=constant.png>
+Package pdftex.def Info: muy=constant.png  used on input line 69.
+(pdftex.def)             Requested size: 427.59645pt x 277.03432pt.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+ <./Experiment.png> <./muy=constant.png>]
+<StrainRate.png, id=52, 483.90787pt x 353.82187pt>
+File: StrainRate.png Graphic file (type png)
+<use StrainRate.png>
+Package pdftex.def Info: StrainRate.png  used on input line 82.
+(pdftex.def)             Requested size: 483.90668pt x 353.821pt.
+ [2
+
+ <./StrainRate.png>] (./3000KineticComp_ev.tex
+\gptboxheight=\skip73
+\gptboxwidth=\skip74
+\gptboxtext=\box90
+Package epstopdf Info: Source file: <./3000KineticComp_ev.eps>
+(epstopdf)                    date: 2025-10-21 16:17:24
+(epstopdf)                    size: 20657 bytes
+(epstopdf)             Output file: <./3000KineticComp_ev-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-10-21 16:17:51
+(epstopdf)                    size: 3725 bytes
+(epstopdf)             Command: <repstopdf --outfile=./3000KineticComp_ev-eps-converted-to.pdf ./3000KineticComp_ev.eps>
+(epstopdf)             \includegraphics on input line 112.
+Package epstopdf Info: Output file is already uptodate.
+<./3000KineticComp_ev-eps-converted-to.pdf, id=83, 361.35pt x 252.945pt>
+File: ./3000KineticComp_ev-eps-converted-to.pdf Graphic file (type pdf)
+<use ./3000KineticComp_ev-eps-converted-to.pdf>
+Package pdftex.def Info: ./3000KineticComp_ev-eps-converted-to.pdf  used on input line 112.
+(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
+)
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 104--104
+ [] 
+ []
+
+(./epsyy_epsv.tex
+Package epstopdf Info: Source file: <epsyy_epsv.eps>
+(epstopdf)                    date: 2025-11-04 10:46:44
+(epstopdf)                    size: 56008 bytes
+(epstopdf)             Output file: <epsyy_epsv-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-11-04 10:47:05
+(epstopdf)                    size: 26105 bytes
+(epstopdf)             Command: <repstopdf --outfile=epsyy_epsv-eps-converted-to.pdf epsyy_epsv.eps>
+(epstopdf)             \includegraphics on input line 136.
+Package epstopdf Info: Output file is already uptodate.
+<epsyy_epsv-eps-converted-to.pdf, id=84, 361.35pt x 252.945pt>
+File: epsyy_epsv-eps-converted-to.pdf Graphic file (type pdf)
+<use epsyy_epsv-eps-converted-to.pdf>
+Package pdftex.def Info: epsyy_epsv-eps-converted-to.pdf  used on input line 136.
+(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
+)
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 104--104
+ [] 
+ []
+
+[3
+
+ <./3000KineticComp_ev-eps-converted-to.pdf> <./epsyy_epsv-eps-converted-to.pdf>] (./epsyy_phi.tex
+Package epstopdf Info: Source file: <epsyy_phi.eps>
+(epstopdf)                    date: 2025-11-04 10:46:44
+(epstopdf)                    size: 57800 bytes
+(epstopdf)             Output file: <epsyy_phi-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-11-06 08:13:23
+(epstopdf)                    size: 26429 bytes
+(epstopdf)             Command: <repstopdf --outfile=epsyy_phi-eps-converted-to.pdf epsyy_phi.eps>
+(epstopdf)             \includegraphics on input line 138.
+Package epstopdf Info: Output file is already uptodate.
+<epsyy_phi-eps-converted-to.pdf, id=123, 361.35pt x 252.945pt>
+File: epsyy_phi-eps-converted-to.pdf Graphic file (type pdf)
+<use epsyy_phi-eps-converted-to.pdf>
+Package pdftex.def Info: epsyy_phi-eps-converted-to.pdf  used on input line 138.
+(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
+)
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 123--123
+ [] 
+ []
+
+(./3000_phi_I_fit.tex
+Package epstopdf Info: Source file: <./3000_phi_I_fit.eps>
+(epstopdf)                    date: 2025-11-05 16:34:18
+(epstopdf)                    size: 22696 bytes
+(epstopdf)             Output file: <./3000_phi_I_fit-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-11-06 08:13:23
+(epstopdf)                    size: 4865 bytes
+(epstopdf)             Command: <repstopdf --outfile=./3000_phi_I_fit-eps-converted-to.pdf ./3000_phi_I_fit.eps>
+(epstopdf)             \includegraphics on input line 124.
+Package epstopdf Info: Output file is already uptodate.
+<./3000_phi_I_fit-eps-converted-to.pdf, id=124, 361.35pt x 252.945pt>
+File: ./3000_phi_I_fit-eps-converted-to.pdf Graphic file (type pdf)
+<use ./3000_phi_I_fit-eps-converted-to.pdf>
+Package pdftex.def Info: ./3000_phi_I_fit-eps-converted-to.pdf  used on input line 124.
+(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
+)
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 123--123
+ [] 
+ []
+
+[4
+
+ <./epsyy_phi-eps-converted-to.pdf> <./3000_phi_I_fit-eps-converted-to.pdf>] (./NombreCoordination.tex
 Package epstopdf Info: Source file: <./NombreCoordination.eps>
 (epstopdf)                    date: 2025-11-10 09:38:16
 (epstopdf)                    size: 22185 bytes
@@ -1054,13 +1082,13 @@ Package epstopdf Info: Source file: <./NombreCoordination.eps>
 (epstopdf)             Command: <repstopdf --outfile=./NombreCoordination-eps-converted-to.pdf ./NombreCoordination.eps>
 (epstopdf)             \includegraphics on input line 134.
 Package epstopdf Info: Output file is already uptodate.
-<./NombreCoordination-eps-converted-to.pdf, id=61, 361.35pt x 252.945pt>
+<./NombreCoordination-eps-converted-to.pdf, id=158, 361.35pt x 252.945pt>
 File: ./NombreCoordination-eps-converted-to.pdf Graphic file (type pdf)
 <use ./NombreCoordination-eps-converted-to.pdf>
 Package pdftex.def Info: ./NombreCoordination-eps-converted-to.pdf  used on input line 134.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 93--93
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 146--146
  [] 
  []
 
@@ -1074,17 +1102,17 @@ Package epstopdf Info: Source file: <Eyy_Ev.eps>
 (epstopdf)             Command: <repstopdf --outfile=Eyy_Ev-eps-converted-to.pdf Eyy_Ev.eps>
 (epstopdf)             \includegraphics on input line 131.
 Package epstopdf Info: Output file is already uptodate.
-<Eyy_Ev-eps-converted-to.pdf, id=62, 361.35pt x 252.945pt>
+<Eyy_Ev-eps-converted-to.pdf, id=159, 361.35pt x 252.945pt>
 File: Eyy_Ev-eps-converted-to.pdf Graphic file (type pdf)
 <use Eyy_Ev-eps-converted-to.pdf>
 Package pdftex.def Info: Eyy_Ev-eps-converted-to.pdf  used on input line 131.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 93--93
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 146--146
  [] 
  []
 
-[2
+[5
 
  <./NombreCoordination-eps-converted-to.pdf> <./Eyy_Ev-eps-converted-to.pdf>] (./Aleatoire.tex
 Package epstopdf Info: Source file: <./Aleatoire.eps>
@@ -1096,13 +1124,13 @@ Package epstopdf Info: Source file: <./Aleatoire.eps>
 (epstopdf)             Command: <repstopdf --outfile=./Aleatoire-eps-converted-to.pdf ./Aleatoire.eps>
 (epstopdf)             \includegraphics on input line 130.
 Package epstopdf Info: Output file is already uptodate.
-<./Aleatoire-eps-converted-to.pdf, id=100, 361.35pt x 252.945pt>
+<./Aleatoire-eps-converted-to.pdf, id=190, 361.35pt x 252.945pt>
 File: ./Aleatoire-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Aleatoire-eps-converted-to.pdf>
 Package pdftex.def Info: ./Aleatoire-eps-converted-to.pdf  used on input line 130.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 114--114
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 167--167
  [] 
  []
 
@@ -1116,93 +1144,198 @@ Package epstopdf Info: Source file: <./ComparerNP.eps>
 (epstopdf)             Command: <repstopdf --outfile=./ComparerNP-eps-converted-to.pdf ./ComparerNP.eps>
 (epstopdf)             \includegraphics on input line 128.
 Package epstopdf Info: Output file is already uptodate.
-<./ComparerNP-eps-converted-to.pdf, id=101, 361.35pt x 252.945pt>
+<./ComparerNP-eps-converted-to.pdf, id=191, 361.35pt x 252.945pt>
 File: ./ComparerNP-eps-converted-to.pdf Graphic file (type pdf)
 <use ./ComparerNP-eps-converted-to.pdf>
 Package pdftex.def Info: ./ComparerNP-eps-converted-to.pdf  used on input line 128.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (8.57005pt too wide) in paragraph at lines 114--114
+Overfull \hbox (8.57005pt too wide) in paragraph at lines 167--167
  [] 
- []
-
-[3
-
- <./Aleatoire-eps-converted-to.pdf> <./ComparerNP-eps-converted-to.pdf>]
-<pressureEnBas.png, id=132, 823.075pt x 657.45625pt>
-File: pressureEnBas.png Graphic file (type png)
-<use pressureEnBas.png>
-Package pdftex.def Info: pressureEnBas.png  used on input line 134.
-(pdftex.def)             Requested size: 142.47038pt x 113.81102pt.
- (./energieCinetique.tex
-Package epstopdf Info: Source file: <./energieCinetique.eps>
-(epstopdf)                    date: 2025-11-12 15:40:59
-(epstopdf)                    size: 23472 bytes
-(epstopdf)             Output file: <./energieCinetique-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-11-12 17:54:30
-(epstopdf)                    size: 3658 bytes
-(epstopdf)             Command: <repstopdf --outfile=./energieCinetique-eps-converted-to.pdf ./energieCinetique.eps>
-(epstopdf)             \includegraphics on input line 122.
-Package epstopdf Info: Output file is already uptodate.
-<./energieCinetique-eps-converted-to.pdf, id=133, 361.35pt x 252.945pt>
-File: ./energieCinetique-eps-converted-to.pdf Graphic file (type pdf)
-<use ./energieCinetique-eps-converted-to.pdf>
-Package pdftex.def Info: ./energieCinetique-eps-converted-to.pdf  used on input line 122.
-(pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-)
-Overfull \hbox (4.72829pt too wide) in paragraph at lines 134--134
- [] 
- []
-
-[4
-
- <./pressureEnBas.png> <./energieCinetique-eps-converted-to.pdf>] [5
-
-]
-Overfull \hbox (0.53114pt too wide) detected at line 196
-\OT1/mathkerncmss/m/sl/10 F[] \OT1/cmss/m/n/10 = []\OML/cmm/m/it/10 ^^M\OT1/mathkerncmss/m/sl/10 H[]K[] \OT1/cmss/m/n/10 + \T1/cmss/m/n/10 2\OT1/mathkerncmss/m/sl/10 cH[] \OT1/cmss/m/n/10 = \T1/cmss/m/n/10 32933\OML/cmm/m/it/10 :\T1/cmss/m/n/10 34
  []
 
 [6
 
-] [7
+ <./Aleatoire-eps-converted-to.pdf> <./ComparerNP-eps-converted-to.pdf>]
+<MP=12_0.png, id=223, 823.075pt x 657.45625pt>
+File: MP=12_0.png Graphic file (type png)
+<use MP=12_0.png>
+Package pdftex.def Info: MP=12_0.png  used on input line 188.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=12_0.png> <a0,fr0>
+<MP=12_1.png, id=227, 823.075pt x 657.45625pt>
+File: MP=12_1.png Graphic file (type png)
+<use MP=12_1.png>
+Package pdftex.def Info: MP=12_1.png  used on input line 188.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=12_1.png> <a0,fr1>
+<MP=12_2.png, id=231, 823.075pt x 657.45625pt>
+File: MP=12_2.png Graphic file (type png)
+<use MP=12_2.png>
+Package pdftex.def Info: MP=12_2.png  used on input line 188.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=12_2.png> <a0,fr2>
+<MP=12+_0.png, id=268, 823.075pt x 657.45625pt>
+File: MP=12+_0.png Graphic file (type png)
+<use MP=12+_0.png>
+Package pdftex.def Info: MP=12+_0.png  used on input line 188.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=12+_0.png> <a1,fr0>
+<MP=12+_1.png, id=272, 823.075pt x 657.45625pt>
+File: MP=12+_1.png Graphic file (type png)
+<use MP=12+_1.png>
+Package pdftex.def Info: MP=12+_1.png  used on input line 188.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=12+_1.png> <a1,fr1>
+<MP=12+_2.png, id=276, 823.075pt x 657.45625pt>
+File: MP=12+_2.png Graphic file (type png)
+<use MP=12+_2.png>
+Package pdftex.def Info: MP=12+_2.png  used on input line 188.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=12+_2.png> <a1,fr2> [7
+
+]
+<MP=1200_0.png, id=331, 823.075pt x 657.45625pt>
+File: MP=1200_0.png Graphic file (type png)
+<use MP=1200_0.png>
+Package pdftex.def Info: MP=1200_0.png  used on input line 207.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=1200_0.png> <a2,fr0>
+<MP=1200_1.png, id=335, 823.075pt x 657.45625pt>
+File: MP=1200_1.png Graphic file (type png)
+<use MP=1200_1.png>
+Package pdftex.def Info: MP=1200_1.png  used on input line 207.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=1200_1.png> <a2,fr1>
+<MP=1200_2.png, id=339, 823.075pt x 657.45625pt>
+File: MP=1200_2.png Graphic file (type png)
+<use MP=1200_2.png>
+Package pdftex.def Info: MP=1200_2.png  used on input line 207.
+(pdftex.def)             Requested size: 823.07298pt x 657.45465pt.
+ <./MP=1200_2.png> <a2,fr2>
+<MPM_0.png, id=363, 2499.3375pt x 1418.29875pt>
+File: MPM_0.png Graphic file (type png)
+<use MPM_0.png>
+Package pdftex.def Info: MPM_0.png  used on input line 207.
+(pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
+ <./MPM_0.png> <a3,fr0>
+<MPM_1.png, id=367, 2499.3375pt x 1418.29875pt>
+File: MPM_1.png Graphic file (type png)
+<use MPM_1.png>
+Package pdftex.def Info: MPM_1.png  used on input line 207.
+(pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
+ <./MPM_1.png> <a3,fr1>
+<MPM_2.png, id=371, 2499.3375pt x 1418.29875pt>
+File: MPM_2.png Graphic file (type png)
+<use MPM_2.png>
+Package pdftex.def Info: MPM_2.png  used on input line 207.
+(pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
+ <./MPM_2.png> <a3,fr2>
+<MPM_3.png, id=375, 2499.3375pt x 1418.29875pt>
+File: MPM_3.png Graphic file (type png)
+<use MPM_3.png>
+Package pdftex.def Info: MPM_3.png  used on input line 207.
+(pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
+ <./MPM_3.png> <a3,fr3>
+<MPM_4.png, id=379, 2499.3375pt x 1418.29875pt>
+File: MPM_4.png Graphic file (type png)
+<use MPM_4.png>
+Package pdftex.def Info: MPM_4.png  used on input line 207.
+(pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
+ <./MPM_4.png> <a3,fr4>
+<MPM_5.png, id=383, 2499.3375pt x 1418.29875pt>
+File: MPM_5.png Graphic file (type png)
+<use MPM_5.png>
+Package pdftex.def Info: MPM_5.png  used on input line 207.
+(pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
+ <./MPM_5.png> <a3,fr5>
+<MPM_6.png, id=387, 2499.3375pt x 1418.29875pt>
+File: MPM_6.png Graphic file (type png)
+<use MPM_6.png>
+Package pdftex.def Info: MPM_6.png  used on input line 207.
+(pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
+ <./MPM_6.png> <a3,fr6>
+<MPM_7.png, id=391, 2499.3375pt x 1418.29875pt>
+File: MPM_7.png Graphic file (type png)
+<use MPM_7.png>
+Package pdftex.def Info: MPM_7.png  used on input line 207.
+(pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
+ <./MPM_7.png> <a3,fr7>
+<MPM_8.png, id=395, 2499.3375pt x 1418.29875pt>
+File: MPM_8.png Graphic file (type png)
+<use MPM_8.png>
+Package pdftex.def Info: MPM_8.png  used on input line 207.
+(pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
+ <./MPM_8.png> <a3,fr8>
+<MPM_9.png, id=399, 2499.3375pt x 1418.29875pt>
+File: MPM_9.png Graphic file (type png)
+<use MPM_9.png>
+Package pdftex.def Info: MPM_9.png  used on input line 207.
+(pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
+ <./MPM_9.png> <a3,fr9>
+<MPM_10.png, id=403, 2499.3375pt x 1418.29875pt>
+File: MPM_10.png Graphic file (type png)
+<use MPM_10.png>
+Package pdftex.def Info: MPM_10.png  used on input line 207.
+(pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
+ <./MPM_10.png> <a3,fr10>
+<MPM_11.png, id=407, 2499.3375pt x 1418.29875pt>
+File: MPM_11.png Graphic file (type png)
+<use MPM_11.png>
+Package pdftex.def Info: MPM_11.png  used on input line 207.
+(pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
+ <./MPM_11.png> <a3,fr11>
+<MPM_12.png, id=411, 2499.3375pt x 1418.29875pt>
+File: MPM_12.png Graphic file (type png)
+<use MPM_12.png>
+Package pdftex.def Info: MPM_12.png  used on input line 207.
+(pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
+ <./MPM_12.png> <a3,fr12>
+<MPM_13.png, id=415, 2499.3375pt x 1418.29875pt>
+File: MPM_13.png Graphic file (type png)
+<use MPM_13.png>
+Package pdftex.def Info: MPM_13.png  used on input line 207.
+(pdftex.def)             Requested size: 2499.33142pt x 1418.2953pt.
+ <./MPM_13.png> <a3,fr13> [8
+
+] [9
 
 ]
 \tf@nav=\write6
-\openout6 = `RapportHebdo.nav'.
+\openout6 = `RapportHebdo_0811.nav'.
 
 \tf@toc=\write7
-\openout7 = `RapportHebdo.toc'.
+\openout7 = `RapportHebdo_0811.toc'.
 
 \tf@snm=\write8
-\openout8 = `RapportHebdo.snm'.
+\openout8 = `RapportHebdo_0811.snm'.
 
- [8] (./RapportHebdo.aux)
+ [10] (./RapportHebdo_0811.aux)
 
 LaTeX Warning: Temporary extra page added at the end. Rerun to get it removed.
 
 
-Package rerunfilecheck Warning: File `RapportHebdo.out' has changed.
+Package rerunfilecheck Warning: File `RapportHebdo_0811.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `RapportHebdo.out':
-(rerunfilecheck)             Before: 43043A208FC91D793620367CBEF2E8ED;202
+Package rerunfilecheck Info: Checksums for `RapportHebdo_0811.out':
+(rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  AC861A1428A4005764E541E3CACF3C45;338.
  ) 
 Here is how much of TeX's memory you used:
- 41004 strings out of 478287
- 958173 string characters out of 5849289
- 1346814 words of memory out of 5000000
- 58391 multiletter control sequences out of 15000+600000
- 480837 words of font info for 53 fonts, out of 8000000 for 9000
+ 41256 strings out of 478287
+ 963028 string characters out of 5849289
+ 1341775 words of memory out of 5000000
+ 58616 multiletter control sequences out of 15000+600000
+ 478540 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,18n,122p,789b,927s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb>
-Output written on RapportHebdo.pdf (8 pages, 440945 bytes).
+ 128i,18n,122p,794b,927s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb>
+Output written on RapportHebdo_0811.pdf (10 pages, 3114962 bytes).
 PDF statistics:
- 330 PDF objects out of 1000 (max. 8388607)
- 270 compressed objects within 3 object streams
- 19 named destinations out of 1000 (max. 500000)
- 100 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 576 PDF objects out of 1000 (max. 8388607)
+ 423 compressed objects within 5 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 437 words of extra memory for PDF output out of 10000 (max. 10000000)
 
