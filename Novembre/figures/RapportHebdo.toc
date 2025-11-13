@@ -2,4 +2,3 @@
 \beamer@sectionintoc {1}{Étude bibliographie}{1}{0}{1}
 \beamer@sectionintoc {2}{DEM}{1}{0}{2}
 \beamer@sectionintoc {3}{MPM}{4}{0}{3}
-\beamer@sectionintoc {4}{MPM-DEM}{7}{0}{4}
