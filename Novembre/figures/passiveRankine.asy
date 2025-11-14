@@ -43,7 +43,7 @@ real hatchSpacing = 1;
 path soil = box((0,0), (L,H));
 filldraw(soil, lightcyan,linewidth(1.0));
 
-real K = 0.7;
+real K = 1.42;
 real Fmax = L - K * H;
 
 real n = 5;
@@ -61,7 +61,7 @@ pair p = (L, H*1/3);
 draw((p-10*E) -- p, arrow=Arrow(HookHead, size=5), purple);
 pair wheelCenter = (L,0)+r*N;
 
-label("$\vec{F_a}$", (p-7*E), N);
+label("$\vec{F_a}$", (p+7*E), N);
 
 draw(wheelCenter -- (L,H), bleuFonce + linewidth(wallWidth), margin = reducedMargin);
 filldraw(circle(wheelCenter, r), roseFonce, linewidth(0.75));
