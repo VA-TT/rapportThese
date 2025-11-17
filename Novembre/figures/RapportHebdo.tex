@@ -115,33 +115,22 @@ rolling-rearrangement resulting in a higher resistance to shear"
 
 
 \section{MPM}
-
-
-\begin{frame}{État Rankine}
-    \begin{multicols}{2}
+\begin{frame}{État Rankine - Modèle}
             \begin{figure}
                 \centering
-                \includegraphics[height = 4cm]{pressureEnBas.png}
-                \caption{Pression en bas}
-            \end{figure}      
-            \columnbreak  
-            \begin{figure}
+                  \includegraphics[height = 2.3cm]{activeRankine.pdf}
+                \caption{Pression active}
+            \end{figure}       
+                        \begin{figure}
                 \centering
-                \scalebox{0.45}{\input{energieCinetique.tex}}
-                \caption{Énergie cinétique}
-            \end{figure}
-        \end{multicols}
+                  \includegraphics[height = 2.3cm]{passiveRankine.pdf}
+                \caption{Pression passive}
+            \end{figure}  
+        Observer la pression sur le mur en bleu
         \end{frame}
 
-        \begin{frame}{État Rankine}
-            \begin{figure}
-                \centering
-                \scalebox{0.7}{\input{Repose.tex}}
-                \caption{Non cohésif}
-            \end{figure}
-        \end{frame}
 
-        \begin{frame}{Paramètres principaux}
+                \begin{frame}{Paramètres principaux}
     \begin{table}
         \centering
         \begin{tabular}{|c|l|l|}
@@ -153,17 +142,37 @@ rolling-rearrangement resulting in a higher resistance to shear"
             $\rho$ & Densité & $2700\ \mathrm{kg/m^3}$ \\
             $E$ & Module de Young  & $1\times10^{9}\ \mathrm{Pa}$ \\
             $\nu$ & Coefficient de Poisson  & 0.2 \\
-            $\varphi$ & Angle de frottement  & $25^{\circ}$\\
+            $\varphi$ & Angle de frottement interne  & $25^{\circ}$\\
             $\psi$ & Angle de dilatance  & $\approx 0^{\circ}$\\
             $v$ & Vélocité de déplacement & 0.005 m/s\\
             $c$ & Cohésion & 0 \& 100 Pa\\
+            $\mu$ & \parbox[t]{4.5cm}{Coefficient de frottement entre\\ le mur et les PMs\\} & 0 \& 0\\
             \hline
         \end{tabular}
-        \caption{Paramètres du modèle Mohr-Coulomb}
+        \caption{Paramètres du modèle (loi Mohr-Coulomb)}
     \end{table}
 \end{frame}
 
-        \begin{frame}{État Rankine - Théorie}
+\begin{frame}{État Rankine - Stabiliser}
+    \begin{multicols}{2}
+            \begin{figure}
+                \centering
+                \includegraphics[height = 4cm]{pressureEnBas.png}
+                \caption{Pression en bas}
+            \end{figure}     
+            $P_{\text{théorique}} = 2.65e4\ (Pa) $
+            \columnbreak  
+            \begin{figure}
+                \centering
+                \scalebox{0.45}{\input{energieCinetique.tex}}
+                \caption{Énergie cinétique}
+                $P_{\text{simulation}} = 2e4\ (Pa)$
+            \end{figure}
+        \end{multicols}
+                       \center\textcolor{red}{ $\rightarrow$ L'écart est $0.65$ kPa}
+        \end{frame}
+
+\begin{frame}{État Rankine - Théorie}
             Coefficient K: la relation entre la contrainte verticale et horizontal:
             \begin{itemize}
            \item Poussée active: $K_a = \dfrac{1 - \sin(\varphi)}{1 + \sin(\varphi)} = 0.406$\\
@@ -201,6 +210,15 @@ F_0 = \dfrac{1}{2}\gamma H^2 K_p + 2cH\sqrt{K_0} = 7.495
 \end{multicols}
 \end{frame}
 
+        \begin{frame}{État Rankine reposé}
+            \begin{figure}
+                \centering
+                \scalebox{0.7}{\input{Repose.tex}}
+                \caption{Pression sur le mur en bleu}
+               \textcolor{red}{ $\rightarrow$ L'écart est $1$ kPa}
+            \end{figure}
+        \end{frame}
+
 \begin{frame}{État Rankine - Pression Active}
     \begin{multicols}{2}
             \begin{figure}
@@ -213,8 +231,10 @@ F_0 = \dfrac{1}{2}\gamma H^2 K_p + 2cH\sqrt{K_0} = 7.495
                 \centering
                   \scalebox{0.45}{\input{ActiveVitess.tex}}
                 \caption{Pression active $c=0=const$}
+                            Effet cinétique?
             \end{figure}  
         \end{multicols}
+                               \center\textcolor{red}{ $\rightarrow$ L'écart est $0.65$ kPa}
         \end{frame}
 
         \begin{frame}{État Rankine - Pression Passive}
@@ -229,8 +249,10 @@ F_0 = \dfrac{1}{2}\gamma H^2 K_p + 2cH\sqrt{K_0} = 7.495
                 \centering
                 \scalebox{0.45}{\input{PassiveVitess.tex}}
                 \caption{Pression passive $c=0=const$}
+                            Effet cinétique?
             \end{figure}
         \end{multicols}
+                               \center\textcolor{red}{ $\rightarrow$ L'écart est $1$ kPa}
         \end{frame}
 \section{MPM-DEM}
 

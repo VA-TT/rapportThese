@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.4.17)  13 NOV 2025 18:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.4.17)  17 NOV 2025 10:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1133,10 +1133,30 @@ Overfull \hbox (8.57005pt too wide) in paragraph at lines 114--114
 [3
 
  <./Aleatoire-eps-converted-to.pdf> <./ComparerNP-eps-converted-to.pdf>]
-<pressureEnBas.png, id=141, 823.075pt x 657.45625pt>
+<activeRankine.pdf, id=141, 173.78928pt x 67.97395pt>
+File: activeRankine.pdf Graphic file (type pdf)
+<use activeRankine.pdf>
+Package pdftex.def Info: activeRankine.pdf  used on input line 130.
+(pdftex.def)             Requested size: 167.32637pt x 65.44142pt.
+<passiveRankine.pdf, id=142, 173.24725pt x 72.69157pt>
+File: passiveRankine.pdf Graphic file (type pdf)
+<use passiveRankine.pdf>
+Package pdftex.def Info: passiveRankine.pdf  used on input line 130.
+(pdftex.def)             Requested size: 155.97395pt x 65.44142pt.
+ [4
+
+ <./activeRankine.pdf> <./passiveRankine.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+
+ []
+
+[5
+
+]
+<pressureEnBas.png, id=219, 823.075pt x 657.45625pt>
 File: pressureEnBas.png Graphic file (type png)
 <use pressureEnBas.png>
-Package pdftex.def Info: pressureEnBas.png  used on input line 134.
+Package pdftex.def Info: pressureEnBas.png  used on input line 173.
 (pdftex.def)             Requested size: 142.47038pt x 113.81102pt.
  (./energieCinetique.tex
 Package epstopdf Info: Source file: <./energieCinetique.eps>
@@ -1148,19 +1168,26 @@ Package epstopdf Info: Source file: <./energieCinetique.eps>
 (epstopdf)             Command: <repstopdf --outfile=./energieCinetique-eps-converted-to.pdf ./energieCinetique.eps>
 (epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
-<./energieCinetique-eps-converted-to.pdf, id=142, 361.35pt x 252.945pt>
+<./energieCinetique-eps-converted-to.pdf, id=220, 361.35pt x 252.945pt>
 File: ./energieCinetique-eps-converted-to.pdf Graphic file (type pdf)
 <use ./energieCinetique-eps-converted-to.pdf>
 Package pdftex.def Info: ./energieCinetique-eps-converted-to.pdf  used on input line 122.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (4.72829pt too wide) in paragraph at lines 134--134
+Overfull \hbox (4.72829pt too wide) in paragraph at lines 173--173
  [] 
  []
 
-[4
+[6
 
- <./pressureEnBas.png> <./energieCinetique-eps-converted-to.pdf>] (./Repose.tex
+ <./pressureEnBas.png> <./energieCinetique-eps-converted-to.pdf>]
+Overfull \hbox (0.53114pt too wide) detected at line 211
+\OT1/mathkerncmss/m/sl/10 F[] \OT1/cmss/m/n/10 = []\OML/cmm/m/it/10 ^^M\OT1/mathkerncmss/m/sl/10 H[]K[] \OT1/cmss/m/n/10 + \T1/cmss/m/n/10 2\OT1/mathkerncmss/m/sl/10 cH[] \OT1/cmss/m/n/10 = \T1/cmss/m/n/10 32\OML/cmm/m/it/10 :\T1/cmss/m/n/10 93334
+ []
+
+[7
+
+] (./Repose.tex
 Package epstopdf Info: Source file: <./Repose.eps>
 (epstopdf)                    date: 2025-11-13 10:40:40
 (epstopdf)                    size: 21656 bytes
@@ -1170,23 +1197,14 @@ Package epstopdf Info: Source file: <./Repose.eps>
 (epstopdf)             Command: <repstopdf --outfile=./Repose-eps-converted-to.pdf ./Repose.eps>
 (epstopdf)             \includegraphics on input line 118.
 Package epstopdf Info: Output file is already uptodate.
-<./Repose-eps-converted-to.pdf, id=174, 361.35pt x 252.945pt>
+<./Repose-eps-converted-to.pdf, id=283, 361.35pt x 252.945pt>
 File: ./Repose-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Repose-eps-converted-to.pdf>
 Package pdftex.def Info: ./Repose-eps-converted-to.pdf  used on input line 118.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
-) [5
+) [8
 
- <./Repose-eps-converted-to.pdf>] [6
-
-]
-Overfull \hbox (0.53114pt too wide) detected at line 202
-\OT1/mathkerncmss/m/sl/10 F[] \OT1/cmss/m/n/10 = []\OML/cmm/m/it/10 ^^M\OT1/mathkerncmss/m/sl/10 H[]K[] \OT1/cmss/m/n/10 + \T1/cmss/m/n/10 2\OT1/mathkerncmss/m/sl/10 cH[] \OT1/cmss/m/n/10 = \T1/cmss/m/n/10 32\OML/cmm/m/it/10 :\T1/cmss/m/n/10 93334
- []
-
-[7
-
-] (./ActiveCohesion.tex
+ <./Repose-eps-converted-to.pdf>] (./ActiveCohesion.tex
 Package epstopdf Info: Source file: <./ActiveCohesion.eps>
 (epstopdf)                    date: 2025-11-13 17:15:59
 (epstopdf)                    size: 57295 bytes
@@ -1196,13 +1214,13 @@ Package epstopdf Info: Source file: <./ActiveCohesion.eps>
 (epstopdf)             Command: <repstopdf --outfile=./ActiveCohesion-eps-converted-to.pdf ./ActiveCohesion.eps>
 (epstopdf)             \includegraphics on input line 117.
 Package epstopdf Info: Output file is already uptodate.
-<./ActiveCohesion-eps-converted-to.pdf, id=267, 361.35pt x 252.945pt>
+<./ActiveCohesion-eps-converted-to.pdf, id=313, 361.35pt x 252.945pt>
 File: ./ActiveCohesion-eps-converted-to.pdf Graphic file (type pdf)
 <use ./ActiveCohesion-eps-converted-to.pdf>
 Package pdftex.def Info: ./ActiveCohesion-eps-converted-to.pdf  used on input line 117.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (4.72829pt too wide) in paragraph at lines 218--218
+Overfull \hbox (4.72829pt too wide) in paragraph at lines 238--238
  [] 
  []
 
@@ -1216,17 +1234,17 @@ Package epstopdf Info: Source file: <./ActiveVitess.eps>
 (epstopdf)             Command: <repstopdf --outfile=./ActiveVitess-eps-converted-to.pdf ./ActiveVitess.eps>
 (epstopdf)             \includegraphics on input line 117.
 Package epstopdf Info: Output file is already uptodate.
-<./ActiveVitess-eps-converted-to.pdf, id=268, 361.35pt x 252.945pt>
+<./ActiveVitess-eps-converted-to.pdf, id=314, 361.35pt x 252.945pt>
 File: ./ActiveVitess-eps-converted-to.pdf Graphic file (type pdf)
 <use ./ActiveVitess-eps-converted-to.pdf>
 Package pdftex.def Info: ./ActiveVitess-eps-converted-to.pdf  used on input line 117.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (4.72829pt too wide) in paragraph at lines 218--218
+Overfull \hbox (4.72829pt too wide) in paragraph at lines 238--238
  [] 
  []
 
-[8
+[9
 
  <./ActiveCohesion-eps-converted-to.pdf> <./ActiveVitess-eps-converted-to.pdf>] (./PassiveCohesion.tex
 Package epstopdf Info: Source file: <./PassiveCohesion.eps>
@@ -1238,13 +1256,13 @@ Package epstopdf Info: Source file: <./PassiveCohesion.eps>
 (epstopdf)             Command: <repstopdf --outfile=./PassiveCohesion-eps-converted-to.pdf ./PassiveCohesion.eps>
 (epstopdf)             \includegraphics on input line 118.
 Package epstopdf Info: Output file is already uptodate.
-<./PassiveCohesion-eps-converted-to.pdf, id=298, 361.35pt x 252.945pt>
+<./PassiveCohesion-eps-converted-to.pdf, id=344, 361.35pt x 252.945pt>
 File: ./PassiveCohesion-eps-converted-to.pdf Graphic file (type pdf)
 <use ./PassiveCohesion-eps-converted-to.pdf>
 Package pdftex.def Info: ./PassiveCohesion-eps-converted-to.pdf  used on input line 118.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (4.72829pt too wide) in paragraph at lines 234--234
+Overfull \hbox (4.72829pt too wide) in paragraph at lines 256--256
  [] 
  []
 
@@ -1253,26 +1271,22 @@ Package epstopdf Info: Source file: <./PassiveVitess.eps>
 (epstopdf)                    date: 2025-11-13 17:22:25
 (epstopdf)                    size: 40320 bytes
 (epstopdf)             Output file: <./PassiveVitess-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-11-13 17:09:21
-(epstopdf)                    size: 12303 bytes
+(epstopdf)                    date: 2025-11-13 18:06:25
+(epstopdf)                    size: 12304 bytes
 (epstopdf)             Command: <repstopdf --outfile=./PassiveVitess-eps-converted-to.pdf ./PassiveVitess.eps>
 (epstopdf)             \includegraphics on input line 118.
-runsystem(repstopdf --outfile=./PassiveVitess-eps-converted-to.pdf ./PassiveVitess.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <./PassiveVitess-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-11-13 18:06:25
-(epstopdf)                    size: 12304 bytes.
-<./PassiveVitess-eps-converted-to.pdf, id=299, 361.35pt x 252.945pt>
+Package epstopdf Info: Output file is already uptodate.
+<./PassiveVitess-eps-converted-to.pdf, id=345, 361.35pt x 252.945pt>
 File: ./PassiveVitess-eps-converted-to.pdf Graphic file (type pdf)
 <use ./PassiveVitess-eps-converted-to.pdf>
 Package pdftex.def Info: ./PassiveVitess-eps-converted-to.pdf  used on input line 118.
 (pdftex.def)             Requested size: 361.35463pt x 252.94823pt.
 )
-Overfull \hbox (4.72829pt too wide) in paragraph at lines 234--234
+Overfull \hbox (4.72829pt too wide) in paragraph at lines 256--256
  [] 
  []
 
-[9
+[10
 
  <./PassiveCohesion-eps-converted-to.pdf> <./PassiveVitess-eps-converted-to.pdf>]
 \tf@nav=\write6
@@ -1289,18 +1303,18 @@ Package rerunfilecheck Info: File `RapportHebdo.out' has not changed.
 (rerunfilecheck)             Checksum: 22E5F8013B5337DEA0601AF5330D8164;260.
  ) 
 Here is how much of TeX's memory you used:
- 41238 strings out of 478287
- 963715 string characters out of 5849289
- 1347805 words of memory out of 5000000
- 58597 multiletter control sequences out of 15000+600000
+ 41260 strings out of 478287
+ 964162 string characters out of 5849289
+ 1347807 words of memory out of 5000000
+ 58615 multiletter control sequences out of 15000+600000
  487044 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,18n,122p,789b,927s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb>
-Output written on RapportHebdo.pdf (9 pages, 542931 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb>
+Output written on RapportHebdo.pdf (10 pages, 569739 bytes).
 PDF statistics:
- 426 PDF objects out of 1000 (max. 8388607)
- 347 compressed objects within 4 object streams
- 22 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 474 PDF objects out of 1000 (max. 8388607)
+ 388 compressed objects within 4 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

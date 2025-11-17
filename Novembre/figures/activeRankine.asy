@@ -1,5 +1,5 @@
 settings.outformat = "pdf";
-size(6cm,0, keepAspect=false);
+size(6cm,0, keepAspect=true);
 // unitsize(1cm); //else defalt is 1pt, which is too smalls
 defaultpen(linewidth(0.5pt));
 

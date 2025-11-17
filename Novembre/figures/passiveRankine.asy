@@ -1,5 +1,5 @@
 settings.outformat = "pdf";
-size(6cm,0, keepAspect=false);
+size(6cm,0, keepAspect=true);
 // unitsize(1cm); //else defalt is 1pt, which is too smalls
 defaultpen(linewidth(0.5pt));
 
@@ -58,17 +58,17 @@ for (real r = 0; r < n; ++r)
 draw ((L,H) -- p1);
 
 pair p = (L, H*1/3); 
-draw((p-10*E) -- p, arrow=Arrow(HookHead, size=5), purple);
+draw((p-20*E) -- p, arrow=Arrow(HookHead, size=5), purple);
 pair wheelCenter = (L,0)+r*N;
 
-label("$\vec{F_a}$", (p+7*E), N);
+label("$\vec{F_p}$", (p-20*E), N);
 
 draw(wheelCenter -- (L,H), bleuFonce + linewidth(wallWidth), margin = reducedMargin);
 filldraw(circle(wheelCenter, r), roseFonce, linewidth(0.75));
 
-pair vectorV = wheelCenter+r*5E;
-draw(wheelCenter -- vectorV, arrow=Arrow(HookHead, size=2), purple);
-label("$\vec{v_a}$", vectorV, N);
+pair vectorV = wheelCenter-r*5E;
+draw(vectorV -- wheelCenter, arrow=Arrow(HookHead, size=2), purple);
+label("$\vec{v_p}$", vectorV, 0.25*N);
 
 
 //Dim
