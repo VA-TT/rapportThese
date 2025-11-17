@@ -67,8 +67,8 @@ draw(wheelCenter -- (L,H), bleuFonce + linewidth(wallWidth), margin = reducedMar
 filldraw(circle(wheelCenter, r), roseFonce, linewidth(0.75));
 
 pair vectorV = wheelCenter-r*5E;
-draw(vectorV -- wheelCenter, arrow=Arrow(HookHead, size=2), purple);
-label("$\vec{v_p}$", vectorV, 0.25*N);
+draw(wheelCenter -- vectorV, arrow=Arrow(HookHead, size=2), purple);
+label("$\vec{v_p}$", vectorV, 0.25*NW);
 
 
 //Dim

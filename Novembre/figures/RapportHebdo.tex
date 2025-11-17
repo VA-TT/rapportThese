@@ -119,12 +119,12 @@ rolling-rearrangement resulting in a higher resistance to shear"
             \begin{figure}
                 \centering
                   \includegraphics[height = 2.3cm]{activeRankine.pdf}
-                \caption{Pression active}
+                \caption{Pression active:le mur s'éloigne du sol}
             \end{figure}       
                         \begin{figure}
                 \centering
                   \includegraphics[height = 2.3cm]{passiveRankine.pdf}
-                \caption{Pression passive}
+                \caption{Pression passive:le mur se rapproche du sol}
             \end{figure}  
         Observer la pression sur le mur en bleu
         \end{frame}
@@ -146,7 +146,7 @@ rolling-rearrangement resulting in a higher resistance to shear"
             $\psi$ & Angle de dilatance  & $\approx 0^{\circ}$\\
             $v$ & Vélocité de déplacement & 0.005 m/s\\
             $c$ & Cohésion & 0 \& 100 Pa\\
-            $\mu$ & \parbox[t]{4.5cm}{Coefficient de frottement entre\\ le mur et les PMs\\} & 0 \& 0\\
+            $\mu$ & \parbox[t]{4.5cm}{Coefficient de frottement entre\\ le mur et les PMs\\} & 0\\
             \hline
         \end{tabular}
         \caption{Paramètres du modèle (loi Mohr-Coulomb)}
@@ -219,6 +219,25 @@ F_0 = \dfrac{1}{2}\gamma H^2 K_p + 2cH\sqrt{K_0} = 7.495
             \end{figure}
         \end{frame}
 
+            \begin{frame}{État Rankine - film de mur bougé}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \animategraphics[loop,autoplay,controls, width=5cm]{1}{active_}{0}{2}
+                \caption{Pression active}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \animategraphics[loop,autoplay,controls, width=5cm]{1}{passive_}{0}{2}
+                \caption{Pression passive}
+                       \end{figure}
+        \end{column}
+    \end{columns}
+        \end{frame}
+
 \begin{frame}{État Rankine - Pression Active}
     \begin{multicols}{2}
             \begin{figure}
@@ -231,10 +250,10 @@ F_0 = \dfrac{1}{2}\gamma H^2 K_p + 2cH\sqrt{K_0} = 7.495
                 \centering
                   \scalebox{0.45}{\input{ActiveVitess.tex}}
                 \caption{Pression active $c=0=const$}
-                            Effet cinétique?
+                            Effet cinétique? Résistance rigide du matériau?
             \end{figure}  
         \end{multicols}
-                               \center\textcolor{red}{ $\rightarrow$ L'écart est $0.65$ kPa}
+                               \center\textcolor{red}{ $\rightarrow$ L'écart est $0.2$ kN ($3\%$)}
         \end{frame}
 
         \begin{frame}{État Rankine - Pression Passive}
@@ -252,7 +271,7 @@ F_0 = \dfrac{1}{2}\gamma H^2 K_p + 2cH\sqrt{K_0} = 7.495
                             Effet cinétique?
             \end{figure}
         \end{multicols}
-                               \center\textcolor{red}{ $\rightarrow$ L'écart est $1$ kPa}
+                               \center\textcolor{red}{ $\rightarrow$ L'écart est $1$ kN ($3\%$)}
         \end{frame}
 \section{MPM-DEM}
 
