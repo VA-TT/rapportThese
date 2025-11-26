@@ -53,65 +53,65 @@
 %     \titlepage
 % \end{frame}
 
-\section{Étude bibliographie}
+% \section{Étude bibliographie}
 
-\section{DEM}
+% \section{DEM}
 
-% 03102025
-\begin{frame}{Article Stress-strain behavior of sand at high strain rates (Mehdi Omidvar et al,2012)}
-            \begin{figure}[h]
-                \centering
-                \scalebox{0.4}{\includegraphics{StrainRate.png}}
-            \end{figure}
-            "Under HSR loading, there is not enough time for strain energy
-accumulation, which prohibits crushing and promotes
-rolling-rearrangement resulting in a higher resistance to shear"
-\end{frame}
+% % 03102025
+% \begin{frame}{Article Stress-strain behavior of sand at high strain rates (Mehdi Omidvar et al,2012)}
+%             \begin{figure}[h]
+%                 \centering
+%                 \scalebox{0.4}{\includegraphics{StrainRate.png}}
+%             \end{figure}
+%             "Under HSR loading, there is not enough time for strain energy
+% accumulation, which prohibits crushing and promotes
+% rolling-rearrangement resulting in a higher resistance to shear"
+% \end{frame}
 
 
-\begin{frame}{Trouver le régime de l'état critique}
-    \begin{columns}
-                \begin{column}{0.5\textwidth}
-            \begin{figure}
-                \centering
-                \scalebox{0.5}{\input{Eyy_Ev.tex}}
-                \caption{Déformation Volumique}
-            \end{figure}
-            \small
-            hpp: $\varepsilon_{yy} = \dfrac{\Delta h_{yy}}{h_{yy}^0}; \varepsilon_v = \varepsilon_{xx} + \varepsilon_{yy} + \varepsilon_{zz} $\\
-            gd: $\varepsilon_{yy} = \ln\left(\dfrac{h_{yy}}{h_{yy}^0}\right);  \varepsilon_v = \dfrac{\Delta V}{V_0}$;
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \begin{figure}
-                \centering
-                \scalebox{0.5}{\input{NombreCoordination.tex}}
-                \caption{Nombre de Coordination}
-            \end{figure}
-            $Z = \dfrac{2N_{contact}}{N_{particule}}$; $I = \dfrac{v}{H_0}\sqrt{\dfrac{m}{P\overline{a}}}$
-        \end{column}
-    \end{columns}
-\end{frame}
+% \begin{frame}{Trouver le régime de l'état critique}
+%     \begin{columns}
+%                 \begin{column}{0.5\textwidth}
+%             \begin{figure}
+%                 \centering
+%                 \scalebox{0.5}{\input{Eyy_Ev.tex}}
+%                 \caption{Déformation Volumique}
+%             \end{figure}
+%             \small
+%             hpp: $\varepsilon_{yy} = \dfrac{\Delta h_{yy}}{h_{yy}^0}; \varepsilon_v = \varepsilon_{xx} + \varepsilon_{yy} + \varepsilon_{zz} $\\
+%             gd: $\varepsilon_{yy} = \ln\left(\dfrac{h_{yy}}{h_{yy}^0}\right);  \varepsilon_v = \dfrac{\Delta V}{V_0}$;
+%         \end{column}
+%         \begin{column}{0.5\textwidth}
+%             \begin{figure}
+%                 \centering
+%                 \scalebox{0.5}{\input{NombreCoordination.tex}}
+%                 \caption{Nombre de Coordination}
+%             \end{figure}
+%             $Z = \dfrac{2N_{contact}}{N_{particule}}$; $I = \dfrac{v}{H_0}\sqrt{\dfrac{m}{P\overline{a}}}$
+%         \end{column}
+%     \end{columns}
+% \end{frame}
 
-\begin{frame}{Trouver le régime de l'état critique}
-    \begin{columns}
-                \begin{column}{0.5\textwidth}
-            \begin{figure}
-                \centering
-                \scalebox{0.5}{\input{Aleatoire.tex}}
-                \caption{Nombre de Coordination}
-            \end{figure}
-            échantillon aléatoire par compression dans l'axe Z
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \begin{figure}
-                \centering
-                \scalebox{0.5}{\input{ComparerNP.tex}}
-                \caption{Nombre de Particules}
-            \end{figure}
-        \end{column}
-    \end{columns}
+% \begin{frame}{Trouver le régime de l'état critique}
+%     \begin{columns}
+%                 \begin{column}{0.5\textwidth}
+%             \begin{figure}
+%                 \centering
+%                 \scalebox{0.5}{\input{Aleatoire.tex}}
+%                 \caption{Nombre de Coordination}
+%             \end{figure}
+%             échantillon aléatoire par compression dans l'axe Z
+%         \end{column}
+%         \begin{column}{0.5\textwidth}
+%             \begin{figure}
+%                 \centering
+%                 \scalebox{0.5}{\input{ComparerNP.tex}}
+%                 \caption{Nombre de Particules}
+%             \end{figure}
+%         \end{column}
+%     \end{columns}
 
-\end{frame}
+% \end{frame}
 
 
 \section{MPM}
@@ -146,10 +146,11 @@ rolling-rearrangement resulting in a higher resistance to shear"
             $\psi$ & Angle de dilatance  & $\approx 0^{\circ}$\\
             $v$ & Vélocité de déplacement & 0.005 m/s\\
             $c$ & Cohésion & 0 \& 100 Pa\\
+            $N$ & Nombre de point matériel & 1200\\
             $\mu$ & \parbox[t]{4.5cm}{Coefficient de frottement entre\\ le mur et les PMs\\} & 0\\
             \hline
         \end{tabular}
-        \caption{Paramètres du modèle (loi Mohr-Coulomb)}
+        \caption{Paramètres du Modèle (loi Mohr-Coulomb)}
     \end{table}
 \end{frame}
 
@@ -177,7 +178,8 @@ rolling-rearrangement resulting in a higher resistance to shear"
             \begin{itemize}
            \item Poussée active: $K_a = \dfrac{1 - \sin(\varphi)}{1 + \sin(\varphi)} = 0.406$\\
 \item Poussée passive: $K_p = 1/K_a = 2.464$\\
-\item État au repos: $ K_0 = 1 - \sin(\varphi) = 0.577$
+\item État au repos [Jaky, 1944]: $ K_0 = (1 - \sin(\varphi)) \dfrac{1+2/3 \sin(\varphi)}{1+ \sin(\varphi)} \approx 1 - \sin(\varphi) = 0.577$
+
             \end{itemize}
 La somme de pression $F$(kN) appliqué sur le mur:
 \begin{multicols}{2}
@@ -273,7 +275,211 @@ F_0 = \dfrac{1}{2}\gamma H^2 K_p + 2cH\sqrt{K_0} = 7.495
         \end{multicols}
                                \center\textcolor{red}{ $\rightarrow$ L'écart est $1$ kN ($3\%$)}
         \end{frame}
-\section{MPM-DEM}
+
+\begin{frame}{Stabilisation - Théorie élastique}
+\begin{align}
+\sigma_{yy} &= \rho \, g \, H = 2700 \cdot 9.81 \cdot 1 = 26487\ \text{Pa} \\[6pt]
+F_{yy} &= \sigma_{yy} \cdot L = 26487 \cdot 3 = 79461\ \text{Pa} \\[6pt]
+\sigma_{xx} &= K_0 \, \sigma_{yy} = K_0 \, \gamma y \\[6pt]
+F_{xx} &= \int_0^H K_0 \gamma y \, dy
+       = \frac{1}{2} \frac{\nu}{1-\nu}\, \gamma z^2
+       = \frac{1}{2}\cdot\frac{0.2}{1-0.2}\cdot 2700\cdot 9.81\cdot 1^2
+       = 3.3\ \text{kN} \\[6pt]
+I &= \frac{v}{H_0}\sqrt{\frac{m}{P}}
+  = \frac{0.005}{3}\sqrt{\frac{0.05^2 \cdot 2700}{2700 \cdot 9.81 \cdot 1}}
+  = 5 \cdot 10^{-4}\\[6pt]
+t_c &=  \dfrac{\pi}{20} \sqrt{\dfrac{m}{k_n}} = \dfrac{\pi}{20} \sqrt{\dfrac{0.05^2 \cdot 2700}{1e9}} = 10^{-5} (s)
+\end{align}
+\end{frame}
+
+
+        \begin{frame}{Stabilisation - Théorie élastique vs Rankine}
+    \begin{multicols}{2}
+     \begin{figure}
+                \centering
+                \scalebox{0.45}{\input{ForceFond.tex}}
+                \caption{La force au fond au repo}
+            \end{figure}
+            à 1s le model est bien stabilisé.
+            La force au fond de deux loi est presque exactement la meme.
+            \columnbreak  
+            \begin{figure}
+                \centering
+                \scalebox{0.45}{\input{ForceMur.tex}}
+                \caption{La force au mur au repo}
+            \end{figure}
+            Un écart de difference entre les 2 théories
+        \end{multicols}
+        \end{frame}
+
+                \begin{frame}{Stabilisation - Modèle Mohr-Coulomb}
+    \begin{multicols}{2}
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+
+        % Đặt ảnh làm nền
+        \node[anchor=south west, inner sep=0] (img) at (0,0)
+        {\includegraphics[height=4.8cm]{sigmayy.png}};
+
+        % Hệ toạ độ chuẩn hoá 0–1 theo ảnh
+        \begin{scope}[x={(img.south east)}, y={(img.north west)}]
+            % Vẽ hình chữ nhật màu đỏ
+            \draw[red, thick] (0.465,0.35) rectangle (0.475,0.56);
+        \end{scope}
+
+    \end{tikzpicture}
+    \caption{$\sigma_{yy}$ quand $\nu = 0.2, \varphi=25^{\circ},c=0$}
+\end{figure}
+            $\sigma$ dans la couche de MP horizontale au fond présente l'effet de bord
+
+
+    \columnbreak  
+                        \begin{figure}
+                \centering
+                \scalebox{0.45}{\input{bandeMilieu.tex}}
+                \caption{La contrainte de bande au milieu de cas $\nu=0.2, \varphi=25^{\circ},c=0$}
+            \end{figure}
+            Le coefficient $K_0$ varie fortement
+        \end{multicols}
+        \end{frame}
+
+
+         \begin{frame}{Stabilisation - Modèle Mohr-Coulomb}
+ 
+                        \begin{figure}
+                \centering
+                \scalebox{0.7}{\input{ElasCohesion.tex}}
+    \caption{Taux $K_0 = \sigma_{xx}/\sigma_{yy} $ quand $\nu = 0.2, \varphi=25^{\circ}$ au chaque points vertical de la bande au milieu}
+            \end{figure}
+        \end{frame}
+
+
+        \begin{frame}{Stabilisation - Modèle Mohr-Coulomb}
+            Le Coefficient $K_0$ quand on fixe $\varphi=25^{\circ},\psi=0^{\circ},c=0$ et varie $\nu$:
+    \begin{multicols}{2}
+     \begin{figure}
+                \centering
+                \scalebox{0.4}{\input{Mohr_nu_ROM.tex}}
+                \caption{Ratio de moyen}
+            \end{figure}
+\tiny
+$$K_0 = \frac{\overline{\sigma_{xx}}}{\overline{\sigma_{yy}}}$$
+$$\mathrm{Std}(K_0) \approx  K_0 \sqrt{ \left(\frac{\mathrm{Std}(\sigma_{xx})}{\overline{\sigma_{xx}}}\right)^2 + \left(\frac{\mathrm{Std}(\sigma_{yy})}{\overline{\sigma_{yy}}}\right)^2}$$
+
+         \columnbreak  
+            \begin{figure}
+                \centering
+                \scalebox{0.4}{\input{Mohr_nu_MOR.tex}}
+                \caption{Moyen de ratio}
+            \end{figure}
+\tiny
+$$K_0 = \frac{1}{N}\sum_{i=1}^N \frac{\sigma_{xx,i}}{\sigma_{yy,i}};$$\\
+ $$\mathrm{Std}(K_0) =\sqrt{\frac{1}{N-1}\sum_{i=1}^N \left(\frac{\sigma_{xx,i}}{\sigma_{yy,i}} - K_0 \right)^2}$$
+
+
+        \end{multicols}
+        \end{frame}
+
+
+        \begin{frame}{Stabilisation - Modèle Mohr-Coulomb}
+            Le Coefficient $K_0$ quand on fixe $\varphi=25^{\circ},\nu=0.2,c=0$ et varie $\psi$:
+    \begin{multicols}{2}
+     \begin{figure}
+                \centering
+                \scalebox{0.45}{\input{Mohr_si_ROM.tex}}
+                \caption{Ratio de moyen}
+            \end{figure}
+
+         \columnbreak  
+            \begin{figure}
+                \centering
+                \scalebox{0.45}{\input{Mohr_si_MOR.tex}}
+                \caption{Moyen de ratio}
+            \end{figure}
+        \end{multicols}
+        La différence est négligeable.
+        \end{frame}
+
+              \begin{frame}{Stabilisation - Modèle Élastique}
+            Le Coefficient $K_0$ quand on fixe $\nu=0.2, \psi=0^{\circ},c=0$ et varie $\varphi$:
+    \begin{multicols}{2}
+     \begin{figure}
+                \centering
+                \scalebox{0.45}{\input{Mohr_phi_MOR.tex}}
+                \caption{Ratio de moyen}
+            \end{figure}
+
+         \columnbreak  
+            \begin{figure}
+                \centering
+                \scalebox{0.45}{\input{Mohr_phi_ROM.tex}}
+                \caption{Moyen de ratio}
+            \end{figure}
+
+        \end{multicols}
+        \end{frame}
+
+                       \begin{frame}{Stabilisation - Modèle Élastique}
+    \begin{multicols}{2}
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+
+        % Đặt ảnh làm nền
+        \node[anchor=south west, inner sep=0] (img) at (0,0)
+        {\includegraphics[height=4.5cm]{elas.png}};
+
+        % Hệ toạ độ chuẩn hoá 0–1 theo ảnh
+        \begin{scope}[x={(img.south east)}, y={(img.north west)}]
+            % Vẽ hình chữ nhật màu đỏ
+            \draw[red, thick] (0.465,0.35) rectangle (0.475,0.56);
+        \end{scope}
+
+    \end{tikzpicture}
+    \caption{$\sigma_{yy}$ ($\nu = 0.2, E = 1e9$ Pa)}
+\end{figure}
+                      \begin{figure}
+                \centering
+                \scalebox{0.45}{\input{HookeTaux.tex}}
+                \caption{La contrainte de bande au milieu de cas $\nu = 0.2, E = 1e9$ Pa}
+            \end{figure}
+
+    \columnbreak  
+        \end{multicols}
+        \end{frame}
+
+
+        \begin{frame}{Stabilisation - Modèle Élastique}
+            $PIC=99\%$\\
+            Le Coefficient $K_0$ quand on fixe $E=1e9Pa$, PIC = 0.9 et varie $\nu$:
+    \begin{multicols}{2}
+     \begin{figure}
+                \centering
+                \scalebox{0.45}{\input{Hooke_nu_ROM.tex}}
+                \caption{Ratio de moyen}
+            \end{figure}
+
+         \columnbreak  
+            \begin{figure}
+                \centering
+                \scalebox{0.45}{\input{Hooke_nu_MOR.tex}}
+                \caption{Moyen de ratio}
+            \end{figure}
+
+
+        \end{multicols}
+        \end{frame}
+
+        \begin{frame}{Stabilisation - Modèle Élastique}
+            L'influence de PIC/FLIP: $E=1e9Pa, \nu=0.4$
+     \begin{figure}
+                \centering
+                \scalebox{0.5}{\input{ElasPIC.tex}}
+                \caption{Taux de $\sigma_{xx}/\sigma_{yy}$}
+    \end{figure}
+    Le PIC n’influence pas significativement le résultat final.
+        \end{frame}
 
 
 
