@@ -178,7 +178,7 @@
             \begin{itemize}
            \item Poussée active: $K_a = \dfrac{1 - \sin(\varphi)}{1 + \sin(\varphi)} = 0.406$\\
 \item Poussée passive: $K_p = 1/K_a = 2.464$\\
-\item État au repos [Jaky, 1944]: $ K_0 = (1 - \sin(\varphi)) \dfrac{1+2/3 \sin(\varphi)}{1+ \sin(\varphi)} \approx 1 - \sin(\varphi) = 0.577$
+\item État au reposs [Jaky, 1944]: $ K_0 = (1 - \sin(\varphi)) \dfrac{1+2/3 \sin(\varphi)}{1+ \sin(\varphi)} \approx 1 - \sin(\varphi) = 0.577$
 
             \end{itemize}
 La somme de pression $F$(kN) appliqué sur le mur:
@@ -279,7 +279,7 @@ F_0 = \dfrac{1}{2}\gamma H^2 K_p + 2cH\sqrt{K_0} = 7.495
 \begin{frame}{Stabilisation - Théorie élastique}
 \begin{align}
 \sigma_{yy} &= \rho \, g \, H = 2700 \cdot 9.81 \cdot 1 = 26487\ \text{Pa} \\[6pt]
-F_{yy} &= \sigma_{yy} \cdot L = 26487 \cdot 3 = 79461\ \text{Pa} \\[6pt]
+F_{yy} &= \sigma_{yy} \cdot L = 26487 \cdot 3 = 79461\ \text{N} \\[6pt]
 \sigma_{xx} &= K_0 \, \sigma_{yy} = K_0 \, \gamma y \\[6pt]
 F_{xx} &= \int_0^H K_0 \gamma y \, dy
        = \frac{1}{2} \frac{\nu}{1-\nu}\, \gamma z^2
@@ -294,21 +294,22 @@ t_c &=  \dfrac{\pi}{20} \sqrt{\dfrac{m}{k_n}} = \dfrac{\pi}{20} \sqrt{\dfrac{0.0
 
 
         \begin{frame}{Stabilisation - Théorie élastique vs Rankine}
+            $E = 1e9 package, \nu=0.2, \varphi=25^{\circ}, \psi=0^{\circ},c=0, PIC=99\%$
     \begin{multicols}{2}
      \begin{figure}
                 \centering
                 \scalebox{0.45}{\input{ForceFond.tex}}
-                \caption{La force au fond au repo}
+                \caption{La force au fond au repos}
             \end{figure}
-            à 1s le model est bien stabilisé.
-            La force au fond de deux loi est presque exactement la meme.
+            à 1s, le modèle est bien stabilisé.
+            La force au fond des deux lois est presque exactement la même.
             \columnbreak  
             \begin{figure}
                 \centering
                 \scalebox{0.45}{\input{ForceMur.tex}}
-                \caption{La force au mur au repo}
+                \caption{La force au mur à droite au repos}
             \end{figure}
-            Un écart de difference entre les 2 théories
+            On observe un écart entre les deux théories.
         \end{multicols}
         \end{frame}
 
@@ -329,7 +330,7 @@ t_c &=  \dfrac{\pi}{20} \sqrt{\dfrac{m}{k_n}} = \dfrac{\pi}{20} \sqrt{\dfrac{0.0
         \end{scope}
 
     \end{tikzpicture}
-    \caption{$\sigma_{yy}$ quand $\nu = 0.2, \varphi=25^{\circ},c=0$}
+    \caption{$\sigma_{yy}$ l'orsque $\nu = 0.2, \varphi=25^{\circ},c=0$}
 \end{figure}
             $\sigma$ dans la couche de MP horizontale au fond présente l'effet de bord
 
@@ -338,9 +339,9 @@ t_c &=  \dfrac{\pi}{20} \sqrt{\dfrac{m}{k_n}} = \dfrac{\pi}{20} \sqrt{\dfrac{0.0
                         \begin{figure}
                 \centering
                 \scalebox{0.45}{\input{bandeMilieu.tex}}
-                \caption{La contrainte de bande au milieu de cas $\nu=0.2, \varphi=25^{\circ},c=0$}
+                \caption{La contrainte de bande au milieu (cas $\nu=0.2, \varphi=25^{\circ},c=0$)}
             \end{figure}
-            Le coefficient $K_0$ varie fortement
+            Évolution du $K_0$ varie fortement
         \end{multicols}
         \end{frame}
 
@@ -350,18 +351,18 @@ t_c &=  \dfrac{\pi}{20} \sqrt{\dfrac{m}{k_n}} = \dfrac{\pi}{20} \sqrt{\dfrac{0.0
                         \begin{figure}
                 \centering
                 \scalebox{0.7}{\input{ElasCohesion.tex}}
-    \caption{Taux $K_0 = \sigma_{xx}/\sigma_{yy} $ quand $\nu = 0.2, \varphi=25^{\circ}$ au chaque points vertical de la bande au milieu}
+    \caption{Taux $K_0 = \sigma_{xx}/\sigma_{yy} $ l'orsque $\nu = 0.2, \varphi=25^{\circ}$ au chaque points vertical de la bande au milieu}
             \end{figure}
         \end{frame}
 
 
         \begin{frame}{Stabilisation - Modèle Mohr-Coulomb}
-            Le Coefficient $K_0$ quand on fixe $\varphi=25^{\circ},\psi=0^{\circ},c=0$ et varie $\nu$:
+            Évolution du $K_0$ lorsqu'on fixe $\varphi=25^{\circ},\psi=0^{\circ},c=0$ et varie $\nu$:
     \begin{multicols}{2}
      \begin{figure}
                 \centering
                 \scalebox{0.4}{\input{Mohr_nu_ROM.tex}}
-                \caption{Ratio de moyen}
+                \caption{Ratio de la moyenne}
             \end{figure}
 \tiny
 $$K_0 = \frac{\overline{\sigma_{xx}}}{\overline{\sigma_{yy}}}$$
@@ -371,7 +372,7 @@ $$\mathrm{Std}(K_0) \approx  K_0 \sqrt{ \left(\frac{\mathrm{Std}(\sigma_{xx})}{\
             \begin{figure}
                 \centering
                 \scalebox{0.4}{\input{Mohr_nu_MOR.tex}}
-                \caption{Moyen de ratio}
+                \caption{Moyenne du ratio}
             \end{figure}
 \tiny
 $$K_0 = \frac{1}{N}\sum_{i=1}^N \frac{\sigma_{xx,i}}{\sigma_{yy,i}};$$\\
@@ -383,38 +384,38 @@ $$K_0 = \frac{1}{N}\sum_{i=1}^N \frac{\sigma_{xx,i}}{\sigma_{yy,i}};$$\\
 
 
         \begin{frame}{Stabilisation - Modèle Mohr-Coulomb}
-            Le Coefficient $K_0$ quand on fixe $\varphi=25^{\circ},\nu=0.2,c=0$ et varie $\psi$:
+            Évolution du $K_0$ lorsquo'on fixe $\varphi=25^{\circ},\nu=0.2,c=0$ et varie $\psi$:
     \begin{multicols}{2}
      \begin{figure}
                 \centering
                 \scalebox{0.45}{\input{Mohr_si_ROM.tex}}
-                \caption{Ratio de moyen}
+                \caption{Ratio de la moyenne}
             \end{figure}
 
          \columnbreak  
             \begin{figure}
                 \centering
                 \scalebox{0.45}{\input{Mohr_si_MOR.tex}}
-                \caption{Moyen de ratio}
+                \caption{Moyenne du ratio}
             \end{figure}
         \end{multicols}
         La différence est négligeable.
         \end{frame}
 
               \begin{frame}{Stabilisation - Modèle Élastique}
-            Le Coefficient $K_0$ quand on fixe $\nu=0.2, \psi=0^{\circ},c=0$ et varie $\varphi$:
+            Évolution du $K_0$ lorsquo'on fixe $\nu=0.2, \psi=0^{\circ},c=0$ et varie $\varphi$:
     \begin{multicols}{2}
      \begin{figure}
                 \centering
                 \scalebox{0.45}{\input{Mohr_phi_MOR.tex}}
-                \caption{Ratio de moyen}
+                \caption{Ratio de la moyenne}
             \end{figure}
 
          \columnbreak  
             \begin{figure}
                 \centering
                 \scalebox{0.45}{\input{Mohr_phi_ROM.tex}}
-                \caption{Moyen de ratio}
+                \caption{Moyenne du ratio}
             \end{figure}
 
         \end{multicols}
@@ -437,12 +438,12 @@ $$K_0 = \frac{1}{N}\sum_{i=1}^N \frac{\sigma_{xx,i}}{\sigma_{yy,i}};$$\\
         \end{scope}
 
     \end{tikzpicture}
-    \caption{$\sigma_{yy}$ ($\nu = 0.2, E = 1e9$ Pa)}
+    \caption{$\sigma_{yy}$ ($\nu = 0.2, E = 1e9\ $ Pa)}
 \end{figure}
                       \begin{figure}
                 \centering
                 \scalebox{0.45}{\input{HookeTaux.tex}}
-                \caption{La contrainte de bande au milieu de cas $\nu = 0.2, E = 1e9$ Pa}
+                \caption{Taux de contrainte de bande au milieu (cas $\nu = 0.2, E = 1e9\ $ Pa)}
             \end{figure}
 
     \columnbreak  
@@ -452,19 +453,19 @@ $$K_0 = \frac{1}{N}\sum_{i=1}^N \frac{\sigma_{xx,i}}{\sigma_{yy,i}};$$\\
 
         \begin{frame}{Stabilisation - Modèle Élastique}
             $PIC=99\%$\\
-            Le Coefficient $K_0$ quand on fixe $E=1e9Pa$, PIC = 0.9 et varie $\nu$:
+            Évolution du $K_0$ lorsquo'on fixe $E=1e9\ Pa$, PIC = 0.9 et varie $\nu$:
     \begin{multicols}{2}
      \begin{figure}
                 \centering
                 \scalebox{0.45}{\input{Hooke_nu_ROM.tex}}
-                \caption{Ratio de moyen}
+                \caption{Ratio de la moyenne}
             \end{figure}
 
          \columnbreak  
             \begin{figure}
                 \centering
                 \scalebox{0.45}{\input{Hooke_nu_MOR.tex}}
-                \caption{Moyen de ratio}
+                \caption{Moyenne du ratio}
             \end{figure}
 
 
@@ -472,7 +473,7 @@ $$K_0 = \frac{1}{N}\sum_{i=1}^N \frac{\sigma_{xx,i}}{\sigma_{yy,i}};$$\\
         \end{frame}
 
         \begin{frame}{Stabilisation - Modèle Élastique}
-            L'influence de PIC/FLIP: $E=1e9Pa, \nu=0.4$
+            L'influence de PIC/FLIP: $E=1e9\ Pa, \nu=0.4$
      \begin{figure}
                 \centering
                 \scalebox{0.5}{\input{ElasPIC.tex}}
