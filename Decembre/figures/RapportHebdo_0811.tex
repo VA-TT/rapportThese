@@ -1,0 +1,213 @@
+\documentclass[10pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz, pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{positioning}
+\usetikzlibrary{trees}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{hyperref} 
+\usepackage{colortbl} % Required for \rowcolor
+\usepackage{animate}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{cancel}
+\usepackage[french]{babel}
+\usepackage[normalem]{ulem}
+
+% Theme và màu sắc cho beamer
+\usetheme{AnnArbor}
+\usecolortheme{seahorse}
+
+% Định nghĩa và thiết lập màu sắc chung
+\definecolor{mydarkblue}{RGB}{0,51,102}
+\setbeamercolor{structure}{fg=mydarkblue}
+\setbeamercolor{frametitle}{bg=mydarkblue, fg=white}
+\setbeamercolor{title}{fg=mydarkblue}
+\setbeamercolor{item}{fg=mydarkblue}
+\setbeamercolor{block title}{bg=mydarkblue, fg=white}
+\setbeamercolor{block body}{bg=white, fg=black}
+\setbeamercolor{section in toc}{fg=mydarkblue}
+\setbeamercolor{subsection in toc}{fg=mydarkblue}
+\setbeamercolor{caption name}{fg=mydarkblue}
+\setbeamercolor{author}{fg=mydarkblue}
+\setbeamercolor{date}{fg=mydarkblue}
+\setbeamercolor{institute}{fg=mydarkblue}
+\setbeamertemplate{caption}[numbered]
+\usepackage{multirow}
+\title{Rapport Hebdo}
+\author{Viet Anh Quach}
+\institute{3SR}
+\date{\today}
+
+\begin{document}
+
+% \begin{frame}
+%     \titlepage
+% \end{frame}
+
+\section{Étude bibliographie}
+\begin{frame}{Auteur Kostas Senetakis}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[h]
+                \centering
+                \scalebox{0.4}{\includegraphics{Experiment.png}}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[h]
+                \centering
+                \scalebox{0.4}{\includegraphics{muy=constant.png}}
+            \end{figure}
+        \end{column}
+        \end{columns}
+[Kostas Senetakis, 2017,2018]:  "Under the low normal load range applied in the study, between 1 and 5 N, we found
+that the frictional force is linearly correlated with the applied normal load"
+\end{frame}
+
+\section{DEM}
+
+% 03102025
+\begin{frame}{Article Stress-strain behavior of sand at high strain rates (Mehdi Omidvar et al,2012)}
+            \begin{figure}[h]
+                \centering
+                \scalebox{0.4}{\includegraphics{StrainRate.png}}
+            \end{figure}
+            "Under HSR loading, there is not enough time for strain energy
+accumulation, which prohibits crushing and promotes
+rolling-rearrangement resulting in a higher resistance to shear"
+\end{frame}
+
+
+\begin{frame}{Trouver le régime de l'état critique}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \scalebox{0.5}{\input{3000KineticComp_ev}}
+                \caption{petit déformation}
+            \end{figure}
+                    $\varepsilon_v = \varepsilon_x + \varepsilon_y + \varepsilon_z$
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \scalebox{0.5}{\input{epsyy_epsv.tex}}
+                \caption{grande déformation}
+            \end{figure}
+                    $\varepsilon_v = \dfrac{det(h)}{det(h_0)} - 1$
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Trouver le régime de l'état critique}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \scalebox{0.5}{\input{epsyy_phi.tex}}
+                \caption{Fraction solide}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \scalebox{0.5}{\input{3000_phi_I_fit.tex}}
+                \caption{grande déformation}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Trouver le régime de l'état critique}
+    \begin{columns}
+
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \scalebox{0.5}{\input{NombreCoordination.tex}}
+                \caption{Nombre de NombreCoordination}
+            \end{figure}
+            hpd: $\varepsilon_{yy} = \dfrac{\Delta {yy}}{h_{yy}^0}; \varepsilon_v = \varepsilon_{xx} + \varepsilon_{yy} + \varepsilon_{zz} $
+        \end{column}
+                \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \scalebox{0.5}{\input{Eyy_Ev.tex}}
+                \caption{Déformation Volumique}
+            \end{figure}
+            gd: $\varepsilon_{yy} = \ln(\dfrac{h_{yy}}{h_{yy}^0});  \varepsilon_v = \dfrac{\Delta V}{V_0}$;
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}{Trouver le régime de l'état critique}
+    \begin{columns}
+                \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \scalebox{0.5}{\input{Aleatoire.tex}}
+                \caption{Nombre de Coordination}
+            \end{figure}
+            échantillon aléatoire par compression dans l'axe Z
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \scalebox{0.5}{\input{ComparerNP.tex}}
+                \caption{Nombre de Particules}
+            \end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+
+\section{MPM}
+\begin{frame}{Stabilisation d'une colonne de sol par Mohr-Coulomb}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \animategraphics[loop,autoplay,controls, width=5cm]{1}{MP=12_}{0}{2}
+                \caption{MP=12}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \animategraphics[loop,autoplay,controls, width=5cm]{1}{MP=12+_}{0}{2}
+                \caption{augementer rigidité de condition aux limites}
+            \end{figure}
+        \end{column}
+    \end{columns}
+        \end{frame}
+
+    \begin{frame}{Effondrement d'une colonne de sol par Mohr-Coulomb}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \animategraphics[loop,autoplay,controls, width=5cm]{1}{MP=1200_}{0}{2}
+                \caption{MP=1200}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \animategraphics[loop,autoplay,controls, width=5cm]{1}{MPM_}{0}{13}
+                \caption{MP=1200 Effondrement}
+                       \end{figure}
+        \end{column}
+    \end{columns}
+        \end{frame}
+
+\section{MPM-DEM}
+Poster pour la conférence "Powder and grains"
+
+
+\end{document}

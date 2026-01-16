@@ -58,5 +58,10 @@
         "typeinfo": "cpp",
         "numbers": "cpp",
         "__nullptr": "cpp"
-    }
+    },
+    "editor.formatOnSave": true,
+    "[latex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    },
+    
 }

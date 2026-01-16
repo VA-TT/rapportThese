@@ -1,0 +1,47 @@
+oneStepType ModifiedLagrangian
+result_folder .
+tolmass 1.e-5
+gravity 0.0  -9.81
+finalTime 10
+confPeriod 5000
+proxPeriod 10
+dt 1e-5
+t 0.0
+ShapeFunction BSpline
+splitting 0
+enablePIC 0.01
+
+#     modelID        modelName  Young     Poisson   FrictionAngle  Cohesion   DilatancyAngle
+model MohrCoulomb    MC         1.0e9     0.2      0.436            0       0.01
+model HookeElasticity    E    1.0e9    0.49
+
+
+# Place the nodes
+set_node_grid  W.H.lx.ly  4.2  2  0.1 0.1
+
+# Place the MPs
+#            group   modelName     mass_density  x0     y0      x1     y1      size of MPs
+set_MP_grid  0      E           2700        0.4   0.4    3.4    1.4    0.05
+
+
+#              column number,  line from   to,    xfixed   yfixed
+set_BC_column  4                14       17        1        1 
+set_BC_column  4                4       14        1        0 
+set_BC_column  3                4       17        1        1 
+set_BC_column  3                4       17        1        1 
+set_BC_column  2                4       17        1        1 
+set_BC_column  1                4       17        1        1 
+set_BC_column  0                4       17        1        1 
+set_BC_column  34                14       17        1        1 
+set_BC_column  34                4       14        1        0 
+set_BC_column  35                4       17        1        1
+set_BC_column  36                4       17        1        1
+set_BC_column  37                4       17        1        1
+set_BC_column  38                4       17        1        1
+set_BC_line    4               4     34        0        1 
+set_BC_line    3               0     38        1        1 
+set_BC_line    2               0     38        1        1 
+set_BC_line    1               0     38        1        1 
+set_BC_line    0               0     38        1        1 
+set_K0_stress 0.49 2700
+
