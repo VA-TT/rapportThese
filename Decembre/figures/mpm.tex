@@ -131,16 +131,20 @@
 \end{frame}
 
 
-\begin{frame}{Stabilisation - Théorie élastique vs Rankine}
-	$E = 1e9\ Pa, \nu=0.2, \varphi=25^{\circ}, \psi=0^{\circ},c=0, PIC=99\%$
-		\begin{figure}
-			\centering
-			\scalebox{0.45}{\input{ForceFond.tex}}
-			\caption{La force au fond au repos}
-		\end{figure}
-		à 1s, le modèle est bien stabilisé.
-		Modèle élastique: $K_0 = \dfrac{\sigma_{xx}}{sigma_{yy}} = \dfrac{\nu}{1 - \nu}$
-\end{frame}
+% \begin{frame}{Stabilisation - Théorie élastique}
+% 	$E = 1e9\ Pa, \nu=0.2, \varphi=25^{\circ}, \psi=0^{\circ},c=0, PIC=99\%$
+% 		\begin{figure}
+% 			\centering
+% 			\scalebox{0.35}{\input{ForceFond.tex}}
+% 			\caption{La force au fond au repos}
+% 		\end{figure}
+		% à 1s, le modèle est bien stabilisé.\\
+% 			\begin{align}
+% 		\sigma_{yy} & = \rho \, g \, H = 2700 \cdot 9.81 \cdot 1 = 26487\ \text{Pa}                                                  \\[6pt]
+% 		F_{yy}      & = \sigma_{yy} \cdot L = 26487 \cdot 3 = 79461\ \text{N}                                                        \\[6pt]
+% 		\text{Modèle élastique: }K_0 &= \dfrac{\sigma_{xx}}{sigma_{yy}} = \dfrac{\nu}{1 - \nu}                                                                     \\[6pt]
+% \end{align}
+% \end{frame}
 
 \begin{frame}{Stabilisation - Modèle avec des points fixées}
 		\begin{figure}[h]
@@ -289,44 +293,49 @@
 % 		\end{figure}
 % \end{frame}
 
-\begin{frame}{Stabilisation - Taux de contrainte}
+\begin{frame}{Stabilisation - Taux de contrainte de bande au milieu}
 		\begin{figure}
 			\centering
-			\scalebox{0.7}{\input{longeur.tex}}
-			\caption{Longueur du modèle \\
-			$\nu=0.33, E = 1e6kPa,  H = 1m, N_{\text{PM}} = 1200$}
+			\scalebox{0.5}{\input{longeur.tex}}
+			\caption{Longueur du modèle}
+						Modèle élastique: $\nu=0.33, E = 1e6kPa,  H = 1m$
 		\end{figure}
+		$$K_0 = \dfrac{\sigma_{xx}}{\sigma_{yy}} = \dfrac{\nu}{1 - \nu} == \dfrac{0.33}{1-0.33} = 0.493 $$
 \end{frame}
 
-\begin{frame}{Stabilisation élastique - Taux de contrainte}
+\begin{frame}{Stabilisation - Taux de contrainte de bande au milieu}
 		\begin{figure}
 			\centering
-			\scalebox{0.7}{\input{v=0.49.tex}}
-			\caption{Nombre de MPs ($\nu=0.49, E = 1e6kPa$), bande au milieu}
+			\scalebox{0.5}{\input{v=0.49.tex}}
+			\caption{Nombre de MPs}
+				Modèle élastique: $\nu=0.49, E = 1e6kPa,  L = 3m$
 		\end{figure}
+				$$K_0 = \dfrac{\sigma_{xx}}{\sigma_{yy}} = \dfrac{\nu}{1 - \nu} == \dfrac{0.49}{1-0.49} = 0.961 $$
 \end{frame}
 
-\begin{frame}{Stabilisation élastique - Taux de contrainte}
+\begin{frame}{Stabilisation élastique - Effet de bord}
 	\begin{multicols}{2}
 		\begin{figure}
 			\centering
 			\scalebox{0.45}{\input{maillage.tex}}
-			\caption{Nombre de MPs ($\nu=0.33, E = 1e6kPa$), bande au milieu}
+			\caption{Bande au milieu}
+							Modèle élastique: $\nu=0.33, E = 1e6kPa,  L = 3m$
 		\end{figure}
 				\columnbreak
 		\begin{figure}
 			\centering
 			\scalebox{0.45}{\input{mur.tex}}
-			\caption{Nombre de MPs ($\nu=0.33, E = 1e6kPa$), bande au bord}		
+			\caption{Bande au bord}		
+										Modèle élastique: $\nu=0.33, E = 1e6kPa,  L = 3m$
 		\end{figure}
 	\end{multicols}
 \end{frame}
 
-\begin{frame}{Stabilisation élastique - Taux de contrainte}
+\begin{frame}{Stabilisation élastique - comparer lois constitutives}
 		\begin{figure}
 			\centering
 			\scalebox{0.7}{\input{loi.tex}}
-			\caption{Nombre de MPs ($\nu=0.49, E = 1e6kPa$), bande au milieu}
+			\caption{Comparer la bande au milieu entre modèle élastique ($\nu=0.33, E = 1e9Pa$) avec modèle élasto-plastique ($\nu=0.33, E = 1e9Pa, c = 2e5Pa$)}
 		\end{figure}
 \end{frame}
 
@@ -349,22 +358,23 @@
 			\end{tikzpicture}
 			\caption{Le maillage et les lignes fixées}
 			L = 3m, H = 1m, $\rho = 2700\ \mathrm{kg/m^3}, N_{\text{PM}} = 1200, \mu_{\text{mur-PM}} = 0$\\
-			Fixer les déplacements des lignes latérales selon l’axe x et de celles en dessous selon l’axe y
-		\end{figure}
+				\end{figure}
 \end{frame}
 
-\begin{frame}{Stabilisation élastique - Taux de contrainte}
+\begin{frame}{Stabilisation élastique - Lignes fixées}
 	\begin{multicols}{2}
 		\begin{figure}
 			\centering
 			\scalebox{0.45}{\input{BC_milieu.tex}}
-			\caption{Nombre de MPs ($\nu=0.33, E = 1e6kPa$), bande au milieu}
+			\caption{Bande au milieu}
+							Modèle élastique: $\nu=0.33, E = 1e6kPa,  L = 3m$
 		\end{figure}
 				\columnbreak
 		\begin{figure}
 			\centering
 			\scalebox{0.45}{\input{BC_bord.tex}}
-			\caption{Nombre de MPs ($\nu=0.33, E = 1e6kPa$), bande au bord}		
+			\caption{Bande au bord}
+							Modèle élastique: $\nu=0.33, E = 1e6kPa,  L = 3m$
 		\end{figure}
 	\end{multicols}
 \end{frame}
