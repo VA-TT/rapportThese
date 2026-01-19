@@ -1,0 +1,64 @@
+oneStepType ModifiedLagrangian
+result_folder .
+tolmass 1.e-5
+gravity 0.0  -9.81
+finalTime 10
+confPeriod 5000
+proxPeriod 10
+dt 1e-5
+t 0.0
+ShapeFunction BSpline
+splitting 0
+enablePIC 0.01
+
+#     modelID        modelName  Young     Poisson   FrictionAngle  Cohesion   DilatancyAngle
+model MohrCoulomb    MC         1.0e9     0.2      0.436            0       0.01
+model HookeElasticity    E    1.0e9    0.33
+
+
+# Place the nodes
+set_node_grid  W.H.lx.ly  4  2  0.0125 0.0125
+
+# Place the MPs
+#            group   modelName     mass_density  x0     y0      x1     y1      size of MPs
+set_MP_grid  0      E           2700        0.4   0.4    3.4    1.4    0.00625
+
+#                group  x0    y0   x1    y1   driveMode
+Obstacle Line    1      3.4  1.6   3.4   0.4  freeze
+Obstacle Line    1      3.5  0.4   0.3   0.4  freeze
+Obstacle Line    1      0.4  0.4   0.4   1.6  freeze
+
+
+set_BC_column  31                32       112        1        1	
+set_BC_column  30                32       112        1        1 
+set_BC_column  29                32       112        1        1
+set_BC_column  28                32       112        1        1
+
+set_BC_column  273                32       112        1        1 
+set_BC_column  274                32       112        1        1 
+set_BC_column  275                32       112        1        1 
+set_BC_column  276                32       112        1        1 
+
+set_BC_line    31                24       280        1        1
+set_BC_line    30                24       280        1        1
+set_BC_line    29                24       280        1        1
+set_BC_line    28                24       280        1        1
+
+set_BC_line    113                24       280        1        1
+set_BC_line    114                24       280        1        1
+set_BC_line    115                24       280        1        1
+set_BC_line    116                24       280        1        1
+
+Spy ElasticBeamDev 100 Kinetic.txt
+Spy ObstacleTracking 2 100 Force2.txt
+Spy ObstacleTracking 1 100 Force1.txt
+Spy ObstacleTracking 0 100 Force0.txt
+
+BoundaryForceLaw frictionalViscoElastic 1
+
+# Set the properties that will be used between Obstacles and MPs
+#properties      parameter  groupMP   groupObst  value
+set              mu         0         1          0.0
+set              kn         0         1          1e7
+set              kt         0         1          1e7
+set              viscRate   0         1          0.98
