@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.4.17)  19 JAN 2026 11:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.4.17)  19 JAN 2026 11:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -856,8 +856,7 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@cntb=\count390
 \multirow@dima=\skip74
 \bigstrutjot=\dimen349
-)
-No file mpm.aux.
+) (./mpm.aux)
 \openout1 = `mpm.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
@@ -878,6 +877,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
 LaTeX Font Info:    ... okay on input line 50.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
 LaTeX Font Info:    ... okay on input line 50.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -944,6 +944,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 50.
 LaTeX Info: Redefining \pageref on input line 50.
 LaTeX Info: Redefining \nameref on input line 50.
+ (./mpm.out) (./mpm.out)
 \@outlinefile=\write5
 \openout5 = `mpm.out'.
 
@@ -1021,12 +1022,12 @@ Package caption Info: End \AtBeginDocument code.
 LaTeX Info: Redefining \degres on input line 50.
 LaTeX Info: Redefining \up on input line 50.
 (./mpm.nav)
-<activeRankine.pdf, id=14, 173.78928pt x 67.97395pt>
+<activeRankine.pdf, id=18, 173.78928pt x 67.97395pt>
 File: activeRankine.pdf Graphic file (type pdf)
 <use activeRankine.pdf>
 Package pdftex.def Info: activeRankine.pdf  used on input line 131.
 (pdftex.def)             Requested size: 167.32637pt x 65.44142pt.
-<passiveRankine.pdf, id=15, 173.24725pt x 72.69157pt>
+<passiveRankine.pdf, id=19, 173.24725pt x 72.69157pt>
 File: passiveRankine.pdf Graphic file (type pdf)
 <use passiveRankine.pdf>
 Package pdftex.def Info: passiveRankine.pdf  used on input line 131.
@@ -1034,7 +1035,7 @@ Package pdftex.def Info: passiveRankine.pdf  used on input line 131.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <./activeRankine.pdf> <./passiveRankine.pdf>]
-<ligneFix.png, id=68, 2499.3375pt x 1418.29875pt>
+<ligneFix.png, id=71, 2499.3375pt x 1418.29875pt>
 File: ligneFix.png Graphic file (type png)
 <use ligneFix.png>
 Package pdftex.def Info: ligneFix.png  used on input line 171.
@@ -1065,7 +1066,7 @@ Package epstopdf Info: Source file: <./longeur.eps>
 (epstopdf)             Command: <repstopdf --outfile=./longeur-eps-converted-to.pdf ./longeur.eps>
 (epstopdf)             \includegraphics on input line 136.
 Package epstopdf Info: Output file is already uptodate.
-<./longeur-eps-converted-to.pdf, id=105, 361.35pt x 252.945pt>
+<./longeur-eps-converted-to.pdf, id=108, 361.35pt x 252.945pt>
 File: ./longeur-eps-converted-to.pdf Graphic file (type pdf)
 <use ./longeur-eps-converted-to.pdf>
 Package pdftex.def Info: ./longeur-eps-converted-to.pdf  used on input line 136.
@@ -1082,7 +1083,7 @@ Package epstopdf Info: Source file: <./v=0.49.eps>
 (epstopdf)             Command: <repstopdf --outfile=./v=0.49-eps-converted-to.pdf ./v=0.49.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
-<./v=0.49-eps-converted-to.pdf, id=137, 361.35pt x 252.945pt>
+<./v=0.49-eps-converted-to.pdf, id=140, 361.35pt x 252.945pt>
 File: ./v=0.49-eps-converted-to.pdf Graphic file (type pdf)
 <use ./v=0.49-eps-converted-to.pdf>
 Package pdftex.def Info: ./v=0.49-eps-converted-to.pdf  used on input line 121.
@@ -1099,7 +1100,7 @@ Package epstopdf Info: Source file: <./maillage.eps>
 (epstopdf)             Command: <repstopdf --outfile=./maillage-eps-converted-to.pdf ./maillage.eps>
 (epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
-<./maillage-eps-converted-to.pdf, id=168, 361.35pt x 252.945pt>
+<./maillage-eps-converted-to.pdf, id=171, 361.35pt x 252.945pt>
 File: ./maillage-eps-converted-to.pdf Graphic file (type pdf)
 <use ./maillage-eps-converted-to.pdf>
 Package pdftex.def Info: ./maillage-eps-converted-to.pdf  used on input line 120.
@@ -1119,7 +1120,7 @@ Package epstopdf Info: Source file: <./mur.eps>
 (epstopdf)             Command: <repstopdf --outfile=./mur-eps-converted-to.pdf ./mur.eps>
 (epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
-<./mur-eps-converted-to.pdf, id=169, 361.35pt x 252.945pt>
+<./mur-eps-converted-to.pdf, id=172, 361.35pt x 252.945pt>
 File: ./mur-eps-converted-to.pdf Graphic file (type pdf)
 <use ./mur-eps-converted-to.pdf>
 Package pdftex.def Info: ./mur-eps-converted-to.pdf  used on input line 120.
@@ -1141,7 +1142,7 @@ Package epstopdf Info: Source file: <./loi.eps>
 (epstopdf)             Command: <repstopdf --outfile=./loi-eps-converted-to.pdf ./loi.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
-<./loi-eps-converted-to.pdf, id=200, 361.35pt x 252.945pt>
+<./loi-eps-converted-to.pdf, id=203, 361.35pt x 252.945pt>
 File: ./loi-eps-converted-to.pdf Graphic file (type pdf)
 <use ./loi-eps-converted-to.pdf>
 Package pdftex.def Info: ./loi-eps-converted-to.pdf  used on input line 121.
@@ -1149,7 +1150,7 @@ Package pdftex.def Info: ./loi-eps-converted-to.pdf  used on input line 121.
 ) [6
 
  <./loi-eps-converted-to.pdf>]
-<Mur+Ligne.png, id=233, 2499.3375pt x 1418.29875pt>
+<Mur+Ligne.png, id=236, 2499.3375pt x 1418.29875pt>
 File: Mur+Ligne.png Graphic file (type png)
 <use Mur+Ligne.png>
 Package pdftex.def Info: Mur+Ligne.png  used on input line 362.
@@ -1166,7 +1167,7 @@ Package epstopdf Info: Source file: <./BC_milieu.eps>
 (epstopdf)             Command: <repstopdf --outfile=./BC_milieu-eps-converted-to.pdf ./BC_milieu.eps>
 (epstopdf)             \includegraphics on input line 116.
 Package epstopdf Info: Output file is already uptodate.
-<./BC_milieu-eps-converted-to.pdf, id=265, 361.35pt x 252.945pt>
+<./BC_milieu-eps-converted-to.pdf, id=268, 361.35pt x 252.945pt>
 File: ./BC_milieu-eps-converted-to.pdf Graphic file (type pdf)
 <use ./BC_milieu-eps-converted-to.pdf>
 Package pdftex.def Info: ./BC_milieu-eps-converted-to.pdf  used on input line 116.
@@ -1186,7 +1187,7 @@ Package epstopdf Info: Source file: <./BC_bord.eps>
 (epstopdf)             Command: <repstopdf --outfile=./BC_bord-eps-converted-to.pdf ./BC_bord.eps>
 (epstopdf)             \includegraphics on input line 116.
 Package epstopdf Info: Output file is already uptodate.
-<./BC_bord-eps-converted-to.pdf, id=266, 361.35pt x 252.945pt>
+<./BC_bord-eps-converted-to.pdf, id=269, 361.35pt x 252.945pt>
 File: ./BC_bord-eps-converted-to.pdf Graphic file (type pdf)
 <use ./BC_bord-eps-converted-to.pdf>
 Package pdftex.def Info: ./BC_bord-eps-converted-to.pdf  used on input line 116.
@@ -1198,105 +1199,7 @@ Overfull \hbox (4.72829pt too wide) in paragraph at lines 380--380
 
 [8
 
- <./BC_milieu-eps-converted-to.pdf> <./BC_bord-eps-converted-to.pdf>]
-
-LaTeX Warning: Command \` invalid in math mode on input line 397.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 397.
-
-/home/3S-LAB/vquach/Documents/rapportThese/Decembre/figures/mpm.tex:397: Missing } inserted.
-<inserted text> 
-                }
-l.397 \end{frame}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no è in font cmss10!
-Missing character: There is no é in font cmss10!
-/home/3S-LAB/vquach/Documents/rapportThese/Decembre/figures/mpm.tex:397: Missing $ inserted.
-<inserted text> 
-                $
-l.397 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/3S-LAB/vquach/Documents/rapportThese/Decembre/figures/mpm.tex:397: Missing $ inserted.
-<inserted text> 
-                $
-l.397 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/3S-LAB/vquach/Documents/rapportThese/Decembre/figures/mpm.tex:397: Missing { inserted.
-<inserted text> 
-                {
-l.397 \end{frame}
-                 
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-
-LaTeX Warning: Command \` invalid in math mode on input line 397.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 397.
-
-/home/3S-LAB/vquach/Documents/rapportThese/Decembre/figures/mpm.tex:397: Missing } inserted.
-<inserted text> 
-                }
-l.397 \end{frame}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no è in font cmss10!
-Missing character: There is no é in font cmss10!
-/home/3S-LAB/vquach/Documents/rapportThese/Decembre/figures/mpm.tex:397: Missing $ inserted.
-<inserted text> 
-                $
-l.397 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/3S-LAB/vquach/Documents/rapportThese/Decembre/figures/mpm.tex:397: Missing $ inserted.
-<inserted text> 
-                $
-l.397 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/3S-LAB/vquach/Documents/rapportThese/Decembre/figures/mpm.tex:397: Missing { inserted.
-<inserted text> 
-                {
-l.397 \end{frame}
-                 
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-
-Overfull \hbox (221.50275pt too wide) detected at line 397
-[]
- []
-
-
-Overfull \vbox (0.64284pt too high) detected at line 397
- []
-
-[9
+ <./BC_milieu-eps-converted-to.pdf> <./BC_bord-eps-converted-to.pdf>] [9
 
 ] (./ForceFond.tex
 Package epstopdf Info: Source file: <./ForceFond.eps>
@@ -1308,7 +1211,7 @@ Package epstopdf Info: Source file: <./ForceFond.eps>
 (epstopdf)             Command: <repstopdf --outfile=./ForceFond-eps-converted-to.pdf ./ForceFond.eps>
 (epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
-<./ForceFond-eps-converted-to.pdf, id=326, 361.35pt x 252.945pt>
+<./ForceFond-eps-converted-to.pdf, id=329, 361.35pt x 252.945pt>
 File: ./ForceFond-eps-converted-to.pdf Graphic file (type pdf)
 <use ./ForceFond-eps-converted-to.pdf>
 Package pdftex.def Info: ./ForceFond-eps-converted-to.pdf  used on input line 104.
@@ -1328,7 +1231,7 @@ Package epstopdf Info: Source file: <./ForceMur.eps>
 (epstopdf)             Command: <repstopdf --outfile=./ForceMur-eps-converted-to.pdf ./ForceMur.eps>
 (epstopdf)             \includegraphics on input line 105.
 Package epstopdf Info: Output file is already uptodate.
-<./ForceMur-eps-converted-to.pdf, id=327, 361.35pt x 252.945pt>
+<./ForceMur-eps-converted-to.pdf, id=330, 361.35pt x 252.945pt>
 File: ./ForceMur-eps-converted-to.pdf Graphic file (type pdf)
 <use ./ForceMur-eps-converted-to.pdf>
 Package pdftex.def Info: ./ForceMur-eps-converted-to.pdf  used on input line 105.
@@ -1350,32 +1253,23 @@ Overfull \hbox (4.72829pt too wide) in paragraph at lines 414--414
 \tf@snm=\write8
 \openout8 = `mpm.snm'.
 
- [11] (./mpm.aux)
-
-LaTeX Warning: Temporary extra page added at the end. Rerun to get it removed.
-
-
-Package rerunfilecheck Warning: File `mpm.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `mpm.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  AD9300AF9A91E6997FB09E65051EBE55;58.
+ (./mpm.aux)
+Package rerunfilecheck Info: File `mpm.out' has not changed.
+(rerunfilecheck)             Checksum: AD9300AF9A91E6997FB09E65051EBE55;58.
  ) 
 Here is how much of TeX's memory you used:
- 41173 strings out of 478287
- 960015 string characters out of 5849289
- 1343705 words of memory out of 5000000
- 58537 multiletter control sequences out of 15000+600000
- 487044 words of font info for 70 fonts, out of 8000000 for 9000
+ 41179 strings out of 478287
+ 960054 string characters out of 5849289
+ 1343716 words of memory out of 5000000
+ 58538 multiletter control sequences out of 15000+600000
+ 486285 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,780b,785s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb>
-Output written on mpm.pdf (11 pages, 530352 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb>
+Output written on mpm.pdf (10 pages, 512864 bytes).
 PDF statistics:
- 446 PDF objects out of 1000 (max. 8388607)
- 367 compressed objects within 4 object streams
+ 442 PDF objects out of 1000 (max. 8388607)
+ 366 compressed objects within 4 object streams
  22 named destinations out of 1000 (max. 500000)
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 
